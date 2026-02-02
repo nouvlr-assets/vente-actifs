@@ -1108,19 +1108,6 @@
         "unit_price": 0.0
     },
     {
-        "lot": "A-118",
-        "prix": 1106.7,
-        "categorie": "Accessoires",
-        "descripcion": "Ball prism Ø 1.5 (30.0 mm)",
-        "detalles": "Ball prism Ø 1.5 (30.0 mm) with 1/4 external thread aimanté",
-        "manual_url": "",
-        "imagenes": [
-            "A-118.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
         "lot": "A-125.5",
         "prix": 32000.0,
         "categorie": "Accessoires",
@@ -1246,19 +1233,6 @@
         "manual_url": "",
         "imagenes": [
             "A-130.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
-        "lot": "A-131",
-        "prix": 715.408,
-        "categorie": "Accessoires",
-        "descripcion": "Sabot Magnétique & Mini-Prisme",
-        "detalles": "Sabot Magnétique pour rail Leica  <br>  Mini-prisme GMP101",
-        "manual_url": "",
-        "imagenes": [
-            "A-131.jpg"
         ],
         "units_available": 1,
         "unit_price": 0.0
@@ -1402,19 +1376,6 @@
         "manual_url": "",
         "imagenes": [
             "A-136.1.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
-        "lot": "A-137",
-        "prix": 1477.98,
-        "categorie": "Accessoires",
-        "descripcion": "Laser rotatif Rugby 640 pente manuelle",
-        "detalles": "Laser rotatif Rugby 640 pente manuelle  <br>  Capteur laser de base avec support  <br>  Chargeur Li-ion",
-        "manual_url": "",
-        "imagenes": [
-            "A-137.jpg"
         ],
         "units_available": 1,
         "unit_price": 0.0
@@ -2005,49 +1966,6 @@
         "unit_price": 0.0
     },
     {
-        "lot": "A-302",
-        "prix": 697.5,
-        "categorie": "Outils légers",
-        "descripcion": "Outils divers",
-        "detalles": "Pelle ronde et carrée  <br>  Pioche fiberglass 36 po  <br>  Escabeau 5 pieds aluminium",
-        "manual_url": "",
-        "imagenes": [
-            "A-302.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
-        "lot": "A-400",
-        "prix": 3256.31,
-        "categorie": "Quincailleries",
-        "descripcion": "Divers éléments ancrages tiges billes",
-        "detalles": "Ancrages à béton  <br>  Coil Threaded Drop-In Anchor  <br>  Wedge Anchor  <br>  Billes nivellement  <br>  Vis à béton",
-        "manual_url": "",
-        "imagenes": [
-            "A-400.jpg",
-            "A-400_A.jpg",
-            "A-400_B.jpg",
-            "A-400_C.jpg",
-            "A-400_D.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
-        "lot": "A-400.1",
-        "prix": 1836.99,
-        "categorie": "Quincailleries",
-        "descripcion": "Forêts Béton",
-        "detalles": "Forêts Béton",
-        "manual_url": "",
-        "imagenes": [
-            "A-400.1.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
         "lot": "A-400.2",
         "prix": 3300.0,
         "categorie": "Quincailleries",
@@ -2056,20 +1974,6 @@
         "manual_url": "",
         "imagenes": [
             "A-400.2.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
-        "lot": "A-401",
-        "prix": 827.38,
-        "categorie": "Quincailleries",
-        "descripcion": "Lot de différentes douilles",
-        "detalles": "lot de différentes douilles",
-        "manual_url": "",
-        "imagenes": [
-            "A-401.jpg",
-            "A-401_A.jpg"
         ],
         "units_available": 1,
         "unit_price": 0.0
@@ -2125,19 +2029,6 @@
         ],
         "units_available": 5,
         "unit_price": 320.0
-    },
-    {
-        "lot": "A-504.3",
-        "prix": 565.0,
-        "categorie": "Monuments",
-        "descripcion": "Monuments piédestal acier 12Po",
-        "detalles": "Monument piédestal acier  <br>  Longueur 12Po Base 6x6 Po",
-        "manual_url": "",
-        "imagenes": [
-            "A-504.3.jpg"
-        ],
-        "units_available": 4,
-        "unit_price": 282.5
     },
     {
         "lot": "A-504.4",
@@ -2218,19 +2109,6 @@
         "unit_price": 300.0
     },
     {
-        "lot": "A-505",
-        "prix": 637.5,
-        "categorie": "Monuments",
-        "descripcion": "Monuments piédestal acier 72Po",
-        "detalles": "Monument piédestal acier  <br>  Longueur 72Po",
-        "manual_url": "",
-        "imagenes": [
-            "A-505.jpg"
-        ],
-        "units_available": 3,
-        "unit_price": 425.0
-    },
-    {
         "lot": "A-505.1",
         "prix": 840.0,
         "categorie": "Monuments",
@@ -2268,19 +2146,6 @@
         ],
         "units_available": 17,
         "unit_price": 300.0
-    },
-    {
-        "lot": "A-505.4",
-        "prix": 1487.5,
-        "categorie": "Monuments",
-        "descripcion": "Monuments piédestal acier 72Po",
-        "detalles": "Monument piédestal acier  <br>  Longueur 72Po",
-        "manual_url": "",
-        "imagenes": [
-            "A-505.4.jpg"
-        ],
-        "units_available": 7,
-        "unit_price": 425.0
     },
     {
         "lot": "A-505.5",
@@ -2322,45 +2187,6 @@
         "unit_price": 300.0
     },
     {
-        "lot": "A-505.8",
-        "prix": 3037.5,
-        "categorie": "Monuments",
-        "descripcion": "Monuments Équerre acier 10X12",
-        "detalles": "Monument Equerre acier 12x10x8Po",
-        "manual_url": "",
-        "imagenes": [
-            "A-505.8.jpg"
-        ],
-        "units_available": 27,
-        "unit_price": 225.0
-    },
-    {
-        "lot": "A-505.9",
-        "prix": 337.5,
-        "categorie": "Monuments",
-        "descripcion": "Monuments Équerre acier 16X12",
-        "detalles": "Monument Equerre acier 16x12Po inclinée 15°",
-        "manual_url": "",
-        "imagenes": [
-            "A-505.9.jpg"
-        ],
-        "units_available": 3,
-        "unit_price": 225.0
-    },
-    {
-        "lot": "A-506",
-        "prix": 337.5,
-        "categorie": "Monuments",
-        "descripcion": "Monuments Équerre acier 12X12",
-        "detalles": "Monument Equerre acier con plaque de serrage 12x12Po",
-        "manual_url": "",
-        "imagenes": [
-            "A-506.jpg"
-        ],
-        "units_available": 3,
-        "unit_price": 225.0
-    },
-    {
         "lot": "A-506.1",
         "prix": 1250.0,
         "categorie": "Monuments",
@@ -2372,19 +2198,6 @@
         ],
         "units_available": 10,
         "unit_price": 250.0
-    },
-    {
-        "lot": "A-506.2",
-        "prix": 687.5,
-        "categorie": "Monuments",
-        "descripcion": "Monuments piédestal acier 48-54Po",
-        "detalles": "Monument piédestal acier  <br>  Longueur 48Po à 54Po",
-        "manual_url": "",
-        "imagenes": [
-            "A-506.2.jpg"
-        ],
-        "units_available": 5,
-        "unit_price": 275.0
     },
     {
         "lot": "A-506.4",
@@ -2773,19 +2586,6 @@
         "manual_url": "",
         "imagenes": [
             "A-801.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
-        "lot": "A-802",
-        "prix": 17053.55,
-        "categorie": "Entrepôt Conteneur",
-        "descripcion": "Conteneur 8 X10 pas isolée matériel inclus",
-        "detalles": "Conteneur 8x10 (2019) Aménagé",
-        "manual_url": "",
-        "imagenes": [
-            "A-802.jpg"
         ],
         "units_available": 1,
         "unit_price": 0.0
