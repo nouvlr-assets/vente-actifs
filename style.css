@@ -1,0 +1,660 @@
+/* ======================================= */
+/* 1. ESTILOS GLOBALES Y PALETA */
+/* ======================================= */
+:root {
+    --color-primario: rgba(7,40,79,0.95);     /* Azul NouvLR */
+    --color-secundario: #4A4A4A;
+    --color-acento-secundario: #7FBC42; /* Verde NouvLR */
+    --color-fondo: #F5F5F5;
+    --color-texto: #333;
+    --color-blanco: white;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    box-sizing: border-box;
+}
+
+*, *::before, *::after { box-sizing: inherit; }
+
+/* =========================== */
+/* 2. HEADER Y NAVEGACIÓN      */
+/* =========================== */
+#main-header {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    padding: 20px 80px 20px 20px;
+    min-height: 140px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+#company-logo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 40px;
+    max-height: 90px;
+    width: auto;
+}
+
+#main-header h1 {
+    font-family: 'Abel', sans-serif;
+    font-size: clamp(1.5em, 2.5vw, 2.8em);
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    color: var(--color-acento-secundario);
+}
+
+/* MENÚ DE NAVEGACIÓN */
+#main-nav {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.nav-btn {
+    background: transparent;
+    border: 2px solid transparent;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.nav-btn:hover {
+    color: var(--color-acento-secundario);
+    border-bottom: 2px solid var(--color-acento-secundario);
+}
+
+.nav-btn.active {
+    background-color: var(--color-acento-secundario);
+    color: var(--color-primario);
+    border-radius: 4px;
+}
+
+/* RESPONSIVE HEADER (MÓVIL) */
+@media (max-width: 768px) {
+    #main-header {
+        padding: 20px;
+        align-items: center;
+        text-align: center;
+    }
+    #main-header h1 {
+        font-size: 1.8rem;
+        margin-top: 10px;
+        line-height: 1.2;
+    }
+    #company-logo {
+        position: static;
+        transform: none;
+        margin-bottom: 10px;
+        max-height: 70px;
+    }
+    #main-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* ========================================= */
+/* 3. SECCIONES Y CONTENIDO */
+/* ========================================= */
+.content-section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.hidden { display: none; }
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* HOME */
+.hero-banner {
+    text-align: center;
+    background-color: white;
+    padding: 60px 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+.hero-banner h2 { color: var(--color-primario); font-size: 2.5em; margin-bottom: 20px; }
+.hero-banner p { font-size: 1.2em; color: #666; max-width: 800px; margin: 0 auto 20px auto; line-height: 1.6; }
+
+.hero-actions {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.big-btn, .download-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    transition: transform 0.2s;
+}
+
+.big-btn { background-color: var(--color-acento-secundario); color: var(--color-primario); }
+.download-btn { background-color: var(--color-primario); color: white; }
+.big-btn:hover, .download-btn:hover { transform: scale(1.05); opacity: 0.9; }
+
+/* DISCLAIMER Y CONTACTO */
+.text-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.text-container h2 {
+    color: var(--color-primario);
+    border-bottom: 2px solid var(--color-acento-secundario);
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+/* ========================================= */
+/* 4. CATÁLOGO Y TARJETAS */
+/* ========================================= */
+
+/* CONTENEDOR DE FILTROS */
+#filter-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 30px;
+    gap: 10px; /* Espacio uniforme entre botones */
+}
+
+/* EL WRAPPER (Botón completo) */
+.category-button-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Alinea arriba para que queden parejos */
+    background-color: transparent !important;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+
+    /* Ancho dinámico pero controlado */
+    flex-basis: calc(100% / 7 - 10px);
+    min-width: 100px; /* Mínimo para que no se aplaste en móvil */
+    transition: transform 0.3s ease;
+}
+
+/* LA IMAGEN (EL ICONO) */
+.category-icon-clickable {
+    width: 100%;
+    max-width: 90px; /* Tamaño controlado */
+    aspect-ratio: 1 / 1; /* Asegura que sea cuadrado */
+    object-fit: cover; /* La imagen llena el cuadrado */
+
+    /* ESTILO VISUAL (SQUIRCLE) */
+    background-color: #fff; /* Fondo blanco para que la foto resalte */
+    border-radius: 18px; /* <--- ESTO LO HACE CUADRADO REDONDEADO */
+    border: 3px solid transparent; /* Borde invisible listo para activarse */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra suave normal */
+
+    transition: all 0.3s ease;
+}
+
+/* 1. Estado Normal (Gris) */
+.category-text-below {
+    margin-top: 8px;
+    font-size: 0.85em;
+    font-weight: 600;
+    color: #555; /* Gris oscuro */
+    text-align: center;
+    transition: all 0.3s ease; /* Animación suave de color */
+    line-height: 1.2;
+}
+
+/* 2. Estado HOVER (Al pasar el mouse, el texto se pone un poco verde) */
+.category-button-wrapper:hover .category-text-below {
+    color: #7FBC42;
+    opacity: 0.8;
+}
+
+/* 3. Estado ACTIVO (Seleccionado: Verde intenso y Negrita) */
+.category-button-wrapper.active .category-text-below {
+    color: #7FBC42 !important; /* Forzamos el Verde Corporativo */
+    font-weight: 800; /* Más grueso (Bold) */
+    text-transform: uppercase; /* Opcional: Mayúsculas para destacar más */
+    letter-spacing: 0.5px;
+    text-shadow: 0 0 1px rgba(127, 188, 66, 0.3); /* Un pelín de brillo en el texto */
+}
+/* --- INTERACCIONES --- */
+
+/* 1. HOVER (Al pasar el mouse) */
+.category-button-wrapper:hover {
+    transform: translateY(-5px); /* Flota un poco */
+}
+.category-button-wrapper:hover .category-icon-clickable {
+    border-color: rgba(127, 188, 66, 0.5); /* Borde verde suave */
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+/* 2. ACTIVO (Cuando está seleccionado) */
+.category-button-wrapper.active .category-icon-clickable {
+    border-color: #7FBC42; /* Borde VERDE FUERTE */
+    box-shadow: 0 0 15px rgba(127, 188, 66, 0.4); /* Resplandor verde */
+    transform: scale(1.05); /* Un pelín más grande */
+}
+
+.category-button-wrapper.active .category-text-below {
+    color: #002D72; /* Texto se vuelve AZUL */
+    font-weight: 700;
+}
+/* TARJETAS */
+#catalogo-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.lote-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: relative;
+    transition: transform 0.2s;
+}
+.lote-card:hover { transform: translateY(-5px); box-shadow: 0 8px 16px rgba(0,0,0,0.15); }
+
+.category-corner-icon {
+    position: absolute;
+    top: 10px; right: 10px;
+    width: 40px; height: 40px;
+    background: white;
+    border-radius: 50%;
+    border: 2px solid var(--color-secundario);
+    overflow: hidden;
+}
+.corner-icon-img { width: 100%; height: 100%; object-fit: cover; }
+
+.lote-card h3 { color: var(--color-primario); margin-top: 0; }
+.lote-card strong { color: var(--color-acento-secundario); }
+
+.lote-card button {
+    width: 100%;
+    margin-top: 8px;
+    padding: 10px;
+    background-color: var(--color-primario); /* <--- ESTA LÍNEA FALTABA */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.lote-card button:hover {
+    background-color: var(--color-acento-secundario); /* Se pone Verde al pasar el mouse */
+    color: var(--color-primario); /* Texto azul */
+    transform: translateY(-2px); /* Pequeño efecto de elevación */
+}
+
+/* Para asegurarnos de que el botón deshabilitado (Precio 0) se siga viendo gris */
+.lote-card button:disabled {
+    background-color: #cccccc !important;
+    color: #666666 !important;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* BADGES EN TARJETAS */
+.badge-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 8px 0;
+    min-height: 25px;
+}
+.tech-badge {
+    background-color: #eef;
+    color: var(--color-primario);
+    font-size: 0.75em;
+    padding: 3px 8px;
+    border-radius: 12px;
+    border: 1px solid #ccd;
+    font-weight: bold;
+}
+
+/* ========================================= */
+/* 5. MODAL TIPO GALERÍA (IMAGEN GIGANTE)    */
+/* ========================================= */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    backdrop-filter: blur(5px);
+}
+
+/* Contenedor Principal Blanco */
+#modal-detalle .modal-content {
+    background-color: #fff;
+    margin: 2vh auto;
+    width: 95%;
+    max-width: 1600px; /* Súper ancho en PC */
+    height: 96vh; /* Casi pantalla completa */
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    padding: 0; /* Sin padding interno global */
+    display: flex;
+    flex-direction: column;
+}
+
+.close {
+    position: absolute;
+    top: 15px; right: 25px;
+    color: #333;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 2000;
+    background: rgba(255,255,255,0.9);
+    width: 50px; height: 50px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    line-height: 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+.close:hover { color: red; transform: scale(1.1); }
+
+/* LAYOUT FLEXIBLE (Móvil vs PC) */
+.modal-flex-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+/* --- ESTILOS COMUNES --- */
+.modal-col-left {
+    position: relative;
+    background-color: #f0f0f0; /* Gris técnico para resaltar foto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.modal-col-right {
+    background-color: #ffffff; /* BLANCO PURO para leer */
+    color: #333;
+    padding: 25px;
+    overflow-y: auto;
+}
+
+#modal-product-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+/* --- MEDIA QUERY: PC (Pantallas Grandes) --- */
+@media (min-width: 900px) {
+    .modal-flex-container {
+        flex-direction: row; /* Lado a lado */
+    }
+
+    /* IMAGEN GIGANTE (65%) */
+    .modal-col-left {
+        width: 65%;
+        height: 100%;
+        border-right: 1px solid #ddd;
+    }
+
+    /* DETALLES (35%) */
+    .modal-col-right {
+        width: 35%;
+        height: 100%;
+        box-shadow: -5px 0 20px rgba(0,0,0,0.05); /* Sombra sutil */
+    }
+}
+
+/* --- MEDIA QUERY: MÓVIL (Lo que te gustaba) --- */
+@media (max-width: 899px) {
+    .modal-col-left {
+        width: 100%;
+        height: 45%; /* Imagen arriba */
+    }
+    .modal-col-right {
+        width: 100%;
+        height: 55%; /* Detalles abajo */
+        padding: 15px;
+    }
+    .modal-content {
+        margin: 0; width: 100%; height: 100%; border-radius: 0; /* Fullscreen en móvil */
+    }
+}
+
+/* TEXTOS Y CAJAS DEL MODAL */
+.modal-title {
+    color: var(--color-primario);
+    font-size: 1.8em;
+    margin-top: 0;
+    line-height: 1.1;
+}
+.modal-subtitle {
+    color: #666;
+    font-weight: normal;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+/* Caja Verde de Detalles */
+.details-box-styled {
+    background-color: #f9fff5;
+    border: 1px solid #7FBC42;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 0.95em;
+    color: #222;
+}
+.details-box-styled h4 {
+    color: #2c6e00;
+    margin-top: 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #7FBC42;
+    padding-bottom: 5px;
+}
+
+/* Botón Manual */
+.manual-btn-styled {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: var(--color-primario);
+    color: white !important;
+    padding: 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 20px;
+    transition: background 0.3s;
+}
+.manual-btn-styled:hover { background-color: #052040; }
+
+/* PRECIO Y ACCIÓN */
+.price-big-display {
+    font-size: 2.2em;
+    font-weight: 800;
+    color: var(--color-primario);
+    text-align: center;
+    margin: 20px 0;
+    background: #f0f4f8;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.modal-actions {
+    background: white;
+    padding-top: 10px;
+}
+
+.add-cart-btn-styled {
+    width: 100%;
+    background-color: var(--color-acento-secundario);
+    color: var(--color-primario);
+    font-size: 1.3em;
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: transform 0.2s;
+}
+.add-cart-btn-styled:hover { transform: scale(1.02); background-color: #8cd147; }
+.add-cart-btn-styled:disabled { background-color: #ccc; cursor: not-allowed; transform: none; color: #666; }
+
+/* Flechas Galería */
+.gallery-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    color: rgba(0,0,0,0.3);
+    cursor: pointer;
+    user-select: none;
+    padding: 20px;
+}
+.gallery-arrow:hover { color: var(--color-acento-secundario); background: rgba(255,255,255,0.5); }
+.left-arrow { left: 10px; }
+.right-arrow { right: 10px; }
+
+
+/* =========================== */
+/* 6. MODAL CARRITO (FORM)     */
+/* =========================== */
+#cart-modal { display: none; background-color: rgba(0,0,0,0.85); }
+
+#cart-modal .modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 8px;
+    max-height: 90vh;
+    overflow-y: auto;
+    border-top: 10px solid var(--color-primario);
+    display: block; /* Bloque normal, no flex como el de producto */
+}
+
+/* FORMULARIO ESTILIZADO */
+#order-form label { color: var(--color-primario); font-weight: bold; margin-top: 10px; display: block; }
+#order-form input, #order-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    background-color: #fcfcfc;
+}
+#order-form input:focus, #order-form textarea:focus { border-color: var(--color-acento-secundario); outline: none; }
+
+.form-disclaimer {
+    background-color: #fff3cd;
+    border-left: 5px solid #ffc107;
+    padding: 10px;
+    font-size: 0.9em;
+    margin: 15px 0;
+    color: #856404;
+}
+.form-info-box {
+    background-color: #d1ecf1;
+    border-left: 5px solid var(--color-primario);
+    padding: 10px;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+    color: #0c5460;
+}
+
+#submit-order {
+    background-color: var(--color-primario);
+    color: white;
+    font-size: 1.2em;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 10px;
+}
+#submit-order:hover { opacity: 0.9; }
+
+#cancel-order {
+    background-color: transparent;
+    color: #666;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Botón flotante carrito */
+#floating-cart-button {
+    position: fixed;
+    bottom: 30px; right: 30px;
+    background-color: var(--color-acento-secundario);
+    color: var(--color-primario);
+    width: 60px; height: 60px;
+    border-radius: 50%;
+    display: flex; justify-content: center; align-items: center;
+    font-size: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 5000;
+}
+#cart-count {
+    position: absolute;
+    top: -5px; right: -5px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    width: 20px; height: 20px;
+    border-radius: 50%;
+    display: flex; justify-content: center; align-items: center;
+}

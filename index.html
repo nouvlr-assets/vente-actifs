@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Vente d'Actifs - Projet NouvLR</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- RESET --- */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Abel', sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* --- HEADER AZUL (Igual que Arpentage) --- */
+        header {
+            background-color: rgba(7,40,79,0.95); /* AZUL NOUVLR */
+            color: white; /* TEXTO BLANCO */
+            padding: 15px 0;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* Separa el Bloque Izquierdo del Botón */
+        }
+
+        /* BLOQUE IZQUIERDO (Logo + Títulos) */
+        .branding {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        /* LOGO BLANCO */
+        #company-logo {
+            height: 60px; /* Tamaño ajustado */
+            width: auto;
+        }
+
+        /* TÍTULOS (Al lado del logo) */
+        .header-titles {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-left: 1px solid rgba(255,255,255,0.3); /* Línea sutil separadora */
+            padding-left: 20px;
+        }
+
+        .header-titles h1 {
+            font-family: 'Abel', sans-serif;
+            font-size: 28px;
+            color: #ffffff; /* Blanco */
+            margin: 0;
+            line-height: 1;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+
+        .header-titles p {
+            font-family: 'Abel', sans-serif;
+            font-size: 16px;
+            color: #7FBC42; /* VERDE NOUVLR (Para resaltar el proyecto) */
+            margin: 5px 0 0 0;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* BOTÓN IDIOMA */
+        .lang-btn {
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+            padding: 8px 15px;
+            border-radius: 4px;
+            font-family: 'Abel', sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .lang-btn:hover {
+            background-color: white;
+            color: #002D72;
+        }
+
+        /* --- PORTADA PRINCIPAL --- */
+        .portada-main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 20px;
+        }
+
+        /* MENSAJE BIENVENIDA */
+        .welcome-message {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .welcome-message h2 {
+            font-size: 2rem;
+            color: #333;
+            font-weight: 300;
+        }
+
+        /* GRID ICONOS */
+        .icons-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            max-width: 1000px;
+        }
+
+        /* ITEM */
+        .icon-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 180px; /* Un poco más ancho */
+            text-decoration: none;
+            transition: transform 0.3s;
+        }
+
+        /* IMAGEN - ESTILO SQUIRCLE (Cuadrado redondeado elegante) */
+        .img-wrapper {
+            width: 160px;
+            height: 160px;
+            border-radius: 24px; /* Bordes redondeados modernos */
+            overflow: hidden;
+            border: 4px solid #fff;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* Sombra difusa */
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Efecto rebote suave */
+        }
+
+        .icon-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        /* LABEL - Nombre debajo */
+        .icon-label {
+            margin-top: 15px;
+            font-weight: 700;
+            color: #002D72; /* Azul NouvLR */
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            opacity: 0;
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+            font-size: 13px;
+        }
+
+        /* --- HOVER STATES --- */
+
+        /* Al pasar el mouse por el ACTIVO */
+        .icon-item.active:hover .img-wrapper {
+            transform: translateY(-10px); /* Sube */
+            border-color: #7FBC42; /* Borde verde */
+            box-shadow: 0 20px 40px rgba(7, 40, 79, 0.2); /* Sombra azulada elegante */
+        }
+
+        /* Zoom suave en la imagen interna */
+        .icon-item.active:hover img {
+            transform: scale(1.1);
+        }
+
+        /* Mostrar texto */
+        .icon-item.active:hover .icon-label {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* INACTIVOS */
+        .icon-item.inactive {
+            opacity: 0.6;
+            filter: grayscale(100%);
+            cursor: not-allowed;
+        }
+        /* FOOTER */
+        footer {
+            background-color: #333;
+            color: #888;
+            text-align: center;
+            padding: 20px;
+            font-size: 12px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .branding { flex-direction: column; align-items: flex-start; gap: 10px; }
+            .header-titles { border-left: none; padding-left: 0; }
+            .header-titles h1 { font-size: 22px; }
+            #company-logo { height: 40px; }
+            .icons-grid { gap: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<header id="main-header">
+    <div class="header-container">
+
+        <div class="branding">
+            <img id="company-logo" src="nouvlr-logo-white.png" alt="Logo NouvLR">
+
+            <div class="header-titles">
+                <h1 id="h-title">VENTE D'ACTIFS</h1>
+                <p id="h-subtitle">PROJET NOUVLR</p>
+            </div>
+        </div>
+
+        <button id="language-toggle" class="lang-btn">ENGLISH</button>
+    </div>
+</header>
+
+<main class="portada-main">
+
+    <div class="welcome-message">
+        <h2 id="welcome-text">SÉLECTIONNEZ UNE <span style="color:#7FBC42; font-weight:bold;">CATÉGORIE</span></h2>
+    </div>
+
+    <div class="icons-grid">
+
+        <a href="arpentage.html" class="icon-item active" id="icon-1">
+            <div class="img-wrapper">
+                <img src="icons/IconF1.jpg" id="img-1" alt="Arpentage">
+            </div>
+            <div class="icon-label" id="lbl-1">Arpentage</div>
+        </a>
+
+        <div class="icon-item inactive" id="icon-2">
+            <div class="img-wrapper"><img src="icons/IconF2.jpg" id="img-2"></div>
+        </div>
+        <div class="icon-item inactive" id="icon-3">
+            <div class="img-wrapper"><img src="icons/IconF3.jpg" id="img-3"></div>
+        </div>
+        <div class="icon-item inactive" id="icon-4">
+            <div class="img-wrapper"><img src="icons/IconF4.jpg" id="img-4"></div>
+        </div>
+
+        <div class="icon-item inactive" id="icon-5">
+            <div class="img-wrapper"><img src="icons/IconF5.jpg" id="img-5"></div>
+        </div>
+        <div class="icon-item inactive" id="icon-6">
+            <div class="img-wrapper"><img src="icons/IconF6.jpg" id="img-6"></div>
+        </div>
+        <div class="icon-item inactive" id="icon-7">
+            <div class="img-wrapper"><img src="icons/IconF7.jpg" id="img-7"></div>
+        </div>
+        <div class="icon-item inactive" id="icon-8">
+            <div class="img-wrapper"><img src="icons/IconF8.jpg" id="img-8"></div>
+        </div>
+
+    </div>
+</main>
+
+<footer>
+    &copy; 2026 NouvLR. Tous droits réservés.
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('language-toggle');
+        const hTitle = document.getElementById('h-title');
+        const hSubtitle = document.getElementById('h-subtitle');
+        const welcome = document.getElementById('welcome-text');
+        const lbl1 = document.getElementById('lbl-1');
+
+        const txt = {
+            fr: {
+                h1: "VENTE D'ACTIFS",
+                sub: "PROJET NOUVLR",
+                wel: "SÉLECTIONNEZ UNE <span style='color:#7FBC42; font-weight:bold;'>CATÉGORIE</span>",
+                l1: "Arpentage",
+                btn: "ENGLISH"
+            },
+            en: {
+                h1: "ASSET SALE",
+                sub: "PROJECT NOUVLR",
+                wel: "SELECT A <span style='color:#7FBC42; font-weight:bold;'>CATEGORY</span>",
+                l1: "Surveying",
+                btn: "FRANÇAIS"
+            }
+        };
+
+        let lang = localStorage.getItem('preferredLanguage') || 'fr';
+
+        function update() {
+            hTitle.textContent = txt[lang].h1;
+            hSubtitle.textContent = txt[lang].sub;
+            welcome.innerHTML = txt[lang].wel;
+            lbl1.textContent = txt[lang].l1;
+            btn.textContent = txt[lang].btn;
+
+            const prefix = (lang === 'fr') ? 'IconF' : 'IconE';
+            for (let i = 1; i <= 8; i++) {
+                const img = document.getElementById(`img-${i}`);
+                if (img) img.src = `icons/${prefix}${i}.jpg`;
+            }
+
+            localStorage.setItem('preferredLanguage', lang);
+            document.documentElement.lang = lang;
+        }
+
+        btn.addEventListener('click', () => {
+            lang = (lang === 'fr') ? 'en' : 'fr';
+            update();
+        });
+
+        update();
+    });
+</script>
+</body>
+</html>
