@@ -658,3 +658,27 @@ body {
     border-radius: 50%;
     display: flex; justify-content: center; align-items: center;
 }
+/* Contenedor de filtros para que queden encuadrados */
+#filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+/* Clase para los filtros sin stock */
+.disabled-filter {
+    cursor: not-allowed !important;
+    pointer-events: none; /* Evita que se pueda hacer clic */
+}
+
+.category-button-wrapper {
+    width: 100px; /* Ajusta según el tamaño de tus iconos */
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.category-button-wrapper:hover:not(.disabled-filter) {
+    transform: translateY(-5px);
+}

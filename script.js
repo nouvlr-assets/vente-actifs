@@ -44,7 +44,8 @@ const translations = {
             "Véhicule Électrique": "Véhicule Électrique",
             "Matériels de Sécurité": "Matériels de Sécurité",
             "Entrepôt Conteneur": "Entrepôt Conteneur",
-            "Véhicule": "Véhicule"
+            "Véhicule": "Véhicule",
+            "Mesure Ferroviaire": "Mesure Ferroviaire",
         },
 
         card_price_free: "Bientôt disponible",
@@ -101,7 +102,8 @@ const translations = {
             "Véhicule Électrique": "Electric Vehicle",
             "Matériels de Sécurité": "Safety Equipment",
             "Entrepôt Conteneur": "Storage Container",
-            "Véhicule": "Vehicle"
+            "Véhicule": "Vehicle",
+            "Mesure Ferroviaire": "Railway Measurement",
         },
 
         card_price_free: "Coming Soon",
@@ -546,40 +548,49 @@ function imagenSiguiente() {
 
 function generarFiltros(data) {
     const container = document.getElementById('filter-container');
+    if (!container) return;
     container.innerHTML = '';
 
-    // Obtenemos categorías únicas
-    const categorias = ['Tous', ...new Set(data.map(l => l.categorie))];
+    const masterCategories = [
+    'Tous',
+    'Station Totale',
+    'GPS',
+    'Accessoires',
+    'Appareil de mesure',
+    'Outils électriques',
+    'Outils légers',
+    'Quincailleries',
+    'Monuments',
+    'Véhicule Électrique',
+    'Matériels de Sécurité',
+    'Entrepôt Conteneur',
+    'Véhicule',
+    'Mesure Ferroviaire' // <--- Ahora es la última
+];
 
-    categorias.forEach(cat => {
-        // Nombre del icono (siempre basado en el nombre original en francés para cargar la imagen)
+    masterCategories.forEach(cat => {
+        const hasStock = cat === 'Tous' || data.some(item => item.categorie === cat);
+        // Ajuste para el nombre del icono (espacios por guiones bajos)
         const iconName = cat === 'Tous' ? 'Tous' : cat.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, '_').replace(/[^a-zA-Z0-9_]/g, '');
 
-        // Texto a mostrar (Traducido)
-        let labelMostrar = cat;
-        if (cat === 'Tous') {
-            labelMostrar = currentLang === 'fr' ? 'Tous' : 'All';
-        } else {
-            // Busca en el diccionario, si no existe usa el original
-            labelMostrar = translations[currentLang].categories[cat] || cat;
+        const div = document.createElement('div');
+        div.className = `category-button-wrapper ${cat === 'Tous' ? 'active' : ''} ${!hasStock ? 'disabled-filter' : ''}`;
+
+        if (hasStock) {
+            div.onclick = () => {
+                document.querySelectorAll('.category-button-wrapper').forEach(b => b.classList.remove('active'));
+                div.classList.add('active');
+                generarTarjetas(cat === 'Tous' ? catalogoData : catalogoData.filter(i => i.categorie === cat));
+            };
         }
 
-        const div = document.createElement('div');
-        div.className = 'category-button-wrapper';
-        if (cat === 'Tous') div.classList.add('active'); // "Tous" activo por defecto al cargar
-
-        div.onclick = () => {
-            document.querySelectorAll('.category-button-wrapper').forEach(b => b.classList.remove('active'));
-            div.classList.add('active');
-            document.getElementById('search-input').value = "";
-
-            if (cat === 'Tous') generarTarjetas(catalogoData);
-            else generarTarjetas(catalogoData.filter(i => i.categorie === cat));
-        };
-
         div.innerHTML = `
-            <img src="icons/${iconName}.jpg" class="category-icon-clickable" alt="${cat}" onerror="this.src='icons/default.jpg'">
-            <span class="category-text-below">${labelMostrar}</span>
+            <img src="icons/${iconName}.jpg" class="category-icon-clickable"
+                 style="${!hasStock ? 'filter: grayscale(1) opacity(0.3);' : ''}"
+                 onerror="this.src='icons/default.jpg'">
+            <span class="category-text-below" style="${!hasStock ? 'color: #ccc;' : ''}">
+                ${cat === 'Tous' ? (currentLang === 'fr' ? 'Tous' : 'All') : (translations[currentLang].categories[cat] || cat)}
+            </span>
         `;
         container.appendChild(div);
     });
