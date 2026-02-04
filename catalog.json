@@ -834,7 +834,7 @@
     {
         "lot": "A-100",
         "prix": 0.0,
-        "categorie": "Station Totale",
+        "categorie": "Mesure Ferroviaire",
         "descripcion": "Station Total Trimble",
         "detalles": "Ensemble & Accessoire pour scan voie ferroviaire GEDO CE 2.0  <br>  Station Total Trimble S9",
         "manual_url": "https://geospatial.trimble.com/en/products/hardware/trimble-s9",
@@ -847,7 +847,7 @@
     {
         "lot": "A-100.1",
         "prix": 0.0,
-        "categorie": "Accessoires",
+        "categorie": "Mesure Ferroviaire",
         "descripcion": "Ensemble pour Scan Ferroviaire",
         "detalles": "Ensemble pour scan voie ferroviaire",
         "manual_url": "",
@@ -2501,7 +2501,7 @@
             "A-700.jpg"
         ],
         "units_available": 3,
-        "unit_price": 3000.0
+        "unit_price": 5000.0
     },
     {
         "lot": "A-702",
