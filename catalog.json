@@ -834,7 +834,7 @@
     {
         "lot": "A-100",
         "prix": 0.0,
-        "categorie": "Station Totale",
+        "categorie": "Mesure Ferroviaire",
         "descripcion": "Station Total Trimble",
         "detalles": "Ensemble & Accessoire pour scan voie ferroviaire GEDO CE 2.0  <br>  Station Total Trimble S9",
         "manual_url": "https://geospatial.trimble.com/en/products/hardware/trimble-s9",
@@ -847,7 +847,7 @@
     {
         "lot": "A-100.1",
         "prix": 0.0,
-        "categorie": "Accessoires",
+        "categorie": "Mesure Ferroviaire",
         "descripcion": "Ensemble pour Scan Ferroviaire",
         "detalles": "Ensemble pour scan voie ferroviaire",
         "manual_url": "",
@@ -1130,8 +1130,8 @@
         "imagenes": [
             "A-125.5.jpg"
         ],
-        "units_available": 1,
-        "unit_price": 0.0
+        "units_available": 16,
+        "unit_price": 2000.0
     },
     {
         "lot": "A-125.6",
@@ -1252,7 +1252,7 @@
     },
     {
         "lot": "A-131",
-        "prix": 715.408,
+        "prix": 715.41,
         "categorie": "Accessoires",
         "descripcion": "Sabot Magnétique & Mini-Prisme",
         "detalles": "Sabot Magnétique pour rail Leica  <br>  Mini-prisme GMP101",
@@ -2500,8 +2500,8 @@
         "imagenes": [
             "A-700.jpg"
         ],
-        "units_available": 1,
-        "unit_price": 0.0
+        "units_available": 3,
+        "unit_price": 5000.0
     },
     {
         "lot": "A-702",
@@ -2526,8 +2526,8 @@
         "imagenes": [
             "A-703.jpg"
         ],
-        "units_available": 1,
-        "unit_price": 0.0
+        "units_available": 3,
+        "unit_price": 150.0
     },
     {
         "lot": "A-704",
@@ -2727,7 +2727,7 @@
     },
     {
         "lot": "A-718",
-        "prix": 25.0,
+        "prix": 100.0,
         "categorie": "Matériels de Sécurité",
         "descripcion": "Lumière de sécurité Kosto",
         "detalles": "Lumière de sécurité Kosto",
