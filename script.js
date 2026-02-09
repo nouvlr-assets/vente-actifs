@@ -1,38 +1,83 @@
 /* ========================================== */
-/* 1. VARIABLES GLOBALES                      */
+/* 1. GLOBAL CONFIGURATION & VARIABLES        */
 /* ========================================== */
-const DEPARTMENT_PREFIX = "A-"; // Arpentage
-let currentLang = 'fr'; // Idioma por defecto
-let catalogoData = []; // Datos del catálogo
-let currentImageSet = []; // Imágenes del lote actual
-let currentImageIndex = 0; // Índice imagen actual
-let cart = []; // Carrito
+const urlParams = new URLSearchParams(window.location.search);
+const DEPT_CODE = urlParams.get('dept') || 'A';
+const DEPARTMENT_PREFIX = DEPT_CODE + "-";
+
+let currentLang = 'fr';
+let fullCatalogData = [];
+let deptCatalogData = [];
+let cart = [];
+let unitSelections = {}; // Unit control tracking
+let currentImageSet = []; // Gallery images
+let currentImageIndex = 0;
 const CART_KEY = 'cotationCart';
-// --- NUEVO: Variable para control de unidades ---
-let unitSelections = {};
+
+// DEPARTMENT CONFIGURATION MAPPING
+const DEPT_CONFIG = {
+    'A': {
+        title: "VENTE D'ÉQUIPEMENT ARPENTAGE",
+        placeholder: "Rechercher (ex: TS16, Trépied...)",
+        categories: [
+            "Tous", "Station Totale", "GPS", "Accessoires", "Appareil de mesure",
+            "Outils électriques", "Outils légers", "Quincailleries", "Monuments",
+            "Véhicule Électrique", "Matériels de Sécurité", "Entrepôt Conteneur",
+            "Véhicule", "Mesure Ferroviaire"
+        ]
+    },
+    'I': {
+        title: "VENTE INFORMATIQUE ET BUREAU",
+        placeholder: "Rechercher (ex: Dell, Écran...)",
+        categories: [
+            "Tous", "Ordinateur", "Portables", "Écrans", "Périphériques",
+            "Imprimante", "Photocopieurs", "Fournitures de bureau", "Fourniture",
+            "Tableaux", "Électroménager"
+        ]
+    },
+    'O': {
+        title: "VENTE MATÉRIEL ET OUTILS",
+        placeholder: "Rechercher (ex: Hilti, Perceuse...)",
+        categories: [
+            "Tous", "Outils électriques", "Outils légers", "Quincailleries",
+            "Entrepôt Conteneur", "Matériels de Sécurité", "Clôture et signalisation"
+        ]
+    },
+    'M': {
+        title: "VENTE MACHINERIE",
+        placeholder: "Rechercher (ex: Générateur...)",
+        categories: [
+            "Tous", "Machinerie légère", "Machinerie lourde",
+            "Générateurs électriques", "Véhicule"
+        ]
+    }
+};
 
 /* ========================================== */
-/* 2. SISTEMA DE IDIOMAS (i18n)               */
+/* 2. LOCALIZATION & TEXT RESOURCES           */
 /* ========================================== */
 const translations = {
     fr: {
         nav_home: "Accueil",
         nav_catalog: "Catalogue",
         nav_disclaimer: "Politique",
-
-        // --- NUEVOS ---
         nav_departments: "Départements",
-        contact_intro: "Pour toute question ou information : ",
-        footer_note: "*Vente réservée aux professionnels.", // <--- ¡AQUÍ ESTÁ EN FRANCÉS!
-        // --------------
-
-        hero_title: "Portail de Liquidation d'Actifs - Projet NouvLR",
-        hero_desc: "NouvLR met à la disposition les actifs du département de support Technique de Construction et d'Arpentage. Grâce à une bibliothèque complète d'articles classés par catégorie conçu pour soutenir vos opérations et optimiser votre efficacité au quotidien.",
-
-        btn_catalog: "Consulter le Catalogue",
-        search_placeholder: "🔍 Rechercher (ex: TS16, Trépied...)",
-
+        btn_add: "Ajouter à la Demande",
+        btn_view: "Voir Détail",
+        btn_unavailable: "Non Disponible",
+        card_price_free: "Bientôt disponible",
+        cart_title: "Votre Demande de Cotation",
+        cart_empty: "Votre demande est vide.",
+        cart_total: "Total Estimé",
+        cart_table_lot: "Lot",
+        cart_table_desc: "Description",
+        cart_table_price: "Prix",
+        modal_details_title: "Détails & Inclusions:",
+        modal_manual_btn: "📄 Voir Fiche Technique (PDF)",
+        form_note: "⚠️ Note importante : Les prix affichés n'incluent ni les taxes ni les frais de transport.",
+        form_info: "ℹ️ Lots partiels : Si vous souhaitez acquérir uniquement un élément spécifique, indiquez-le.",
         categories: {
+            "Tous": "Tous",
             "Station Totale": "Station Totale",
             "GPS": "GPS",
             "Accessoires": "Accessoires",
@@ -46,55 +91,54 @@ const translations = {
             "Entrepôt Conteneur": "Entrepôt Conteneur",
             "Véhicule": "Véhicule",
             "Mesure Ferroviaire": "Mesure Ferroviaire",
+            "Ordinateur": "Ordinateur",
+            "Portables": "Portables",
+            "Écrans": "Écrans",
+            "Périphériques": "Périphériques",
+            "Imprimante": "Imprimante",
+            "Photocopieurs": "Photocopieurs",
+            "Fournitures de bureau": "Fournitures de bureau",
+            "Fourniture": "Fourniture",
+            "Tableaux": "Tableaux",
+            "Électroménager": "Électroménager",
+            "Machinerie légère": "Machinerie légère",
+            "Machinerie lourde": "Machinerie lourde",
+            "Générateurs électriques": "Générateurs électriques",
+            "Clôture et signalisation": "Clôture et signalisation"
         },
-
-        card_price_free: "Bientôt disponible",
-        card_btn_add: "Ajouter à la Demande",
-        card_btn_view: "Voir Détail",
-        card_btn_unavailable: "Non Disponible",
-        modal_details_title: "Détails & Inclusions:",
-        modal_manual_btn: "📄 Voir Fiche Technique (PDF)",
-        modal_price_prefix: "Prix: ",
-        cart_title: "Votre Demande de Cotation",
-        cart_table_lot: "Lot",
-        cart_table_desc: "Description",
-        cart_table_price: "Prix",
-        cart_total: "Total Estimé",
-        cart_empty: "Votre demande est vide.",
-        form_name: "Nom et Prénom:",
-        form_email: "Courriel:",
-        form_btn_send: "Envoyer la Demande",
-        form_btn_cancel: "Annuler",
-        tag_tripod: "🔭 Trépied",
-        tag_pole: "📏 Canne",
-        tag_charger: "🔋 Chargeur",
-        tag_prism: "💎 Prisme",
-        tag_radio: "📡 Radio",
-        tag_tablet: "📱 Tablette"
+        policy_html: `
+            <h2>Politique de Vente</h2>
+            <div class="disclaimer-box">
+                <h3>1. Vente Finale</h3><p>Toutes les ventes sont finales.</p>
+                <h3>2. État "Tel quel"</h3><p>Les articles sont vendus sans garantie.</p>
+                <h3>3. Inspection</h3><p>Inspection sur place recommandée.</p>
+            </div>`
     },
-
     en: {
         nav_home: "Home",
         nav_catalog: "Catalog",
         nav_disclaimer: "Policy",
-
-        // --- NUEVOS ---
         nav_departments: "Departments",
-        contact_intro: "For questions or inquiries: ",
-        footer_note: "*Sale reserved for professionals.", // <--- ¡AQUÍ ESTÁ EN INGLÉS! (Si falta esta, no cambia)
-        // --------------
-
-        hero_title: "Asset Liquidation Portal - NouvLR Project",
-        hero_desc: "NouvLR makes the assets of the Construction Technical Support and Surveying department available. Featuring a complete library of items classified by category, designed to support your operations and optimize your daily efficiency.",
-
-        btn_catalog: "View Catalog",
-        search_placeholder: "🔍 Search (e.g., TS16, Tripod...)",
-
+        btn_add: "Add to Quote",
+        btn_view: "View Details",
+        btn_unavailable: "Unavailable",
+        card_price_free: "Coming Soon",
+        cart_title: "Your Quote Request",
+        cart_empty: "Your quote request is empty.",
+        cart_total: "Estimated Total",
+        cart_table_lot: "Lot",
+        cart_table_desc: "Description",
+        cart_table_price: "Price",
+        modal_details_title: "Details & Inclusions:",
+        modal_manual_btn: "📄 View Datasheet (PDF)",
+        form_note: "⚠️ Important Note: Displayed prices do not include taxes or shipping costs.",
+        form_info: "ℹ️ Partial Lots: If you wish to acquire only a specific item, please indicate it.",
         categories: {
+            "Tous": "All",
             "Station Totale": "Total Station",
             "GPS": "GNSS / GPS",
             "Accessoires": "Accessories",
-            "Appareil de mesure": "Surveying Instruments",
+            "Appareil de mesure": "Measuring Devices",
             "Outils électriques": "Power Tools",
             "Outils légers": "Light Tools",
             "Quincailleries": "Hardware",
@@ -104,221 +148,167 @@ const translations = {
             "Entrepôt Conteneur": "Storage Container",
             "Véhicule": "Vehicle",
             "Mesure Ferroviaire": "Railway Measurement",
+            "Ordinateur": "Computer",
+            "Portables": "Laptops",
+            "Écrans": "Monitors",
+            "Périphériques": "Peripherals",
+            "Imprimante": "Printers",
+            "Photocopieurs": "Copiers",
+            "Fournitures de bureau": "Office Supplies",
+            "Fourniture": "Furniture",
+            "Tableaux": "Whiteboards",
+            "Électroménager": "Appliances",
+            "Machinerie légère": "Light Machinery",
+            "Machinerie lourde": "Heavy Machinery",
+            "Générateurs électriques": "Generators",
+            "Clôture et signalisation": "Fencing & Signage"
         },
-
-        card_price_free: "Coming Soon",
-        card_btn_add: "Add to Quote",
-        card_btn_view: "View Details",
-        card_btn_unavailable: "Unavailable",
-        modal_details_title: "Details & Inclusions:",
-        modal_manual_btn: "📄 View Datasheet (PDF)",
-        modal_price_prefix: "Price: ",
-        cart_title: "Your Quote Request",
-        cart_table_lot: "Lot",
-        cart_table_desc: "Description",
-        cart_table_price: "Price",
-        cart_total: "Estimated Total",
-        cart_empty: "Your quote request is empty.",
-        form_name: "Full Name:",
-        form_email: "Email:",
-        form_btn_send: "Send Quote Request",
-        form_btn_cancel: "Cancel",
-        tag_tripod: "🔭 Tripod",
-        tag_pole: "📏 Pole",
-        tag_charger: "🔋 Charger",
-        tag_prism: "💎 Prism",
-        tag_radio: "📡 Radio",
-        tag_tablet: "📱 Tablet"
+        policy_html: `
+            <h2>Sales Policy</h2>
+            <div class="disclaimer-box">
+                <h3>1. Final Sale</h3><p>All sales are final.</p>
+                <h3>2. "As Is" Condition</h3><p>Items sold without warranty.</p>
+                <h3>3. Inspection</h3><p>On-site inspection recommended.</p>
+            </div>`
     }
 };
-/* ========================================== */
-/* 3. FUNCIONES PRINCIPALES                   */
-/* ========================================== */
 
-// INICIALIZACIÓN
+function getText(key) { return translations[currentLang][key] || key; }
+
+/* ========================================== */
+/* 3. INITIALIZATION & SETUP                  */
+/* ========================================== */
 document.addEventListener('DOMContentLoaded', () => {
-    // Inicializar EmailJS
-    if (typeof emailjs !== 'undefined') {
-        emailjs.init("frfWoBbmJwoPNo-qm");
-    }
+    const config = DEPT_CONFIG[DEPT_CODE] || DEPT_CONFIG['A'];
+    const titleEl = document.getElementById('dept-title-dynamic');
+    if(titleEl) titleEl.textContent = config.title;
+    const searchEl = document.getElementById('search-input');
+    if(searchEl) searchEl.placeholder = config.placeholder;
+
+    if (typeof emailjs !== 'undefined') emailjs.init("frfWoBbmJwoPNo-qm");
 
     loadCart();
     cargarCatalogo();
 
-    // Listener para el formulario
-    const orderForm = document.getElementById('order-form');
-    if (orderForm) {
-        orderForm.addEventListener('submit', sendOrder);
-    }
+    const form = document.getElementById('order-form');
+    if(form) form.addEventListener('submit', sendOrder);
 
-    // Iniciar en HOME
-    mostrarSeccion('home');
+    updateFormDisclaimer();
 });
 
-// Función para cambiar idioma
-// Función para cambiar idioma
-function toggleLanguage() {
-    currentLang = currentLang === 'fr' ? 'en' : 'fr';
-
-    // Actualizar texto del botón EN/FR
-    const btnLang = document.getElementById('lang-toggle');
-    if(btnLang) btnLang.textContent = currentLang === 'fr' ? 'EN' : 'FR';
-
-    // Actualizar textos estáticos
-    updateTexts();
-
-    // Regenerar las tarjetas (para traducir botones y títulos)
-    generarTarjetas(catalogoData);
-
-    // NUEVO: Regenerar los filtros (para traducir los textos de los iconos)
-    generarFiltros(catalogoData);
+function updateFormDisclaimer() {
+    const container = document.getElementById('form-disclaimer-container');
+    if(container) {
+        container.innerHTML = `
+            <div class="form-disclaimer">${getText('form_note')}</div>
+            <div class="form-info-box">${getText('form_info')}</div>
+        `;
+    }
 }
 
-// Función para actualizar textos estáticos (HTML)
-function updateTexts() {
-    const t = translations[currentLang];
-
-    // 1. Textos con data-i18n
-    document.querySelectorAll('[data-i18n]').forEach(el => {
-        const key = el.getAttribute('data-i18n');
-        if (t[key]) el.textContent = t[key];
-    });
-
-    // 2. Placeholders y Inputs
-    const searchInput = document.getElementById('search-input');
-    if (searchInput) searchInput.placeholder = t.search_placeholder;
-
-    const clientName = document.getElementById('client_name');
-    if (clientName && clientName.previousElementSibling) clientName.previousElementSibling.textContent = t.form_name;
-
-    const clientEmail = document.getElementById('client_email');
-    if (clientEmail && clientEmail.previousElementSibling) clientEmail.previousElementSibling.textContent = t.form_email;
-
-    // 3. Botones Formulario
-    const btnSend = document.getElementById('submit-order');
-    if(btnSend) btnSend.textContent = t.form_btn_send;
-
-    const btnCancel = document.getElementById('cancel-order');
-    if(btnCancel) btnCancel.textContent = t.form_btn_cancel;
-
-    // 4. Gestión de bloques grandes de texto (Disclaimer / Contacto)
-    document.querySelectorAll('[data-lang-content]').forEach(el => {
-        if (el.getAttribute('data-lang-content') === currentLang) {
-            el.style.display = 'block';
-        } else {
-            el.style.display = 'none';
-        }
-    });
-}
-
-// Función auxiliar rápida
-function getText(key) {
-    return translations[currentLang][key] || key;
-}
-
-// CARGAR DATOS
 function cargarCatalogo() {
     fetch('catalog.json')
-        .then(response => {
-            if (!response.ok) throw new Error('Error loading JSON');
-            return response.json();
-        })
+        .then(response => response.json())
         .then(data => {
-            // --- AQUÍ ESTÁ EL CAMBIO ---
-            // Filtramos solo los lotes que empiezan por "A-"
-            catalogoData = data.filter(item =>
+            fullCatalogData = data;
+            deptCatalogData = fullCatalogData.filter(item =>
                 item.lot && item.lot.toString().startsWith(DEPARTMENT_PREFIX)
             );
-
-            // Pequeña ayuda por si no carga nada
-            if (catalogoData.length === 0) {
-                console.warn(`Atención: No se han encontrado artículos con el prefijo "${DEPARTMENT_PREFIX}"`);
-            }
-
-            generarFiltros(catalogoData);
-            generarTarjetas(catalogoData);
+            generarFiltros(deptCatalogData);
+            generarTarjetas(deptCatalogData);
         })
-        .catch(error => {
-            console.error('Error:', error);
-            document.getElementById('catalogo-container').innerHTML =
-                '<p style="color:red; text-align:center;">Erreur de chargement. Vérifiez le fichier JSON.</p>';
+        .catch(err => {
+            console.error(err);
+            document.getElementById('catalogo-container').innerHTML = "<p>Erreur de chargement.</p>";
         });
 }
 
-// 1. Variable global para controlar el tiempo (IMPORTANTE: Ponla fuera de la función)
+/* ========================================== */
+/* 4. FILTERS & CATEGORIES (ICON LOGIC)       */
+/* ========================================== */
+function cleanIconName(catName) {
+    if(!catName) return "default";
+
+    // EXACT MAPPING BASED ON FILE LIST (NO ACCENTS/SPACES)
+    const map = {
+        "Clôture et signalisation": "Clouture_et_signalitation",
+        "Véhicule Électrique": "Vehicule_Electrique",
+        "Station Totale": "Station_Totale",
+        "Appareil de mesure": "Appareil_de_mesure",
+        "Entrepôt Conteneur": "Entrepot_Conteneur",
+        "Outils électriques": "Outils_electriques",
+        "Outils légers": "Outils_legers",
+        "Matériels de Sécurité": "Materiels_de_Securite",
+        "Mesure Ferroviaire": "Mesure_Ferroviaire",
+        "Fournitures de bureau": "Fournitures_de_bureau",
+        "Machinerie légère": "Machinerie_legere",
+        "Machinerie lourde": "Machinerie_lourde",
+        "Générateurs électriques": "Generateurs_electriques",
+        "Écrans": "Ecrans",
+        "Électroménager": "Electromenager",
+        "Périphériques": "Peripheriques",
+        "Véhicule": "Vehicule"
+    };
+
+    if(map[catName]) return map[catName];
+
+    // Fallback cleanup if map fails
+    return catName.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+                  .replace(/\s+/g, '_')
+                  .replace(/[^a-zA-Z0-9_]/g, '');
+}
+
+function generarFiltros(data) {
+    const container = document.getElementById('filter-container');
+    if (!container) return;
+    container.innerHTML = '';
+
+    const config = DEPT_CONFIG[DEPT_CODE] || DEPT_CONFIG['A'];
+
+    config.categories.forEach(cat => {
+        const hasStock = cat === 'Tous' || data.some(item => item.categorie === cat);
+        const iconName = cleanIconName(cat);
+
+        const div = document.createElement('div');
+        div.className = `category-button-wrapper ${cat === 'Tous' ? 'active' : ''} ${!hasStock ? 'disabled-filter' : ''}`;
+
+        if (hasStock) {
+            div.onclick = () => {
+                document.querySelectorAll('.category-button-wrapper').forEach(b => b.classList.remove('active'));
+                div.classList.add('active');
+                const filtrados = cat === 'Tous' ? deptCatalogData : deptCatalogData.filter(i => i.categorie === cat);
+                generarTarjetas(filtrados);
+            };
+        }
+
+        div.innerHTML = `
+            <img src="icons/${iconName}.jpg" class="category-icon-clickable"
+                 style="${!hasStock ? 'filter: grayscale(1) opacity(0.4); cursor: default;' : ''}"
+                 onerror="this.src='icons/default.jpg'">
+            <span class="category-text-below" style="${!hasStock ? 'color: #ccc;' : ''}">
+                ${translations[currentLang].categories[cat] || cat}
+            </span>
+        `;
+        container.appendChild(div);
+    });
+}
+
+/* ========================================== */
+/* 5. CARDS & UNIT SALES LOGIC                */
+/* ========================================== */
 let searchTimeout;
-
 function filtrarPorBusqueda() {
-    // 2. Si el usuario escribe otra letra antes de 300ms, cancelamos la búsqueda anterior
     clearTimeout(searchTimeout);
-
-    // 3. Iniciamos la cuenta atrás. La búsqueda solo ocurrirá si el usuario para de escribir por 0.3 segundos.
     searchTimeout = setTimeout(() => {
-
-        // --- AQUÍ EMPIEZA TU CÓDIGO ORIGINAL (INTACTO) ---
-        const input = document.getElementById('search-input');
-
-        // Verificación de seguridad por si el input no existe
-        if (!input) return;
-
-        let texto = input.value.toLowerCase();
-
-        const sinonimos = {
-            "tripod": "trépied",
-            "pole": "canne",
-            "charger": "chargeur",
-            "battery": "batterie",
-            "level": "niveau",
-            "nail": "clou",
-            "paint": "peinture",
-            "safety": "sécurité",
-            "total station": "station totale",
-            "truck": "camion",
-            "trailer": "remorque"
-        };
-
-        let terminoBusqueda = texto;
-        if (sinonimos[texto]) {
-            terminoBusqueda = sinonimos[texto];
-        }
-
-        const modelosLeica = ['ts16', 'ms60', 'ts60', 'tm50', 'ls15', 'gs15', 'gs16', 'icg70', 'dna03', 'leica'];
-        let esBusquedaLeica = (texto === 'leica');
-
-        // Esta parte manipula el DOM, es bueno que ahora esté dentro del timeout
-        document.querySelectorAll('.category-button-wrapper').forEach(b => b.classList.remove('active'));
-
-        if (texto === "") {
-            generarTarjetas(catalogoData);
-            return;
-        }
-
-        const filtrados = catalogoData.filter(item => {
-            // Un pequeño truco de optimización: verificar nulo antes de concatenar
-            const lote = item.lot || "";
-            const desc = item.descripcion || "";
-            const cat = item.categorie || "";
-            const det = item.detalles || "";
-
-            const todoElTexto = (lote + " " + desc + " " + cat + " " + det).toLowerCase();
-
-            if (esBusquedaLeica) {
-                if (todoElTexto.includes('trimble')) return false;
-                return modelosLeica.some(modelo => todoElTexto.includes(modelo));
-            }
-
-            return todoElTexto.includes(texto) || todoElTexto.includes(terminoBusqueda);
-        });
-
-        generarTarjetas(filtrados);
-        // --- FIN DE TU CÓDIGO ORIGINAL ---
-
-    }, 300); // 300 milisegundos de espera (Ajustable)
+        const term = document.getElementById('search-input').value.toLowerCase();
+        if (term === "") { generarTarjetas(deptCatalogData); return; }
+        const filtered = deptCatalogData.filter(item =>
+            (item.lot + " " + item.descripcion + " " + item.categorie).toLowerCase().includes(term)
+        );
+        generarTarjetas(filtered);
+    }, 300);
 }
 
-
-// GENERAR TARJETAS
-// GENERAR TARJETAS (NUEVA VERSIÓN)
 function generarTarjetas(lotes) {
     const container = document.getElementById('catalogo-container');
     container.innerHTML = '';
@@ -328,516 +318,267 @@ function generarTarjetas(lotes) {
         return;
     }
 
-    // Generamos el HTML de cada tarjeta usando la nueva función auxiliar
+    // Render detailed design for each card
     const htmlTotal = lotes.map(lote => generarTarjetaHTML(lote)).join('');
     container.innerHTML = htmlTotal;
 }
 
-// NUEVA FUNCIÓN AUXILIAR QUE CREA EL HTML DE UNA SOLA TARJETA
 function generarTarjetaHTML(item) {
-    // 1. Inicializar contador de unidades
-    if (unitSelections[item.lot] === undefined) {
-        unitSelections[item.lot] = 0;
-    }
+    if (unitSelections[item.lot] === undefined) unitSelections[item.lot] = 0;
 
-    // 2. Lógica de Iconos y Badges (Conservando tu estilo original)
-    const iconName = (item.categorie || 'default')
-        .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
-        .replace(/\s+/g, '_').replace(/[^a-zA-Z0-9_]/g, '');
+    const iconName = cleanIconName(item.categorie);
 
+    // --- 1. EMOJI BADGE LOGIC (Restored from stable version) ---
     let badgesHTML = '';
-    const categoriasPrincipales = ['Station Totale', 'GPS', 'Appareil de mesure', 'Drones'];
-    if (categoriasPrincipales.some(cat => (item.categorie || '').includes(cat))) {
-        const keywords = [
-            { key: 'trépied', label: getText('tag_tripod') },
-            { key: 'canne', label: getText('tag_pole') },
-            { key: 'cs20', label: '📱 CS20' },
-            { key: 'tablette', label: getText('tag_tablet') },
-            { key: 'chargeur', label: getText('tag_charger') },
-            { key: 'prisme', label: getText('tag_prism') },
-            { key: 'rh16', label: getText('tag_radio') }
+    if (DEPT_CODE === 'A' && item.detalles) {
+        const det = item.detalles.toLowerCase();
+        const tags = [
+            {k:'trépied', l:'🔭 Trépied'}, {k:'canne', l:'📏 Canne'},
+            {k:'cs20', l:'📱 CS20'}, {k:'chargeur', l:'🔋 Chargeur'},
+            {k:'prisme', l:'💎 Prisme'}, {k:'radio', l:'📡 Radio'}
         ];
-        const detallesLower = (item.detalles || '').toLowerCase();
-        keywords.forEach(k => {
-            if (detallesLower.includes(k.key)) {
-                badgesHTML += `<span class="tech-badge">${k.label}</span>`;
-            }
+        tags.forEach(t => {
+            if(det.includes(t.k)) badgesHTML += `<span class="tech-badge">${t.l}</span>`;
         });
     }
 
-    // 3. Lógica de Precios y Unidades
+    // --- 2. PRICING LOGIC (Restored) ---
     const esGratis = item.prix === 0;
     const precioDisplay = esGratis
-        ? `<span style="color:#d9534f; font-size:0.9em;">${getText('card_price_free')}</span>`
-        : new Intl.NumberFormat('fr-FR', { style: 'currency', currency: 'CAD' }).format(item.prix);
+        ? `<span style="color:#d9534f; font-size:0.9em;">Bientôt disponible</span>`
+        : new Intl.NumberFormat('fr-CA', { style: 'currency', currency: 'CAD' }).format(item.prix);
 
-    // Detectar si es divisible (tiene unidades y precio unitario)
+    // --- 3. UNIT LOGIC (Grey box restoration) ---
     const esDivisible = (item.units_available > 1 && item.unit_price > 0);
-
     let unitSelectorHTML = '';
 
     if (esDivisible) {
-        const precioUnidad = new Intl.NumberFormat('fr-FR', { style: 'currency', currency: 'CAD' }).format(item.unit_price);
+        const precioUnidad = new Intl.NumberFormat('fr-CA', { style: 'currency', currency: 'CAD' }).format(item.unit_price);
         unitSelectorHTML = `
-            <div class="unit-controls" style="margin: 10px 0; padding: 10px; background: #f9f9f9; border: 1px solid #eee; border-radius: 5px;">
-                <div style="font-size: 0.85em; margin-bottom: 5px; color:#002D72; font-weight:bold;">
+            <div class="unit-controls" style="margin: 10px 0; padding: 10px; background: #f9f9f9; border: 1px solid #eee; border-radius: 5px; text-align:center;">
+                <div style="font-size: 0.85em; margin-bottom: 5px; color:#07284f; font-weight:bold;">
                     Acheter à l'unité: ${precioUnidad} / un.
                 </div>
-                <div style="display: flex; align-items: center; justify-content: space-between; max-width: 120px; margin: 0 auto;">
+                <div style="display: flex; align-items: center; justify-content: center; gap: 15px; margin: 5px 0;">
                     <button onclick="cambiarCantidad('${item.lot}', -1, ${item.units_available})" style="width:30px; height:30px; cursor:pointer;">-</button>
-                    <span id="count-${item.lot}" style="font-weight:bold; font-size:1.1em;">0</span>
+                    <span id="count-${item.lot}" style="font-weight:bold; font-size:1.1em;">${unitSelections[item.lot]}</span>
                     <button onclick="cambiarCantidad('${item.lot}', 1, ${item.units_available})" style="width:30px; height:30px; cursor:pointer;">+</button>
                 </div>
-                <div style="text-align:center; font-size:0.8em; color:#666; margin-top:2px;">
-                    Disponibles: ${item.units_available}
-                </div>
-            </div>
-        `;
+                <div style="font-size:0.8em; color:#666;">Disponibles: ${item.units_available}</div>
+            </div>`;
     }
 
-    const btnState = esGratis ? 'disabled' : '';
-    const btnText = esGratis ? getText('card_btn_unavailable') : getText('card_btn_add');
-
-    // 4. Construir el HTML final
-    // NOTA: Cambiamos el onclick del botón añadir para usar la nueva función inteligente
     return `
-        <div class="lote-card" data-lot="${item.lot}">
-            <div class="category-corner-icon">
-                <img src="icons/${iconName}.jpg" class="corner-icon-img" onerror="this.src='icons/default.jpg'">
-            </div>
-
-            <h3>Lot ${item.lot}</h3>
-            <h4>${traducirTitulo(item.descripcion)}</h4>
-
-            <div class="badge-container">${badgesHTML}</div>
-
-            <p style="font-size:0.85em; color:#666;">
-                ${translations[currentLang].categories[item.categorie] || item.categorie}
-            </p>
-
-            <strong style="display:block; margin:10px 0; font-size:1.3em;">${precioDisplay}</strong>
-
-            ${unitSelectorHTML}
-
-            <div class="card-actions">
-                <button onclick="verDetalle('${item.lot}')" style="background:#444;">${getText('card_btn_view')}</button>
-
-                <button id="btn-add-${item.lot}"
-                        onclick="agregarAlCarritoInteligente('${item.lot}')"
-                        ${btnState}>
-                    ${btnText}
-                </button>
-            </div>
+    <div class="lote-card">
+        <div class="category-corner-icon">
+            <img src="icons/${iconName}.jpg" onerror="this.src='icons/default.jpg'">
         </div>
-    `;
+
+        <h3>Lot ${item.lot}</h3>
+        <h4>${item.descripcion}</h4>
+
+        <div class="badge-container">${badgesHTML}</div>
+
+        <p style="font-size: 0.85em; color: #666; margin: 5px 0;">${item.categorie}</p>
+
+        <strong style="color: #7FBC42; font-size: 1.4rem; display: block; margin: 10px 0;">${precioDisplay}</strong>
+
+        ${unitSelectorHTML}
+
+        <div class="card-actions" style="margin-top: auto;">
+            <button onclick="verDetalle('${item.lot}')" class="btn-detail">Voir Détail</button>
+            <button id="btn-add-${item.lot}" onclick="agregarAlCarritoInteligente('${item.lot}')" class="btn-add" ${esGratis?'disabled':''}>
+                ${esGratis ? 'Non Disponible' : 'Ajouter'}
+            </button>
+        </div>
+    </div>`;
 }
-// MODAL DETALLE
+
+function cambiarCantidad(lotId, cambio, max) {
+    let actual = unitSelections[lotId] || 0;
+    let nuevo = actual + cambio;
+    if (nuevo < 0) nuevo = 0;
+    if (nuevo > max) nuevo = max;
+    unitSelections[lotId] = nuevo;
+    document.getElementById(`count-${lotId}`).innerText = nuevo;
+    actualizarBotonCompra(lotId);
+}
+
+function actualizarBotonCompra(lotId) {
+    const item = deptCatalogData.find(i => i.lot === lotId);
+    if (!item) return;
+    const qty = unitSelections[lotId] || 0;
+    const btn = document.getElementById(`btn-add-${lotId}`);
+
+    if (qty === 0) {
+        btn.innerText = getText('btn_add');
+        btn.style.backgroundColor = "";
+    } else {
+        const total = qty * item.unit_price;
+        btn.innerHTML = `Ajouter <b>${qty}</b> unités - ${total.toFixed(2)}$`;
+        btn.style.backgroundColor = "#7FBC42";
+    }
+}
+
+function agregarAlCarritoInteligente(lotId) {
+    const item = deptCatalogData.find(i => i.lot === lotId);
+    const qty = unitSelections[lotId] || 0;
+
+    if (qty === 0) {
+        anadirAlCarrito(item.lot, item.descripcion, item.prix);
+    } else {
+        anadirAlCarrito(item.lot, `${item.descripcion} (x${qty})`, item.unit_price * qty);
+        cambiarCantidad(lotId, -qty, item.units_available); // Reset
+    }
+}
+
+/* ========================================== */
+/* 6. MODAL DETAILS & GALLERY                 */
+/* ========================================== */
 function verDetalle(lotID) {
-    const lote = catalogoData.find(i => i.lot === lotID);
+    const lote = deptCatalogData.find(i => i.lot === lotID);
     if (!lote) return;
 
     currentImageSet = lote.imagenes && lote.imagenes.length > 0 ? lote.imagenes : ['default.jpg'];
     currentImageIndex = 0;
 
-    // 1. Botón Manual
-    let manualBtnHTML = '';
-    if (lote.manual_url) {
-        manualBtnHTML = `
-            <a href="${lote.manual_url}" target="_blank" class="manual-btn-styled">
-                ${getText('modal_manual_btn')}
-            </a>
-        `;
-    }
-
-    // ===============================================
-    // 2. LÓGICA DE VIDEO (YOUTUBE) - AQUÍ LA DEFINES
-    // ===============================================
-    let videoHTML = '';
-
-    // Si es el lote 601, preparamos el reproductor
-    if (lote.lot === '601') {
-        const youtubeID = "_XwrQ_zNwZU"; // Tu video real
-
-        videoHTML = `
-            <div style="margin-top: 20px; text-align: center;">
-                <h4 style="margin: 0 0 10px 0; color: var(--color-primario);">🎥 Démonstration Vidéo</h4>
-                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius:8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-                    <iframe
-                        src="https://www.youtube.com/embed/${youtubeID}?rel=0"
-                        style="position: absolute; top: 0; left: 0; width: 100%; height: 75%; border:0;"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
-                    </iframe>
-                </div>
-            </div>
-        `;
-    }
-    // ===============================================
-
-    const detallesTexto = lote.detalles ? lote.detalles : "Aucun détail supplémentaire.";
-
-    const precioDisplay = lote.prix === 0
-        ? `<span style="color:#d9534f; font-size:0.6em">${getText('card_btn_unavailable')}</span>`
-        : new Intl.NumberFormat('fr-FR', { style: 'currency', currency: 'CAD' }).format(lote.prix);
-
-    const btnText = lote.prix === 0 ? getText('card_btn_unavailable') : getText('card_btn_add');
+    const manualBtn = lote.manual_url ? `<a href="${lote.manual_url}" target="_blank" class="manual-btn-styled">${getText('modal_manual_btn')}</a>` : '';
+    const precio = lote.prix === 0 ? getText('btn_unavailable') : new Intl.NumberFormat('fr-FR', { style: 'currency', currency: 'CAD' }).format(lote.prix);
 
     const modalBody = document.getElementById('modal-body');
-
     modalBody.innerHTML = `
         <div class="modal-flex-container">
-
             <div class="modal-col-left">
                 ${currentImageSet.length > 1 ? '<span class="gallery-arrow left-arrow" onclick="imagenAnterior()">&#10094;</span>' : ''}
-                <img id="modal-product-image" src="img/${currentImageSet[0]}" alt="Lot ${lote.lot}" onerror="this.src='img/default.jpg'">
+                <img id="modal-product-image" src="img/${currentImageSet[0]}" onerror="this.src='img/default.jpg'">
                 ${currentImageSet.length > 1 ? '<span class="gallery-arrow right-arrow" onclick="imagenSiguiente()">&#10095;</span>' : ''}
             </div>
-
             <div class="modal-col-right">
-                <span style="font-size:0.9em; color:#999; text-transform:uppercase; letter-spacing:1px;">
-                    ${translations[currentLang].categories[lote.categorie] || lote.categorie}
-                </span>
-                <h2 class="modal-title">Lot ${lote.lot}</h2>
-                <h3 class="modal-subtitle">${traducirTitulo(lote.descripcion)}</h3>
-
+                <h2>Lot ${lote.lot}</h2>
+                <h3>${lote.descripcion}</h3>
                 <div class="details-box-styled">
                     <h4>${getText('modal_details_title')}</h4>
-                    <div style="line-height:1.8;">
-                        ${detallesTexto}
-                    </div>
+                    <p>${lote.detalles || ''}</p>
                 </div>
-
-                ${manualBtnHTML}
-
-                <div class="price-big-display">
-                    ${precioDisplay}
-                </div>
-
-                <div class="modal-actions">
-                    <button class="add-cart-btn-styled" onclick="anadirAlCarrito('${lote.lot}', '${(lote.descripcion||'').replace(/'/g, "\\'")}', ${lote.prix}); cerrarModal();"
-                        ${lote.prix === 0 ? 'disabled' : ''}>
-                        ${btnText}
-                    </button>
-
-                    ${videoHTML}
-                </div>
+                ${manualBtn}
+                <div class="price-big-display">${precio}</div>
+                <button class="add-cart-btn-styled" onclick="anadirAlCarrito('${lote.lot}', '${lote.descripcion.replace(/'/g, "\\'")}', ${lote.prix}); cerrarModal();" ${lote.prix===0?'disabled':''}>
+                    ${getText('btn_add')}
+                </button>
             </div>
-        </div>
-    `;
-
+        </div>`;
     document.getElementById('modal-detalle').style.display = 'block';
 }
 
-// FUNCIONES SOPORTE
 function updateImage() {
     const img = document.getElementById('modal-product-image');
-    if (img) img.src = `img/${currentImageSet[currentImageIndex]}`;
+    if(img) img.src = `img/${currentImageSet[currentImageIndex]}`;
 }
 function imagenAnterior() {
-    if (currentImageSet.length > 1) {
+    if(currentImageSet.length > 1) {
         currentImageIndex = (currentImageIndex - 1 + currentImageSet.length) % currentImageSet.length;
         updateImage();
     }
 }
 function imagenSiguiente() {
-    if (currentImageSet.length > 1) {
+    if(currentImageSet.length > 1) {
         currentImageIndex = (currentImageIndex + 1) % currentImageSet.length;
         updateImage();
     }
 }
 
-function generarFiltros(data) {
-    const container = document.getElementById('filter-container');
-    if (!container) return;
-    container.innerHTML = '';
-
-    const masterCategories = [
-    'Tous',
-    'Station Totale',
-    'GPS',
-    'Accessoires',
-    'Appareil de mesure',
-    'Outils électriques',
-    'Outils légers',
-    'Quincailleries',
-    'Monuments',
-    'Véhicule Électrique',
-    'Matériels de Sécurité',
-    'Entrepôt Conteneur',
-    'Véhicule',
-    'Mesure Ferroviaire' // <--- Ahora es la última
-];
-
-    masterCategories.forEach(cat => {
-        const hasStock = cat === 'Tous' || data.some(item => item.categorie === cat);
-        // Ajuste para el nombre del icono (espacios por guiones bajos)
-        const iconName = cat === 'Tous' ? 'Tous' : cat.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, '_').replace(/[^a-zA-Z0-9_]/g, '');
-
-        const div = document.createElement('div');
-        div.className = `category-button-wrapper ${cat === 'Tous' ? 'active' : ''} ${!hasStock ? 'disabled-filter' : ''}`;
-
-        if (hasStock) {
-            div.onclick = () => {
-                document.querySelectorAll('.category-button-wrapper').forEach(b => b.classList.remove('active'));
-                div.classList.add('active');
-                generarTarjetas(cat === 'Tous' ? catalogoData : catalogoData.filter(i => i.categorie === cat));
-            };
-        }
-
-        div.innerHTML = `
-            <img src="icons/${iconName}.jpg" class="category-icon-clickable"
-                 style="${!hasStock ? 'filter: grayscale(1) opacity(0.3);' : ''}"
-                 onerror="this.src='icons/default.jpg'">
-            <span class="category-text-below" style="${!hasStock ? 'color: #ccc;' : ''}">
-                ${cat === 'Tous' ? (currentLang === 'fr' ? 'Tous' : 'All') : (translations[currentLang].categories[cat] || cat)}
-            </span>
-        `;
-        container.appendChild(div);
-    });
-}
-
+/* ========================================== */
+/* 7. CART & NAVIGATION                       */
+/* ========================================== */
 function loadCart() {
     const stored = localStorage.getItem(CART_KEY);
     if (stored) cart = JSON.parse(stored);
     updateCartUI();
 }
-function saveCart() { localStorage.setItem(CART_KEY, JSON.stringify(cart)); }
-
-function anadirAlCarrito(lote, desc, precio) {
-    if (cart.find(i => i.lote === lote)) {
-        alert("Ce lot est déjà dans votre liste.");
-        return;
-    }
-    cart.push({ lote, descripcion: desc, prix: precio });
-    saveCart();
-    updateCartUI();
-    const btn = document.getElementById('floating-cart-button');
-    if(btn) {
-        btn.style.transform = "scale(1.2)";
-        setTimeout(() => btn.style.transform = "scale(1)", 200);
-    }
-}
-
+function saveCart() { localStorage.setItem(CART_KEY, JSON.stringify(cart)); updateCartUI(); }
 function updateCartUI() {
-    const count = document.getElementById('cart-count');
-    const floatBtn = document.getElementById('floating-cart-button');
-    if (count) count.textContent = cart.length;
-    if (floatBtn) floatBtn.style.display = cart.length > 0 ? 'flex' : 'none';
+    document.getElementById('cart-count').textContent = cart.length;
+    document.getElementById('floating-cart-button').style.display = cart.length > 0 ? 'flex' : 'none';
+}
+function anadirAlCarrito(lot, desc, prix) {
+    cart.push({lote: lot, descripcion: desc, prix: prix});
+    saveCart();
+    // Visual effect
+    const btn = document.getElementById('floating-cart-button');
+    btn.style.transform = "scale(1.2)"; setTimeout(() => btn.style.transform = "scale(1)", 200);
 }
 
-// Función para mostrar sección y actualizar el menú activo
-function mostrarSeccion(id) {
-    // 1. Ocultar todas las secciones
-    document.querySelectorAll('.content-section').forEach(s => s.classList.add('hidden'));
-
-    // 2. Mostrar la sección deseada
-    const sec = document.getElementById('section-' + id);
-    if (sec) sec.classList.remove('hidden');
-
-    // 3. GESTIÓN DE BOTONES DEL MENÚ (Lo que faltaba)
-    // Primero: Quitamos la clase 'active' (verde) de TODOS los botones
-    document.querySelectorAll('.nav-btn').forEach(btn => {
-        btn.classList.remove('active');
-
-        // Segundo: Si el botón apunta a la sección actual, le ponemos el verde
-        // Leemos el atributo onclick para ver si coincide con el id actual
-        const funcionOnclick = btn.getAttribute('onclick');
-        if (funcionOnclick && funcionOnclick.includes(`'${id}'`)) {
-            btn.classList.add('active');
-        }
-    });
-
-    // 4. Scroll arriba suave
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-
-
-function cerrarModal() { document.getElementById('modal-detalle').style.display = 'none'; }
-function closeCartModal() { document.getElementById('cart-modal').style.display = 'none'; }
 function showCotationModal() {
-    if (cart.length === 0) return;
     document.getElementById('cart-modal').style.display = 'block';
-    renderCartSummary();
-}
-
-function renderCartSummary() {
     const div = document.getElementById('cart-summary');
+    if(cart.length===0) { div.innerHTML = `<p>${getText('cart_empty')}</p>`; return; }
+
     let total = 0;
-
-    if (cart.length === 0) {
-        div.innerHTML = `<p>${getText('cart_empty')}</p>`;
-        return;
-    }
-
-    let html = `<table style="width:100%; border-collapse:collapse;">
-        <thead>
-            <tr style="background:#eee; text-align:left;">
-                <th>${getText('cart_table_lot')}</th>
-                <th>${getText('cart_table_desc')}</th>
-                <th>${getText('cart_table_price')}</th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>`;
-
-    cart.forEach(item => {
-        total += item.prix;
+    let html = `<table style="width:100%; border-collapse:collapse;"><thead><tr style="background:#eee;"><th>${getText('cart_table_lot')}</th><th>${getText('cart_table_desc')}</th><th>${getText('cart_table_price')}</th><th></th></tr></thead><tbody>`;
+    cart.forEach((i, idx) => {
+        total += i.prix;
         html += `<tr>
-            <td style="padding:10px; border-bottom:1px solid #ddd;">${item.lote}</td>
-            <td style="padding:10px; border-bottom:1px solid #ddd;">${item.descripcion}</td>
-            <td style="padding:10px; border-bottom:1px solid #ddd;">${new Intl.NumberFormat('fr-FR', { style: 'currency', currency: 'CAD' }).format(item.prix)}</td>
-            <td style="padding:10px; border-bottom:1px solid #ddd;"><button onclick="removeFromCart('${item.lote}')" style="background:red; color:white; border:none; padding:5px 10px; border-radius:3px; cursor:pointer;">X</button></td>
+            <td style="padding:10px; border-bottom:1px solid #ddd;">${i.lote}</td>
+            <td style="padding:10px; border-bottom:1px solid #ddd;">${i.descripcion}</td>
+            <td style="padding:10px; border-bottom:1px solid #ddd;">${new Intl.NumberFormat('fr-FR', { style: 'currency', currency: 'CAD' }).format(i.prix)}</td>
+            <td style="padding:10px; border-bottom:1px solid #ddd;"><button onclick="removeItem(${idx})" style="background:red; color:white; border:none; border-radius:3px; cursor:pointer;">X</button></td>
         </tr>`;
     });
-
-    html += `</tbody></table>
-    <h3 style="text-align:right; margin-top:20px;">${getText('cart_total')}: ${new Intl.NumberFormat('fr-FR', { style: 'currency', currency: 'CAD' }).format(total)}</h3>`;
+    html += `</tbody></table><h3 style="text-align:right;">${getText('cart_total')}: ${new Intl.NumberFormat('fr-FR', { style: 'currency', currency: 'CAD' }).format(total)}</h3>`;
     div.innerHTML = html;
 }
 
-function removeFromCart(id) {
-    cart = cart.filter(i => i.lote !== id);
-    saveCart();
-    updateCartUI();
-    renderCartSummary();
-    if (cart.length === 0) closeCartModal();
+function removeItem(idx) {
+    cart.splice(idx, 1); saveCart(); showCotationModal();
+    if(cart.length===0) closeCartModal();
 }
 
+function mostrarSeccion(id) {
+    if(id === 'disclaimer') {
+        document.getElementById('section-catalogo').classList.add('hidden');
+        document.getElementById('section-disclaimer').classList.remove('hidden');
+        document.getElementById('policy-content').innerHTML = translations[currentLang].policy_html;
+    }
+}
+function cerrarModal() { document.getElementById('modal-detalle').style.display = 'none'; }
+function closeCartModal() { document.getElementById('cart-modal').style.display = 'none'; }
+
+function toggleLanguage() {
+    currentLang = currentLang === 'fr' ? 'en' : 'fr';
+    document.getElementById('lang-toggle').textContent = currentLang === 'fr' ? 'EN' : 'FR';
+    generarFiltros(deptCatalogData);
+    generarTarjetas(deptCatalogData);
+    updateFormDisclaimer();
+}
+
+// Email sending logic
 function sendOrder(e) {
     e.preventDefault();
     if (cart.length === 0) return alert("Panier vide");
-
     const form = document.getElementById('order-form');
     const params = {
         client_name: form.client_name.value,
         client_email: form.client_email.value,
         client_phone: form.client_phone.value,
         client_company: form.client_company.value,
-        client_address: form.client_address.value,
-        client_city: form.client_city.value,
-        client_zip: form.client_zip.value,
-        client_country: form.client_country.value,
         client_message: form.client_message.value,
-        order_table_rows: cart.map(i =>
-            `<tr><td>${i.lote}</td><td>${i.descripcion}</td><td>${i.prix}$</td></tr>`
-        ).join(''),
+        order_table_rows: cart.map(i => `${i.lote} - ${i.descripcion} - ${i.prix}$`).join('\n'),
         total_price: cart.reduce((sum, i) => sum + i.prix, 0).toFixed(2) + " $"
     };
 
+    const btn = document.getElementById('submit-order');
+    btn.textContent = "Envoi en cours...";
+    btn.disabled = true;
+
     emailjs.send("service_qit85uu", "template_5l7jajt", params)
         .then(() => {
-            document.getElementById('cotation-page').innerHTML = '<div style="text-align:center; padding:50px;"><h2>✅ Envoyé!</h2><p>Nous vous contacterons bientôt.</p></div>';
-            cart = [];
-            saveCart();
-            updateCartUI();
+            document.getElementById('cotation-page').innerHTML = '<div style="text-align:center; padding:50px; color:green;"><h2>✅ Envoyé avec succès!</h2><p>Nous vous contacterons bientôt.</p></div>';
+            cart = []; saveCart(); updateCartUI();
             setTimeout(() => window.location.reload(), 4000);
         })
-        .catch(err => alert("Erreur: " + JSON.stringify(err)));
-}
-
-window.onclick = function(event) {
-    const m1 = document.getElementById('modal-detalle');
-    const m2 = document.getElementById('cart-modal');
-    if (event.target == m1) m1.style.display = "none";
-    if (event.target == m2) m2.style.display = "none";
-}
-
-// Función para traducir títulos de productos "al vuelo"
-function traducirTitulo(textoOriginal) {
-    if (currentLang === 'fr') return textoOriginal;
-
-    let texto = textoOriginal;
-
-    // Diccionario simple de reemplazo para títulos
-    const reemplazos = {
-        "Station Totale": "Total Station",
-        "Station totale": "Total Station",
-        "Niveau": "Level",
-        "Trépied": "Tripod",
-        "Canne": "Pole",
-        "Contrôleur": "Controller",
-        "Chargeur": "Charger",
-        "Batterie": "Battery",
-        "Coffre": "Case",
-        "Ensemble": "Set",
-        "pour": "for",
-        "avec": "with"
-    };
-
-    // Reemplazar cada palabra encontrada
-    for (const [fr, en] of Object.entries(reemplazos)) {
-        // Regex global e insensible a mayúsculas/minúsculas
-        const regex = new RegExp(fr, "gi");
-        texto = texto.replace(regex, en);
-    }
-
-    return texto;
-}
-/* ========================================== */
-/* 4. FUNCIONES DE UNIDADES Y CARRITO INTELIGENTE */
-/* ========================================== */
-
-// Manejar botones + y -
-function cambiarCantidad(lotId, cambio, max) {
-    let actual = unitSelections[lotId] || 0;
-    let nuevo = actual + cambio;
-
-    if (nuevo < 0) nuevo = 0;
-    if (nuevo > max) nuevo = max;
-
-    unitSelections[lotId] = nuevo;
-
-    // Actualizar UI
-    const countSpan = document.getElementById(`count-${lotId}`);
-    if(countSpan) countSpan.innerText = nuevo;
-
-    actualizarBotonCompra(lotId);
-}
-
-// Cambiar texto del botón según selección
-function actualizarBotonCompra(lotId) {
-    const item = catalogoData.find(i => i.lot === lotId);
-    if (!item) return;
-
-    const qty = unitSelections[lotId] || 0;
-    const btn = document.getElementById(`btn-add-${lotId}`);
-    if (!btn) return;
-
-    if (qty === 0) {
-        // MODO LOTE
-        btn.innerText = getText('card_btn_add');
-        btn.style.backgroundColor = ""; // Restaurar color original (CSS)
-        btn.style.border = "";
-    } else {
-        // MODO UNIDAD
-        const totalPrecio = qty * item.unit_price;
-        const totalFmt = new Intl.NumberFormat('fr-FR', { style: 'currency', currency: 'CAD' }).format(totalPrecio);
-
-        btn.innerHTML = `Ajouter <b>${qty}</b> unités - ${totalFmt}`;
-        btn.style.backgroundColor = "#7FBC42"; // Verde
-        btn.style.border = "1px solid #7FBC42";
-    }
-}
-
-// Lógica inteligente para añadir al carrito
-function agregarAlCarritoInteligente(lotId) {
-    const item = catalogoData.find(i => i.lot === lotId);
-    if (!item) return;
-
-    const qty = unitSelections[lotId] || 0;
-
-    if (qty === 0) {
-        // Opción A: Añadir el Lote completo (Llamamos a tu función original)
-        anadirAlCarrito(item.lot, item.descripcion, item.prix);
-    } else {
-        // Opción B: Añadir Unidades Sueltas
-        // Modificamos la descripción y el precio antes de enviar
-        const descNueva = `${item.descripcion} (x${qty} Unités)`;
-        const precioTotal = item.unit_price * qty;
-
-        anadirAlCarrito(item.lot, descNueva, precioTotal);
-
-        // Resetear contador visual
-        cambiarCantidad(lotId, -qty, item.units_available); // Truco para resetear a 0 usando la lógica existente
-    }
+        .catch(err => {
+            alert("Erreur: " + JSON.stringify(err));
+            btn.textContent = "Réessayer";
+            btn.disabled = false;
+        });
 }

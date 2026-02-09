@@ -1,10 +1,10 @@
 /* ======================================= */
-/* 1. ESTILOS GLOBALES Y PALETA */
+/* 1. GLOBAL STYLES & COLOR PALETTE        */
 /* ======================================= */
 :root {
-    --color-primario: rgba(7,40,79,0.95);     /* Azul NouvLR */
+    --color-primario: rgba(7,40,79,0.95);     /* NouvLR Blue */
     --color-secundario: #4A4A4A;
-    --color-acento-secundario: #7FBC42; /* Verde NouvLR */
+    --color-acento-secundario: #7FBC42; /* NouvLR Green */
     --color-fondo: #F5F5F5;
     --color-texto: #333;
     --color-blanco: white;
@@ -21,29 +21,175 @@ body {
 
 *, *::before, *::after { box-sizing: inherit; }
 
-/* =========================== */
-/* 2. HEADER Y NAVEGACIÓN      */
-/* =========================== */
+/* ========================================= */
+/* VISUAL ENHANCEMENTS: HOME & HEADER (UI)   */
+/* ========================================= */
+
+/* 1. Premium Dark Header */
+/* ENHANCED HEADER (Abel Typography & Margin Corrections) */
 #main-header {
-    background-color: var(--color-primario);
-    color: var(--color-blanco);
+    background: linear-gradient(135deg, #05182d 0%, #0a2e52 100%);
+    border-bottom: 4px solid var(--color-acento-secundario);
+    padding: 15px 30px; /* Reduced lateral padding on mobile */
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: flex-end;
-    justify-content: center;
-    position: relative;
-    padding: 20px 80px 20px 20px;
-    min-height: 140px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    min-height: auto;
+    flex-wrap: wrap; /* Allows content flow on mobile devices */
+}
+
+.logo-container {
+    flex-shrink: 0;
 }
 
 #company-logo {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 40px;
-    max-height: 90px;
+    max-height: 80px;
     width: auto;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+}
+
+.header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align everything to the right */
+    gap: 10px;
+}
+
+/* Green Title with Abel Font (Preserved) */
+#main-header h1 {
+    font-family: 'Abel', sans-serif;
+    font-size: clamp(1.5em, 4vw, 2.2em); /* Fluid responsive sizing */
+    font-weight: normal; /* Abel is naturally bold */
+    letter-spacing: 1px;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    color: var(--color-acento-secundario);
+    line-height: 1;
+    text-align: right;
+    width: 100%; /* Full width on mobile */
+}
+
+/* NAVIGATION MENU (Mobile Correction) */
+#main-nav {
+    display: flex;
+    gap: 10px; /* Tighter spacing between buttons */
+    justify-content: flex-end;
+    width: 100%;
+    flex-wrap: wrap; /* KEY: Wraps elements to next line if space is insufficient */
+}
+
+/* 2. Hero Section "Card" */
+.hero-wrapper {
+    max-width: 900px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Main White Card */
+.hero-card {
+    background: white;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    position: relative;
+    border-top: 5px solid var(--color-primario);
+    text-align: left; /* Left alignment improves readability and elegance */
+}
+
+/* Professional Badge - "Corporate" Style */
+.pro-badge {
+    display: inline-block;
+    background-color: #eef2f7; /* Very light blue-grey */
+    color: #4a6fa5; /* Elegant medium blue */
+    padding: 6px 15px;
+    border-radius: 4px; /* Less rounded, more technical look */
+    font-size: 0.85em;
+    font-weight: 700;
+    border-left: 4px solid #4a6fa5; /* Left accent line */
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.hero-card h2 {
+    color: var(--color-primario);
+    font-size: 2.2em;
+    margin-top: 0;
+}
+
+/* Special Welcome Text */
+.hero-text-content {
+    font-family: 'Open Sans', sans-serif; /* Sans-serif, cleaner aesthetic */
+    font-size: 1.1em;
+    line-height: 1.7;
+    color: #333; /* Soft black, better contrast */
+    font-weight: 400; /* Normal weight, not light */
+    margin-bottom: 30px;
+}
+.hero-text-content strong {
+    font-weight: 700; /* Heavy bold for final message */
+    color: var(--color-primario);
+}
+
+/* 3. Contact Card (Blue Key) */
+.contact-card {
+    background: #f4f7fa; /* Very soft blue-grey */
+    border-left: 5px solid #3498db; /* Blue border */
+    padding: 25px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column; /* Mobile: Column layout */
+    gap: 15px;
+}
+
+.contact-card h3 {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 1.2em;
+}
+.contact-card p {
+    margin: 0;
+    font-size: 0.95em;
+    color: #666;
+}
+
+/* MAIL BUTTON FIX (Prevent line breaks) */
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    width: fit-content; /* Adjusts to content width */
+    max-width: 100%; /* Prevents overflow from parent */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    white-space: nowrap; /* KEY: Forces single line display */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Ellipsis if content is too long */
+}
+.contact-item:hover {
+    transform: translateX(5px);
+}
+.contact-item i {
+    color: #3498db;
+    font-size: 1.2em;
+}
+.contact-item a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Desktop Media Query */
+@media (min-width: 768px) {
+    .contact-card {
+        flex-direction: row; /* Side-by-side on PC */
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 
 #main-header h1 {
@@ -56,7 +202,7 @@ body {
     color: var(--color-acento-secundario);
 }
 
-/* MENÚ DE NAVEGACIÓN */
+/* NAVIGATION MENU */
 #main-nav {
     display: flex;
     gap: 15px;
@@ -67,10 +213,11 @@ body {
     background: transparent;
     border: 2px solid transparent;
     color: white;
-    font-size: 1em;
+    font-size: 0.9em; /* Slightly reduced size on mobile viewports */
+    padding: 8px 12px;
+    white-space: nowrap; /* Prevents button text breakage */
     font-weight: bold;
     cursor: pointer;
-    padding: 8px 15px;
     border-radius: 4px;
     transition: all 0.3s ease;
     text-transform: uppercase;
@@ -87,7 +234,7 @@ body {
     border-radius: 4px;
 }
 
-/* RESPONSIVE HEADER (MÓVIL) */
+/* RESPONSIVE HEADER (MOBILE) */
 @media (max-width: 768px) {
     #main-header {
         padding: 20px;
@@ -111,8 +258,33 @@ body {
     }
 }
 
+@media (max-width: 600px) {
+    #main-header {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .logo-container {
+        margin-bottom: 10px;
+    }
+
+    #company-logo {
+        max-height: 60px; /* Smaller logo on mobile */
+    }
+
+    #main-header h1 {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    #main-nav {
+        justify-content: center;
+    }
+}
+
 /* ========================================= */
-/* 3. SECCIONES Y CONTENIDO */
+/* 3. SECTIONS & CONTENT LAYOUT              */
 /* ========================================= */
 .content-section {
     padding: 40px 20px;
@@ -163,7 +335,7 @@ body {
 .download-btn { background-color: var(--color-primario); color: white; }
 .big-btn:hover, .download-btn:hover { transform: scale(1.05); opacity: 0.9; }
 
-/* DISCLAIMER Y CONTACTO */
+/* DISCLAIMER & CONTACT */
 .text-container {
     background-color: white;
     padding: 40px;
@@ -178,181 +350,229 @@ body {
 }
 
 /* ========================================= */
-/* 4. CATÁLOGO Y TARJETAS */
+/* 4. CATALOG & CARD COMPONENTS              */
 /* ========================================= */
 
-/* CONTENEDOR DE FILTROS */
+/* FILTER CONTAINER */
 #filter-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
     margin-bottom: 30px;
-    gap: 10px; /* Espacio uniforme entre botones */
+    gap: 10px; /* Uniform spacing between buttons */
 }
 
-/* EL WRAPPER (Botón completo) */
+/* THE WRAPPER (Full Button) */
 .category-button-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start; /* Alinea arriba para que queden parejos */
+    justify-content: flex-start; /* Aligns to top for uniformity */
     background-color: transparent !important;
     border: none;
     padding: 5px;
     cursor: pointer;
 
-    /* Ancho dinámico pero controlado */
+    /* Dynamic but controlled width */
     flex-basis: calc(100% / 7 - 10px);
-    min-width: 100px; /* Mínimo para que no se aplaste en móvil */
+    min-width: 100px; /* Minimum width to prevent crushing on mobile */
     transition: transform 0.3s ease;
 }
 
-/* LA IMAGEN (EL ICONO) */
+/* THE IMAGE (ICON) */
 .category-icon-clickable {
     width: 100%;
-    max-width: 90px; /* Tamaño controlado */
-    aspect-ratio: 1 / 1; /* Asegura que sea cuadrado */
-    object-fit: cover; /* La imagen llena el cuadrado */
+    max-width: 90px; /* Controlled size */
+    aspect-ratio: 1 / 1; /* Ensures square aspect ratio */
+    object-fit: cover; /* Image fills the square */
 
-    /* ESTILO VISUAL (SQUIRCLE) */
-    background-color: #fff; /* Fondo blanco para que la foto resalte */
-    border-radius: 18px; /* <--- ESTO LO HACE CUADRADO REDONDEADO */
-    border: 3px solid transparent; /* Borde invisible listo para activarse */
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra suave normal */
+    /* VISUAL STYLE (SQUIRCLE) */
+    background-color: #fff; /* White background for contrast */
+    border-radius: 18px; /* <--- CREATES THE ROUNDED SQUARE (SQUIRCLE) */
+    border: 3px solid transparent; /* Invisible border ready for activation */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Standard soft shadow */
 
     transition: all 0.3s ease;
 }
 
-/* 1. Estado Normal (Gris) */
+/* 1. Normal State (Grey) */
 .category-text-below {
     margin-top: 8px;
     font-size: 0.85em;
     font-weight: 600;
-    color: #555; /* Gris oscuro */
+    color: #555; /* Dark grey */
     text-align: center;
-    transition: all 0.3s ease; /* Animación suave de color */
+    transition: all 0.3s ease; /* Smooth color transition */
     line-height: 1.2;
 }
 
-/* 2. Estado HOVER (Al pasar el mouse, el texto se pone un poco verde) */
+/* 2. HOVER State (Text turns slightly green on mouseover) */
 .category-button-wrapper:hover .category-text-below {
     color: #7FBC42;
     opacity: 0.8;
 }
 
-/* 3. Estado ACTIVO (Seleccionado: Verde intenso y Negrita) */
+/* 3. ACTIVE State (Selected: Intense Green & Bold) */
 .category-button-wrapper.active .category-text-below {
-    color: #7FBC42 !important; /* Forzamos el Verde Corporativo */
-    font-weight: 800; /* Más grueso (Bold) */
-    text-transform: uppercase; /* Opcional: Mayúsculas para destacar más */
+    color: #7FBC42 !important; /* Force Corporate Green */
+    font-weight: 800; /* Thicker weight (Bold) */
+    text-transform: uppercase; /* Optional: Uppercase for emphasis */
     letter-spacing: 0.5px;
-    text-shadow: 0 0 1px rgba(127, 188, 66, 0.3); /* Un pelín de brillo en el texto */
+    text-shadow: 0 0 1px rgba(127, 188, 66, 0.3); /* Slight text glow */
 }
-/* --- INTERACCIONES --- */
+/* --- INTERACTIONS --- */
 
-/* 1. HOVER (Al pasar el mouse) */
+/* 1. HOVER (Mouseover) */
 .category-button-wrapper:hover {
-    transform: translateY(-5px); /* Flota un poco */
+    transform: translateY(-5px); /* Slight float effect */
 }
 .category-button-wrapper:hover .category-icon-clickable {
-    border-color: rgba(127, 188, 66, 0.5); /* Borde verde suave */
+    border-color: rgba(127, 188, 66, 0.5); /* Soft green border */
     box-shadow: 0 8px 15px rgba(0,0,0,0.15);
 }
 
-/* 2. ACTIVO (Cuando está seleccionado) */
+/* 2. ACTIVE (Selected) */
 .category-button-wrapper.active .category-icon-clickable {
-    border-color: #7FBC42; /* Borde VERDE FUERTE */
-    box-shadow: 0 0 15px rgba(127, 188, 66, 0.4); /* Resplandor verde */
-    transform: scale(1.05); /* Un pelín más grande */
+    border-color: #7FBC42; /* STRONG GREEN Border */
+    box-shadow: 0 0 15px rgba(127, 188, 66, 0.4); /* Green glow */
+    transform: scale(1.05); /* Slight enlargement */
 }
 
 .category-button-wrapper.active .category-text-below {
-    color: #002D72; /* Texto se vuelve AZUL */
+    color: #002D72; /* Text turns BLUE */
     font-weight: 700;
 }
-/* TARJETAS */
+
+/* ======================================= */
+/* CARDS (FINAL DEBUGGED DESIGN)           */
+/* ======================================= */
 #catalogo-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    padding: 10px;
+    align-items: stretch;
+    padding: 20px;
 }
 
 .lote-card {
-    background-color: white;
+    background: white;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
-    width: 280px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 280px; /* Original Arpentage width */
     position: relative;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
     transition: transform 0.2s;
 }
-.lote-card:hover { transform: translateY(-5px); box-shadow: 0 8px 16px rgba(0,0,0,0.15); }
 
+.lote-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+/* 1. ICON: Arpentage Style (Circle with cropped image inside) */
 .category-corner-icon {
     position: absolute;
     top: 10px; right: 10px;
-    width: 40px; height: 40px;
-    background: white;
+    width: 45px; height: 45px;
+    background: white; /* White background prevents image darkening */
+    border: 2px solid #4A4A4A; /* Original grey/dark border */
     border-radius: 50%;
-    border: 2px solid var(--color-secundario);
+
+    /* CORE LOGIC: Crops the square image into a circular shape */
     overflow: hidden;
+
+    display: flex; align-items: center; justify-content: center;
+    z-index: 2;
 }
-.corner-icon-img { width: 100%; height: 100%; object-fit: cover; }
 
-.lote-card h3 { color: var(--color-primario); margin-top: 0; }
-.lote-card strong { color: var(--color-acento-secundario); }
-
-.lote-card button {
+.category-corner-icon img {
     width: 100%;
-    margin-top: 8px;
+    height: 100%;
+    object-fit: cover; /* Image fills the entire circle */
+    filter: none; /* Remove filters: shows original image */
+}
+
+/* TITLES & TEXT */
+.lote-card h3 {
+    color: #07284f;
+    margin: 0 0 5px 0;
+    font-size: 1.25rem;
+}
+
+.lote-card h4 {
+    font-weight: bold;
+    font-size: 0.95rem;
+    color: #333;
+    margin: 15px 0 12px 0;
+    line-height: 1.3;
+}
+
+/* BADGES/TAGS */
+.badge-container { display: flex; flex-wrap: wrap; gap: 5px; margin: 8px 0; min-height: 25px; }
+.tech-badge { background-color: #eef; color: #07284f; font-size: 0.75em; padding: 3px 8px; border-radius: 12px; border: 1px solid #ccd; font-weight: bold; }
+
+/* 2. +/- BUTTONS (Restored Blue) */
+.unit-controls button {
+    background-color: #07284f !important; /* Corporate Blue */
+    color: white !important;
+    border: none;
+    border-radius: 4px;
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.unit-controls button:hover {
+    background-color: #7FBC42 !important; /* Green on mouseover */
+}
+
+/* ACTION CONTAINER */
+.card-actions {
+    margin-top: auto;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-actions button {
+    width: 100%;
     padding: 10px;
-    background-color: var(--color-primario); /* <--- ESTA LÍNEA FALTABA */
-    color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
+    font-size: 0.9rem;
     transition: all 0.3s ease;
 }
 
-.lote-card button:hover {
-    background-color: var(--color-acento-secundario); /* Se pone Verde al pasar el mouse */
-    color: var(--color-primario); /* Texto azul */
-    transform: translateY(-2px); /* Pequeño efecto de elevación */
+/* 3. VIEW DETAIL BUTTON (Grey -> Hover: Green bg / Blue text) */
+.card-actions button:first-child {
+    background-color: #444 !important; /* Dark Grey */
+    color: white !important;
 }
 
-/* Para asegurarnos de que el botón deshabilitado (Precio 0) se siga viendo gris */
-.lote-card button:disabled {
-    background-color: #cccccc !important;
-    color: #666666 !important;
-    cursor: not-allowed;
-    transform: none;
+.card-actions button:first-child:hover {
+    background-color: #7FBC42 !important; /* Green Background */
+    color: #07284f !important; /* Blue Text */
 }
 
-/* BADGES EN TARJETAS */
-.badge-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-    margin: 8px 0;
-    min-height: 25px;
+/* ADD BUTTON (Blue -> Hover: Green) */
+.card-actions button:last-child {
+    background-color: #07284f;
+    color: white;
 }
-.tech-badge {
-    background-color: #eef;
-    color: var(--color-primario);
-    font-size: 0.75em;
-    padding: 3px 8px;
-    border-radius: 12px;
-    border: 1px solid #ccd;
-    font-weight: bold;
-}
+.card-actions button:last-child:hover { background-color: #7FBC42; }
+.card-actions button:disabled { background-color: #ccc !important; color: #666 !important; cursor: not-allowed; }
 
 /* ========================================= */
-/* 5. MODAL TIPO GALERÍA (IMAGEN GIGANTE)    */
+/* 5. GALLERY TYPE MODAL (GIANT IMAGE)       */
 /* ========================================= */
 
 .modal {
@@ -365,17 +585,17 @@ body {
     backdrop-filter: blur(5px);
 }
 
-/* Contenedor Principal Blanco */
+/* Main White Container */
 #modal-detalle .modal-content {
     background-color: #fff;
     margin: 2vh auto;
     width: 95%;
-    max-width: 1600px; /* Súper ancho en PC */
-    height: 96vh; /* Casi pantalla completa */
+    max-width: 1600px; /* Super wide on PC */
+    height: 96vh; /* Almost full screen */
     border-radius: 8px;
     overflow: hidden;
     position: relative;
-    padding: 0; /* Sin padding interno global */
+    padding: 0; /* No global internal padding */
     display: flex;
     flex-direction: column;
 }
@@ -397,7 +617,7 @@ body {
 }
 .close:hover { color: red; transform: scale(1.1); }
 
-/* LAYOUT FLEXIBLE (Móvil vs PC) */
+/* FLEXIBLE LAYOUT (Mobile vs PC) */
 .modal-flex-container {
     display: flex;
     flex-direction: column;
@@ -405,10 +625,10 @@ body {
     width: 100%;
 }
 
-/* --- ESTILOS COMUNES --- */
+/* --- COMMON STYLES --- */
 .modal-col-left {
     position: relative;
-    background-color: #f0f0f0; /* Gris técnico para resaltar foto */
+    background-color: #f0f0f0; /* Technical grey to highlight photo */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -416,7 +636,7 @@ body {
 }
 
 .modal-col-right {
-    background-color: #ffffff; /* BLANCO PURO para leer */
+    background-color: #ffffff; /* PURE WHITE for readability */
     color: #333;
     padding: 25px;
     overflow-y: auto;
@@ -429,44 +649,44 @@ body {
     display: block;
 }
 
-/* --- MEDIA QUERY: PC (Pantallas Grandes) --- */
+/* --- MEDIA QUERY: PC (Large Screens) --- */
 @media (min-width: 900px) {
     .modal-flex-container {
-        flex-direction: row; /* Lado a lado */
+        flex-direction: row; /* Side by side */
     }
 
-    /* IMAGEN GIGANTE (65%) */
+    /* GIANT IMAGE (65%) */
     .modal-col-left {
         width: 65%;
         height: 100%;
         border-right: 1px solid #ddd;
     }
 
-    /* DETALLES (35%) */
+    /* DETAILS (35%) */
     .modal-col-right {
         width: 35%;
         height: 100%;
-        box-shadow: -5px 0 20px rgba(0,0,0,0.05); /* Sombra sutil */
+        box-shadow: -5px 0 20px rgba(0,0,0,0.05); /* Subtle shadow */
     }
 }
 
-/* --- MEDIA QUERY: MÓVIL (Lo que te gustaba) --- */
+/* --- MEDIA QUERY: MOBILE (User Preference) --- */
 @media (max-width: 899px) {
     .modal-col-left {
         width: 100%;
-        height: 45%; /* Imagen arriba */
+        height: 45%; /* Image on top */
     }
     .modal-col-right {
         width: 100%;
-        height: 55%; /* Detalles abajo */
+        height: 55%; /* Details below */
         padding: 15px;
     }
     .modal-content {
-        margin: 0; width: 100%; height: 100%; border-radius: 0; /* Fullscreen en móvil */
+        margin: 0; width: 100%; height: 100%; border-radius: 0; /* Fullscreen on mobile */
     }
 }
 
-/* TEXTOS Y CAJAS DEL MODAL */
+/* MODAL TEXTS & BOXES */
 .modal-title {
     color: var(--color-primario);
     font-size: 1.8em;
@@ -480,7 +700,7 @@ body {
     font-size: 1.1em;
 }
 
-/* Caja Verde de Detalles */
+/* Green Details Box */
 .details-box-styled {
     background-color: #f9fff5;
     border: 1px solid #7FBC42;
@@ -498,7 +718,7 @@ body {
     padding-bottom: 5px;
 }
 
-/* Botón Manual */
+/* Manual Button */
 .manual-btn-styled {
     display: block;
     width: 100%;
@@ -514,7 +734,7 @@ body {
 }
 .manual-btn-styled:hover { background-color: #052040; }
 
-/* PRECIO Y ACCIÓN */
+/* PRICE & ACTION */
 .price-big-display {
     font-size: 2.2em;
     font-weight: 800;
@@ -547,7 +767,7 @@ body {
 .add-cart-btn-styled:hover { transform: scale(1.02); background-color: #8cd147; }
 .add-cart-btn-styled:disabled { background-color: #ccc; cursor: not-allowed; transform: none; color: #666; }
 
-/* Flechas Galería */
+/* Gallery Arrows */
 .gallery-arrow {
     position: absolute;
     top: 50%;
@@ -564,7 +784,7 @@ body {
 
 
 /* =========================== */
-/* 6. MODAL CARRITO (FORM)     */
+/* 6. CART MODAL (FORM UI)     */
 /* =========================== */
 #cart-modal { display: none; background-color: rgba(0,0,0,0.85); }
 
@@ -578,10 +798,10 @@ body {
     max-height: 90vh;
     overflow-y: auto;
     border-top: 10px solid var(--color-primario);
-    display: block; /* Bloque normal, no flex como el de producto */
+    display: block; /* Normal block, not flex like the product modal */
 }
 
-/* FORMULARIO ESTILIZADO */
+/* STYLIZED FORM */
 #order-form label { color: var(--color-primario); font-weight: bold; margin-top: 10px; display: block; }
 #order-form input, #order-form textarea {
     width: 100%;
@@ -634,7 +854,7 @@ body {
     border-radius: 5px;
 }
 
-/* Botón flotante carrito */
+/* Floating Cart Button (FAB) */
 #floating-cart-button {
     position: fixed;
     bottom: 30px; right: 30px;
@@ -658,7 +878,7 @@ body {
     border-radius: 50%;
     display: flex; justify-content: center; align-items: center;
 }
-/* Contenedor de filtros para que queden encuadrados */
+/* Filter container to ensure alignment */
 #filter-container {
     display: flex;
     flex-wrap: wrap;
@@ -667,14 +887,14 @@ body {
     margin: 20px 0;
 }
 
-/* Clase para los filtros sin stock */
+/* Class for out-of-stock filters */
 .disabled-filter {
     cursor: not-allowed !important;
-    pointer-events: none; /* Evita que se pueda hacer clic */
+    pointer-events: none; /* Prevents clicking */
 }
 
 .category-button-wrapper {
-    width: 100px; /* Ajusta según el tamaño de tus iconos */
+    width: 100px; /* Adjust based on icon size */
     text-align: center;
     transition: transform 0.2s ease;
 }
@@ -682,3 +902,209 @@ body {
 .category-button-wrapper:hover:not(.disabled-filter) {
     transform: translateY(-5px);
 }
+/* ========================================= */
+/* DEPARTMENT STYLES (MODERN LIST)           */
+/* ========================================= */
+
+.departments-list {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header section */
+.section-header-styled {
+    text-align: center;
+    margin-bottom: 60px;
+}
+/* Subtitle Departments */
+.section-header-styled h2 {
+    color: var(--color-primario);
+    /* RESPONSIVE SCALING: Font scales fluidly between 1.5em and 3em based on viewport width */
+    font-size: clamp(1.8em, 6vw, 3em);
+    font-weight: 800;
+    margin: 0;
+    letter-spacing: 1px; /* Slightly reduced spacing for better fit */
+    text-transform: uppercase;
+    line-height: 1.2; /* Prevents line overlap if split */
+    padding: 0 10px; /* Safety lateral margin */
+}
+/* underline Departments */
+.header-underline {
+    width: 1000px;
+    height: 2px;
+    background-color: var(--color-acento-secundario); /* Green */
+    margin: 15px auto 0 auto;
+    border-radius: 2px;
+}
+
+/* Department Row */
+.dept-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    gap: 30px; /* Spacing between text and image */
+    flex-wrap: wrap; /* KEY: Allows dropping on mobile */
+}
+
+/* Information (Text) */
+.dept-info {
+    flex: 1; /* Occupies available space */
+    min-width: 300px; /* Min width to prevent crushing */
+}
+
+.dept-title {
+    font-size: 2em; /* Large Title */
+    color: var(--color-primario);
+    margin: 0 0 15px 0;
+    font-family: 'Abel', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.dept-desc {
+    font-size: 1.15em;
+    color: #555;
+    line-height: 1.6;
+    font-style: italic; /* ITALIC TEXT */
+    font-weight: 300;
+    border-left: 4px solid #ddd; /* Grey decorative line on left */
+    padding-left: 15px;
+}
+
+/* Icon Button (Image Clickable) */
+.dept-icon-btn {
+    position: relative;
+    width: 160px; /* Sizes fix and elegant */
+    height: 160px;
+    border-radius: 20px; /* Rounded borders (Squircle) */
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15); /* Elegant shadow */
+
+    border: 4px solid var(--color-primario);
+    transition: all 0.4s ease;
+    cursor: pointer;
+    flex-shrink: 0; /* Prevents shrinking */
+}
+
+.dept-icon-btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* Hover Effect (Mouseover) */
+.dept-icon-btn:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+    border-color: var(--color-acento-secundario); /* Border changes to green */
+}
+
+.dept-icon-btn:hover img {
+    transform: scale(1.1); /* Smooth zoom to the image */
+    filter: brightness(0.7); /* Gets a bit darker when is selected */
+}
+
+/* "VOIR" Text overlay */
+.icon-overlay-text {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    opacity: 0; /* Invisible by default */
+    transition: opacity 0.3s ease;
+    z-index: 2;
+}
+
+.dept-icon-btn:hover .icon-overlay-text {
+    opacity: 1; /* Appears when pass the pointer */
+}
+
+/* Divider */
+.dept-divider {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #ccc, transparent); /* Faded line */
+    margin: 10px 0;
+}
+
+/* MOBILE ADJUSTMENT (Media Query) */
+@media (max-width: 768px) {
+    .dept-row {
+        flex-direction: column-reverse; /* Image top, text bottom */
+        text-align: center;
+        gap: 15px;
+    }
+
+    .dept-info {
+        min-width: 100%;
+    }
+
+    .dept-desc {
+        border-left: none; /* Remove lateral line on mobile */
+        padding-left: 0;
+    }
+
+    .dept-icon-btn {
+        width: 100%; /* Wide image on mobile */
+        height: 200px; /* Rectangular banner style */
+        max-width: 400px;
+    }
+}
+
+/* Language Button with Border */
+.lang-btn {
+    border: 2px solid rgba(255, 255, 255, 0.6) !important; /* Elegant semi-transparent border */
+    padding: 5px 12px !important;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    border-color: white !important;
+}
+
+/* POLICY STYLES */
+.policy-list {
+    margin: 20px 0;
+    padding-left: 20px;
+    line-height: 1.8;
+    color: #444;
+}
+
+.policy-list li {
+    margin-bottom: 12px;
+}
+
+.policy-footer {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    font-size: 1.05em;
+}
+
+.policy-footer a {
+    color: var(--color-primario);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.policy-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Fix for links in the menu */
+a.nav-btn {
+    text-decoration: none !important; /* Removes underline */
+    display: inline-block; /* Ensures padding is respected */
+}
+
+/* Ensure they look white and turn green on hover */
+a.nav-btn:visited { color: white; }
+a.nav-btn:hover { color: var(--color-acento-secundario); }
