@@ -40,14 +40,14 @@ const DEPT_CONFIG = {
         placeholder: "Rechercher (ex: Hilti, Perceuse...)",
         categories: [
             "Tous", "Outils électriques", "Outils légers", "Quincailleries",
-            "Entrepôt Conteneur", "Matériels de Sécurité", "Clôture et signalisation"
+            "Entrepôt Conteneur", "Matériels de Sécurité", "Clôture et signalisation","Materiels"
         ]
     },
     'M': {
         title: "VENTE MACHINERIE",
         placeholder: "Rechercher (ex: Générateur...)",
         categories: [
-            "Tous", "Machinerie légère", "Machinerie lourde",
+            "Tous", "Machinerie légère",
             "Générateurs électriques", "Véhicule"
         ]
     }
@@ -104,7 +104,8 @@ const translations = {
             "Machinerie légère": "Machinerie légère",
             "Machinerie lourde": "Machinerie lourde",
             "Générateurs électriques": "Générateurs électriques",
-            "Clôture et signalisation": "Clôture et signalisation"
+            "Clôture et signalisation": "Clôture et signalisation",
+            "Materiels": "Materiels"
         },
         policy_html: `
             <h2>Politique de Vente</h2>
@@ -161,7 +162,8 @@ const translations = {
             "Machinerie légère": "Light Machinery",
             "Machinerie lourde": "Heavy Machinery",
             "Générateurs électriques": "Generators",
-            "Clôture et signalisation": "Fencing & Signage"
+            "Clôture et signalisation": "Fencing & Signage",
+            "Materiels":"Materials",
         },
         policy_html: `
             <h2>Sales Policy</h2>
@@ -247,7 +249,8 @@ function cleanIconName(catName) {
         "Écrans": "Ecrans",
         "Électroménager": "Electromenager",
         "Périphériques": "Peripheriques",
-        "Véhicule": "Vehicule"
+        "Véhicule": "Vehicule",
+        "Materiels":"Materiels",
     };
 
     if(map[catName]) return map[catName];
