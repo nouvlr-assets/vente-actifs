@@ -1154,3 +1154,16 @@ a.nav-btn:hover { color: var(--color-acento-secundario); }
         grid-template-columns: 1fr;
     }
 }
+/* Estilo para la categoría cuando no hay productos (desactivada) */
+.category-card.disabled {
+    pointer-events: none;    /* Impide que el usuario haga clic */
+    opacity: 0.4;            /* Hace que se vea más tenue (apagada) */
+    filter: grayscale(1);    /* Convierte la imagen a blanco y negro */
+    cursor: not-allowed;     /* Cambia el cursor para indicar que no está disponible */
+}
+
+/* Opcional: añade un efecto visual al pasar el ratón solo en las activas */
+.category-card:not(.disabled):hover {
+    transform: scale(1.05);  /* Efecto de aumento suave al pasar el ratón */
+    transition: transform 0.3s ease;
+}
