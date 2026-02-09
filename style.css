@@ -1108,3 +1108,49 @@ a.nav-btn {
 /* Ensure they look white and turn green on hover */
 a.nav-btn:visited { color: white; }
 a.nav-btn:hover { color: var(--color-acento-secundario); }
+
+
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Crea 2 columnas iguales */
+    gap: 30px;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.category-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+    transform: scale(1.05);
+}
+
+.category-card img {
+    width: 100%;
+    max-width: 250px; /* Ajusta este tamaño para hacer los iconos más grandes */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.category-label {
+    margin-top: 15px;
+    font-family: 'Abel', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #07284f;
+    text-align: center;
+}
+
+/* Para móviles: que pase a 1 columna si la pantalla es pequeña */
+@media (max-width: 600px) {
+    .categories-grid {
+        grid-template-columns: 1fr;
+    }
+}

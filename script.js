@@ -540,9 +540,17 @@ function mostrarSeccion(id) {
     if(id === 'disclaimer') {
         document.getElementById('section-catalogo').classList.add('hidden');
         document.getElementById('section-disclaimer').classList.remove('hidden');
-        document.getElementById('policy-content').innerHTML = translations[currentLang].policy_html;
+
+        // Esto traerá el texto corregido que pusimos en el objeto de traducciones
+        document.getElementById('policy-content').innerHTML = `
+            <h2>${getText('nav_policy')}</h2>
+            <div class="disclaimer-box">
+                ${translations[currentLang].policy_text || ""}
+            </div>`;
     }
 }
+
+
 function cerrarModal() { document.getElementById('modal-detalle').style.display = 'none'; }
 function closeCartModal() { document.getElementById('cart-modal').style.display = 'none'; }
 

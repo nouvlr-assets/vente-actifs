@@ -23,10 +23,8 @@
         <h1>VENTE D'ACTIFS NOUVLR</h1>
 
         <nav id="main-nav">
-            <button class="nav-btn active" onclick="mostrarSeccion('home')">Accueil</button>
-            <button class="nav-btn" onclick="mostrarSeccion('departments')">Départements</button>
-            <button class="nav-btn" onclick="mostrarSeccion('policy')">Politique</button>
-
+            <button class="nav-btn active" onclick="mostrarSeccion('departments')" data-i18n="nav_departments">Catégories</button>
+            <button class="nav-btn" onclick="mostrarSeccion('policy')" data-i18n="nav_policy">Politique</button>
             <button id="lang-toggle" class="nav-btn lang-btn" onclick="toggleLanguage()">EN</button>
         </nav>
     </div>
@@ -74,73 +72,29 @@
 
 </section>
 
-<section id="section-departments" class="content-section hidden">
+<section id="section-departments" class="content-section">
     <div class="section-header-styled">
-        <h2 data-i18n="nav_departments">DÉPARTEMENTS</h2>
+        <h2 data-i18n="nav_departments">CATEGORIES</h2>
         <div class="header-underline"></div>
     </div>
 
-    <div class="departments-list">
-
-        <div class="dept-row">
-            <div class="dept-info">
-                <h3 class="dept-title" data-i18n="dept_1_title">ARPENTAGE</h3>
-                <p class="dept-desc" data-i18n="dept_1_desc">Fort d'une équipe ayant compté plus de cent arpenteurs, ce
-                    département a investi dans les technologies de pointe pour garantir une précision irréprochable.
-                    Notre inventaire comprend une vaste gamme d’équipements, des stations totales aux drones, incluant
-                    accessoires, outils de marquage, quincaillerie et véhicules spécialisés, dont un chariot ferroviaire
-                    électrique.</p>
-            </div>
-            <a href="catalogue.html?dept=A" class="dept-icon-btn">
-                <img id="img-dept-1" src="icons/IconF1.jpg" alt="Catalogue Arpentage">
-                <span class="icon-overlay-text">VOIR</span>
-            </a>
-        </div>
-        <hr class="dept-divider">
-
-        <div class="dept-row">
-            <div class="dept-info">
-                <h3 class="dept-title" data-i18n="dept_2_title">INFORMATIQUE ET MATÉRIEL DE BUREAU</h3>
-                <p class="dept-desc" data-i18n="dept_2_desc">Au cœur d’un projet ayant accueilli jusqu’à 5 000
-                    collaborateurs, NouvLR a toujours misé sur une infrastructure technologique de premier plan.
-                    Découvrez une large sélection de matériel informatique (hardware), ainsi qu'une vaste gamme de
-                    mobilier de bureau, fournitures administratives, électroménagers et systèmes d’impression.</p>
-            </div>
-            <a href="catalogue.html?dept=I" class="dept-icon-btn">
-                <img id="img-dept-2" src="icons/IconF2.jpg" alt="Catalogue Informatique">
-                <span class="icon-overlay-text">VOIR</span>
-            </a>
-        </div>
-        <hr class="dept-divider">
-
-        <div class="dept-row">
-            <div class="dept-info">
-                <h3 class="dept-title" data-i18n="dept_3_title">MATÉRIEL ET OUTILS</h3>
-                <p class="dept-desc" data-i18n="dept_3_desc">Reflet des travaux colossaux réalisés sur un tracé de 67 km
-                    incluant tunnels, infrastructures ferroviaires et génie urbain, notre inventaire couvre tous les
-                    besoins de la construction moderne : outillage divers, quincaillerie, matériaux variés, équipements
-                    de sécurité et de gestion de trafic.</p>
-            </div>
-            <a href="catalogue.html?dept=O" class="dept-icon-btn">
-                <img id="img-dept-3" src="icons/IconF3.jpg" alt="Catalogue Construction">
-                <span class="icon-overlay-text">VOIR</span>
-            </a>
-        </div>
-        <hr class="dept-divider">
-
-        <div class="dept-row">
-            <div class="dept-info">
-                <h3 class="dept-title" data-i18n="dept_4_title">MACHINERIE</h3>
-                <p class="dept-desc" data-i18n="dept_4_desc">Bien que ce catalogue ne propose pas de machinerie lourde,
-                    cette section regroupe une sélection complète de petits équipements et de machinerie légère. Ces
-                    actifs proviennent d'un projet d'envergure nationale, garantissant fiabilité et performance pour vos
-                    opérations.</p>
-            </div>
-            <a href="catalogue.html?dept=M" class="dept-icon-btn">
-                <img id="img-dept-4" src="icons/IconF4.jpg" alt="Catalogue Mobilier">
-                <span class="icon-overlay-text">VOIR</span>
-            </a>
-        </div>
+    <div class="categories-grid">
+        <a href="catalogue.html?dept=A" class="category-card">
+            <img id="img-dept-1" src="icons/IconF1.jpg" alt="Arpentage">
+            <span class="category-label" data-i18n="dept_1_title">ARPENTAGE</span>
+        </a>
+        <a href="catalogue.html?dept=I" class="category-card">
+            <img id="img-dept-2" src="icons/IconF2.jpg" alt="Informatique">
+            <span class="category-label" data-i18n="dept_2_title">INFORMATIQUE</span>
+        </a>
+        <a href="catalogue.html?dept=O" class="category-card">
+            <img id="img-dept-3" src="icons/IconF3.jpg" alt="Outils">
+            <span class="category-label" data-i18n="dept_3_title">OUTILS</span>
+        </a>
+        <a href="catalogue.html?dept=M" class="category-card">
+            <img id="img-dept-4" src="icons/IconF4.jpg" alt="Machinerie">
+            <span class="category-label" data-i18n="dept_4_title">MACHINERIE</span>
+        </a>
     </div>
 </section>
 
@@ -167,20 +121,19 @@
             contact_sub: "Pour toute question ou pour planifier une visite avec un responsable :",
 
             // --- Navigation & Policy (FR) ---
-            nav_departments: "DÉPARTEMENTS",
+            nav_departments: "CATÉGORIES",
             nav_policy: "Politique de Vente",
             policy_text: `
                 <ol class="policy-list">
-                    <li>La vente est exclusivement réservée aux entités professionnelles.</li>
-                    <li>Tous les actifs sont vendus « tels quels », sans aucune garantie expresse ou implicite de la part du consortium NouvLR.</li>
-                    <li>Les prix indiqués sont fermes, hors taxes applicables et sujets à changement sans préavis.</li>
-                    <li>Vente finale : aucun retour, échange ou remboursement ne sera accepté après la transaction.</li>
-                    <li>L'acheteur est entièrement responsable de la cueillette, du chargement et du transport des biens acquis.</li>
-                    <li>NouvLR se réserve le droit de retirer tout article de l'inventaire ou d'annuler une vente à sa seule discrétion.</li>
+                    <li><strong>Vente Finale:</strong> Afin d'assurer la transparence et la clarté, nous vous informons que toutes les ventes sont finales. Une fois la vente complétée, aucune modification ne pourra être effectuée.</li>
+                    <li><strong>État des Articles:</strong> Les articles sont vendus dans leur état actuel (« tel quel »), sans garantie additionnelle et sans possibilité de retour, d'échange ou de remboursement.</li>
+                    <li><strong>Inspection Recommandée:</strong> Nous vous recommandons fortement de venir sur place pour vérifier attentivement chaque produit avant de conclure la transaction.</li>
+                    <li><strong>Taxes:</strong> Les taxes applicables ne sont pas incluses dans les prix affichés.</li>
+                    <li><strong>Paiement:</strong> Après acceptation de la vente, le client s'engage à effectuer le paiement intégral dans un délai de cinq (5) jours ouvrables. Passé ce délai, des frais ou conditions additionnels pourraient s'appliquer.</li>
+                    <li><strong>Livraison:</strong> Le délai de livraison est de dix (10) jours ouvrables après réception du paiement, et la marchandise peut être expédiée par notre transporteur ou le vôtre.</li>
                 </ol>
                 <div class="policy-footer">
-                    <p><strong>Nous vous recommandons</strong> de planifier une visite pour inspecter physiquement le matériel avant de confirmer votre achat.</p>
-                    <p>Contact : <a href="mailto:vente-actifs@nouvlr.com">vente-actifs@nouvlr.com</a></p>
+                    <p>Contactez-nous à l'adresse courriel <a href="mailto:vente-actifs@nouvlr.com">vente-actifs@nouvlr.com</a> pour une prise de rendez-vous avec notre représentant.</p>
                 </div>
             `,
             btn_access_catalog: "Accéder au Catalogue",
@@ -206,19 +159,19 @@
 
             // --- Navigation & Policy (EN) ---
             nav_departments: "DEPARTEMENTS",
+            nav_departments: "CATEGORIES",
             nav_policy: "Sales Policy",
             policy_text: `
                 <ol class="policy-list">
-                    <li>Sale is exclusively reserved for professional entities.</li>
-                    <li>All assets are sold \"as is,\" without any express or implied warranty from the NouvLR consortium.</li>
-                    <li>Listed prices are firm, excluding applicable taxes, and subject to change without notice.</li>
-                    <li>Final sale: no returns, exchanges, or refunds will be accepted after the transaction.</li>
-                    <li>The buyer is solely responsible for the pick-up, loading, and transportation of the acquired goods.</li>
-                    <li>NouvLR reserves the right to withdraw any item from the inventory or cancel a sale at its sole discretion.</li>
+                    <li><strong>Final Sale:</strong> To ensure transparency and clarity, please be advised that all sales are final. Once the sale is completed, no modifications can be made.</li>
+                    <li><strong>Condition of Items:</strong> Items are sold in their current condition ("as is"), without additional warranty and without the possibility of return, exchange, or refund.</li>
+                    <li><strong>Recommended Inspection:</strong> We strongly recommend visiting the site to carefully inspect each product before concluding the transaction.</li>
+                    <li><strong>Taxes:</strong> Applicable taxes are not included in the displayed prices.</li>
+                    <li><strong>Payment:</strong> Upon acceptance of the sale, the client agrees to make full payment within five (5) business days. Beyond this period, additional fees or conditions may apply.</li>
+                    <li><strong>Delivery:</strong> The delivery timeframe is ten (10) business days after receipt of payment, and the goods can be shipped via our carrier or yours.</li>
                 </ol>
                 <div class="policy-footer">
-                    <p><strong>We recommend</strong> scheduling a visit to physically inspect the equipment before confirming your purchase.</p>
-                    <p>Contact: <a href="mailto:vente-actifs@nouvlr.com">vente-actifs@nouvlr.com</a></p>
+                    <p>Contact us at <a href="mailto:vente-actifs@nouvlr.com">vente-actifs@nouvlr.com</a> to schedule an appointment with our representative.</p>
                 </div>
             `,
             btn_access_catalog: "Access Catalog",
@@ -240,16 +193,22 @@
      * Switches the visible section (Home, Departments, Policy) and updates active nav buttons.
      */
     function mostrarSeccion(id) {
-        // Hide all sections
+        // Ocultar todas las secciones
         document.querySelectorAll('.content-section').forEach(s => s.classList.add('hidden'));
-        // Show target section
-        document.getElementById('section-' + id).classList.remove('hidden');
 
-        // Update Nav Button States
+        // Mostrar la sección seleccionada
+        const section = document.getElementById('section-' + id);
+        if (section) section.classList.remove('hidden');
+
+        // Actualizar el estado de los botones del menú
         document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
-        if(id === 'home') document.querySelectorAll('.nav-btn')[0].classList.add('active');
-        if(id === 'departments') document.querySelectorAll('.nav-btn')[1].classList.add('active');
-        if(id === 'policy') document.querySelectorAll('.nav-btn')[2].classList.add('active');
+
+        // Seleccionamos los botones por su atributo data-i18n para ser precisos
+        if (id === 'departments') {
+            document.querySelector('[data-i18n="nav_departments"]').classList.add('active');
+        } else if (id === 'policy') {
+            document.querySelector('[data-i18n="nav_policy"]').classList.add('active');
+        }
     }
 
     /**
@@ -293,21 +252,11 @@
     }
 
     // 6.6 Initialization
-    // Run initial setup when DOM is fully loaded.
     document.addEventListener('DOMContentLoaded', () => {
-       
-        const hash = window.location.hash;
+        // Eliminamos cualquier lógica anterior y forzamos a mostrar siempre 'departments' (Categories)
+        mostrarSeccion('departments');
 
-        if (hash === '#section-departments') {
-            mostrarSeccion('departments');
-        } else if (hash === '#section-policy') {
-            mostrarSeccion('policy');
-        } else {
-
-            mostrarSeccion('home');
-        }
-
-
+        // Aplicamos las traducciones corregidas
         aplicarTraducciones();
     });
 </script>
