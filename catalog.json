@@ -2097,8 +2097,8 @@
         "imagenes": [
             "A-405.jpg"
         ],
-        "units_available": 1,
-        "unit_price": 0.0
+        "units_available": 2,
+        "unit_price": 800.0
     },
     {
         "lot": "A-504.1",
