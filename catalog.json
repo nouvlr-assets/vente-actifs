@@ -2127,32 +2127,6 @@
         "unit_price": 320.0
     },
     {
-        "lot": "A-504.3",
-        "prix": 565.0,
-        "categorie": "Monuments",
-        "descripcion": "Monuments piédestal acier 12Po",
-        "detalles": "Monument piédestal acier  <br>  Longueur 12Po Base 6x6 Po",
-        "manual_url": "",
-        "imagenes": [
-            "A-504.3.jpg"
-        ],
-        "units_available": 4,
-        "unit_price": 282.5
-    },
-    {
-        "lot": "A-504.4",
-        "prix": 450.0,
-        "categorie": "Monuments",
-        "descripcion": "Monuments piédestal acier 24Po",
-        "detalles": "Monument piédestal acier  <br>  Longueur 24Po",
-        "manual_url": "",
-        "imagenes": [
-            "A-504.4.jpg"
-        ],
-        "units_available": 4,
-        "unit_price": 225.0
-    },
-    {
         "lot": "A-504.5",
         "prix": 510.0,
         "categorie": "Monuments",
@@ -2229,19 +2203,6 @@
         ],
         "units_available": 3,
         "unit_price": 425.0
-    },
-    {
-        "lot": "A-505.1",
-        "prix": 840.0,
-        "categorie": "Monuments",
-        "descripcion": "Monuments piédestal acier 48Po",
-        "detalles": "Monument piédestal acier  <br>  Longueur 48Po Base 10x10Po",
-        "manual_url": "",
-        "imagenes": [
-            "A-505.1.jpg"
-        ],
-        "units_available": 6,
-        "unit_price": 280.0
     },
     {
         "lot": "A-505.2",
@@ -2322,19 +2283,6 @@
         "unit_price": 300.0
     },
     {
-        "lot": "A-505.8",
-        "prix": 3037.5,
-        "categorie": "Monuments",
-        "descripcion": "Monuments Équerre acier 10X12",
-        "detalles": "Monument Equerre acier 12x10x8Po",
-        "manual_url": "",
-        "imagenes": [
-            "A-505.8.jpg"
-        ],
-        "units_available": 27,
-        "unit_price": 225.0
-    },
-    {
         "lot": "A-505.9",
         "prix": 337.5,
         "categorie": "Monuments",
@@ -2343,19 +2291,6 @@
         "manual_url": "",
         "imagenes": [
             "A-505.9.jpg"
-        ],
-        "units_available": 3,
-        "unit_price": 225.0
-    },
-    {
-        "lot": "A-506",
-        "prix": 337.5,
-        "categorie": "Monuments",
-        "descripcion": "Monuments Équerre acier 12X12",
-        "detalles": "Monument Equerre acier con plaque de serrage 12x12Po",
-        "manual_url": "",
-        "imagenes": [
-            "A-506.jpg"
         ],
         "units_available": 3,
         "unit_price": 225.0
