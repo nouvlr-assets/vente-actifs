@@ -144,7 +144,7 @@
             dept_2_title: "INFORMATIQUE ET MATÉRIEL DE BUREAU",
             dept_2_desc: "Au cœur d’un projet ayant accueilli jusqu’à 5 000 collaborateurs, NouvLR a toujours misé sur une infrastructure technologique de premier plan. Découvrez une large sélection de matériel informatique (hardware), ainsi qu'une vaste gamme de mobilier de bureau, fournitures administratives, électroménagers et systèmes d’impression.",
             dept_3_title: "MATÉRIEL ET OUTILS",
-            dept_3_desc: "Reflet des travaux colossaux réalisés sur un tracé de 67 km incluant tunnels, infrastructures ferroviaires et génie urbain, notre inventaire couvre tous les besoins de la construction moderne : outillage divers, quincaillerie, matériaux variés, équipements de sécurité et de gestion de trafic.",
+            dept_3_desc: "Reflet des travaux colossaux réalisés sur un tracé de 67 km incluant tunnels, infrastructures ferroviaires et génie urbain, notre inventaire couvre todos los besoins de la construction moderne : outillage divers, quincaillerie, matériaux variés, équipements de sécurité et de gestion de trafic.",
             dept_4_title: "MACHINERIE",
             dept_4_desc: "Bien que ce catalogue ne propose pas de machinerie lourde, cette sección regroupe une sélection complète de petits équipements et de machinerie légère. Ces actifs proviennent d'un projet d'envergure nationale, garantissant fiabilité et performance pour vos opérations.",
         },
@@ -193,17 +193,17 @@
      * Switches the visible section (Home, Departments, Policy) and updates active nav buttons.
      */
     function mostrarSeccion(id) {
-        // Ocultar todas las secciones
+        // Hide all sections
         document.querySelectorAll('.content-section').forEach(s => s.classList.add('hidden'));
 
-        // Mostrar la sección seleccionada
+        // Show the requested section
         const section = document.getElementById('section-' + id);
         if (section) section.classList.remove('hidden');
 
-        // Actualizar el estado de los botones del menú
+        // Update navigation button states
         document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
 
-        // Seleccionamos los botones por su atributo data-i18n para ser precisos
+        // Target buttons by data-i18n attribute for precision
         if (id === 'departments') {
             document.querySelector('[data-i18n="nav_departments"]').classList.add('active');
         } else if (id === 'policy') {
@@ -250,47 +250,50 @@
         currentLang = currentLang === 'fr' ? 'en' : 'fr';
         aplicarTraducciones();
     }
-    // 6.6 Initialization & Stock Check (Corregido para navegación por Hash)
-document.addEventListener('DOMContentLoaded', () => {
-    // 1. Detectar qué sección mostrar según la URL (Hash)
-    const hash = window.location.hash;
 
-    if (hash === '#section-policy') {
-        mostrarSeccion('policy');
-    } else {
-        // Por defecto o si el hash no coincide, mostramos categorías
-        mostrarSeccion('departments');
-    }
+    /**
+     * 6.6 Initialization & Stock Check (Updated for Hash navigation)
+     */
+    document.addEventListener('DOMContentLoaded', () => {
+        // 1. Determine which section to show based on URL Hash
+        const hash = window.location.hash;
 
-    // 2. Aplicamos las traducciones
-    aplicarTraducciones();
+        if (hash === '#section-policy') {
+            mostrarSeccion('policy');
+        } else {
+            // Default to departments if no hash or no match
+            mostrarSeccion('departments');
+        }
 
-    // 3. Verificamos el inventario para desactivar categorías vacías
-    fetch('catalog.json')
-        .then(response => response.json())
-        .then(data => {
-            const depts = {
-                'A': 'A-', // Arpentage
-                'I': 'I-', // Informatique
-                'O': 'O-', // Outils
-                'M': 'M-'  // Machinerie
-            };
+        // 2. Apply translations
+        aplicarTraducciones();
 
-            Object.keys(depts).forEach(key => {
-                const prefix = depts[key];
-                const tieneStock = data.some(item => item.lot && item.lot.toString().startsWith(prefix));
-                const card = document.querySelector(`a[href*="dept=${key}"]`);
+        // 3. Verify inventory to disable empty categories
+        fetch('catalog.json')
+            .then(response => response.json())
+            .then(data => {
+                const depts = {
+                    'A': 'A-', // Surveying
+                    'I': 'I-', // IT & Office
+                    'O': 'O-', // Tools
+                    'M': 'M-'  // Machinery
+                };
 
-                if (card && !tieneStock) {
-                    card.classList.add('disabled');
-                    card.style.pointerEvents = 'none';
-                    card.style.opacity = '0.4';
-                    card.style.filter = 'grayscale(1)';
-                }
-            });
-        })
-        .catch(err => console.error("Error al verificar stock:", err));
-});
+                Object.keys(depts).forEach(key => {
+                    const prefix = depts[key];
+                    const tieneStock = data.some(item => item.lot && item.lot.toString().startsWith(prefix));
+                    const card = document.querySelector(`a[href*="dept=${key}"]`);
+
+                    if (card && !tieneStock) {
+                        card.classList.add('disabled');
+                        card.style.pointerEvents = 'none';
+                        card.style.opacity = '0.4';
+                        card.style.filter = 'grayscale(1)';
+                    }
+                });
+            })
+            .catch(err => console.error("Inventory stock check error:", err));
+    });
 </script>
 </body>
 </html>
