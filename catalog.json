@@ -131,10 +131,10 @@
     },
     {
         "lot": "A-27",
-        "prix": 0.0,
+        "prix": 29000.0,
         "categorie": "Station Totale",
-        "descripcion": "Station Totale TS16 P 2 R500",
-        "detalles": "Station Totale TS16 P 2 R500 (2020)  <br>  Contrôleur CS20 3.75G  <br>  Embase GDF321  <br>  Prisme 360 GRZ122  <br>  Trépied",
+        "descripcion": "Station Totale TS16 P 1 R500",
+        "detalles": "Station Totale TS16 P 1 R500 (2019)  <br>  Contrôleur CS20 3.75G  <br>  Embase GDF321  <br>  Prisme 360 GRZ4  <br>  Trépied",
         "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_ts16_ds.ashx",
         "imagenes": [
             "A-27.jpg"
@@ -638,10 +638,10 @@
     },
     {
         "lot": "A-79",
-        "prix": 0.0,
+        "prix": 19500.0,
         "categorie": "GPS",
         "descripcion": "GS16 3.75G & UHF Performance NAFTA",
-        "detalles": "GS16 3.75G & UHF Performance NAFTA (2020)  <br>  Contrôleur CS20 LTE (2015)  <br>  Adapteur pour antenne GPS  <br>  Canne à prisme en fibre de carbone SECO 2.2m",
+        "detalles": "GS16 3.75G & UHF Performance NAFTA (2018)  <br>  Contrôleur CS20 LTE (2015)  <br>  Adapteur pour antenne GPS  <br>  Canne à prisme en fibre de carbone SECO 2.2m",
         "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_gs16_ds.ashx",
         "imagenes": [
             "A-79.jpg"
@@ -651,13 +651,26 @@
     },
     {
         "lot": "A-80",
-        "prix": 0.0,
+        "prix": 19500.0,
         "categorie": "GPS",
         "descripcion": "GS16 3.75G & UHF Performance NAFTA",
-        "detalles": "GS16 3.75G & UHF Performance NAFTA (2020)  <br>  Contrôleur CS20 LTE (2015)  <br>  Armoire de rangement produits inflammables  <br>  Adapteur pour antenne GPS  <br>  Canne à prisme en fibre de carbone SECO 2.2m",
+        "detalles": "GS16 3.75G & UHF Performance NAFTA (2020)  <br>  Contrôleur CS20 LTE (2018)   <br>  Adapteur pour antenne GPS  <br>  Canne à prisme en fibre de carbone SECO 2.2m",
         "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_gs16_ds.ashx",
         "imagenes": [
             "A-80.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "A-80.1",
+        "prix": 19500.0,
+        "categorie": "GPS",
+        "descripcion": "GS16 3.75G & UHF Performance NAFTA",
+        "detalles": "GS16 3.75G & UHF Performance NAFTA (2017)  <br>  Contrôleur CS20 LTE (2019)   <br>  Adapteur pour antenne GPS  <br>  Canne à prisme en fibre de carbone SECO 2.2m",
+        "manual_url": "",
+        "imagenes": [
+            "A-80.1.jpg"
         ],
         "units_available": 1,
         "unit_price": 0.0
@@ -1095,19 +1108,6 @@
         "unit_price": 0.0
     },
     {
-        "lot": "A-114",
-        "prix": 400.0,
-        "categorie": "Accessoires",
-        "descripcion": "Mini Prisme Leica GMP111-0",
-        "detalles": "Mini Prisme Leica GMP111-0",
-        "manual_url": "",
-        "imagenes": [
-            "A-114.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
         "lot": "A-118",
         "prix": 1106.7,
         "categorie": "Accessoires",
@@ -1130,7 +1130,7 @@
         "imagenes": [
             "A-125.5.jpg"
         ],
-        "units_available": 16,
+        "units_available": 14,
         "unit_price": 2000.0
     },
     {
@@ -1142,19 +1142,6 @@
         "manual_url": "",
         "imagenes": [
             "A-125.6.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
-        "lot": "A-126",
-        "prix": 3400.0,
-        "categorie": "Accessoires",
-        "descripcion": "Coffre d'ensemble pour embase (GVP609)",
-        "detalles": "Porteur avec plomb optique (GZR103)  <br>  Prisme circulaire Pro (GPR121)  <br>  Prisme 360 GRZ122",
-        "manual_url": "",
-        "imagenes": [
-            "A-126.jpg"
         ],
         "units_available": 1,
         "unit_price": 0.0
@@ -2099,19 +2086,6 @@
         ],
         "units_available": 2,
         "unit_price": 800.0
-    },
-    {
-        "lot": "A-504.1",
-        "prix": 4590.0,
-        "categorie": "Monuments",
-        "descripcion": "Monuments piédestal acier 55Po",
-        "detalles": "Monuments piédestal acier 55Po",
-        "manual_url": "",
-        "imagenes": [
-            "A-504.1.jpg"
-        ],
-        "units_available": 27,
-        "unit_price": 340.0
     },
     {
         "lot": "A-504.2",
