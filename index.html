@@ -250,17 +250,25 @@
         currentLang = currentLang === 'fr' ? 'en' : 'fr';
         aplicarTraducciones();
     }
-// 6.6 Initialization & Stock Check
+    // 6.6 Initialization & Stock Check (Corregido para navegación por Hash)
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Forzamos la vista de Categorías y aplicamos idiomas
-    mostrarSeccion('departments');
+    // 1. Detectar qué sección mostrar según la URL (Hash)
+    const hash = window.location.hash;
+
+    if (hash === '#section-policy') {
+        mostrarSeccion('policy');
+    } else {
+        // Por defecto o si el hash no coincide, mostramos categorías
+        mostrarSeccion('departments');
+    }
+
+    // 2. Aplicamos las traducciones
     aplicarTraducciones();
 
-    // 2. Verificamos el inventario para desactivar categorías vacías
+    // 3. Verificamos el inventario para desactivar categorías vacías
     fetch('catalog.json')
         .then(response => response.json())
         .then(data => {
-            // Mapeo de los prefijos de lote por departamento
             const depts = {
                 'A': 'A-', // Arpentage
                 'I': 'I-', // Informatique
@@ -270,17 +278,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
             Object.keys(depts).forEach(key => {
                 const prefix = depts[key];
-                // Comprobamos si hay al menos un producto con ese prefijo
                 const tieneStock = data.some(item => item.lot && item.lot.toString().startsWith(prefix));
-
-                // Buscamos el enlace que contiene el código del departamento
                 const card = document.querySelector(`a[href*="dept=${key}"]`);
 
                 if (card && !tieneStock) {
-                    card.classList.add('disabled'); // Añade el estado "apagado"
-                    card.style.pointerEvents = 'none'; // Desactiva el clic
-                    card.style.opacity = '0.4'; // Lo hace semitransparente
-                    card.style.filter = 'grayscale(1)'; // Lo pone en blanco y negro
+                    card.classList.add('disabled');
+                    card.style.pointerEvents = 'none';
+                    card.style.opacity = '0.4';
+                    card.style.filter = 'grayscale(1)';
                 }
             });
         })

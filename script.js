@@ -556,7 +556,20 @@ function closeCartModal() { document.getElementById('cart-modal').style.display 
 
 function toggleLanguage() {
     currentLang = currentLang === 'fr' ? 'en' : 'fr';
+
+    // Cambia el texto del botón de idioma
     document.getElementById('lang-toggle').textContent = currentLang === 'fr' ? 'EN' : 'FR';
+
+    // --- NUEVO: Actualiza los textos del menú del catálogo ---
+    const navLinks = document.querySelectorAll('#main-nav .nav-btn, #main-nav a');
+
+    // El índice [1] es "Catégories"
+    navLinks[1].textContent = currentLang === 'fr' ? 'Catégories' : 'Categories';
+
+    // El índice [2] es "Politique de Vente"
+    navLinks[2].textContent = currentLang === 'fr' ? 'Politique de Vente' : 'Sales Policy';
+    // --------------------------------------------------------
+
     generarFiltros(deptCatalogData);
     generarTarjetas(deptCatalogData);
     updateFormDisclaimer();
@@ -566,14 +579,30 @@ function toggleLanguage() {
 function sendOrder(e) {
     e.preventDefault();
     if (cart.length === 0) return alert("Panier vide");
+
     const form = document.getElementById('order-form');
+
+    // 1. Generamos las FILAS de la tabla en formato HTML
+    const rowsHtml = cart.map(i => `
+        <tr>
+            <td style="border: 1px solid #236fa1; padding: 10px; text-align: left;">${i.lote}</td>
+            <td style="border: 1px solid #236fa1; padding: 10px; text-align: left;">${i.descripcion}</td>
+            <td style="border: 1px solid #236fa1; padding: 10px; text-align: right;">${i.prix.toFixed(2)} $</td>
+        </tr>
+    `).join('');
+
+    // 2. Formateamos la dirección completa para el campo {{client_full_address}}
+    const fullAddress = `${form.client_address.value}, ${form.client_city.value}, ${form.client_zip.value}, ${form.client_country.value}`;
+
+    // 3. Preparamos los parámetros para EmailJS
     const params = {
         client_name: form.client_name.value,
         client_email: form.client_email.value,
         client_phone: form.client_phone.value,
-        client_company: form.client_company.value,
-        client_message: form.client_message.value,
-        order_table_rows: cart.map(i => `${i.lote} - ${i.descripcion} - ${i.prix}$`).join('\n'),
+        client_company: form.client_company.value || "N/A",
+        client_message: form.client_message.value || "",
+        client_full_address: fullAddress, // Coincide con tu plantilla
+        order_table_rows: rowsHtml,       // Enviamos el HTML de las filas
         total_price: cart.reduce((sum, i) => sum + i.prix, 0).toFixed(2) + " $"
     };
 
@@ -583,11 +612,18 @@ function sendOrder(e) {
 
     emailjs.send("service_qit85uu", "template_5l7jajt", params)
         .then(() => {
-            document.getElementById('cotation-page').innerHTML = '<div style="text-align:center; padding:50px; color:green;"><h2>✅ Envoyé avec succès!</h2><p>Nous vous contacterons bientôt.</p></div>';
-            cart = []; saveCart(); updateCartUI();
-            setTimeout(() => window.location.reload(), 4000);
+            document.getElementById('cotation-page').innerHTML = `
+                <div style="text-align:center; padding:50px; color:#7FBC42;">
+                    <h2>✅ Envoyé avec succès!</h2>
+                    <p>Nous vous contacterons bientôt.</p>
+                </div>`;
+            cart = [];
+            saveCart();
+            updateCartUI();
+            setTimeout(() => window.location.href = "index.html", 4000);
         })
         .catch(err => {
+            console.error("EmailJS Error:", err);
             alert("Erreur: " + JSON.stringify(err));
             btn.textContent = "Réessayer";
             btn.disabled = false;
