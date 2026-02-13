@@ -2,12 +2,42 @@
 /* 1. GLOBAL CONFIGURATION & VARIABLES        */
 /* ========================================== */
 
-// Parse URL parameters to determine department context
+/** Tooltip data for surveying assets. */
+const ARPENTAGE_TOOLTIPS = {
+    fr: {
+        "Station Totale": ["TS16", "TS60", "TM50", "MS60"],
+        "GPS": ["GS15", "GS16", "ICG70"],
+        "Accessoires": ["Trépied", "Canne", "Plumb", "Prisme", "Monitoring", "Laser", "Détecteur de métal", "Chargeur"],
+        "Appareil de mesure": ["Niveau", "Mire", "Drone"],
+        "Outils électriques": ["Génératrice", "Milwaukee", "Dewalt", "Hilti"],
+        "Outils légers": ["Escalier", "Échelle", "Outils divers"],
+        "Quincailleries": ["Ancrages", "Tiges", "Forêts", "Goujon Fileté", "Douille"],
+        "Véhicule Électrique": ["Chariot Électrique", "Chariot Manuel", "Dérailleurs"],
+        "Matériels de Sécurité": ["Xtirpa", "Cône", "Back Rack", "Harnais", "Ancrage", "Lumière"],
+        "Véhicule": ["Ford", "Remorque"],
+        "Mesure Ferroviaire": ["Scanneur Ferroviaire"]
+    },
+    en: {
+        "Station Totale": ["TS16", "TS60", "TM50", "MS60"],
+        "GPS": ["GS15", "GS16", "ICG70"],
+        "Accessoires": ["Tripod", "Pole", "Plumb", "Prism", "Monitoring", "Laser", "Metal Detector", "Charger"],
+        "Appareil de mesure": ["Level", "Rod", "Drone"],
+        "Outils électriques": ["Generator", "Milwaukee", "Dewalt", "Hilti"],
+        "Outils légers": ["Step Ladder", "Ladder", "Misc. Tools"],
+        "Quincailleries": ["Anchors", "Rods", "Drill Bits", "Threaded Stud", "Socket"],
+        "Véhicule Électrique": ["Electric Cart", "Manual Cart", "Derailers"],
+        "Matériels de Sécurité": ["Xtirpa", "Cone", "Back Rack", "Harness", "Anchor", "Light"],
+        "Véhicule": ["Ford", "Trailer"],
+        "Mesure Ferroviaire": ["Railway Scanner"]
+    }
+};
+
+/** URL parameter parsing to determine department context. */
 const urlParams = new URLSearchParams(window.location.search);
 const DEPT_CODE = urlParams.get('dept') || 'A';
 const DEPARTMENT_PREFIX = DEPT_CODE + "-";
 
-// Global state management variables
+/** Global application state management. */
 let currentLang = 'fr';
 let fullCatalogData = [];
 let deptCatalogData = [];
@@ -17,7 +47,7 @@ let currentImageSet = []; // Stores the current set of images for the gallery
 let currentImageIndex = 0;
 const CART_KEY = 'cotationCart';
 
-// Department-specific configuration and category mappings
+/** Department configuration and category mappings. */
 const DEPT_CONFIG = {
     'A': {
         title: "VENTE D'ÉQUIPEMENT ARPENTAGE",
@@ -111,6 +141,7 @@ const translations = {
             "Clôture et signalisation": "Clôture et signalisation",
             "Materiels": "Materiels"
         },
+        tooltip_title: "Inclus:",
         policy_html: `
             <h2>Politique de Vente</h2>
             <div class="disclaimer-box">
@@ -169,6 +200,7 @@ const translations = {
             "Clôture et signalisation": "Fencing & Signage",
             "Materiels":"Materials",
         },
+        tooltip_title: "Included:",
         policy_html: `
             <h2>Sales Policy</h2>
             <div class="disclaimer-box">
@@ -180,7 +212,7 @@ const translations = {
 };
 
 /**
- * Utility function to retrieve localized strings based on the current language.
+ * Utility function to retrieve localized strings.
  */
 function getText(key) { return translations[currentLang][key] || key; }
 
@@ -189,21 +221,21 @@ function getText(key) { return translations[currentLang][key] || key; }
 /* ========================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Apply initial department configuration
+    /** Initialize department-specific UI configuration. */
     const config = DEPT_CONFIG[DEPT_CODE] || DEPT_CONFIG['A'];
     const titleEl = document.getElementById('dept-title-dynamic');
     if(titleEl) titleEl.textContent = config.title;
     const searchEl = document.getElementById('search-input');
     if(searchEl) searchEl.placeholder = config.placeholder;
 
-    // Initialize EmailJS service
+    /** Initialize external EmailJS service. */
     if (typeof emailjs !== 'undefined') emailjs.init("frfWoBbmJwoPNo-qm");
 
-    // Load persistent cart data and fetch catalog
+    /** Load persistent data and fetch catalog assets. */
     loadCart();
     cargarCatalogo();
 
-    // Attach form submission event listener
+    /** Attach global event listeners. */
     const form = document.getElementById('order-form');
     if(form) form.addEventListener('submit', sendOrder);
 
@@ -211,7 +243,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /**
- * Updates the disclaimer text within the quotation form.
+ * Updates localized disclaimer text within the quotation form.
  */
 function updateFormDisclaimer() {
     const container = document.getElementById('form-disclaimer-container');
@@ -224,7 +256,7 @@ function updateFormDisclaimer() {
 }
 
 /**
- * Fetches catalog data from the server and filters by department.
+ * Fetches catalog data from source and applies department filtering.
  */
 function cargarCatalogo() {
     fetch('catalog.json')
@@ -248,12 +280,12 @@ function cargarCatalogo() {
 /* ========================================== */
 
 /**
- * Maps category names to safe icon filenames, handling accents and special characters.
+ * Normalizes category names to safe icon filenames.
  */
 function cleanIconName(catName) {
     if(!catName) return "default";
 
-    // Static mapping for specific categories with complex naming
+    /** Static mapping for complex category identifiers. */
     const map = {
         "Clôture et signalisation": "Clouture_et_signalitation",
         "Véhicule Électrique": "Vehicule_Electrique",
@@ -277,14 +309,14 @@ function cleanIconName(catName) {
 
     if(map[catName]) return map[catName];
 
-    // Standard normalization fallback
+    /** Generic normalization fallback. */
     return catName.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
                   .replace(/\s+/g, '_')
                   .replace(/[^a-zA-Z0-9_]/g, '');
 }
 
 /**
- * Dynamically generates category filter buttons based on department configuration.
+ * Generates category filter elements based on inventory availability.
  */
 function generarFiltros(data) {
     const container = document.getElementById('filter-container');
@@ -300,15 +332,6 @@ function generarFiltros(data) {
         const div = document.createElement('div');
         div.className = `category-button-wrapper ${cat === 'Tous' ? 'active' : ''} ${!hasStock ? 'disabled-filter' : ''}`;
 
-        if (hasStock) {
-            div.onclick = () => {
-                document.querySelectorAll('.category-button-wrapper').forEach(b => b.classList.remove('active'));
-                div.classList.add('active');
-                const filtrados = cat === 'Tous' ? deptCatalogData : deptCatalogData.filter(i => i.categorie === cat);
-                generarTarjetas(filtrados);
-            };
-        }
-
         div.innerHTML = `
             <img src="icons/${iconName}.jpg" class="category-icon-clickable"
                  style="${!hasStock ? 'filter: grayscale(1) opacity(0.4); cursor: default;' : ''}"
@@ -317,6 +340,36 @@ function generarFiltros(data) {
                 ${translations[currentLang].categories[cat] || cat}
             </span>
         `;
+
+        /** Implement localized tooltip logic for specific departments. */
+        if (DEPT_CODE === 'A' && ARPENTAGE_TOOLTIPS[currentLang][cat]) {
+            const tooltip = document.createElement('div');
+            tooltip.className = 'category-tooltip';
+
+            const itemsList = ARPENTAGE_TOOLTIPS[currentLang][cat].map(i => `<li>${i}</li>`).join('');
+
+            tooltip.innerHTML = `<strong>${getText('tooltip_title')}</strong><ul>${itemsList}</ul>`;
+
+            div.appendChild(tooltip);
+
+            let tooltipTimeout;
+            div.onmouseenter = () => {
+                tooltipTimeout = setTimeout(() => tooltip.classList.add('show'), 800);
+            };
+            div.onmouseleave = () => {
+                clearTimeout(tooltipTimeout);
+                tooltip.classList.remove('show');
+            };
+        }
+
+        if (hasStock) {
+            div.onclick = () => {
+                document.querySelectorAll('.category-button-wrapper').forEach(b => b.classList.remove('active'));
+                div.classList.add('active');
+                const filtrados = cat === 'Tous' ? deptCatalogData : deptCatalogData.filter(i => i.categorie === cat);
+                generarTarjetas(filtrados);
+            };
+        }
         container.appendChild(div);
     });
 }
@@ -327,7 +380,7 @@ function generarFiltros(data) {
 
 let searchTimeout;
 /**
- * Filters the product display based on the search input string.
+ * Executes debounced product filtering based on user search input.
  */
 function filtrarPorBusqueda() {
     clearTimeout(searchTimeout);
@@ -342,7 +395,7 @@ function filtrarPorBusqueda() {
 }
 
 /**
- * Renders product cards into the catalog container.
+ * Renders product cards into the primary catalog container.
  */
 function generarTarjetas(lotes) {
     const container = document.getElementById('catalogo-container');
@@ -358,14 +411,14 @@ function generarTarjetas(lotes) {
 }
 
 /**
- * Returns the HTML structure for a single product card.
+ * Returns HTML template for an individual product card.
  */
 function generarTarjetaHTML(item) {
     if (unitSelections[item.lot] === undefined) unitSelections[item.lot] = 0;
 
     const iconName = cleanIconName(item.categorie);
 
-    // Dynamic technical badges for specific department items
+    /** Generate department-specific technical badges. */
     let badgesHTML = '';
     if (DEPT_CODE === 'A' && item.detalles) {
         const det = item.detalles.toLowerCase();
@@ -379,13 +432,13 @@ function generarTarjetaHTML(item) {
         });
     }
 
-    // Determine pricing display based on availability
+    /** Determine localized price formatting and availability. */
     const esGratis = item.prix === 0;
     const precioDisplay = esGratis
         ? `<span style="color:#d9534f; font-size:0.9em;">Bientôt disponible</span>`
         : new Intl.NumberFormat('fr-CA', { style: 'currency', currency: 'CAD' }).format(item.prix);
 
-    // Logic for items purchasable by unit
+    /** Configure individual unit selection UI if applicable. */
     const esDivisible = (item.units_available > 1 && item.unit_price > 0);
     let unitSelectorHTML = '';
 
@@ -432,7 +485,7 @@ function generarTarjetaHTML(item) {
 }
 
 /**
- * Updates the unit quantity selection for a specific product lot.
+ * Modifies the unit quantity selection for a specific lot.
  */
 function cambiarCantidad(lotId, cambio, max) {
     let actual = unitSelections[lotId] || 0;
@@ -445,7 +498,7 @@ function cambiarCantidad(lotId, cambio, max) {
 }
 
 /**
- * Updates the visual state and text of the purchase button based on quantity.
+ * Updates UI button state to reflect the current quantity and total price.
  */
 function actualizarBotonCompra(lotId) {
     const item = deptCatalogData.find(i => i.lot === lotId);
@@ -464,7 +517,7 @@ function actualizarBotonCompra(lotId) {
 }
 
 /**
- * Determines whether to add units or the full lot to the cart based on current selection.
+ * Executes cart addition logic, distinguishing between individual units and full lots.
  */
 function agregarAlCarritoInteligente(lotId) {
     const item = deptCatalogData.find(i => i.lot === lotId);
@@ -484,7 +537,7 @@ function agregarAlCarritoInteligente(lotId) {
 /* ========================================== */
 
 /**
- * Populates and displays the detail modal for a given lot ID.
+ * Populates and displays the modal window for item specifications.
  */
 function verDetalle(lotID) {
     const lote = deptCatalogData.find(i => i.lot === lotID);
@@ -521,11 +574,13 @@ function verDetalle(lotID) {
     document.getElementById('modal-detalle').style.display = 'block';
 }
 
+/** Updates the active image in the modal gallery. */
 function updateImage() {
     const img = document.getElementById('modal-product-image');
     if(img) img.src = `img/${currentImageSet[currentImageIndex]}`;
 }
 
+/** Navigates to the previous image in the gallery. */
 function imagenAnterior() {
     if(currentImageSet.length > 1) {
         currentImageIndex = (currentImageIndex - 1 + currentImageSet.length) % currentImageSet.length;
@@ -533,6 +588,7 @@ function imagenAnterior() {
     }
 }
 
+/** Navigates to the next image in the gallery. */
 function imagenSiguiente() {
     if(currentImageSet.length > 1) {
         currentImageIndex = (currentImageIndex + 1) % currentImageSet.length;
@@ -544,24 +600,24 @@ function imagenSiguiente() {
 /* 7. CART & NAVIGATION                       */
 /* ========================================== */
 
+/** Loads cart data from persistent browser storage. */
 function loadCart() {
     const stored = localStorage.getItem(CART_KEY);
     if (stored) cart = JSON.parse(stored);
     updateCartUI();
 }
 
+/** Persists current cart state and refreshes UI components. */
 function saveCart() { localStorage.setItem(CART_KEY, JSON.stringify(cart)); updateCartUI(); }
 
-/**
- * Updates the cart badge and floating button visibility.
- */
+/** Synchronizes cart badge count and floating button visibility. */
 function updateCartUI() {
     document.getElementById('cart-count').textContent = cart.length;
     document.getElementById('floating-cart-button').style.display = cart.length > 0 ? 'flex' : 'none';
 }
 
 /**
- * Handles adding items to the cart, managing unit vs full lot exclusivity and stock limits.
+ * Handles logic for adding items to the cart, managing stock conflicts and unit versus lot exclusivity.
  */
 function anadirAlCarrito(lot, desc, prix, esUnidad = false, cantidad = 1) {
     const productoBase = deptCatalogData.find(i => i.lot === lot);
@@ -569,17 +625,16 @@ function anadirAlCarrito(lot, desc, prix, esUnidad = false, cantidad = 1) {
     const itemExistente = cart.find(item => item.lote === lot);
 
     if (itemExistente) {
-        // Detect if the cart already contains the full lot (description lacks unit count marker)
         const yaTieneLoteCompleto = !itemExistente.descripcion.includes("(x");
 
         if (esUnidad) {
-            // SCENARIO A: User tries to add units but full lot is already in cart
+            /** Scenario: Prevent unit addition if full lot is present. */
             if (yaTieneLoteCompleto) {
                 alert("Vous avez déjà ajouté le lot complet. Impossible d'ajouter des unités supplémentaires.");
                 return;
             }
 
-            // SCENARIO B: Increment units for an existing cart entry while validating stock
+            /** Scenario: Update unit counts within existing cart entry. */
             let cantEnCarrito = parseInt(itemExistente.descripcion.match(/\(x(\d+)\)/)?.[1] || 0);
             if ((cantEnCarrito + cantidad) > stockMaximo) {
                 alert(`Action impossible. Stock total: ${stockMaximo}. Vous avez déjà ${cantEnCarrito} unités.`);
@@ -591,25 +646,24 @@ function anadirAlCarrito(lot, desc, prix, esUnidad = false, cantidad = 1) {
             itemExistente.descripcion = `${nombreBase} (x${nuevaCant})`;
 
         } else {
-            // SCENARIO C: User adds full lot, replacing existing unit selections
+            /** Scenario: Replace existing units with the full lot. */
             if (!yaTieneLoteCompleto) {
                 itemExistente.descripcion = desc;
                 itemExistente.prix = prix;
                 alert("Votre sélection d'unités a été remplacée par le lot complet.");
             } else {
-                // SCENARIO D: Full lot already present in cart
                 alert("Ce lot est déjà dans votre demande.");
                 return;
             }
         }
     } else {
-        // SCENARIO E: New item added to cart
+        /** Scenario: Add new lot or unit selection. */
         cart.push({ lote: lot, descripcion: desc, prix: prix });
     }
 
     saveCart();
 
-    // Trigger visual feedback animation for the cart button
+    /** Trigger feedback animation on the floating cart button. */
     const btn = document.getElementById('floating-cart-button');
     if(btn) {
         btn.style.transform = "scale(1.2)";
@@ -618,7 +672,7 @@ function anadirAlCarrito(lot, desc, prix, esUnidad = false, cantidad = 1) {
 }
 
 /**
- * Renders the cart contents and summary inside the modal.
+ * Displays a summary of selected items in the quotation modal.
  */
 function showCotationModal() {
     document.getElementById('cart-modal').style.display = 'block';
@@ -640,13 +694,14 @@ function showCotationModal() {
     div.innerHTML = html;
 }
 
+/** Removes an item from the cart by index. */
 function removeItem(idx) {
     cart.splice(idx, 1); saveCart(); showCotationModal();
     if(cart.length===0) closeCartModal();
 }
 
 /**
- * Manages visibility for sections and dynamic content injection for the policy section.
+ * Toggles visibility of UI sections and injects localized content.
  */
 function mostrarSeccion(id) {
     if(id === 'disclaimer') {
@@ -661,19 +716,18 @@ function mostrarSeccion(id) {
     }
 }
 
+/** Modal closure logic. */
 function cerrarModal() { document.getElementById('modal-detalle').style.display = 'none'; }
 function closeCartModal() { document.getElementById('cart-modal').style.display = 'none'; }
 
 /**
- * Toggles global language and refreshes UI labels and active content.
+ * Executes a global language toggle and updates localized interface elements.
  */
 function toggleLanguage() {
     currentLang = currentLang === 'fr' ? 'en' : 'fr';
 
-    // Update language toggle button label
     document.getElementById('lang-toggle').textContent = currentLang === 'fr' ? 'EN' : 'FR';
 
-    // Update navigation menu text labels
     const navLinks = document.querySelectorAll('#main-nav .nav-btn, #main-nav a');
 
     if (navLinks.length >= 3) {
@@ -687,7 +741,7 @@ function toggleLanguage() {
 }
 
 /**
- * Handles the email generation and delivery using EmailJS service.
+ * Generates the order payload and dispatches it via EmailJS.
  */
 function sendOrder(e) {
     e.preventDefault();
@@ -695,7 +749,7 @@ function sendOrder(e) {
 
     const form = document.getElementById('order-form');
 
-    // 1. Generate HTML table rows for the order summary
+    /** 1. Generate HTML table rows for the order summary. */
     const rowsHtml = cart.map(i => `
         <tr>
             <td style="border: 1px solid #236fa1; padding: 10px; text-align: left;">${i.lote}</td>
@@ -704,10 +758,10 @@ function sendOrder(e) {
         </tr>
     `).join('');
 
-    // 2. Format the complete client address for the email template
+    /** 2. Format the client address for the email template. */
     const fullAddress = `${form.client_address.value}, ${form.client_city.value}, ${form.client_zip.value}, ${form.client_country.value}`;
 
-    // 3. Prepare parameters for the EmailJS template
+    /** 3. Prepare parameters for the EmailJS template. */
     const params = {
         client_name: form.client_name.value,
         client_email: form.client_email.value,
@@ -742,3 +796,4 @@ function sendOrder(e) {
             btn.disabled = false;
         });
 }
+

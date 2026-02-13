@@ -1,13 +1,14 @@
-/* ======================================= */
-/* 1. GLOBAL STYLES & COLOR PALETTE        */
-/* ======================================= */
+/* ==========================================================================
+   1. GLOBAL STYLES & COLOR PALETTE
+   ========================================================================== */
+
 :root {
-    --color-primario: rgba(7,40,79,0.95);     /* NouvLR Blue */
-    --color-secundario: #4A4A4A;
-    --color-acento-secundario: #7FBC42; /* NouvLR Green */
-    --color-fondo: #F5F5F5;
-    --color-texto: #333;
-    --color-blanco: white;
+    --color-primario: rgba(7,40,79,0.95);     /* NouvLR Blue primary brand color */
+    --color-secundario: #4A4A4A;             /* Secondary neutral grey */
+    --color-acento-secundario: #7FBC42;      /* NouvLR Green accent color */
+    --color-fondo: #F5F5F5;                  /* General background color */
+    --color-texto: #333;                     /* Standard text color */
+    --color-blanco: white;                   /* Pure white reference */
 }
 
 body {
@@ -19,23 +20,25 @@ body {
     box-sizing: border-box;
 }
 
-*, *::before, *::after { box-sizing: inherit; }
+/* Ensure box-sizing is inherited across all elements */
+*, *::before, *::after {
+    box-sizing: inherit;
+}
 
-/* ========================================= */
-/* VISUAL ENHANCEMENTS: HOME & HEADER (UI)   */
-/* ========================================= */
+/* ==========================================================================
+   2. UI ENHANCEMENTS: HEADER & NAVIGATION
+   ========================================================================== */
 
-/* 1. Premium Dark Header */
-/* ENHANCED HEADER (Abel Typography & Margin Corrections) */
+/* Main Header Container */
 #main-header {
     background: linear-gradient(135deg, #05182d 0%, #0a2e52 100%);
     border-bottom: 4px solid var(--color-acento-secundario);
-    padding: 15px 30px; /* Reduced lateral padding on mobile */
+    padding: 15px 30px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     min-height: auto;
-    flex-wrap: wrap; /* Allows content flow on mobile devices */
+    flex-wrap: wrap; /* Allows wrapping for responsive layouts */
 }
 
 .logo-container {
@@ -51,34 +54,37 @@ body {
 .header-right {
     display: flex;
     flex-direction: column;
-    align-items: flex-end; /* Align everything to the right */
+    align-items: flex-end;
     gap: 10px;
 }
 
-/* Green Title with Abel Font (Preserved) */
+/* Primary Title Styling */
 #main-header h1 {
     font-family: 'Abel', sans-serif;
-    font-size: clamp(1.5em, 4vw, 2.2em); /* Fluid responsive sizing */
-    font-weight: normal; /* Abel is naturally bold */
+    font-size: clamp(1.5em, 4vw, 2.2em);
+    font-weight: normal;
     letter-spacing: 1px;
     margin: 0 0 10px 0;
     text-transform: uppercase;
     color: var(--color-acento-secundario);
     line-height: 1;
     text-align: right;
-    width: 100%; /* Full width on mobile */
+    width: 100%;
 }
 
-/* NAVIGATION MENU (Mobile Correction) */
+/* Navigation Bar */
 #main-nav {
     display: flex;
-    gap: 10px; /* Tighter spacing between buttons */
+    gap: 10px;
     justify-content: flex-end;
     width: 100%;
-    flex-wrap: wrap; /* KEY: Wraps elements to next line if space is insufficient */
+    flex-wrap: wrap;
 }
 
-/* 2. Hero Section "Card" */
+/* ==========================================================================
+   3. HERO SECTION & CARDS
+   ========================================================================== */
+
 .hero-wrapper {
     max-width: 900px;
     margin: 40px auto;
@@ -87,7 +93,7 @@ body {
     gap: 20px;
 }
 
-/* Main White Card */
+/* Main Presentation Card */
 .hero-card {
     background: white;
     padding: 50px;
@@ -95,19 +101,19 @@ body {
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
     position: relative;
     border-top: 5px solid var(--color-primario);
-    text-align: left; /* Left alignment improves readability and elegance */
+    text-align: left;
 }
 
-/* Professional Badge - "Corporate" Style */
+/* Corporate Badge Styling */
 .pro-badge {
     display: inline-block;
-    background-color: #eef2f7; /* Very light blue-grey */
-    color: #4a6fa5; /* Elegant medium blue */
+    background-color: #eef2f7;
+    color: #4a6fa5;
     padding: 6px 15px;
-    border-radius: 4px; /* Less rounded, more technical look */
+    border-radius: 4px;
     font-size: 0.85em;
     font-weight: 700;
-    border-left: 4px solid #4a6fa5; /* Left accent line */
+    border-left: 4px solid #4a6fa5;
     margin-bottom: 25px;
     letter-spacing: 0.5px;
     text-transform: uppercase;
@@ -119,28 +125,29 @@ body {
     margin-top: 0;
 }
 
-/* Special Welcome Text */
+/* Content Typography for Hero Section */
 .hero-text-content {
-    font-family: 'Open Sans', sans-serif; /* Sans-serif, cleaner aesthetic */
+    font-family: 'Open Sans', sans-serif;
     font-size: 1.1em;
     line-height: 1.7;
-    color: #333; /* Soft black, better contrast */
-    font-weight: 400; /* Normal weight, not light */
+    color: #333;
+    font-weight: 400;
     margin-bottom: 30px;
 }
+
 .hero-text-content strong {
-    font-weight: 700; /* Heavy bold for final message */
+    font-weight: 700;
     color: var(--color-primario);
 }
 
-/* 3. Contact Card (Blue Key) */
+/* Contact Information Card */
 .contact-card {
-    background: #f4f7fa; /* Very soft blue-grey */
-    border-left: 5px solid #3498db; /* Blue border */
+    background: #f4f7fa;
+    border-left: 5px solid #3498db;
     padding: 25px;
     border-radius: 8px;
     display: flex;
-    flex-direction: column; /* Mobile: Column layout */
+    flex-direction: column;
     gap: 15px;
 }
 
@@ -149,13 +156,14 @@ body {
     color: #2c3e50;
     font-size: 1.2em;
 }
+
 .contact-card p {
     margin: 0;
     font-size: 0.95em;
     color: #666;
 }
 
-/* MAIL BUTTON FIX (Prevent line breaks) */
+/* Individual Contact Item Styling */
 .contact-item {
     display: flex;
     align-items: center;
@@ -163,35 +171,43 @@ body {
     background: white;
     padding: 10px 15px;
     border-radius: 5px;
-    width: fit-content; /* Adjusts to content width */
-    max-width: 100%; /* Prevents overflow from parent */
+    width: fit-content;
+    max-width: 100%;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    white-space: nowrap; /* KEY: Forces single line display */
+    white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis; /* Ellipsis if content is too long */
+    text-overflow: ellipsis;
 }
+
 .contact-item:hover {
     transform: translateX(5px);
 }
+
 .contact-item i {
     color: #3498db;
     font-size: 1.2em;
 }
+
 .contact-item a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
 }
 
-/* Desktop Media Query */
+/* ==========================================================================
+   4. RESPONSIVE MEDIA QUERIES
+   ========================================================================== */
+
+/* Desktop view adjustments */
 @media (min-width: 768px) {
     .contact-card {
-        flex-direction: row; /* Side-by-side on PC */
+        flex-direction: row;
         align-items: center;
         justify-content: space-between;
     }
 }
 
+/* Duplicate selector preservation for logic consistency */
 #main-header h1 {
     font-family: 'Abel', sans-serif;
     font-size: clamp(1.5em, 2.5vw, 2.8em);
@@ -202,7 +218,7 @@ body {
     color: var(--color-acento-secundario);
 }
 
-/* NAVIGATION MENU */
+/* Re-definition of navigation layout for specific break points */
 #main-nav {
     display: flex;
     gap: 15px;
@@ -213,9 +229,9 @@ body {
     background: transparent;
     border: 2px solid transparent;
     color: white;
-    font-size: 0.9em; /* Slightly reduced size on mobile viewports */
+    font-size: 0.9em;
     padding: 8px 12px;
-    white-space: nowrap; /* Prevents button text breakage */
+    white-space: nowrap;
     font-weight: bold;
     cursor: pointer;
     border-radius: 4px;
@@ -234,7 +250,7 @@ body {
     border-radius: 4px;
 }
 
-/* RESPONSIVE HEADER (MOBILE) */
+/* Tablet and Mobile Optimization (Max-width: 768px) */
 @media (max-width: 768px) {
     #main-header {
         padding: 20px;
@@ -258,6 +274,7 @@ body {
     }
 }
 
+/* Small Mobile Devices (Max-width: 600px) */
 @media (max-width: 600px) {
     #main-header {
         flex-direction: column;
@@ -270,7 +287,7 @@ body {
     }
 
     #company-logo {
-        max-height: 60px; /* Smaller logo on mobile */
+        max-height: 60px;
     }
 
     #main-header h1 {
@@ -283,9 +300,10 @@ body {
     }
 }
 
-/* ========================================= */
-/* 3. SECTIONS & CONTENT LAYOUT              */
-/* ========================================= */
+/* ==========================================================================
+   5. SECTIONS & CONTENT LAYOUT
+   ========================================================================== */
+
 .content-section {
     padding: 40px 20px;
     max-width: 1200px;
@@ -300,7 +318,7 @@ body {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* HOME */
+/* Hero Banner Component */
 .hero-banner {
     text-align: center;
     background-color: white;
@@ -308,9 +326,22 @@ body {
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
-.hero-banner h2 { color: var(--color-primario); font-size: 2.5em; margin-bottom: 20px; }
-.hero-banner p { font-size: 1.2em; color: #666; max-width: 800px; margin: 0 auto 20px auto; line-height: 1.6; }
 
+.hero-banner h2 {
+    color: var(--color-primario);
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero-banner p {
+    font-size: 1.2em;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    line-height: 1.6;
+}
+
+/* Call to Action Buttons */
 .hero-actions {
     margin-top: 40px;
     display: flex;
@@ -333,15 +364,20 @@ body {
 
 .big-btn { background-color: var(--color-acento-secundario); color: var(--color-primario); }
 .download-btn { background-color: var(--color-primario); color: white; }
-.big-btn:hover, .download-btn:hover { transform: scale(1.05); opacity: 0.9; }
 
-/* DISCLAIMER & CONTACT */
+.big-btn:hover, .download-btn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* Standard Text Container */
 .text-container {
     background-color: white;
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
+
 .text-container h2 {
     color: var(--color-primario);
     border-bottom: 2px solid var(--color-acento-secundario);
@@ -349,104 +385,99 @@ body {
     margin-bottom: 30px;
 }
 
-/* ========================================= */
-/* 4. CATALOG & CARD COMPONENTS              */
-/* ========================================= */
+/* ==========================================================================
+   6. CATALOG FILTER COMPONENTS
+   ========================================================================== */
 
-/* FILTER CONTAINER */
+/* Main container for category filters */
 #filter-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
     margin-bottom: 30px;
-    gap: 10px; /* Uniform spacing between buttons */
+    gap: 10px;
 }
 
-/* THE WRAPPER (Full Button) */
+/* Category individual button layout */
 .category-button-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start; /* Aligns to top for uniformity */
+    justify-content: flex-start;
     background-color: transparent !important;
     border: none;
     padding: 5px;
     cursor: pointer;
 
-    /* Dynamic but controlled width */
+    /* Responsive grid basis for filters */
     flex-basis: calc(100% / 7 - 10px);
-    min-width: 100px; /* Minimum width to prevent crushing on mobile */
+    min-width: 100px;
     transition: transform 0.3s ease;
 }
 
-/* THE IMAGE (ICON) */
+/* Category squircle icon styling */
 .category-icon-clickable {
     width: 100%;
-    max-width: 90px; /* Controlled size */
-    aspect-ratio: 1 / 1; /* Ensures square aspect ratio */
-    object-fit: cover; /* Image fills the square */
+    max-width: 90px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
 
-    /* VISUAL STYLE (SQUIRCLE) */
-    background-color: #fff; /* White background for contrast */
-    border-radius: 18px; /* <--- CREATES THE ROUNDED SQUARE (SQUIRCLE) */
-    border: 3px solid transparent; /* Invisible border ready for activation */
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Standard soft shadow */
+    background-color: #fff;
+    border-radius: 18px; /* Squircle effect */
+    border: 3px solid transparent;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 
     transition: all 0.3s ease;
 }
 
-/* 1. Normal State (Grey) */
+/* Label text below category icon */
 .category-text-below {
     margin-top: 8px;
     font-size: 0.85em;
     font-weight: 600;
-    color: #555; /* Dark grey */
+    color: #555;
     text-align: center;
-    transition: all 0.3s ease; /* Smooth color transition */
+    transition: all 0.3s ease;
     line-height: 1.2;
 }
 
-/* 2. HOVER State (Text turns slightly green on mouseover) */
+/* --- Filter Interactions --- */
+
+/* Hover state: elevation and subtle color shift */
+.category-button-wrapper:hover {
+    transform: translateY(-5px);
+}
+
+.category-button-wrapper:hover .category-icon-clickable {
+    border-color: rgba(127, 188, 66, 0.5);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
 .category-button-wrapper:hover .category-text-below {
     color: #7FBC42;
     opacity: 0.8;
 }
 
-/* 3. ACTIVE State (Selected: Intense Green & Bold) */
-.category-button-wrapper.active .category-text-below {
-    color: #7FBC42 !important; /* Force Corporate Green */
-    font-weight: 800; /* Thicker weight (Bold) */
-    text-transform: uppercase; /* Optional: Uppercase for emphasis */
-    letter-spacing: 0.5px;
-    text-shadow: 0 0 1px rgba(127, 188, 66, 0.3); /* Slight text glow */
-}
-/* --- INTERACTIONS --- */
-
-/* 1. HOVER (Mouseover) */
-.category-button-wrapper:hover {
-    transform: translateY(-5px); /* Slight float effect */
-}
-.category-button-wrapper:hover .category-icon-clickable {
-    border-color: rgba(127, 188, 66, 0.5); /* Soft green border */
-    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
-}
-
-/* 2. ACTIVE (Selected) */
+/* Active/Selected state styling */
 .category-button-wrapper.active .category-icon-clickable {
-    border-color: #7FBC42; /* STRONG GREEN Border */
-    box-shadow: 0 0 15px rgba(127, 188, 66, 0.4); /* Green glow */
-    transform: scale(1.05); /* Slight enlargement */
+    border-color: #7FBC42;
+    box-shadow: 0 0 15px rgba(127, 188, 66, 0.4);
+    transform: scale(1.05);
 }
 
 .category-button-wrapper.active .category-text-below {
-    color: #002D72; /* Text turns BLUE */
-    font-weight: 700;
+    color: #002D72 !important;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-shadow: 0 0 1px rgba(127, 188, 66, 0.3);
 }
 
-/* ======================================= */
-/* CARDS (FINAL DEBUGGED DESIGN)           */
-/* ======================================= */
+/* ==========================================================================
+   7. PRODUCT CATALOG & CARD SYSTEM
+   ========================================================================== */
+
 #catalogo-container {
     display: flex;
     flex-wrap: wrap;
@@ -456,12 +487,13 @@ body {
     padding: 20px;
 }
 
+/* Individual product card layout */
 .lote-card {
     background: white;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
-    width: 280px; /* Original Arpentage width */
+    width: 280px;
     position: relative;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     display: flex;
@@ -474,30 +506,31 @@ body {
     box-shadow: 0 8px 16px rgba(0,0,0,0.15);
 }
 
-/* 1. ICON: Arpentage Style (Circle with cropped image inside) */
+/* Circular icon indicator in the top-right corner of the card */
 .category-corner-icon {
     position: absolute;
-    top: 10px; right: 10px;
-    width: 45px; height: 45px;
-    background: white; /* White background prevents image darkening */
-    border: 2px solid #4A4A4A; /* Original grey/dark border */
+    top: 10px;
+    right: 10px;
+    width: 45px;
+    height: 45px;
+    background: white;
+    border: 2px solid #4A4A4A;
     border-radius: 50%;
-
-    /* CORE LOGIC: Crops the square image into a circular shape */
     overflow: hidden;
-
-    display: flex; align-items: center; justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     z-index: 2;
 }
 
 .category-corner-icon img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Image fills the entire circle */
-    filter: none; /* Remove filters: shows original image */
+    object-fit: cover;
+    filter: none;
 }
 
-/* TITLES & TEXT */
+/* Card Typography */
 .lote-card h3 {
     color: #07284f;
     margin: 0 0 5px 0;
@@ -512,13 +545,32 @@ body {
     line-height: 1.3;
 }
 
-/* BADGES/TAGS */
-.badge-container { display: flex; flex-wrap: wrap; gap: 5px; margin: 8px 0; min-height: 25px; }
-.tech-badge { background-color: #eef; color: #07284f; font-size: 0.75em; padding: 3px 8px; border-radius: 12px; border: 1px solid #ccd; font-weight: bold; }
+/* Tags and Badges Container */
+.badge-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 8px 0;
+    min-height: 25px;
+}
 
-/* 2. +/- BUTTONS (Restored Blue) */
+.tech-badge {
+    background-color: #eef;
+    color: #07284f;
+    font-size: 0.75em;
+    padding: 3px 8px;
+    border-radius: 12px;
+    border: 1px solid #ccd;
+    font-weight: bold;
+}
+
+/* ==========================================================================
+   8. INTERACTIVE CONTROLS & ACTION BUTTONS
+   ========================================================================== */
+
+/* Incremental/Decremental Quantity Controls */
 .unit-controls button {
-    background-color: #07284f !important; /* Corporate Blue */
+    background-color: #07284f !important;
     color: white !important;
     border: none;
     border-radius: 4px;
@@ -528,11 +580,12 @@ body {
     cursor: pointer;
     transition: background 0.3s;
 }
+
 .unit-controls button:hover {
-    background-color: #7FBC42 !important; /* Green on mouseover */
+    background-color: #7FBC42 !important;
 }
 
-/* ACTION CONTAINER */
+/* Primary Card Actions */
 .card-actions {
     margin-top: auto;
     padding-top: 15px;
@@ -552,72 +605,91 @@ body {
     transition: all 0.3s ease;
 }
 
-/* 3. VIEW DETAIL BUTTON (Grey -> Hover: Green bg / Blue text) */
+/* "View Detail" Button Styling */
 .card-actions button:first-child {
-    background-color: #444 !important; /* Dark Grey */
+    background-color: #444 !important;
     color: white !important;
 }
 
 .card-actions button:first-child:hover {
-    background-color: #7FBC42 !important; /* Green Background */
-    color: #07284f !important; /* Blue Text */
+    background-color: #7FBC42 !important;
+    color: #07284f !important;
 }
 
-/* ADD BUTTON (Blue -> Hover: Green) */
+/* "Add" Button Styling */
 .card-actions button:last-child {
     background-color: #07284f;
     color: white;
 }
-.card-actions button:last-child:hover { background-color: #7FBC42; }
-.card-actions button:disabled { background-color: #ccc !important; color: #666 !important; cursor: not-allowed; }
 
-/* ========================================= */
-/* 5. GALLERY TYPE MODAL (GIANT IMAGE)       */
-/* ========================================= */
+.card-actions button:last-child:hover {
+    background-color: #7FBC42;
+}
+
+.card-actions button:disabled {
+    background-color: #ccc !important;
+    color: #666 !important;
+    cursor: not-allowed;
+}
+
+/* ==========================================================================
+   9. PRODUCT DETAIL MODAL (LIGHTBOX)
+   ========================================================================== */
 
 .modal {
     display: none;
     position: fixed;
     z-index: 9999;
-    left: 0; top: 0;
-    width: 100%; height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
     background-color: rgba(0,0,0,0.9);
     backdrop-filter: blur(5px);
 }
 
-/* Main White Container */
+/* Main Modal Content Wrapper */
 #modal-detalle .modal-content {
     background-color: #fff;
     margin: 2vh auto;
     width: 95%;
-    max-width: 1600px; /* Super wide on PC */
-    height: 96vh; /* Almost full screen */
+    max-width: 1600px;
+    height: 96vh;
     border-radius: 8px;
     overflow: hidden;
     position: relative;
-    padding: 0; /* No global internal padding */
+    padding: 0;
     display: flex;
     flex-direction: column;
 }
 
+/* Close Interface Control */
 .close {
     position: absolute;
-    top: 15px; right: 25px;
+    top: 15px;
+    right: 25px;
     color: #333;
     font-size: 40px;
     font-weight: bold;
     cursor: pointer;
     z-index: 2000;
     background: rgba(255,255,255,0.9);
-    width: 50px; height: 50px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     line-height: 0;
     box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
-.close:hover { color: red; transform: scale(1.1); }
 
-/* FLEXIBLE LAYOUT (Mobile vs PC) */
+.close:hover {
+    color: red;
+    transform: scale(1.1);
+}
+
+/* Flexible Layout Strategy for Modal Content */
 .modal-flex-container {
     display: flex;
     flex-direction: column;
@@ -625,18 +697,19 @@ body {
     width: 100%;
 }
 
-/* --- COMMON STYLES --- */
+/* Left Column: Visual Content (Image) */
 .modal-col-left {
     position: relative;
-    background-color: #f0f0f0; /* Technical grey to highlight photo */
+    background-color: #f0f0f0;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
 }
 
+/* Right Column: Textual Content (Information) */
 .modal-col-right {
-    background-color: #ffffff; /* PURE WHITE for readability */
+    background-color: #ffffff;
     color: #333;
     padding: 25px;
     overflow-y: auto;
@@ -649,50 +722,54 @@ body {
     display: block;
 }
 
-/* --- MEDIA QUERY: PC (Large Screens) --- */
+/* --- Responsive Adjustments: Desktop View --- */
 @media (min-width: 900px) {
     .modal-flex-container {
-        flex-direction: row; /* Side by side */
+        flex-direction: row;
     }
 
-    /* GIANT IMAGE (65%) */
+    /* Primary image focus (65% width) */
     .modal-col-left {
         width: 65%;
         height: 100%;
         border-right: 1px solid #ddd;
     }
 
-    /* DETAILS (35%) */
+    /* Detailed information panel (35% width) */
     .modal-col-right {
         width: 35%;
         height: 100%;
-        box-shadow: -5px 0 20px rgba(0,0,0,0.05); /* Subtle shadow */
+        box-shadow: -5px 0 20px rgba(0,0,0,0.05);
     }
 }
 
-/* --- MEDIA QUERY: MOBILE (User Preference) --- */
+/* --- Responsive Adjustments: Mobile View --- */
 @media (max-width: 899px) {
     .modal-col-left {
         width: 100%;
-        height: 45%; /* Image on top */
+        height: 45%;
     }
     .modal-col-right {
         width: 100%;
-        height: 55%; /* Details below */
+        height: 55%;
         padding: 15px;
     }
     .modal-content {
-        margin: 0; width: 100%; height: 100%; border-radius: 0; /* Fullscreen on mobile */
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
     }
 }
 
-/* MODAL TEXTS & BOXES */
+/* Modal Internal Typography */
 .modal-title {
     color: var(--color-primario);
     font-size: 1.8em;
     margin-top: 0;
     line-height: 1.1;
 }
+
 .modal-subtitle {
     color: #666;
     font-weight: normal;
@@ -700,7 +777,11 @@ body {
     font-size: 1.1em;
 }
 
-/* Green Details Box */
+/* ==========================================================================
+   10. PRODUCT INFORMATION & ACTION COMPONENTS
+   ========================================================================== */
+
+/* Highlighted details container */
 .details-box-styled {
     background-color: #f9fff5;
     border: 1px solid #7FBC42;
@@ -710,6 +791,7 @@ body {
     font-size: 0.95em;
     color: #222;
 }
+
 .details-box-styled h4 {
     color: #2c6e00;
     margin-top: 0;
@@ -718,7 +800,7 @@ body {
     padding-bottom: 5px;
 }
 
-/* Manual Button */
+/* Documentation / User Manual link button */
 .manual-btn-styled {
     display: block;
     width: 100%;
@@ -732,9 +814,12 @@ body {
     margin-bottom: 20px;
     transition: background 0.3s;
 }
-.manual-btn-styled:hover { background-color: #052040; }
 
-/* PRICE & ACTION */
+.manual-btn-styled:hover {
+    background-color: #052040;
+}
+
+/* Featured price display */
 .price-big-display {
     font-size: 2.2em;
     font-weight: 800;
@@ -751,6 +836,7 @@ body {
     padding-top: 10px;
 }
 
+/* Add to cart primary button */
 .add-cart-btn-styled {
     width: 100%;
     background-color: var(--color-acento-secundario);
@@ -764,10 +850,23 @@ body {
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
     transition: transform 0.2s;
 }
-.add-cart-btn-styled:hover { transform: scale(1.02); background-color: #8cd147; }
-.add-cart-btn-styled:disabled { background-color: #ccc; cursor: not-allowed; transform: none; color: #666; }
 
-/* Gallery Arrows */
+.add-cart-btn-styled:hover {
+    transform: scale(1.02);
+    background-color: #8cd147;
+}
+
+.add-cart-btn-styled:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    transform: none;
+    color: #666;
+}
+
+/* ==========================================================================
+   11. GALLERY INTERFACE CONTROLS
+   ========================================================================== */
+
 .gallery-arrow {
     position: absolute;
     top: 50%;
@@ -778,15 +877,23 @@ body {
     user-select: none;
     padding: 20px;
 }
-.gallery-arrow:hover { color: var(--color-acento-secundario); background: rgba(255,255,255,0.5); }
+
+.gallery-arrow:hover {
+    color: var(--color-acento-secundario);
+    background: rgba(255,255,255,0.5);
+}
+
 .left-arrow { left: 10px; }
 .right-arrow { right: 10px; }
 
+/* ==========================================================================
+   12. CART MODAL & ORDER FORM UI
+   ========================================================================== */
 
-/* =========================== */
-/* 6. CART MODAL (FORM UI)     */
-/* =========================== */
-#cart-modal { display: none; background-color: rgba(0,0,0,0.85); }
+#cart-modal {
+    display: none;
+    background-color: rgba(0,0,0,0.85);
+}
 
 #cart-modal .modal-content {
     background-color: #fff;
@@ -798,11 +905,17 @@ body {
     max-height: 90vh;
     overflow-y: auto;
     border-top: 10px solid var(--color-primario);
-    display: block; /* Normal block, not flex like the product modal */
+    display: block;
 }
 
-/* STYLIZED FORM */
-#order-form label { color: var(--color-primario); font-weight: bold; margin-top: 10px; display: block; }
+/* Form input styling */
+#order-form label {
+    color: var(--color-primario);
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
 #order-form input, #order-form textarea {
     width: 100%;
     padding: 10px;
@@ -811,8 +924,13 @@ body {
     border-radius: 4px;
     background-color: #fcfcfc;
 }
-#order-form input:focus, #order-form textarea:focus { border-color: var(--color-acento-secundario); outline: none; }
 
+#order-form input:focus, #order-form textarea:focus {
+    border-color: var(--color-acento-secundario);
+    outline: none;
+}
+
+/* Alert and information boxes within forms */
 .form-disclaimer {
     background-color: #fff3cd;
     border-left: 5px solid #ffc107;
@@ -821,6 +939,7 @@ body {
     margin: 15px 0;
     color: #856404;
 }
+
 .form-info-box {
     background-color: #d1ecf1;
     border-left: 5px solid var(--color-primario);
@@ -830,6 +949,7 @@ body {
     color: #0c5460;
 }
 
+/* Form submission and cancellation controls */
 #submit-order {
     background-color: var(--color-primario);
     color: white;
@@ -841,7 +961,10 @@ body {
     cursor: pointer;
     margin-top: 10px;
 }
-#submit-order:hover { opacity: 0.9; }
+
+#submit-order:hover {
+    opacity: 0.9;
+}
 
 #cancel-order {
     background-color: transparent;
@@ -854,31 +977,44 @@ body {
     border-radius: 5px;
 }
 
-/* Floating Cart Button (FAB) */
+/* ==========================================================================
+   13. FLOATING ACTION BUTTON (CART)
+   ========================================================================== */
+
 #floating-cart-button {
     position: fixed;
-    bottom: 30px; right: 30px;
+    bottom: 30px;
+    right: 30px;
     background-color: var(--color-acento-secundario);
     color: var(--color-primario);
-    width: 60px; height: 60px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    display: flex; justify-content: center; align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 30px;
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     z-index: 5000;
 }
+
 #cart-count {
     position: absolute;
-    top: -5px; right: -5px;
+    top: -5px;
+    right: -5px;
     background-color: red;
     color: white;
     font-size: 12px;
-    width: 20px; height: 20px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
-    display: flex; justify-content: center; align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-/* Filter container to ensure alignment */
+
+/* --- Filter state management --- */
 #filter-container {
     display: flex;
     flex-wrap: wrap;
@@ -887,14 +1023,13 @@ body {
     margin: 20px 0;
 }
 
-/* Class for out-of-stock filters */
 .disabled-filter {
     cursor: not-allowed !important;
-    pointer-events: none; /* Prevents clicking */
+    pointer-events: none;
 }
 
 .category-button-wrapper {
-    width: 100px; /* Adjust based on icon size */
+    width: 100px;
     text-align: center;
     transition: transform 0.2s ease;
 }
@@ -902,9 +1037,10 @@ body {
 .category-button-wrapper:hover:not(.disabled-filter) {
     transform: translateY(-5px);
 }
-/* ========================================= */
-/* DEPARTMENT STYLES (MODERN LIST)           */
-/* ========================================= */
+
+/* ==========================================================================
+   14. DEPARTMENT DIRECTORY (MODERN LISTING)
+   ========================================================================== */
 
 .departments-list {
     max-width: 1000px;
@@ -912,50 +1048,47 @@ body {
     padding: 20px;
 }
 
-/* Header section */
 .section-header-styled {
     text-align: center;
     margin-bottom: 60px;
 }
-/* Subtitle Departments */
+
 .section-header-styled h2 {
     color: var(--color-primario);
-    /* RESPONSIVE SCALING: Font scales fluidly between 1.5em and 3em based on viewport width */
     font-size: clamp(1.8em, 6vw, 3em);
     font-weight: 800;
     margin: 0;
-    letter-spacing: 1px; /* Slightly reduced spacing for better fit */
+    letter-spacing: 1px;
     text-transform: uppercase;
-    line-height: 1.2; /* Prevents line overlap if split */
-    padding: 0 10px; /* Safety lateral margin */
+    line-height: 1.2;
+    padding: 0 10px;
 }
-/* underline Departments */
+
 .header-underline {
     width: 1000px;
     height: 2px;
-    background-color: var(--color-acento-secundario); /* Green */
+    background-color: var(--color-acento-secundario);
     margin: 15px auto 0 auto;
     border-radius: 2px;
 }
 
-/* Department Row */
+/* Department row layout */
 .dept-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 0;
-    gap: 30px; /* Spacing between text and image */
-    flex-wrap: wrap; /* KEY: Allows dropping on mobile */
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
-/* Information (Text) */
 .dept-info {
-    flex: 1; /* Occupies available space */
-    min-width: 300px; /* Min width to prevent crushing */
+    flex: 1;
+    min-width: 300px;
 }
 
 .dept-title {
-    font-size: 2em; /* Large Title */
+    font-size: 2em;
     color: var(--color-primario);
     margin: 0 0 15px 0;
     font-family: 'Abel', sans-serif;
@@ -967,25 +1100,24 @@ body {
     font-size: 1.15em;
     color: #555;
     line-height: 1.6;
-    font-style: italic; /* ITALIC TEXT */
+    font-style: italic;
     font-weight: 300;
-    border-left: 4px solid #ddd; /* Grey decorative line on left */
+    border-left: 4px solid #ddd;
     padding-left: 15px;
 }
 
-/* Icon Button (Image Clickable) */
+/* Interactive department icon */
 .dept-icon-btn {
     position: relative;
-    width: 160px; /* Sizes fix and elegant */
+    width: 160px;
     height: 160px;
-    border-radius: 20px; /* Rounded borders (Squircle) */
+    border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.15); /* Elegant shadow */
-
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
     border: 4px solid var(--color-primario);
     transition: all 0.4s ease;
     cursor: pointer;
-    flex-shrink: 0; /* Prevents shrinking */
+    flex-shrink: 0;
 }
 
 .dept-icon-btn img {
@@ -995,19 +1127,18 @@ body {
     transition: transform 0.5s ease;
 }
 
-/* Hover Effect (Mouseover) */
 .dept-icon-btn:hover {
     transform: translateY(-5px) scale(1.02);
     box-shadow: 0 15px 30px rgba(0,0,0,0.25);
-    border-color: var(--color-acento-secundario); /* Border changes to green */
+    border-color: var(--color-acento-secundario);
 }
 
 .dept-icon-btn:hover img {
-    transform: scale(1.1); /* Smooth zoom to the image */
-    filter: brightness(0.7); /* Gets a bit darker when is selected */
+    transform: scale(1.1);
+    filter: brightness(0.7);
 }
 
-/* "VOIR" Text overlay */
+/* Call-to-action overlay text */
 .icon-overlay-text {
     position: absolute;
     top: 50%; left: 50%;
@@ -1016,27 +1147,26 @@ body {
     font-weight: bold;
     font-size: 1.2em;
     letter-spacing: 2px;
-    opacity: 0; /* Invisible by default */
+    opacity: 0;
     transition: opacity 0.3s ease;
     z-index: 2;
 }
 
 .dept-icon-btn:hover .icon-overlay-text {
-    opacity: 1; /* Appears when pass the pointer */
+    opacity: 1;
 }
 
-/* Divider */
 .dept-divider {
     border: 0;
     height: 1px;
-    background: linear-gradient(to right, transparent, #ccc, transparent); /* Faded line */
+    background: linear-gradient(to right, transparent, #ccc, transparent);
     margin: 10px 0;
 }
 
-/* MOBILE ADJUSTMENT (Media Query) */
+/* Mobile responsive adjustments for departments */
 @media (max-width: 768px) {
     .dept-row {
-        flex-direction: column-reverse; /* Image top, text bottom */
+        flex-direction: column-reverse;
         text-align: center;
         gap: 15px;
     }
@@ -1046,20 +1176,24 @@ body {
     }
 
     .dept-desc {
-        border-left: none; /* Remove lateral line on mobile */
+        border-left: none;
         padding-left: 0;
     }
 
     .dept-icon-btn {
-        width: 100%; /* Wide image on mobile */
-        height: 200px; /* Rectangular banner style */
+        width: 100%;
+        height: 200px;
         max-width: 400px;
     }
 }
 
-/* Language Button with Border */
+/* ==========================================================================
+   15. NAVIGATION & UTILITY STYLES
+   ========================================================================== */
+
+/* Language selection controls */
 .lang-btn {
-    border: 2px solid rgba(255, 255, 255, 0.6) !important; /* Elegant semi-transparent border */
+    border: 2px solid rgba(255, 255, 255, 0.6) !important;
     padding: 5px 12px !important;
     border-radius: 4px;
     transition: all 0.3s ease;
@@ -1070,7 +1204,7 @@ body {
     border-color: white !important;
 }
 
-/* POLICY STYLES */
+/* Legal and policy content styling */
 .policy-list {
     margin: 20px 0;
     padding-left: 20px;
@@ -1099,21 +1233,22 @@ body {
     text-decoration: underline;
 }
 
-/* Fix for links in the menu */
+/* Navigation button link reset */
 a.nav-btn {
-    text-decoration: none !important; /* Removes underline */
-    display: inline-block; /* Ensures padding is respected */
+    text-decoration: none !important;
+    display: inline-block;
 }
 
-/* Ensure they look white and turn green on hover */
 a.nav-btn:visited { color: white; }
 a.nav-btn:hover { color: var(--color-acento-secundario); }
 
-
+/* ==========================================================================
+   16. CATEGORY GRID & CARD SYSTEM
+   ========================================================================== */
 
 .categories-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Crea 2 columnas iguales */
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     max-width: 800px;
     margin: 40px auto;
@@ -1134,7 +1269,7 @@ a.nav-btn:hover { color: var(--color-acento-secundario); }
 
 .category-card img {
     width: 100%;
-    max-width: 250px; /* Ajusta este tamaño para hacer los iconos más grandes */
+    max-width: 250px;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
@@ -1148,22 +1283,65 @@ a.nav-btn:hover { color: var(--color-acento-secundario); }
     text-align: center;
 }
 
-/* Para móviles: que pase a 1 columna si la pantalla es pequeña */
+/* Single column layout for small screens */
 @media (max-width: 600px) {
     .categories-grid {
         grid-template-columns: 1fr;
     }
 }
-/* Estilo para la categoría cuando no hay productos (desactivada) */
+
+/* Inactive category state */
 .category-card.disabled {
-    pointer-events: none;    /* Impide que el usuario haga clic */
-    opacity: 0.4;            /* Hace que se vea más tenue (apagada) */
-    filter: grayscale(1);    /* Convierte la imagen a blanco y negro */
-    cursor: not-allowed;     /* Cambia el cursor para indicar que no está disponible */
+    pointer-events: none;
+    opacity: 0.4;
+    filter: grayscale(1);
+    cursor: not-allowed;
 }
 
-/* Opcional: añade un efecto visual al pasar el ratón solo en las activas */
 .category-card:not(.disabled):hover {
-    transform: scale(1.05);  /* Efecto de aumento suave al pasar el ratón */
+    transform: scale(1.05);
     transition: transform 0.3s ease;
+}
+
+/* ==========================================================================
+   17. INTERACTIVE TOOLTIP COMPONENT
+   ========================================================================== */
+
+.category-button-wrapper {
+    position: relative;
+}
+
+.category-tooltip {
+    position: absolute;
+    bottom: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(7, 40, 79, 0.98);
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 0.75em;
+    width: 160px;
+    z-index: 1000;
+    pointer-events: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    border: 1px solid var(--color-acento-secundario);
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    text-align: left;
+}
+
+.category-tooltip.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-5px);
+}
+
+.category-tooltip ul {
+    margin: 5px 0 0 0;
+    padding-left: 15px;
+    list-style-type: square;
+}
+
+.category-tooltip li {
+    margin-bottom: 2px;
 }
