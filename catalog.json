@@ -1130,7 +1130,7 @@
         "imagenes": [
             "A-125.5.jpg"
         ],
-        "units_available": 14,
+        "units_available": 13,
         "unit_price": 2000.0
     },
     {
@@ -2721,6 +2721,201 @@
         "manual_url": "",
         "imagenes": [
             "A-901.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-1",
+        "prix": 120800.0,
+        "categorie": "Acc. Pick up",
+        "descripcion": "Couvre Boite",
+        "detalles": "Différents modèles",
+        "manual_url": "",
+        "imagenes": [
+            "O-1.jpg"
+        ],
+        "units_available": 151,
+        "unit_price": 800.0
+    },
+    {
+        "lot": "O-2",
+        "prix": 32000.0,
+        "categorie": "Acc. Pick up",
+        "descripcion": "Back Rack usagé",
+        "detalles": "Back Rack usagé",
+        "manual_url": "",
+        "imagenes": [
+            "O-2.jpg"
+        ],
+        "units_available": 80,
+        "unit_price": 400.0
+    },
+    {
+        "lot": "O-3",
+        "prix": 160000.0,
+        "categorie": "Acc. Pick up",
+        "descripcion": "Back Rack Neuf",
+        "detalles": "Back Rack Neuf",
+        "manual_url": "",
+        "imagenes": [
+            "O-3.jpg"
+        ],
+        "units_available": 400,
+        "unit_price": 400.0
+    },
+    {
+        "lot": "O-4",
+        "prix": 16000.0,
+        "categorie": "Acc. Pick up",
+        "descripcion": "Flèche pliable sur Back Rack",
+        "detalles": "FL1-L21240 (Pliable)",
+        "manual_url": "",
+        "imagenes": [
+            "O-4.jpg"
+        ],
+        "units_available": 8,
+        "unit_price": 2000.0
+    },
+    {
+        "lot": "O-5",
+        "prix": 10000.0,
+        "categorie": "Acc. Pick up",
+        "descripcion": "Flèche Fixe sur Back Rack",
+        "detalles": "FL1-L21240 (Fixe)",
+        "manual_url": "",
+        "imagenes": [
+            "O-5.jpg"
+        ],
+        "units_available": 5,
+        "unit_price": 2000.0
+    },
+    {
+        "lot": "O-6",
+        "prix": 4500.0,
+        "categorie": "Acc. Pick up",
+        "descripcion": "Boite en Fibre pour Pick up",
+        "detalles": "Fibrobec Loisir 8'",
+        "manual_url": "",
+        "imagenes": [
+            "O-6.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-7",
+        "prix": 4000.0,
+        "categorie": "Acc. Pick up",
+        "descripcion": "Boite en Fibre pour Pick up",
+        "detalles": "Fibrobec Compak 7'",
+        "manual_url": "",
+        "imagenes": [
+            "O-7.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-8",
+        "prix": 6500.0,
+        "categorie": "Acc. Pick up",
+        "descripcion": "Boite pour Ford",
+        "detalles": "Grandeur 8'",
+        "manual_url": "",
+        "imagenes": [
+            "O-8.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-9",
+        "prix": 10513.0,
+        "categorie": "Acc. Déneigement",
+        "descripcion": "Saleuse",
+        "detalles": "Steel-Caster 7' 1.5YD",
+        "manual_url": "",
+        "imagenes": [
+            "O-9.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-10",
+        "prix": 61295.0,
+        "categorie": "Acc. Déneigement",
+        "descripcion": "Pelle de déneigement",
+        "detalles": "Grandeur 8' <br> Modèle: 90800-HD2",
+        "manual_url": "",
+        "imagenes": [
+            "O-10.jpg"
+        ],
+        "units_available": 5,
+        "unit_price": 12260.0
+    },
+    {
+        "lot": "O-11",
+        "prix": 12260.0,
+        "categorie": "Acc. Déneigement",
+        "descripcion": "Pelle de déneigement",
+        "detalles": "Grandeur 7' 6'' <br> Modèle:69400-HT Series",
+        "manual_url": "",
+        "imagenes": [
+            "O-11.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-12",
+        "prix": 6000.0,
+        "categorie": "Acc. Chariot Élévateur",
+        "descripcion": "Fourche",
+        "detalles": "Kit de Fourche 4'",
+        "manual_url": "",
+        "imagenes": [
+            "O-12.jpg"
+        ],
+        "units_available": 4,
+        "unit_price": 1500.0
+    },
+    {
+        "lot": "O-13",
+        "prix": 2500.0,
+        "categorie": "Acc. Chariot Élévateur",
+        "descripcion": "Fourche",
+        "detalles": "Kit de Fourche 6'",
+        "manual_url": "",
+        "imagenes": [
+            "O-13.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-14",
+        "prix": 3500.0,
+        "categorie": "Acc. Chariot Élévateur",
+        "descripcion": "Godet",
+        "detalles": "Godet pour Chariot élévateur",
+        "manual_url": "",
+        "imagenes": [
+            "O-14.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-15",
+        "prix": 4500.0,
+        "categorie": "Acc. Chariot Élévateur",
+        "descripcion": "Godet de déneigement",
+        "detalles": "Modèle:HLA SP350008 <br> No Série:21201598",
+        "manual_url": "",
+        "imagenes": [
+            "O-15.jpg"
         ],
         "units_available": 1,
         "unit_price": 0.0
