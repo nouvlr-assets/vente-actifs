@@ -72,16 +72,19 @@ const DEPT_CONFIG = {
         title: "VENTE MATÉRIEL ET OUTILS",
         placeholder: "Rechercher (ex: Hilti, Perceuse...)",
         categories: [
-            "Tous", "Outils électriques", "Outils légers", "Quincailleries",
-            "Entrepôt Conteneur", "Matériels de Sécurité", "Clôture et signalisation","Materiels"
+            "Tous",
+            "Acc. Pick up", "Acc. Déneigement", "Acc. Chariot Élévateur", // Nuevas al principio
+            "Outils électriques", "Outils légers", "Quincailleries",
+            "Entrepôt Conteneur", "Matériels de Sécurité", "Clôture et signalisation", "Materiels"
         ]
     },
     'M': {
         title: "VENTE MACHINERIE",
         placeholder: "Rechercher (ex: Générateur...)",
         categories: [
-            "Tous", "Machinerie légère",
-            "Générateurs électriques", "Véhicule"
+            "Tous", "Machinerie légère", "Générateurs électriques", "Véhicule", // Originales
+            "Compacteur", "Chauffage Électrique", "Réservoir", "Trailer",
+            "Souffleuse à neige", "Panneau d'affichage", "Nettoyeur h. pression" // Resto al final
         ]
     }
 };
@@ -139,7 +142,17 @@ const translations = {
             "Machinerie lourde": "Machinerie lourde",
             "Générateurs électriques": "Générateurs électriques",
             "Clôture et signalisation": "Clôture et signalisation",
-            "Materiels": "Materiels"
+            "Materiels": "Materiels",
+            "Acc. Pick up": "Acc. Pick up",
+            "Acc. Déneigement": "Acc. Déneigement",
+            "Acc. Chariot Élévateur": "Acc. Chariot Élévateur",
+            "Compacteur": "Compacteur",
+            "Chauffage Électrique": "Chauffage Électrique",
+            "Réservoir": "Réservoir",
+            "Trailer": "Trailer",
+            "Souffleuse à neige": "Souffleuse à neige",
+            "Panneau d'affichage": "Panneau d'affichage",
+            "Nettoyeur h. pression": "Nettoyeur h. pression",
         },
         tooltip_title: "Inclus:",
         policy_html: `
@@ -199,6 +212,16 @@ const translations = {
             "Générateurs électriques": "Generators",
             "Clôture et signalisation": "Fencing & Signage",
             "Materiels":"Materials",
+            "Acc. Pick up": "Pickup Truck Acc.",
+            "Acc. Déneigement": "Snow Removal Acc.",
+            "Acc. Chariot Élévateur": "Forklift Acc.",
+            "Compacteur": "Compactor",
+            "Chauffage Électrique": "Electric Heating",
+            "Réservoir": "Tank / Reservoir",
+            "Trailer": "Trailer",
+            "Souffleuse à neige": "Snow Blower",
+            "Panneau d'affichage": "Display Panel",
+            "Nettoyeur h. pression": "Pressure Washer",
         },
         tooltip_title: "Included:",
         policy_html: `
@@ -287,6 +310,16 @@ function cleanIconName(catName) {
 
     /** Static mapping for complex category identifiers. */
     const map = {
+        "Acc. Pick up": "Acc_Pick_up",
+        "Acc. Déneigement": "Acc_Deneigement",
+        "Acc. Chariot Élévateur": "Acc_Charriot_elevateur",
+        "Compacteur": "Compacteur",
+        "Chauffage Électrique": "Chauffage_electrique",
+        "Réservoir": "Resevoir",
+        "Trailer": "Trailer",
+        "Souffleuse à neige": "Soffleusse_a_niege",
+        "Panneau d'affichage": "Panneu_daffichage",
+        "Nettoyeur h. pression": "Nettoyeur_H_pression",
         "Clôture et signalisation": "Clouture_et_signalitation",
         "Véhicule Électrique": "Vehicule_Electrique",
         "Station Totale": "Station_Totale",
