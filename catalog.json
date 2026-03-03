@@ -1130,7 +1130,7 @@
         "imagenes": [
             "A-125.5.jpg"
         ],
-        "units_available": 13,
+        "units_available": 10,
         "unit_price": 2000.0
     },
     {
@@ -1142,19 +1142,6 @@
         "manual_url": "",
         "imagenes": [
             "A-125.6.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
-        "lot": "A-126.1",
-        "prix": 10550.0,
-        "categorie": "Accessoires",
-        "descripcion": "Prisme 360 GRZ122 avec étui lot de 2",
-        "detalles": "Prisme 360 GRZ122 avec étui",
-        "manual_url": "",
-        "imagenes": [
-            "A-126.1.jpg"
         ],
         "units_available": 1,
         "unit_price": 0.0
@@ -1662,32 +1649,6 @@
         "manual_url": "",
         "imagenes": [
             "A-201.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
-        "lot": "A-202",
-        "prix": 225.0,
-        "categorie": "Outils électriques",
-        "descripcion": "Milwaukee impact- Gun 1/2",
-        "detalles": "Milwaukee impact- Gun 1/2  <br>  Chargeur M12-M18  <br>  2x Batterie XC5.0",
-        "manual_url": "",
-        "imagenes": [
-            "A-202.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
-        "lot": "A-203",
-        "prix": 225.0,
-        "categorie": "Outils électriques",
-        "descripcion": "Milwaukee impact- Gun 1/2 Fuel 18 volt",
-        "detalles": "Milwaukee Drill driver- Gun 1/2 Fuel  <br>  Milwaukee impact- Gun 1/2 Fuel 18 volt  <br>  Chargeur M12-M18  <br>  2x Batterie XC5.0",
-        "manual_url": "",
-        "imagenes": [
-            "A-203.jpg"
         ],
         "units_available": 1,
         "unit_price": 0.0
@@ -2886,7 +2847,7 @@
         "prix": 2500.0,
         "categorie": "Acc. Chariot Élévateur",
         "descripcion": "Fourche",
-        "detalles": "",
+        "detalles": "Kit de Fourche 6'",
         "manual_url": "",
         "imagenes": [
             "O-13.jpg"
