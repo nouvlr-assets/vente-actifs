@@ -248,10 +248,10 @@
     },
     {
         "lot": "A-38",
-        "prix": 0.0,
+        "prix": 11500.0,
         "categorie": "Station Totale",
         "descripcion": "Station Totale TS16 P 3 R500",
-        "detalles": "Station Totale TS16 P 3 R500 (2020)  <br>  Contrôleur CS20 3.75G  <br>  Embase GDF321  <br>  Prisme 360 GRZ122  <br>  Trépied GST120-9",
+        "detalles": "Station Totale TS16 I 3 R1000 (2015)  <br>  Embase GDF321  <br>  Prisme 360 GRZ4  <br>  Trépied",
         "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_ts16_ds.ashx",
         "imagenes": [
             "A-38.jpg"
@@ -1130,7 +1130,7 @@
         "imagenes": [
             "A-125.5.jpg"
         ],
-        "units_available": 6,
+        "units_available": 9,
         "unit_price": 2000.0
     },
     {
@@ -1910,7 +1910,7 @@
         "imagenes": [
             "A-222.jpg"
         ],
-        "units_available": 1,
+        "units_available": 2,
         "unit_price": 0.0
     },
     {
@@ -2004,20 +2004,6 @@
         "manual_url": "",
         "imagenes": [
             "A-400.2.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
-        "lot": "A-401",
-        "prix": 827.38,
-        "categorie": "Quincailleries",
-        "descripcion": "Lot de différentes douilles",
-        "detalles": "lot de différentes douilles",
-        "manual_url": "",
-        "imagenes": [
-            "A-401.jpg",
-            "A-401_A.jpg"
         ],
         "units_available": 1,
         "unit_price": 0.0
@@ -2337,7 +2323,7 @@
     {
         "lot": "A-604",
         "prix": 0.0,
-        "categorie": "Véhicule Électrique",
+        "categorie": "Appareil de mesure",
         "descripcion": "Caméra GoPro Héro12",
         "detalles": "2x Caméra GoPro Héro12 27MP  <br>  Support de fixation",
         "manual_url": "",
@@ -2350,7 +2336,7 @@
     {
         "lot": "A-604.1",
         "prix": 150.0,
-        "categorie": "Véhicule Électrique",
+        "categorie": "Appareil de mesure",
         "descripcion": "Caméra GoPro Héro10",
         "detalles": "Caméra GoPro Héro10",
         "manual_url": "",
@@ -2513,8 +2499,8 @@
         "imagenes": [
             "A-712.jpg"
         ],
-        "units_available": 1,
-        "unit_price": 0.0
+        "units_available": 2,
+        "unit_price": 500.0
     },
     {
         "lot": "A-712.1",
