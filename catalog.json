@@ -874,6 +874,80 @@
         "unit_price": 0.0
     },
     {
+        "lot": "A-100.2",
+        "prix": 145821.13,
+        "categorie": "Mesure Ferroviaire",
+        "descripcion": "Pack TRIMBLE GEDO CE 2.0 VORSYS-01 2019",
+        "detalles": "Pack TRIMBLE GEDO CE 2.0 VORSYS-01 2019",
+        "manual_url": "",
+        "imagenes": [
+            "A-100.2.jpg",
+            "A-100.2_A.jpg",
+            "A-100.2_B.jpg",
+            "A-100.2_C.jpg",
+            "A-100.2_D.jpg",
+            "A-100.2_E.jpg",
+            "A-100.2_F.jpg",
+            "A-100.2_G.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "A-100.3",
+        "prix": 146282.43,
+        "categorie": "Mesure Ferroviaire",
+        "descripcion": "Pack TRIMBLE GEDO CE 2.0 VORSYS-02 2020",
+        "detalles": "Pack TRIMBLE GEDO CE 2.0 VORSYS-02 2020",
+        "manual_url": "",
+        "imagenes": [
+            "A-100.3.jpg",
+            "A-100.3_A.jpg",
+            "A-100.3_B.jpg",
+            "A-100.3_C.jpg",
+            "A-100.3_D.jpg",
+            "A-100.3_E.jpg",
+            "A-100.3_F.jpg",
+            "A-100.3_G.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "A-100.4",
+        "prix": 81691.61,
+        "categorie": "Mesure Ferroviaire",
+        "descripcion": "Pack TRIMBLE GEDO CE 2.0 TRACK-01 2019",
+        "detalles": "Pack TRIMBLE GEDO CE 2.0 TRACK-01 2019",
+        "manual_url": "",
+        "imagenes": [
+            "A-100.4.jpg",
+            "A-100.4_A.jpg",
+            "A-100.4_B.jpg",
+            "A-100.4_C.jpg",
+            "A-100.4_D.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "A-100.5",
+        "prix": 80595.8,
+        "categorie": "Mesure Ferroviaire",
+        "descripcion": "Pack TRIMBLE GEDO CE 2.0 TRACK-02 2020",
+        "detalles": "Pack TRIMBLE GEDO CE 2.0 TRACK-02 2020",
+        "manual_url": "",
+        "imagenes": [
+            "A-100.5.jpg",
+            "A-100.5_A.jpg",
+            "A-100.5_B.jpg",
+            "A-100.5_C.jpg",
+            "A-100.5_D.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
         "lot": "A-101.1",
         "prix": 0.0,
         "categorie": "Appareil de mesure",
