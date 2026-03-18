@@ -73,7 +73,8 @@ const DEPT_CONFIG = {
         placeholder: "Rechercher (ex: Hilti, Perceuse...)",
         categories: [
             "Tous",
-            "Acc. Pick up", "Acc. Déneigement", "Acc. Chariot Élévateur", // Nuevas al principio
+            "Acc. Pick up", "Acc. Déneigement", "Acc. Chariot Élévateur",
+            "Coffre", "Radios",
             "Outils électriques", "Outils légers", "Quincailleries",
             "Entrepôt Conteneur", "Matériels de Sécurité", "Clôture et signalisation", "Materiels"
         ]
@@ -153,6 +154,8 @@ const translations = {
             "Souffleuse à neige": "Souffleuse à neige",
             "Panneau d'affichage": "Panneau d'affichage",
             "Nettoyeur h. pression": "Nettoyeur h. pression",
+            "Coffre": "Coffre",
+            "Radios": "Radios",
         },
         tooltip_title: "Inclus:",
         policy_html: `
@@ -222,6 +225,8 @@ const translations = {
             "Souffleuse à neige": "Snow Blower",
             "Panneau d'affichage": "Display Panel",
             "Nettoyeur h. pression": "Pressure Washer",
+            "Coffre": "Tool Chest",
+            "Radios": "Radios",
         },
         tooltip_title: "Included:",
         policy_html: `
@@ -338,6 +343,8 @@ function cleanIconName(catName) {
         "Périphériques": "Peripheriques",
         "Véhicule": "Vehicule",
         "Materiels":"Materiels",
+        "Coffre": "Coffre",
+        "Radios": "Radios",
     };
 
     if(map[catName]) return map[catName];
