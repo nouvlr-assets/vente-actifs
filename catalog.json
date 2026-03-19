@@ -2933,12 +2933,13 @@
         "prix": 7021.2,
         "categorie": "Coffre",
         "descripcion": "Coffre de Chantier",
-        "detalles": "Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",237",
+        "detalles": "*Prix négociable selon offre sérieuse*",
+        "manual_url": "",
         "imagenes": [
             "O-16.jpg",
             "O-16_A.jpg",
-            "O-16_B.jpg"
+            "O-16_B.jpg",
+            "O-16_C.jpg"
         ],
         "units_available": 1,
         "unit_price": 7021.2
@@ -2962,7 +2963,11 @@
             "O-17_H.jpg",
             "O-17_I.jpg",
             "O-17_J.jpg",
-            "O-17_K.jpg"
+            "O-17_K.jpg",
+            "O-17_L.jpg",
+            "O-17_M.jpg",
+            "O-17_N.jpg",
+            "O-17_O.jpg"
         ],
         "units_available": 1,
         "unit_price": 0.0
