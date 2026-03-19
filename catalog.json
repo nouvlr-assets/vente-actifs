@@ -2927,5 +2927,213 @@
         ],
         "units_available": 1,
         "unit_price": 0.0
+    },
+    {
+        "lot": "O-16",
+        "prix": 3600.0,
+        "categorie": "Coffre",
+        "descripcion": "Coffre de Chantier",
+        "detalles": "Jobox armoire à tablette <br> Prix négociable",
+        "manual_url": "",
+        "imagenes": [
+            "O-16.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 3600.0
+    },
+    {
+        "lot": "O-17",
+        "prix": 4442.4,
+        "categorie": "Coffre",
+        "descripcion": "Coffre de Chantier",
+        "detalles": "Jobox de style piano <br> Prix négociable",
+        "manual_url": "",
+        "imagenes": [
+            "O-17.jpg"
+        ],
+        "units_available": 2,
+        "unit_price": 2221.2
+    },
+    {
+        "lot": "O-18",
+        "prix": 3600.0,
+        "categorie": "Coffre",
+        "descripcion": "Coffre de chantier",
+        "detalles": "Armoire site vault <br> Prix négociable",
+        "manual_url": "",
+        "imagenes": [
+            "O-18.jpg"
+        ],
+        "units_available": 3,
+        "unit_price": 1200.0
+    },
+    {
+        "lot": "O-19",
+        "prix": 0.0,
+        "categorie": "Radios",
+        "descripcion": "Chargeur",
+        "detalles": "Modele KSC32-45un <br> Modele KSC25S-135un <br> Modele KSC326A-9un <br> Modele RC2022-20un <br> Modele KSC256A-51un",
+        "manual_url": "",
+        "imagenes": [
+            "O-19.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-20",
+        "prix": 0.0,
+        "categorie": "Radios",
+        "descripcion": "Microphone",
+        "detalles": "Modele KMC72-236un <br> Modele KMC41D-176un",
+        "manual_url": "",
+        "imagenes": [
+            "O-20.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-21",
+        "prix": 0.0,
+        "categorie": "Radios",
+        "descripcion": "Radio",
+        "detalles": "Modele NX3300K2-221un <br> ModeleNX5300K5-166un",
+        "manual_url": "",
+        "imagenes": [
+            "O-21.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-22",
+        "prix": 0.0,
+        "categorie": "Radios",
+        "descripcion": "Batterie",
+        "detalles": "Modele KNB57L usagé-140un <br> Modele KNB57L neuve-18un <br> Modele KNB2L usagé-155un <br> Modele KNB2L neuve-35un",
+        "manual_url": "",
+        "imagenes": [
+            "O-22.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-23",
+        "prix": 0.0,
+        "categorie": "Radios",
+        "descripcion": "Étui",
+        "detalles": "Modele KLH140SW neuve-28un <br> Modele KLH208P2 neuve-23un <br> Modele KLH202P2-29un <br> Modele KLH3SW-43un",
+        "manual_url": "",
+        "imagenes": [
+            "O-23.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-24",
+        "prix": 0.0,
+        "categorie": "Radios",
+        "descripcion": "Base Camp Connect",
+        "detalles": "Modele BCC-TVB-1 un",
+        "manual_url": "",
+        "imagenes": [
+            "O-24.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-25",
+        "prix": 0.0,
+        "categorie": "Radios",
+        "descripcion": "Power Supply",
+        "detalles": "Modele ICT1201210A-2un",
+        "manual_url": "",
+        "imagenes": [
+            "O-25.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-26",
+        "prix": 0.0,
+        "categorie": "Radios",
+        "descripcion": "VHF Digital Transceiver",
+        "detalles": "Modele NX5700-9un <br> Modele NX700-15un <br> Modele NX5800K2-1un <br> Modele NX3820HGK2-1un",
+        "manual_url": "",
+        "imagenes": [
+            "O-26.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-27",
+        "prix": 0.0,
+        "categorie": "Radios",
+        "descripcion": "Antenne",
+        "detalles": "Antenne modele SY303SFISNM (ABK)-4un",
+        "manual_url": "",
+        "imagenes": [
+            "O-27.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-28",
+        "prix": 0.0,
+        "categorie": "Radios",
+        "descripcion": "Remote I/O Module",
+        "detalles": "Remote modele SEL2505-8un <br> Power distributor modele EATA115-1un",
+        "manual_url": "",
+        "imagenes": [
+            "O-28.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-29",
+        "prix": 0.0,
+        "categorie": "Radios",
+        "descripcion": "Router Station Assembly",
+        "detalles": "Modele RB2011UIASRM-1un <br> Modele Q3330E1-1un <br> Modele TJ3115R3-5un",
+        "manual_url": "",
+        "imagenes": [
+            "O-29.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-30",
+        "prix": 0.0,
+        "categorie": "Radios",
+        "descripcion": "Router Station/Assembly",
+        "detalles": "Modele RB2011UIASRM-1un <br> Modele Q3330E1-1un <br> Modele TJ3115R3-5un <br> Modele SLR5700-5un <br> Batterie modele WPHR12110-2un",
+        "manual_url": "",
+        "imagenes": [
+            "O-30.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "0",
+        "prix": 0.0,
+        "categorie": "251",
+        "descripcion": "",
+        "detalles": "",
+        "manual_url": "",
+        "imagenes": [
+            "0.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
     }
 ]
