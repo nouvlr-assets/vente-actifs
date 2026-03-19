@@ -114,6 +114,10 @@ const translations = {
         modal_manual_btn: "📄 Voir Fiche Technique (PDF)",
         form_note: "⚠️ Note importante : Les prix affichés n'incluent ni les taxes ni les frais de transport.",
         form_info: "ℹ️ Lots partiels : Si vous souhaitez acquérir uniquement un élément spécifique, indiquez-le.",
+        label_offer: "OFFRE / ENCHÈRE",
+        placeholder_offer: "Votre offre ($)",
+        alert_offer: "Veuillez entrer un montant valide.",
+        btn_offer: "Proposer mon prix",
         categories: {
             "Tous": "Tous",
             "Station Totale": "Station Totale",
@@ -185,6 +189,10 @@ const translations = {
         modal_manual_btn: "📄 View Datasheet (PDF)",
         form_note: "⚠️ Important Note: Displayed prices do not include taxes or shipping costs.",
         form_info: "ℹ️ Partial Lots: If you wish to acquire only a specific item, please indicate it.",
+        label_offer: "OFFER / AUCTION",
+        placeholder_offer: "Your offer ($)",
+        alert_offer: "Please enter a valid amount.",
+        btn_offer: "Submit my price",
         categories: {
             "Tous": "All",
             "Station Totale": "Total Station",
@@ -455,10 +463,37 @@ function generarTarjetas(lotes) {
  */
 function generarTarjetaHTML(item) {
     if (unitSelections[item.lot] === undefined) unitSelections[item.lot] = 0;
-
     const iconName = cleanIconName(item.categorie);
 
-    /** Generate department-specific technical badges. */
+    // --- 1. DETECCIÓN DE OFERTA Y LIMPIEZA DEL NOMBRE ---
+    const rawDescription = item.descripcion || "";
+    // Detecta si contiene [o] o [O]
+    const esOferta = /\[o\]/i.test(rawDescription);
+    // Crea la descripción limpia para mostrarla al usuario
+    const cleanedDescription = rawDescription.replace(/\[o\]/gi, "").trim();
+
+    const offerBadge = esOferta ? `<div class="offer-badge">${getText('label_offer')}</div>` : '';
+
+    let precioDisplay = '';
+    let actionButtonHTML = '';
+
+    if (esOferta) {
+        // Lógica de Subasta
+        precioDisplay = `<input type="number" id="custom-price-${item.lot}" class="custom-price-input" placeholder="${getText('placeholder_offer')}">`;
+        actionButtonHTML = `<button onclick="agregarOfertaAlCarrito('${item.lot}')" class="btn-add" style="background-color:#e67e22;">${getText('btn_offer')}</button>`;
+    } else {
+        // Lógica Estándar
+        const esGratis = item.prix === 0;
+        precioDisplay = esGratis
+            ? `<strong style="color:#d9534f; font-size:1.1rem; display:block; margin:10px 0;">${getText('card_price_free')}</strong>`
+            : `<strong style="color:#7FBC42; font-size:1.4rem; display:block; margin:10px 0;">${new Intl.NumberFormat('fr-CA', { style: 'currency', currency: 'CAD' }).format(item.prix)}</strong>`;
+
+        actionButtonHTML = `<button id="btn-add-${item.lot}" onclick="agregarAlCarritoInteligente('${item.lot}')" class="btn-add" ${esGratis?'disabled':''}>
+                ${esGratis ? getText('btn_unavailable') : getText('btn_add')}
+            </button>`;
+    }
+
+    // --- 2. ETIQUETAS TÉCNICAS ---
     let badgesHTML = '';
     if (DEPT_CODE === 'A' && item.detalles) {
         const det = item.detalles.toLowerCase();
@@ -472,17 +507,10 @@ function generarTarjetaHTML(item) {
         });
     }
 
-    /** Determine localized price formatting and availability. */
-    const esGratis = item.prix === 0;
-    const precioDisplay = esGratis
-        ? `<span style="color:#d9534f; font-size:0.9em;">Bientôt disponible</span>`
-        : new Intl.NumberFormat('fr-CA', { style: 'currency', currency: 'CAD' }).format(item.prix);
-
-    /** Configure individual unit selection UI if applicable. */
+    // --- 3. SELECCIÓN DE UNIDADES ---
     const esDivisible = (item.units_available > 1 && item.unit_price > 0);
     let unitSelectorHTML = '';
-
-    if (esDivisible) {
+    if (esDivisible && !esOferta) {
         const precioUnidad = new Intl.NumberFormat('fr-CA', { style: 'currency', currency: 'CAD' }).format(item.unit_price);
         unitSelectorHTML = `
             <div class="unit-controls" style="margin: 10px 0; padding: 10px; background: #f9f9f9; border: 1px solid #eee; border-radius: 5px; text-align:center;">
@@ -494,47 +522,31 @@ function generarTarjetaHTML(item) {
                     <span id="count-${item.lot}" style="font-weight:bold; font-size:1.1em;">${unitSelections[item.lot]}</span>
                     <button onclick="cambiarCantidad('${item.lot}', 1, ${item.units_available})" style="width:30px; height:30px; cursor:pointer;">+</button>
                 </div>
-                <div style="font-size:0.8em; color:#666;">Disponibles: ${item.units_available}</div>
             </div>`;
     }
 
+    // --- 4. RENDERIZADO FINAL ---
     return `
     <div class="lote-card">
+        ${offerBadge}
         <div class="category-corner-icon">
             <img src="icons/${iconName}.jpg" onerror="this.src='icons/default.jpg'">
         </div>
 
         <h3>Lot ${item.lot}</h3>
-        <h4>${item.descripcion}</h4>
-
-        <div class="badge-container">${badgesHTML}</div>
+        <h4>${cleanedDescription}</h4> <div class="badge-container">${badgesHTML}</div>
 
         <p style="font-size: 0.85em; color: #666; margin: 5px 0;">${item.categorie}</p>
 
-        <strong style="color: #7FBC42; font-size: 1.4rem; display: block; margin: 10px 0;">${precioDisplay}</strong>
+        ${precioDisplay}
 
         ${unitSelectorHTML}
 
         <div class="card-actions" style="margin-top: auto;">
-            <button onclick="verDetalle('${item.lot}')" class="btn-detail">Voir Détail</button>
-            <button id="btn-add-${item.lot}" onclick="agregarAlCarritoInteligente('${item.lot}')" class="btn-add" ${esGratis?'disabled':''}>
-                ${esGratis ? 'Non Disponible' : 'Ajouter'}
-            </button>
+            <button onclick="verDetalle('${item.lot}')" class="btn-detail">${getText('btn_view')}</button>
+            ${actionButtonHTML}
         </div>
     </div>`;
-}
-
-/**
- * Modifies the unit quantity selection for a specific lot.
- */
-function cambiarCantidad(lotId, cambio, max) {
-    let actual = unitSelections[lotId] || 0;
-    let nuevo = actual + cambio;
-    if (nuevo < 0) nuevo = 0;
-    if (nuevo > max) nuevo = max;
-    unitSelections[lotId] = nuevo;
-    document.getElementById(`count-${lotId}`).innerText = nuevo;
-    actualizarBotonCompra(lotId);
 }
 
 /**
@@ -579,15 +591,30 @@ function agregarAlCarritoInteligente(lotId) {
 /**
  * Populates and displays the modal window for item specifications.
  */
+
 function verDetalle(lotID) {
     const lote = deptCatalogData.find(i => i.lot === lotID);
     if (!lote) return;
+
+    // --- LÓGICA DE LIMPIEZA Y OFERTA ---
+    const rawDesc = lote.descripcion || "";
+    const esOferta = /\[o\]/i.test(rawDesc);
+    const descLimpia = rawDesc.replace(/\[o\]/gi, "").trim();
 
     currentImageSet = lote.imagenes && lote.imagenes.length > 0 ? lote.imagenes : ['default.jpg'];
     currentImageIndex = 0;
 
     const manualBtn = lote.manual_url ? `<a href="${lote.manual_url}" target="_blank" class="manual-btn-styled">${getText('modal_manual_btn')}</a>` : '';
-    const precio = lote.prix === 0 ? getText('btn_unavailable') : new Intl.NumberFormat('fr-FR', { style: 'currency', currency: 'CAD' }).format(lote.prix);
+
+    // Ajuste de precio para el modal
+    let precioHTML = '';
+    if (esOferta) {
+        precioHTML = `<span style="color:#e67e22; font-weight:bold;">${getText('label_offer')}</span>`;
+    } else {
+        precioHTML = lote.prix === 0
+            ? getText('btn_unavailable')
+            : new Intl.NumberFormat('fr-FR', { style: 'currency', currency: 'CAD' }).format(lote.prix);
+    }
 
     const modalBody = document.getElementById('modal-body');
     modalBody.innerHTML = `
@@ -599,21 +626,23 @@ function verDetalle(lotID) {
             </div>
             <div class="modal-col-right">
                 <h2>Lot ${lote.lot}</h2>
-                <h3>${lote.descripcion}</h3>
-                <div class="details-box-styled">
+                <h3>${descLimpia}</h3> <div class="details-box-styled">
                     <h4>${getText('modal_details_title')}</h4>
                     <p>${lote.detalles || ''}</p>
                 </div>
                 ${manualBtn}
-                <div class="price-big-display">${precio}</div>
-                <button class="add-cart-btn-styled" onclick="anadirAlCarrito('${lote.lot}', '${lote.descripcion.replace(/'/g, "\\'")}', ${lote.prix}); cerrarModal();" ${lote.prix===0?'disabled':''}>
-                    ${getText('btn_add')}
+                <div class="price-big-display">${precioHTML}</div>
+
+                <button class="add-cart-btn-styled"
+                    onclick="${esOferta ? "cerrarModal(); alert('Veuillez utiliser le champ de la carte para proponer un precio');" : `anadirAlCarrito('${lote.lot}', '${descLimpia.replace(/'/g, "\\'")}', ${lote.prix}); cerrarModal();`}"
+                    style="${esOferta ? 'background-color:#e67e22;' : ''}"
+                    ${!esOferta && lote.prix === 0 ? 'disabled' : ''}>
+                    ${esOferta ? getText('btn_offer') : getText('btn_add')}
                 </button>
             </div>
         </div>`;
     document.getElementById('modal-detalle').style.display = 'block';
 }
-
 /** Updates the active image in the modal gallery. */
 function updateImage() {
     const img = document.getElementById('modal-product-image');
@@ -837,3 +866,23 @@ function sendOrder(e) {
         });
 }
 
+function agregarOfertaAlCarrito(lotId) {
+    const item = deptCatalogData.find(i => i.lot === lotId);
+    if (!item) return;
+
+    const inputPrecio = document.getElementById(`custom-price-${lotId}`);
+    const precioPropuesto = parseFloat(inputPrecio.value);
+
+    if (isNaN(precioPropuesto) || precioPropuesto <= 0) {
+        alert(getText('alert_offer') || "Veuillez entrer un montant valide.");
+        return;
+    }
+
+    // Limpiamos la descripción antes de enviarla al carrito
+    const cleanedDesc = item.descripcion.replace("[o]", "").trim();
+
+    anadirAlCarrito(item.lot, `${cleanedDesc} (OFFRE CLIENT)`, precioPropuesto);
+
+    inputPrecio.value = '';
+    alert("Offre ajoutée au panier.");
+}

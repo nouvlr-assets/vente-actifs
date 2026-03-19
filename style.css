@@ -489,16 +489,15 @@ body {
 
 /* Individual product card layout */
 .lote-card {
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    width: 280px;
-    position: relative;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background: #fff;
+    border-radius: 10px;
+    /* AÑADIMOS PADDING SUPERIOR para dar espacio a la etiqueta naranja */
+    padding: 50px 15px 15px 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: relative; /* Necesario para los elementos absolutos de dentro */
     display: flex;
     flex-direction: column;
-    transition: transform 0.2s;
+    height: 100%;
 }
 
 .lote-card:hover {
@@ -1344,4 +1343,30 @@ a.nav-btn:hover { color: var(--color-acento-secundario); }
 
 .category-tooltip li {
     margin-bottom: 2px;
+}
+
+/* --- OFFER / AUCTION STYLES --- */
+.offer-badge {
+    position: absolute;
+    top: 10px;
+    left: -5px;
+    background: #e67e22; /* Color naranja para destacar */
+    color: white;
+    padding: 5px 12px;
+    font-weight: bold;
+    font-size: 0.8em;
+    border-radius: 0 4px 4px 0;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    z-index: 3;
+}
+
+.custom-price-input {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 2px solid #e67e22;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+    color: #07284f;
 }
