@@ -2712,10 +2712,16 @@
         "prix": 0.0,
         "categorie": "Véhicule",
         "descripcion": "Ford Transit 250 AWD",
-        "detalles": "Ford Transit 250 AWD  <br>  Excellente condition A-1",
+        "detalles": "Ford Transit 250 AWD  <br>  Excellente condition A <br>  *Peut être vendu avec les équipements veuillez nous contacter pour obtenir un prix révisé.*",
         "manual_url": "",
         "imagenes": [
-            "A-900.jpg"
+            "A-900.jpg",
+            "A-900_A.jpg",
+            "A-900_B.jpg",
+            "A-900_C.jpg",
+            "A-900_D.jpg",
+            "A-900_E.jpg",
+            "A-900_F.jpg"
         ],
         "units_available": 1,
         "unit_price": 0.0
@@ -2933,7 +2939,7 @@
         "prix": 7021.2,
         "categorie": "Coffre",
         "descripcion": "Coffre de Chantier",
-        "detalles": "*Prix négociable selon offre sérieuse*",
+        "detalles": "Prix valeur à neuf <br> *Prix négociable selon offre sérieuse*",
         "manual_url": "",
         "imagenes": [
             "O-16.jpg",
@@ -2968,6 +2974,37 @@
             "O-17_M.jpg",
             "O-17_N.jpg",
             "O-17_O.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-18",
+        "prix": 2860.0,
+        "categorie": "Outils légers",
+        "descripcion": "Kit Laser Rotatif",
+        "detalles": "Prix valeur à neuf <br> *Prix négociable selon offre sérieuse*",
+        "manual_url": "",
+        "imagenes": [
+            "O-18.jpg",
+            "O-18_A.jpg",
+            "O-18_B.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-19",
+        "prix": 2850.0,
+        "categorie": "Acc. Chariot Élévateur",
+        "descripcion": "Transpalette",
+        "detalles": "Prix valeur à neuf <br> *Prix négociable selon offre sérieuse*",
+        "manual_url": "",
+        "imagenes": [
+            "O-19.jpg",
+            "O-19_A.jpg",
+            "O-19_B.jpg",
+            "O-19_C.jpg"
         ],
         "units_available": 1,
         "unit_price": 0.0
