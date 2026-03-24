@@ -559,6 +559,32 @@
         "unit_price": 0.0
     },
     {
+        "lot": "A-64",
+        "prix": 29961.44,
+        "categorie": "Station Totale",
+        "descripcion": "Trimble S7 2''",
+        "detalles": "Carnet <br> Prisme MT1000 S6 Active/Passive <br> Canne 2.6M <br> Trépied TRIMAX",
+        "manual_url": "",
+        "imagenes": [
+            "A-64.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "A-65",
+        "prix": 7246.45,
+        "categorie": "Station Totale",
+        "descripcion": "Trimble TSC7",
+        "detalles": "Trimble TSC7",
+        "manual_url": "",
+        "imagenes": [
+            "A-65.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
         "lot": "A-67",
         "prix": 8000.0,
         "categorie": "GPS",
@@ -689,6 +715,19 @@
         "unit_price": 0.0
     },
     {
+        "lot": "A-82",
+        "prix": 20845.14,
+        "categorie": "GPS",
+        "descripcion": "GPS Trimble",
+        "detalles": "GPS Trimble",
+        "manual_url": "",
+        "imagenes": [
+            "A-82.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
         "lot": "A-84",
         "prix": 1500.0,
         "categorie": "Accessoires",
@@ -762,6 +801,19 @@
         "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_ls10_ls15_ds.ashx",
         "imagenes": [
             "A-89.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "A-89.1",
+        "prix": 6336.18,
+        "categorie": "Appareil de mesure",
+        "descripcion": "Niveau Trimble DiNi",
+        "detalles": "Niveau Trimble DiNi",
+        "manual_url": "",
+        "imagenes": [
+            "A-89.1.jpg"
         ],
         "units_available": 1,
         "unit_price": 0.0
@@ -1183,6 +1235,19 @@
     },
     {
         "lot": "A-118",
+        "prix": 1776.0,
+        "categorie": "Accessoires",
+        "descripcion": "Ball Prism Ø 1.5 (38.1mm) with 1/4 external thread",
+        "detalles": "Ball Prism Ø 1.5 (38.1mm) with 1/4 external thread",
+        "manual_url": "",
+        "imagenes": [
+            "A-118.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "A-118",
         "prix": 1106.7,
         "categorie": "Accessoires",
         "descripcion": "Ball prism Ø 1.5 (30.0 mm)",
@@ -1247,6 +1312,19 @@
         "unit_price": 0.0
     },
     {
+        "lot": "A-126.4",
+        "prix": 2456.19,
+        "categorie": "Accessoires",
+        "descripcion": "MT1000 Target S6 Active/passive",
+        "detalles": "MT1000 Target S6 Active/passive",
+        "manual_url": "",
+        "imagenes": [
+            "A-126.4.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
         "lot": "A-128.1",
         "prix": 75.0,
         "categorie": "Accessoires",
@@ -1297,6 +1375,19 @@
         ],
         "units_available": 1,
         "unit_price": 0.0
+    },
+    {
+        "lot": "A-130.1",
+        "prix": 2499.0,
+        "categorie": "Accessoires",
+        "descripcion": "Sabot Magnétique",
+        "detalles": "Sabot Magnétique",
+        "manual_url": "",
+        "imagenes": [
+            "A-130.1.jpg"
+        ],
+        "units_available": 6,
+        "unit_price": 416.5
     },
     {
         "lot": "A-131",
@@ -1559,6 +1650,32 @@
         "unit_price": 0.0
     },
     {
+        "lot": "A-143.1",
+        "prix": 2198.0,
+        "categorie": "Accessoires",
+        "descripcion": "Track Gauge",
+        "detalles": "Track Gauge",
+        "manual_url": "",
+        "imagenes": [
+            "A-143.1.jpg"
+        ],
+        "units_available": 4,
+        "unit_price": 549.5
+    },
+    {
+        "lot": "A-143.2",
+        "prix": 1305.5,
+        "categorie": "Accessoires",
+        "descripcion": "Track Gauge numérique",
+        "detalles": "Track Gauge numérique",
+        "manual_url": "",
+        "imagenes": [
+            "A-143.2.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
         "lot": "A-144",
         "prix": 260.0,
         "categorie": "Accessoires",
@@ -1684,6 +1801,19 @@
         "manual_url": "",
         "imagenes": [
             "A-153.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "A-154",
+        "prix": 942099.0,
+        "categorie": "Accessoires",
+        "descripcion": "Trimble AD-12 Enmbase AutoNivelante",
+        "detalles": "Trimble AD-12 Enmbase AutoNivelante",
+        "manual_url": "",
+        "imagenes": [
+            "A-154.jpg"
         ],
         "units_available": 1,
         "unit_price": 0.0
@@ -1936,6 +2066,19 @@
         "unit_price": 0.0
     },
     {
+        "lot": "A-219.1",
+        "prix": 400.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Drill Bosch",
+        "detalles": "Drill Bosch",
+        "manual_url": "",
+        "imagenes": [
+            "A-219.1.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
         "lot": "A-220",
         "prix": 500.0,
         "categorie": "Outils électriques",
@@ -1983,6 +2126,32 @@
         "manual_url": "",
         "imagenes": [
             "A-223.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "A-224",
+        "prix": 70.0,
+        "categorie": "Accessoires",
+        "descripcion": "Laser Bosch",
+        "detalles": "Laser Bosch",
+        "manual_url": "",
+        "imagenes": [
+            "A-224.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "A-225",
+        "prix": 100.0,
+        "categorie": "Accessoires",
+        "descripcion": "Laser Leica",
+        "detalles": "Laser Leica",
+        "manual_url": "",
+        "imagenes": [
+            "A-225.jpg"
         ],
         "units_available": 1,
         "unit_price": 0.0
@@ -2956,7 +3125,7 @@
         "categorie": "Radios",
         "descripcion": "Radios et Accessoires[o]",
         "detalles": "Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",238",
+        "manual_url": ",251",
         "imagenes": [
             "O-17.jpg",
             "O-17_A.jpg",
