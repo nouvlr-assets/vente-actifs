@@ -131,26 +131,13 @@
     },
     {
         "lot": "A-27",
-        "prix": 29000.0,
+        "prix": 25000.0,
         "categorie": "Station Totale",
         "descripcion": "Station Totale TS16 P 1 R500",
         "detalles": "Station Totale TS16 P 1 R500 (2019)  <br>  Embase GDF321  <br>  Prisme 360 GRZ4  <br>  Trépied",
         "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_ts16_ds.ashx",
         "imagenes": [
             "A-27.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
-        "lot": "A-29",
-        "prix": 27100.0,
-        "categorie": "Station Totale",
-        "descripcion": "Station Totale TS16 P 1 R1000",
-        "detalles": "Station Totale TS16 1 R1000 (2018)  <br>  Poignée radio RH16 (2019)  <br>  Contrôleur CS20 3.75G (2019)  <br>  Embase GDF321  <br>  Prisme 360 GRZ122  <br>  Trépied",
-        "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_ts16_ds.ashx",
-        "imagenes": [
-            "A-29.jpg"
         ],
         "units_available": 1,
         "unit_price": 0.0
@@ -203,19 +190,6 @@
         "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_ts16_ds.ashx",
         "imagenes": [
             "A-34.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
-        "lot": "A-35",
-        "prix": 29000.0,
-        "categorie": "Station Totale",
-        "descripcion": "Station Totale TS16 I 1 R1000",
-        "detalles": "Station Totale TS16 I 1 R1000 (2018)  <br>  Poignée radio RH16 (2025)  <br>  Embase GDF321  <br>  Chargeur  <br>  Prisme 360 GRZ4  <br>  Trépied",
-        "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_ts16_ds.ashx",
-        "imagenes": [
-            "A-35.jpg"
         ],
         "units_available": 1,
         "unit_price": 0.0
@@ -1936,19 +1910,6 @@
         "unit_price": 0.0
     },
     {
-        "lot": "A-211",
-        "prix": 160.0,
-        "categorie": "Outils électriques",
-        "descripcion": "Hilti Ensemble meuleuse sans fil AG 600-A36",
-        "detalles": "Hilti Ensemble meuleuse sans fil AG 600-A36",
-        "manual_url": "",
-        "imagenes": [
-            "A-211.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
         "lot": "A-212",
         "prix": 500.0,
         "categorie": "Outils électriques",
@@ -2022,19 +1983,6 @@
         "manual_url": "",
         "imagenes": [
             "A-214.2.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
-        "lot": "A-214.3",
-        "prix": 350.0,
-        "categorie": "Outils électriques",
-        "descripcion": "Hilti Impact SW 22-A",
-        "detalles": "Hilti Impact SW 22-A (2020)",
-        "manual_url": "",
-        "imagenes": [
-            "A-214.3.jpg"
         ],
         "units_available": 1,
         "unit_price": 0.0
@@ -2527,15 +2475,15 @@
     {
         "lot": "A-602",
         "prix": 10656.0,
-        "categorie": "Matériels de Sécurité",
+        "categorie": "Acc. Ferroviaire",
         "descripcion": "Drapeau et tige de support",
         "detalles": "10x Drapeau et tige de support  <br>  Nolan PD-6 Dérailleur Portable",
         "manual_url": "",
         "imagenes": [
             "A-602.jpg"
         ],
-        "units_available": 1,
-        "unit_price": 0.0
+        "units_available": 8,
+        "unit_price": 1332.0
     },
     {
         "lot": "A-603",
