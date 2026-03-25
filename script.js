@@ -56,7 +56,7 @@ const DEPT_CONFIG = {
             "Tous", "Station Totale", "GPS", "Accessoires", "Appareil de mesure",
             "Outils électriques", "Outils légers", "Quincailleries", "Monuments",
             "Véhicule Électrique", "Matériels de Sécurité", "Entrepôt Conteneur",
-            "Véhicule", "Mesure Ferroviaire"
+            "Véhicule", "Mesure Ferroviaire", "Radios", "Acc_Ferroviaires"
         ]
     },
     'I': {
@@ -76,16 +76,17 @@ const DEPT_CONFIG = {
             "Acc. Pick up", "Acc. Déneigement", "Acc. Chariot Élévateur",
             "Coffre", "Radios",
             "Outils électriques", "Outils légers", "Quincailleries",
-            "Entrepôt Conteneur", "Matériels de Sécurité", "Clôture et signalisation", "Materiels"
+            "Entrepôt Conteneur", "Matériels de Sécurité", "Clôture et signalisation", "Materiels",
+            "Quincaillerie_Ferroviaire", "Acc_Ferroviaires",
         ]
     },
     'M': {
         title: "VENTE MACHINERIE",
         placeholder: "Rechercher (ex: Générateur...)",
         categories: [
-            "Tous", "Machinerie légère", "Générateurs électriques", "Véhicule", // Originales
+            "Tous", "Machinerie légère", "Générateurs électriques", "Véhicule",
             "Compacteur", "Chauffage Électrique", "Réservoir", "Trailer",
-            "Souffleuse à neige", "Panneau d'affichage", "Nettoyeur h. pression" // Resto al final
+            "Souffleuse à neige", "Panneau d'affichage", "Nettoyeur h. pression",
         ]
     }
 };
@@ -160,6 +161,8 @@ const translations = {
             "Nettoyeur h. pression": "Nettoyeur h. pression",
             "Coffre": "Coffre",
             "Radios": "Radios",
+            "Acc_Ferroviaires": "Acc. Ferroviaires",
+            "Quincaillerie_Ferroviaire": "Quincaillerie Ferroviaire",
         },
         tooltip_title: "Inclus:",
         policy_html: `
@@ -235,6 +238,8 @@ const translations = {
             "Nettoyeur h. pression": "Pressure Washer",
             "Coffre": "Tool Chest",
             "Radios": "Radios",
+            "Acc_Ferroviaires": "Railway Acc.",
+            "Quincaillerie_Ferroviaire": "Railway Hardware",
         },
         tooltip_title: "Included:",
         policy_html: `
@@ -353,6 +358,8 @@ function cleanIconName(catName) {
         "Materiels":"Materiels",
         "Coffre": "Coffre",
         "Radios": "Radios",
+        "Acc_Ferroviaires": "Acc_Ferroviaires",
+        "Quincaillerie_Ferroviaire": "Quincaillerie_Ferroviaire",
     };
 
     if(map[catName]) return map[catName];
