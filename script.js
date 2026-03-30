@@ -56,7 +56,7 @@ const DEPT_CONFIG = {
             "Tous", "Station Totale", "GPS", "Accessoires", "Appareil de mesure",
             "Outils électriques", "Outils légers", "Quincailleries", "Monuments",
             "Véhicule Électrique", "Matériels de Sécurité", "Entrepôt Conteneur",
-            "Véhicule", "Mesure Ferroviaire", "Radios", "Acc. Ferroviaire"
+            "Véhicule", "Mesure Ferroviaire", "Acc. Ferroviaire", "Radios",
         ]
     },
     'I': {
@@ -74,10 +74,10 @@ const DEPT_CONFIG = {
         categories: [
             "Tous",
             "Acc. Pick up", "Acc. Déneigement", "Acc. Chariot Élévateur",
-            "Coffre", "Radios",
-            "Outils électriques", "Outils légers", "Quincailleries",
+            "Coffre", "Radios","Quincailleries Ferroviaire", "Acc. Ferroviaire", "Outils légers",
+            "Outils électriques",  "Quincailleries",
             "Entrepôt Conteneur", "Matériels de Sécurité", "Clôture et signalisation", "Materiels",
-            "Quincailleries Ferroviaire", "Acc. Ferroviaire",
+
         ]
     },
     'M': {
