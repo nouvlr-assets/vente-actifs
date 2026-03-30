@@ -975,7 +975,7 @@
     },
     {
         "lot": "A-101.1",
-        "prix": 0.0,
+        "prix": 8500.0,
         "categorie": "Appareil de mesure",
         "descripcion": "Drone DJI Matrice 350 RTK",
         "detalles": "DJI Matrice 350 RTK (2024)  <br>  2x Batteries TB65 (2024)  <br>  Emetteur DJI RC Plus  <br>  Chargeur BS65",
@@ -988,10 +988,10 @@
     },
     {
         "lot": "A-101.2",
-        "prix": 0.0,
+        "prix": 5500.0,
         "categorie": "Appareil de mesure",
         "descripcion": "Drone DJI Matrice 300 RTK",
-        "detalles": "DJI Matrice 300 RTK (2021)  <br>  Emetteur DJI Smart Controller Enterprise  <br>  Chargeur BS60",
+        "detalles": "DJI Matrice 300 RTK (2021)  <br>  Emetteur DJI Smart Controller Enterprise  <br>  Chargeur BS60 <br> *Manette non compatible avec le lidar*",
         "manual_url": "https://dl.djicdn.com/downloads/matrice-300/20200507/M300_RTK_Specs_EN.pdf",
         "imagenes": [
             "A-101.2.jpg"
@@ -1001,7 +1001,7 @@
     },
     {
         "lot": "A-101.3",
-        "prix": 0.0,
+        "prix": 1800.0,
         "categorie": "Appareil de mesure",
         "descripcion": "Drone accessoire Caméra DJI Zenmuse H20",
         "detalles": "Caméra DJI Zenmuse H20 (2021)  <br>  Grand Angle Zoom 23x optique",
@@ -1014,7 +1014,7 @@
     },
     {
         "lot": "A-101.4",
-        "prix": 0.0,
+        "prix": 7000.0,
         "categorie": "Appareil de mesure",
         "descripcion": "Drone accessoire Caméra DJI Zenmuse P1 avec objecOf 35 mm",
         "detalles": "Caméra DJI Zenmuse P1 (2021)  <br>  Objectif 35 mm  <br>  Photogrammétrie",
@@ -1027,7 +1027,7 @@
     },
     {
         "lot": "A-101.5",
-        "prix": 0.0,
+        "prix": 14500.0,
         "categorie": "Appareil de mesure",
         "descripcion": "Lidar DJI Zenmuse L2",
         "detalles": "Lidar DJI Zenmuse L2 (2024)",
@@ -1040,9 +1040,9 @@
     },
     {
         "lot": "A-101.6",
-        "prix": 0.0,
+        "prix": 2500.0,
         "categorie": "Appareil de mesure",
-        "descripcion": "Accessoire Drone",
+        "descripcion": "Accessoire Drone Parachute",
         "detalles": "AVSS PRS-M350 parachute (2021)  <br>  Homologué par Transports Canada",
         "manual_url": "",
         "imagenes": [
@@ -1053,22 +1053,22 @@
     },
     {
         "lot": "A-101.7",
-        "prix": 0.0,
+        "prix": 750.0,
         "categorie": "Appareil de mesure",
         "descripcion": "Accessoire Drone Batterie TB65",
-        "detalles": "Batterie TB65",
+        "detalles": "Batterie TB65 <br> Applicable sur le DJI Matrice 300 TK & DJI Matrice 350 RTK",
         "manual_url": "",
         "imagenes": [
             "A-101.7.jpg"
         ],
-        "units_available": 1,
+        "units_available": 4,
         "unit_price": 0.0
     },
     {
         "lot": "A-101.8",
-        "prix": 0.0,
+        "prix": 225.0,
         "categorie": "Appareil de mesure",
-        "descripcion": "Accessoire Drone valisepour Batterie",
+        "descripcion": "Accessoire Drone valise pour Batterie",
         "detalles": "Valise de transport pour Batterie TB60/TB65",
         "manual_url": "",
         "imagenes": [
@@ -1079,7 +1079,7 @@
     },
     {
         "lot": "A-101.9",
-        "prix": 0.0,
+        "prix": 60.0,
         "categorie": "Appareil de mesure",
         "descripcion": "Accessoire Drone Batteries WB37",
         "detalles": "Batterie WB37 (2021) - Lot de 5 unités",
@@ -1087,12 +1087,12 @@
         "imagenes": [
             "A-101.9.jpg"
         ],
-        "units_available": 1,
+        "units_available": 5,
         "unit_price": 0.0
     },
     {
         "lot": "A-101.10",
-        "prix": 0.0,
+        "prix": 75.0,
         "categorie": "Appareil de mesure",
         "descripcion": "Accessoire Drone Support Émetteur DJI C Plus",
         "detalles": "Courroie et support pour émetteur DJI RC Plus (2024)",
@@ -1105,7 +1105,7 @@
     },
     {
         "lot": "A-101.11",
-        "prix": 0.0,
+        "prix": 100.0,
         "categorie": "Appareil de mesure",
         "descripcion": "Accessoire Drone Support de caméra supérieur",
         "detalles": "Support de connecteur de cardan de caméra supérieur (2021)",
@@ -1209,10 +1209,10 @@
     },
     {
         "lot": "A-118",
-        "prix": 1776.0,
+        "prix": 1106.7,
         "categorie": "Accessoires",
-        "descripcion": "Ball Prism Ø 1.5 (38.1mm) with 1/4 external thread",
-        "detalles": "Ball Prism Ø 1.5 (38.1mm) with 1/4 external thread",
+        "descripcion": "Ball prism Ø 1.5 (30.0 mm)",
+        "detalles": "Ball prism Ø 1.5 (30.0 mm) with 1/4 external thread aimanté",
         "manual_url": "",
         "imagenes": [
             "A-118.jpg"
@@ -1222,10 +1222,10 @@
     },
     {
         "lot": "A-118",
-        "prix": 1106.7,
+        "prix": 1776.0,
         "categorie": "Accessoires",
-        "descripcion": "Ball prism Ø 1.5 (30.0 mm)",
-        "detalles": "Ball prism Ø 1.5 (30.0 mm) with 1/4 external thread aimanté",
+        "descripcion": "Ball Prism Ø 1.5 (38.1mm) with 1/4 external thread",
+        "detalles": "Ball Prism Ø 1.5 (38.1mm) with 1/4 external thread",
         "manual_url": "",
         "imagenes": [
             "A-118.jpg"
@@ -1781,7 +1781,7 @@
     },
     {
         "lot": "A-154",
-        "prix": 942099.0,
+        "prix": 9420.99,
         "categorie": "Accessoires",
         "descripcion": "Trimble AD-12 Enmbase AutoNivelante",
         "detalles": "Trimble AD-12 Enmbase AutoNivelante",
@@ -2513,7 +2513,7 @@
     },
     {
         "lot": "A-604.1",
-        "prix": 150.0,
+        "prix": 250.0,
         "categorie": "Appareil de mesure",
         "descripcion": "Caméra GoPro Héro10",
         "detalles": "Caméra GoPro Héro10",
@@ -2861,7 +2861,7 @@
         "prix": 120800.0,
         "categorie": "Acc. Pick up",
         "descripcion": "Couvre Boite",
-        "detalles": "Différents modèles",
+        "detalles": "Différents modèles <br> Prix valeur à neuf <br> *Prix négociable selon offre sérieuse*",
         "manual_url": "",
         "imagenes": [
             "O-1.jpg"
@@ -2874,7 +2874,7 @@
         "prix": 32000.0,
         "categorie": "Acc. Pick up",
         "descripcion": "Back Rack usagé",
-        "detalles": "Back Rack usagé",
+        "detalles": "Back Rack usagé <br> Prix valeur à neuf <br> *Prix négociable selon offre sérieuse*",
         "manual_url": "",
         "imagenes": [
             "O-2.jpg"
@@ -2887,7 +2887,7 @@
         "prix": 160000.0,
         "categorie": "Acc. Pick up",
         "descripcion": "Back Rack Neuf",
-        "detalles": "Back Rack Neuf",
+        "detalles": "Back Rack Neuf <br> Prix valeur à neuf <br> *Prix négociable selon offre sérieuse*",
         "manual_url": "",
         "imagenes": [
             "O-3.jpg"
@@ -2900,7 +2900,7 @@
         "prix": 16000.0,
         "categorie": "Acc. Pick up",
         "descripcion": "Flèche pliable sur Back Rack",
-        "detalles": "FL1-L21240 (Pliable)",
+        "detalles": "FL1-L21240 (Pliable) <br> Prix valeur à neuf <br> *Prix négociable selon offre sérieuse*",
         "manual_url": "",
         "imagenes": [
             "O-4.jpg"
@@ -2913,7 +2913,7 @@
         "prix": 10000.0,
         "categorie": "Acc. Pick up",
         "descripcion": "Flèche Fixe sur Back Rack",
-        "detalles": "FL1-L21240 (Fixe)",
+        "detalles": "FL1-L21240 (Fixe) <br> Prix valeur à neuf <br> *Prix négociable selon offre sérieuse*",
         "manual_url": "",
         "imagenes": [
             "O-5.jpg"
@@ -2926,7 +2926,7 @@
         "prix": 4500.0,
         "categorie": "Acc. Pick up",
         "descripcion": "Boite en Fibre pour Pick up",
-        "detalles": "Fibrobec Loisir 8'",
+        "detalles": "Fibrobec Loisir 8' <br> Prix valeur à neuf <br> *Prix négociable selon offre sérieuse*",
         "manual_url": "",
         "imagenes": [
             "O-6.jpg"
@@ -2939,7 +2939,7 @@
         "prix": 4000.0,
         "categorie": "Acc. Pick up",
         "descripcion": "Boite en Fibre pour Pick up",
-        "detalles": "Fibrobec Compak 7'",
+        "detalles": "Fibrobec Compak 7' <br> Prix valeur à neuf <br> *Prix négociable selon offre sérieuse*",
         "manual_url": "",
         "imagenes": [
             "O-7.jpg"
@@ -2952,7 +2952,7 @@
         "prix": 6500.0,
         "categorie": "Acc. Pick up",
         "descripcion": "Boite pour Ford",
-        "detalles": "Grandeur 8'",
+        "detalles": "Grandeur 8' <br> Prix valeur à neuf <br> *Prix négociable selon offre sérieuse*",
         "manual_url": "",
         "imagenes": [
             "O-8.jpg"
@@ -2965,7 +2965,7 @@
         "prix": 10513.0,
         "categorie": "Acc. Déneigement",
         "descripcion": "Saleuse",
-        "detalles": "Steel-Caster 7' 1.5YD",
+        "detalles": "Steel-Caster 7' 1.5YD <br> Prix valeur à neuf <br> *Prix négociable selon offre sérieuse*",
         "manual_url": "",
         "imagenes": [
             "O-9.jpg"
@@ -2978,7 +2978,7 @@
         "prix": 61295.0,
         "categorie": "Acc. Déneigement",
         "descripcion": "Pelle de déneigement",
-        "detalles": "Grandeur 8' <br> Modèle: 90800-HD2",
+        "detalles": "Grandeur 8' <br> Modèle: 90800-HD2 <br> Prix valeur à neuf <br> *Prix négociable selon offre sérieuse*",
         "manual_url": "",
         "imagenes": [
             "O-10.jpg"
@@ -2991,7 +2991,7 @@
         "prix": 12260.0,
         "categorie": "Acc. Déneigement",
         "descripcion": "Pelle de déneigement",
-        "detalles": "Grandeur 7' 6'' <br> Modèle:69400-HT Series",
+        "detalles": "Grandeur 7' 6'' <br> Modèle:69400-HT Series <br> Prix valeur à neuf <br> *Prix négociable selon offre sérieuse*",
         "manual_url": "",
         "imagenes": [
             "O-11.jpg"
@@ -3004,7 +3004,7 @@
         "prix": 6000.0,
         "categorie": "Acc. Chariot Élévateur",
         "descripcion": "Fourche",
-        "detalles": "Kit de Fourche 4'",
+        "detalles": "Kit de Fourche 4' <br> Prix valeur à neuf <br> *Prix négociable selon offre sérieuse*",
         "manual_url": "",
         "imagenes": [
             "O-12.jpg"
@@ -3017,7 +3017,7 @@
         "prix": 2500.0,
         "categorie": "Acc. Chariot Élévateur",
         "descripcion": "Fourche",
-        "detalles": "Kit de Fourche 6'",
+        "detalles": "Kit de Fourche 6' <br> Prix valeur à neuf <br> *Prix négociable selon offre sérieuse*",
         "manual_url": "",
         "imagenes": [
             "O-13.jpg"
@@ -3030,7 +3030,7 @@
         "prix": 3500.0,
         "categorie": "Acc. Chariot Élévateur",
         "descripcion": "Godet",
-        "detalles": "Godet pour Chariot élévateur",
+        "detalles": "Godet pour Chariot élévateur <br> Prix valeur à neuf <br> *Prix négociable selon offre sérieuse*",
         "manual_url": "",
         "imagenes": [
             "O-14.jpg"
@@ -3043,7 +3043,7 @@
         "prix": 4500.0,
         "categorie": "Acc. Chariot Élévateur",
         "descripcion": "Godet de déneigement",
-        "detalles": "Modèle:HLA SP350008 <br> No Série:21201598",
+        "detalles": "Modèle:HLA SP350008 <br> No Série:21201598 <br> Prix valeur à neuf <br> *Prix négociable selon offre sérieuse*",
         "manual_url": "",
         "imagenes": [
             "O-15.jpg"
@@ -3122,6 +3122,520 @@
             "O-19_A.jpg",
             "O-19_B.jpg",
             "O-19_C.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-21",
+        "prix": 0.0,
+        "categorie": "Quincailleries Ferroviaire",
+        "descripcion": "Ancrage[o]",
+        "detalles": "Ancrage  <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",254",
+        "imagenes": [
+            "O-21.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-22",
+        "prix": 0.0,
+        "categorie": "Quincailleries Ferroviaire",
+        "descripcion": "Bolts[o]",
+        "detalles": "Bolts <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",255",
+        "imagenes": [
+            "O-22.jpg",
+            "O-22_A.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-23",
+        "prix": 0.0,
+        "categorie": "Quincailleries Ferroviaire",
+        "descripcion": "Bouteille & Butterfly Clip[o]",
+        "detalles": "Bouteille & Butterfly Clip <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",256",
+        "imagenes": [
+            "O-23.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-24",
+        "prix": 0.0,
+        "categorie": "Quincailleries Ferroviaire",
+        "descripcion": "C Channel[o]",
+        "detalles": "C Channel <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",257",
+        "imagenes": [
+            "O-24.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-25",
+        "prix": 0.0,
+        "categorie": "Acc. Ferroviaire",
+        "descripcion": "Dérailleurs & Flag[o]",
+        "detalles": "Dérailleurs & Flag <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",258",
+        "imagenes": [
+            "O-25.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-26",
+        "prix": 0.0,
+        "categorie": "Quincailleries Ferroviaire",
+        "descripcion": "DF Hardware[o]",
+        "detalles": "DF Hardware <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",259",
+        "imagenes": [
+            "O-26.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-27",
+        "prix": 0.0,
+        "categorie": "Quincailleries Ferroviaire",
+        "descripcion": "DF Pads[o]",
+        "detalles": "DF Pads <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",260",
+        "imagenes": [
+            "O-27.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-28",
+        "prix": 0.0,
+        "categorie": "Quincailleries Ferroviaire",
+        "descripcion": "DF Plates[o]",
+        "detalles": "DF Plates <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",261",
+        "imagenes": [
+            "O-28.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-29",
+        "prix": 0.0,
+        "categorie": "Quincailleries Ferroviaire",
+        "descripcion": "Gage Pads Standards[o]",
+        "detalles": "Gage Pads Standards <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",262",
+        "imagenes": [
+            "O-29.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-30",
+        "prix": 0.0,
+        "categorie": "Quincailleries Ferroviaire",
+        "descripcion": "Gage Pads Bi-Block[o]",
+        "detalles": "Gage Pads Bi-Block <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",263",
+        "imagenes": [
+            "O-30.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-31",
+        "prix": 0.0,
+        "categorie": "Quincailleries Ferroviaire",
+        "descripcion": "Poubelle Shack[o]",
+        "detalles": "Poubelle Shack <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",264",
+        "imagenes": [
+            "O-31.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-32",
+        "prix": 0.0,
+        "categorie": "Quincailleries Ferroviaire",
+        "descripcion": "Hollow Tie Plate[o]",
+        "detalles": "Hollow Tie Plate <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",265",
+        "imagenes": [
+            "O-32.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-33",
+        "prix": 0.0,
+        "categorie": "Quincailleries Ferroviaire",
+        "descripcion": "Iron Horse Hands[o]",
+        "detalles": "Iron Horse Hands <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",266",
+        "imagenes": [
+            "O-33.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-34",
+        "prix": 0.0,
+        "categorie": "Quincailleries Ferroviaire",
+        "descripcion": "Joint Bar[o]",
+        "detalles": "Joint Bar <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",267",
+        "imagenes": [
+            "O-34.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-35",
+        "prix": 0.0,
+        "categorie": "Quincailleries Ferroviaire",
+        "descripcion": "Jordan Rail[o]",
+        "detalles": "Jordan Rail <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",268",
+        "imagenes": [
+            "O-35.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-36",
+        "prix": 0.0,
+        "categorie": "Quincailleries Ferroviaire",
+        "descripcion": "L Bracket[o]",
+        "detalles": "L Bracket <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",269",
+        "imagenes": [
+            "O-36.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-37",
+        "prix": 0.0,
+        "categorie": "Quincailleries Ferroviaire",
+        "descripcion": "M-180[o]",
+        "detalles": "M-180 <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",270",
+        "imagenes": [
+            "O-37.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-38",
+        "prix": 0.0,
+        "categorie": "Quincailleries Ferroviaire",
+        "descripcion": "Nuts[o]",
+        "detalles": "Nuts <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",271",
+        "imagenes": [
+            "O-38.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-39",
+        "prix": 0.0,
+        "categorie": "Quincailleries Ferroviaire",
+        "descripcion": "Pandrol[o]",
+        "detalles": "Pandrol <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",272",
+        "imagenes": [
+            "O-39.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-40",
+        "prix": 0.0,
+        "categorie": "Quincailleries Ferroviaire",
+        "descripcion": "Pad Bleu[o]",
+        "detalles": "Pad Bleu <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",273",
+        "imagenes": [
+            "O-40.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-41",
+        "prix": 0.0,
+        "categorie": "Quincailleries Ferroviaire",
+        "descripcion": "Push and Pull[o]",
+        "detalles": "Push and Pull <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",274",
+        "imagenes": [
+            "O-41.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-42",
+        "prix": 0.0,
+        "categorie": "Quincailleries Ferroviaire",
+        "descripcion": "Rail Ancers[o]",
+        "detalles": "Rail Ancers <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",275",
+        "imagenes": [
+            "O-42.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-43",
+        "prix": 0.0,
+        "categorie": "Quincailleries Ferroviaire",
+        "descripcion": "Rail Cart[o]",
+        "detalles": "Rail Cart <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",276",
+        "imagenes": [
+            "O-43.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-44",
+        "prix": 0.0,
+        "categorie": "Quincailleries Ferroviaire",
+        "descripcion": "Rail Pads[o]",
+        "detalles": "Rail Pads <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",277",
+        "imagenes": [
+            "O-44.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-45",
+        "prix": 0.0,
+        "categorie": "Quincailleries Ferroviaire",
+        "descripcion": "Rollers[o]",
+        "detalles": "Rollers <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",278",
+        "imagenes": [
+            "O-45.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-46",
+        "prix": 0.0,
+        "categorie": "Quincailleries Ferroviaire",
+        "descripcion": "Shim[o]",
+        "detalles": "Shim <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",279",
+        "imagenes": [
+            "O-46.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-47",
+        "prix": 0.0,
+        "categorie": "Quincailleries Ferroviaire",
+        "descripcion": "Sleeve for Heater[o]",
+        "detalles": "Sleeve for Heater <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",280",
+        "imagenes": [
+            "O-47.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-48",
+        "prix": 0.0,
+        "categorie": "Quincailleries Ferroviaire",
+        "descripcion": "Spike Screw[o]",
+        "detalles": "Spike Screw <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",281",
+        "imagenes": [
+            "O-48.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-49",
+        "prix": 0.0,
+        "categorie": "Quincailleries Ferroviaire",
+        "descripcion": "Spindle[o]",
+        "detalles": "Spindle <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",282",
+        "imagenes": [
+            "O-49.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-50",
+        "prix": 0.0,
+        "categorie": "Quincailleries Ferroviaire",
+        "descripcion": "Sping Washer[o]",
+        "detalles": "Spring Washer <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",283",
+        "imagenes": [
+            "O-50.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-51",
+        "prix": 0.0,
+        "categorie": "Quincailleries Ferroviaire",
+        "descripcion": "Station Brace[o]",
+        "detalles": "Station Brace  <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",284",
+        "imagenes": [
+            "O-51.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-52",
+        "prix": 0.0,
+        "categorie": "Quincailleries Ferroviaire",
+        "descripcion": "Stiffness Pads[o]",
+        "detalles": "Stiffness Pads <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",285",
+        "imagenes": [
+            "O-52.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-53",
+        "prix": 0.0,
+        "categorie": "Quincailleries Ferroviaire",
+        "descripcion": "Tie Pad[o]",
+        "detalles": "Tie Pad <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",286",
+        "imagenes": [
+            "O-53.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-54",
+        "prix": 0.0,
+        "categorie": "Quincailleries Ferroviaire",
+        "descripcion": "Tie Plate[o]",
+        "detalles": "Tie Plate <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",287",
+        "imagenes": [
+            "O-54.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-55",
+        "prix": 0.0,
+        "categorie": "Quincailleries Ferroviaire",
+        "descripcion": "Washers[o]",
+        "detalles": "Washers <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",288",
+        "imagenes": [
+            "O-55.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-56",
+        "prix": 0.0,
+        "categorie": "Quincailleries Ferroviaire",
+        "descripcion": "Wheel Shocks[o]",
+        "detalles": "Wheel Shocks <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",289",
+        "imagenes": [
+            "O-56.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-57",
+        "prix": 10000.0,
+        "categorie": "Outils légers",
+        "descripcion": "Laser",
+        "detalles": "Laser <br> Prix valeur à neuf <br> *Prix négociable selon offre sérieuse*",
+        "manual_url": "",
+        "imagenes": [
+            "O-57.jpg",
+            "O-57_A.jpg",
+            "O-57_B.jpg",
+            "O-57_C.jpg",
+            "O-57_D.jpg"
+        ],
+        "units_available": 7,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-58",
+        "prix": 1700.0,
+        "categorie": "Outils légers",
+        "descripcion": "Spider Box",
+        "detalles": "Spider Box <br> Prix valeur à neuf <br> *Prix négociable selon offre sérieuse*",
+        "manual_url": "",
+        "imagenes": [
+            "O-58.jpg",
+            "O-58_A.jpg"
+        ],
+        "units_available": 10,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-59",
+        "prix": 0.0,
+        "categorie": "Outils légers",
+        "descripcion": "Coffrag Rod Vibrateur & Convertisseur[o]",
+        "detalles": "Coffrage <br> Rod <br> Vibrateur & Convertisseur <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",292",
+        "imagenes": [
+            "O-59.jpg",
+            "O-59_A.jpg"
         ],
         "units_available": 1,
         "unit_price": 0.0
