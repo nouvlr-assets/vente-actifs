@@ -1053,7 +1053,7 @@
     },
     {
         "lot": "A-101.7",
-        "prix": 750.0,
+        "prix": 3000.0,
         "categorie": "Appareil de mesure",
         "descripcion": "Accessoire Drone Batterie TB65",
         "detalles": "Batterie TB65 <br> Applicable sur le DJI Matrice 300 TK & DJI Matrice 350 RTK",
@@ -1062,7 +1062,7 @@
             "A-101.7.jpg"
         ],
         "units_available": 4,
-        "unit_price": 0.0
+        "unit_price": 750.0
     },
     {
         "lot": "A-101.8",
@@ -1079,7 +1079,7 @@
     },
     {
         "lot": "A-101.9",
-        "prix": 60.0,
+        "prix": 300.0,
         "categorie": "Appareil de mesure",
         "descripcion": "Accessoire Drone Batteries WB37",
         "detalles": "Batterie WB37 (2021) - Lot de 5 unités",
@@ -1088,7 +1088,7 @@
             "A-101.9.jpg"
         ],
         "units_available": 5,
-        "unit_price": 0.0
+        "unit_price": 60.0
     },
     {
         "lot": "A-101.10",
