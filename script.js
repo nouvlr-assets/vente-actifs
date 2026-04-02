@@ -56,7 +56,7 @@ const DEPT_CONFIG = {
             "Tous", "Station Totale", "GPS", "Accessoires", "Appareil de mesure",
             "Outils électriques", "Outils légers", "Quincailleries", "Monuments",
             "Véhicule Électrique", "Matériels de Sécurité", "Entrepôt Conteneur",
-            "Véhicule", "Mesure Ferroviaire", "Acc. Ferroviaire", "Radios",
+            "Véhicule", "Mesure Ferroviaire", "Acc. Ferroviaire", "Radios", "Drone",
         ]
     },
     'I': {
@@ -163,6 +163,7 @@ const translations = {
             "Radios": "Radios",
             "Acc_Ferroviaires": "Acc. Ferroviaires",
             "Quincaillerie_Ferroviaire": "Quincaillerie Ferroviaire",
+            "Drone": "Drone"
         },
         tooltip_title: "Inclus:",
         policy_html: `
@@ -240,6 +241,7 @@ const translations = {
             "Radios": "Radios",
             "Acc_Ferroviaires": "Railway Acc.",
             "Quincaillerie_Ferroviaire": "Railway Hardware",
+            "Drone": "Drone",
         },
         tooltip_title: "Included:",
         policy_html: `
@@ -360,6 +362,7 @@ function cleanIconName(catName) {
         "Radios": "Radios",
         "Acc_Ferroviaires": "Acc_Ferroviaires",
         "Quincaillerie_Ferroviaire": "Quincaillerie_Ferroviaire",
+        "Drone": "Drone",
     };
 
     if(map[catName]) return map[catName];
