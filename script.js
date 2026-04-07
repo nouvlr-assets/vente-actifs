@@ -75,6 +75,7 @@ const DEPT_CONFIG = {
             "Tous",
             "Acc. Pick up", "Acc. Déneigement", "Acc. Chariot Élévateur",
             "Coffre", "Radios","Quincailleries Ferroviaire", "Acc. Ferroviaire", "Outils légers",
+            "Sanitaire",
             "Outils électriques",  "Quincailleries",
             "Entrepôt Conteneur", "Matériels de Sécurité", "Clôture et signalisation", "Materiels",
 
@@ -87,6 +88,7 @@ const DEPT_CONFIG = {
             "Tous", "Machinerie légère", "Générateurs électriques", "Véhicule",
             "Compacteur", "Chauffage Électrique", "Réservoir", "Trailer",
             "Souffleuse à neige", "Panneau d'affichage", "Nettoyeur h. pression",
+            "Machinerie Ferroviaire",
         ]
     }
 };
@@ -163,7 +165,9 @@ const translations = {
             "Radios": "Radios",
             "Acc_Ferroviaires": "Acc. Ferroviaires",
             "Quincaillerie_Ferroviaire": "Quincaillerie Ferroviaire",
-            "Drone": "Drone"
+            "Drone": "Drone",
+            "Sanitaire": "Sanitaire",
+            "Machinerie Ferroviaire": "Machinerie Ferroviaire",
         },
         tooltip_title: "Inclus:",
         policy_html: `
@@ -242,6 +246,8 @@ const translations = {
             "Acc_Ferroviaires": "Railway Acc.",
             "Quincaillerie_Ferroviaire": "Railway Hardware",
             "Drone": "Drone",
+            "Sanitaire": "Sanitary",
+            "Machinerie Ferroviaire": "Railway Machinery",
         },
         tooltip_title: "Included:",
         policy_html: `
@@ -363,6 +369,8 @@ function cleanIconName(catName) {
         "Acc_Ferroviaires": "Acc_Ferroviaires",
         "Quincaillerie_Ferroviaire": "Quincaillerie_Ferroviaire",
         "Drone": "Drone",
+        "Sanitaire": "Sanitaire",
+        "Machinerie Ferroviaire": "Machinerie_Ferroviaire",
     };
 
     if(map[catName]) return map[catName];
