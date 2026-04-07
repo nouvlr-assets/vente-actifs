@@ -1380,3 +1380,47 @@ a.nav-btn:hover { color: var(--color-acento-secundario); }
     font-weight: bold;
     color: #07284f;
 }
+
+/* --- Estilo del GIF Promocional --- */
+/* --- style.css UPDATE --- */
+.promo-banner {
+    position: fixed;
+    top: 150px;
+    right: 30px;
+    z-index: 9999;
+
+    /* 1. CREAMOS LA CAJA AQUÍ */
+    background-color: #000;    /* Fondo negro para que se fusione con el GIF */
+    padding: 15px;             /* ESTO es lo que da aire a las letras */
+    border-radius: 18px;       /* Bordes redondeados de la caja */
+    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.promo-banner img {
+    /* 2. ACHICAMOS UN PELÍN EL GIF DENTRO DE LA CAJA */
+    width: 120px;              /* Ajusta este ancho a tu gusto */
+    height: auto;
+    display: block;
+    border-radius: 0;          /* Ya no necesita borde el GIF, lo tiene la caja */
+}
+
+/* Efecto hover */
+.promo-banner:hover {
+    transform: scale(1.1) rotate(3deg); /* Un pequeño giro le da un toque más "oferta" */
+}
+
+@media (max-width: 800px) {
+    .promo-banner {
+        width: 80px;
+        padding: 10px;
+        top: 100px;
+    }
+    .promo-banner img {
+        width: 60px;
+    }
+}
