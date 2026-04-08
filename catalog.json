@@ -1212,7 +1212,7 @@
         "prix": 1051.36,
         "categorie": "Accessoires",
         "descripcion": "Ball prism Ø 1.5 (30.0 mm)",
-        "detalles": "Ball prism Ø 1.5 (30.0 mm) with 1/4 external thread aimanté",
+        "detalles": "Ball prism Ø 1.5 (30.0 mm) avec 1/4 external thread aimanté",
         "manual_url": "",
         "imagenes": [
             "A-118.jpg"
@@ -1221,14 +1221,14 @@
         "unit_price": 0.0
     },
     {
-        "lot": "A-118",
-        "prix": 1687.2,
+        "lot": "A-118.1",
+        "prix": 2000.0,
         "categorie": "Accessoires",
-        "descripcion": "Ball Prism Ø 1.5 (38.1mm) with 1/4 external thread",
-        "detalles": "Ball Prism Ø 1.5 (38.1mm) with 1/4 external thread",
-        "manual_url": "",
+        "descripcion": "Ball prism Ø 1.5 (381 mm)",
+        "detalles": "Ball prism Ø 1.5 (38,1 mm) avec  1/4 external thread aimanté",
+        "manual_url": ",95",
         "imagenes": [
-            "A-118.jpg"
+            "A-118.1.jpg"
         ],
         "units_available": 1,
         "unit_price": 0.0
