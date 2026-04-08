@@ -53,10 +53,10 @@
     },
     {
         "lot": "A-18",
-        "prix": 27645.0,
+        "prix": 23750.0,
         "categorie": "Station Totale",
         "descripcion": "Station Totale TS16 P 2 R500",
-        "detalles": "Station Totale TS16 P 2 R500 (2020)  <br>  Poignée radio RH17  <br>  Embase GDF321  <br>  Contrôleur CS20 LTE  <br>  Chargeur GKL341  <br>  Prisme 360 GRZ122  <br>  Trépied",
+        "detalles": "Station Totale TS16 P 2 R500 (2020)  <br>  Poignée radio RH17  <br>  Embase GDF321  <br>  Prisme 360 GRZ4  <br>  Trépied",
         "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_ts16_ds.ashx",
         "imagenes": [
             "A-18.jpg"
@@ -66,10 +66,10 @@
     },
     {
         "lot": "A-19",
-        "prix": 27645.0,
+        "prix": 23750.0,
         "categorie": "Station Totale",
         "descripcion": "Station Totale TS16 P 2 R500",
-        "detalles": "Station Totale TS16 P 2 R500 (2020)  <br>  Poignée radio RH17  <br>  Embase GDF321  <br>  Contrôleur CS20  <br>  Chargeur GKL341  <br>  Prisme 360 GRZ122  <br>  Trépied",
+        "detalles": "Station Totale TS16 P 2 R500 (2020)  <br>  Poignée radio RH17  <br>  Embase GDF321  <br>  Prisme 360 GRZ4  <br>  Trépied",
         "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_ts16_ds.ashx",
         "imagenes": [
             "A-19.jpg"
