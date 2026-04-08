@@ -2857,12 +2857,38 @@
         "unit_price": 0.0
     },
     {
+        "lot": "A-1000",
+        "prix": 1200.0,
+        "categorie": "Radios",
+        "descripcion": "Radio Kenwood",
+        "detalles": "Radio Kenwood <br> Inclus: batterie et chargeur",
+        "manual_url": "",
+        "imagenes": [
+            "A-1000.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "A-1001",
+        "prix": 500.0,
+        "categorie": "Radios",
+        "descripcion": "Radio Motorola",
+        "detalles": "Radio Motorola <br> Inclus: batterie et chargeur",
+        "manual_url": "",
+        "imagenes": [
+            "A-1001.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
         "lot": "I-1",
         "prix": 1250.0,
         "categorie": "Écrans",
         "descripcion": "Écran d'ordinateur",
         "detalles": "Écran d'ordinateur <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",235",
+        "manual_url": ",237",
         "imagenes": [
             "I-1.jpg"
         ],
@@ -3086,7 +3112,7 @@
         "categorie": "Radios",
         "descripcion": "Radios et Accessoires[o]",
         "detalles": "Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",252",
+        "manual_url": ",254",
         "imagenes": [
             "O-17.jpg",
             "O-17_A.jpg",
@@ -3145,7 +3171,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Ancrage[o]",
         "detalles": "Ancrage  <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",255",
+        "manual_url": ",257",
         "imagenes": [
             "O-21.jpg"
         ],
@@ -3158,7 +3184,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Bolts[o]",
         "detalles": "Bolts <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",256",
+        "manual_url": ",258",
         "imagenes": [
             "O-22.jpg",
             "O-22_A.jpg"
@@ -3172,7 +3198,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Bouteille & Butterfly Clip[o]",
         "detalles": "Bouteille & Butterfly Clip <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",257",
+        "manual_url": ",259",
         "imagenes": [
             "O-23.jpg"
         ],
@@ -3185,7 +3211,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "C Channel[o]",
         "detalles": "C Channel <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",258",
+        "manual_url": ",260",
         "imagenes": [
             "O-24.jpg"
         ],
@@ -3198,7 +3224,7 @@
         "categorie": "Acc. Ferroviaire",
         "descripcion": "Dérailleurs & Flag[o]",
         "detalles": "Dérailleurs & Flag <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",259",
+        "manual_url": ",261",
         "imagenes": [
             "O-25.jpg"
         ],
@@ -3211,7 +3237,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "DF Hardware[o]",
         "detalles": "DF Hardware <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",260",
+        "manual_url": ",262",
         "imagenes": [
             "O-26.jpg"
         ],
@@ -3224,7 +3250,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "DF Pads[o]",
         "detalles": "DF Pads <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",261",
+        "manual_url": ",263",
         "imagenes": [
             "O-27.jpg"
         ],
@@ -3237,7 +3263,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "DF Plates[o]",
         "detalles": "DF Plates <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",262",
+        "manual_url": ",264",
         "imagenes": [
             "O-28.jpg"
         ],
@@ -3250,7 +3276,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Gage Pads Standards[o]",
         "detalles": "Gage Pads Standards <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",263",
+        "manual_url": ",265",
         "imagenes": [
             "O-29.jpg"
         ],
@@ -3263,7 +3289,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Gage Pads Bi-Block[o]",
         "detalles": "Gage Pads Bi-Block <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",264",
+        "manual_url": ",266",
         "imagenes": [
             "O-30.jpg"
         ],
@@ -3276,7 +3302,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Poubelle Shack[o]",
         "detalles": "Poubelle Shack <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",265",
+        "manual_url": ",267",
         "imagenes": [
             "O-31.jpg"
         ],
@@ -3289,7 +3315,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Hollow Tie Plate[o]",
         "detalles": "Hollow Tie Plate <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",266",
+        "manual_url": ",268",
         "imagenes": [
             "O-32.jpg"
         ],
@@ -3302,7 +3328,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Iron Horse Hands[o]",
         "detalles": "Iron Horse Hands <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",267",
+        "manual_url": ",269",
         "imagenes": [
             "O-33.jpg"
         ],
@@ -3315,7 +3341,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Joint Bar[o]",
         "detalles": "Joint Bar <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",268",
+        "manual_url": ",270",
         "imagenes": [
             "O-34.jpg"
         ],
@@ -3328,7 +3354,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Jordan Rail[o]",
         "detalles": "Jordan Rail <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",269",
+        "manual_url": ",271",
         "imagenes": [
             "O-35.jpg"
         ],
@@ -3341,7 +3367,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "L Bracket[o]",
         "detalles": "L Bracket <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",270",
+        "manual_url": ",272",
         "imagenes": [
             "O-36.jpg"
         ],
@@ -3354,7 +3380,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "M-180[o]",
         "detalles": "M-180 <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",271",
+        "manual_url": ",273",
         "imagenes": [
             "O-37.jpg"
         ],
@@ -3367,7 +3393,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Nuts[o]",
         "detalles": "Nuts <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",272",
+        "manual_url": ",274",
         "imagenes": [
             "O-38.jpg"
         ],
@@ -3380,7 +3406,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Pandrol[o]",
         "detalles": "Pandrol <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",273",
+        "manual_url": ",275",
         "imagenes": [
             "O-39.jpg"
         ],
@@ -3393,7 +3419,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Pad Bleu[o]",
         "detalles": "Pad Bleu <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",274",
+        "manual_url": ",276",
         "imagenes": [
             "O-40.jpg"
         ],
@@ -3406,7 +3432,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Push and Pull[o]",
         "detalles": "Push and Pull <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",275",
+        "manual_url": ",277",
         "imagenes": [
             "O-41.jpg"
         ],
@@ -3419,7 +3445,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Rail Ancers[o]",
         "detalles": "Rail Ancers <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",276",
+        "manual_url": ",278",
         "imagenes": [
             "O-42.jpg"
         ],
@@ -3432,7 +3458,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Rail Cart[o]",
         "detalles": "Rail Cart <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",277",
+        "manual_url": ",279",
         "imagenes": [
             "O-43.jpg"
         ],
@@ -3445,7 +3471,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Rail Pads[o]",
         "detalles": "Rail Pads <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",278",
+        "manual_url": ",280",
         "imagenes": [
             "O-44.jpg"
         ],
@@ -3458,7 +3484,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Rollers[o]",
         "detalles": "Rollers <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",279",
+        "manual_url": ",281",
         "imagenes": [
             "O-45.jpg"
         ],
@@ -3471,7 +3497,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Shim[o]",
         "detalles": "Shim <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",280",
+        "manual_url": ",282",
         "imagenes": [
             "O-46.jpg"
         ],
@@ -3484,7 +3510,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Sleeve for Heater[o]",
         "detalles": "Sleeve for Heater <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",281",
+        "manual_url": ",283",
         "imagenes": [
             "O-47.jpg"
         ],
@@ -3497,7 +3523,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Spike Screw[o]",
         "detalles": "Spike Screw <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",282",
+        "manual_url": ",284",
         "imagenes": [
             "O-48.jpg"
         ],
@@ -3510,7 +3536,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Spindle[o]",
         "detalles": "Spindle <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",283",
+        "manual_url": ",285",
         "imagenes": [
             "O-49.jpg"
         ],
@@ -3523,7 +3549,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Sping Washer[o]",
         "detalles": "Spring Washer <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",284",
+        "manual_url": ",286",
         "imagenes": [
             "O-50.jpg"
         ],
@@ -3536,7 +3562,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Station Brace[o]",
         "detalles": "Station Brace  <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",285",
+        "manual_url": ",287",
         "imagenes": [
             "O-51.jpg"
         ],
@@ -3549,7 +3575,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Stiffness Pads[o]",
         "detalles": "Stiffness Pads <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",286",
+        "manual_url": ",288",
         "imagenes": [
             "O-52.jpg"
         ],
@@ -3562,7 +3588,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Tie Pad[o]",
         "detalles": "Tie Pad <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",287",
+        "manual_url": ",289",
         "imagenes": [
             "O-53.jpg"
         ],
@@ -3575,7 +3601,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Tie Plate[o]",
         "detalles": "Tie Plate <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",288",
+        "manual_url": ",290",
         "imagenes": [
             "O-54.jpg"
         ],
@@ -3588,7 +3614,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Washers[o]",
         "detalles": "Washers <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",289",
+        "manual_url": ",291",
         "imagenes": [
             "O-55.jpg"
         ],
@@ -3601,7 +3627,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Wheel Shocks[o]",
         "detalles": "Wheel Shocks <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",290",
+        "manual_url": ",292",
         "imagenes": [
             "O-56.jpg"
         ],
@@ -3645,7 +3671,7 @@
         "categorie": "Outils légers",
         "descripcion": "Coffrage Rod Vibrateur & Convertisseur[o]",
         "detalles": "Coffrage <br> Rod <br> Vibrateur & Convertisseur <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",293",
+        "manual_url": ",295",
         "imagenes": [
             "O-59.jpg",
             "O-59_A.jpg"
@@ -3672,7 +3698,7 @@
         "categorie": "Sanitaire",
         "descripcion": "Station de lavage mobile autonome avec pompe au pied[o]",
         "detalles": "Station de lavage mobile autonome avec pompe au pied <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",295",
+        "manual_url": ",297",
         "imagenes": [
             "O-61.jpg"
         ],
@@ -3685,7 +3711,7 @@
         "categorie": "Outils électriques",
         "descripcion": "Power Wrench[o]",
         "detalles": "Power Wrench <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",296",
+        "manual_url": ",298",
         "imagenes": [
             "O-62.jpg"
         ],
@@ -3698,7 +3724,7 @@
         "categorie": "Outils électriques",
         "descripcion": "Power Pack[o]",
         "detalles": "Power Pack <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",297",
+        "manual_url": ",299",
         "imagenes": [
             "O-63.jpg"
         ],
