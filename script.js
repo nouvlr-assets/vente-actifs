@@ -904,3 +904,32 @@ function agregarOfertaAlCarrito(lotId) {
     inputPrecio.value = '';
     alert("Offre ajoutée au panier.");
 }
+/**
+ * Gestiona el contador de unidades para lotes divisibles.
+ * @param {string} lotId - ID del lote (ej: 'A-504.5')
+ * @param {number} delta - Cambio en la cantidad (+1 o -1)
+ * @param {number} maxDisponible - Límite máximo de unidades del lote
+ */
+
+window.cambiarCantidad = function(lotId, delta, maxDisponible) {
+    // 1. Inicializar el valor en el objeto de selecciones si no existe
+    if (typeof unitSelections[lotId] === 'undefined') {
+        unitSelections[lotId] = 0;
+    }
+
+    // 2. Calcular la nueva cantidad
+    let nuevoValor = unitSelections[lotId] + delta;
+
+    // 3. Validar que no sea menor que 0 ni mayor que el stock
+    if (nuevoValor < 0) nuevoValor = 0;
+    if (nuevoValor > maxDisponible) nuevoValor = maxDisponible;
+
+    // 4. Guardar el nuevo valor en el objeto global
+    unitSelections[lotId] = nuevoValor;
+
+    // 5. Actualizar el texto en la tarjeta (el <span> que tiene el número)
+    const contadorVisual = document.getElementById(`count-${lotId}`);
+    if (contadorVisual) {
+        contadorVisual.innerText = nuevoValor;
+    }
+};
