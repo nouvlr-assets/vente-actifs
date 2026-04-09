@@ -63,7 +63,7 @@ const DEPT_CONFIG = {
         title: "VENTE INFORMATIQUE ET BUREAU",
         placeholder: "Rechercher (ex: Dell, Écran...)",
         categories: [
-            "Tous", "Ordinateur", "Portables", "Écrans", "Périphériques",
+            "Tous", "Écrans", "Ordinateur", "Portables", "Périphériques",
             "Imprimante", "Photocopieurs", "Fournitures de bureau", "Fourniture",
             "Tableaux", "Électroménager"
         ]
@@ -85,10 +85,10 @@ const DEPT_CONFIG = {
         title: "VENTE MACHINERIE",
         placeholder: "Rechercher (ex: Générateur...)",
         categories: [
-            "Tous", "Machinerie légère", "Générateurs électriques", "Véhicule",
+            "Tous", "Machinerie Ferroviaire", "Machinerie légère", "Générateurs électriques", "Véhicule",
             "Compacteur", "Chauffage Électrique", "Réservoir", "Trailer",
             "Souffleuse à neige", "Panneau d'affichage", "Nettoyeur h. pression",
-            "Machinerie Ferroviaire",
+
         ]
     }
 };
