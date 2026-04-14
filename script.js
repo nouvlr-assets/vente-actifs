@@ -540,6 +540,9 @@ function generarTarjetaHTML(item) {
                     <span id="count-${item.lot}" style="font-weight:bold; font-size:1.1em;">${unitSelections[item.lot]}</span>
                     <button onclick="cambiarCantidad('${item.lot}', 1, ${item.units_available})" style="width:30px; height:30px; cursor:pointer;">+</button>
                 </div>
+                    <div style="font-size: 0.75em; color: #666; margin-top: 5px;">
+                    Disponibles: ${item.units_available}
+                </div>
             </div>`;
     }
 
