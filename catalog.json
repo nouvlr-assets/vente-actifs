@@ -3016,8 +3016,8 @@
         "lot": "O-16",
         "prix": 7021.2,
         "categorie": "Coffre",
-        "descripcion": "Coffre de Chantier",
-        "detalles": "Prix valeur à neuf <br> *Prix négociable selon offre sérieuse*",
+        "descripcion": "Coffre de Chantier (WH-001)",
+        "detalles": "WH-001 <br> Prix valeur à neuf <br> *Prix négociable selon offre sérieuse*",
         "manual_url": "",
         "imagenes": [
             "O-16.jpg",
@@ -3032,8 +3032,8 @@
         "lot": "O-17",
         "prix": 0.0,
         "categorie": "Radios",
-        "descripcion": "Radios et Accessoires[o]",
-        "detalles": "Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "descripcion": "Radios et Accessoires (WH-002)[o]",
+        "detalles": "WH-002 <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
         "manual_url": ",248",
         "imagenes": [
             "O-17.jpg",
@@ -3060,8 +3060,8 @@
         "lot": "O-18",
         "prix": 2860.0,
         "categorie": "Outils légers",
-        "descripcion": "Kit Laser Rotatif",
-        "detalles": "Prix valeur à neuf <br> *Prix négociable selon offre sérieuse*",
+        "descripcion": "Kit Laser Rotatif (WH-003)",
+        "detalles": "WH-003 <br> Prix valeur à neuf <br> *Prix négociable selon offre sérieuse*",
         "manual_url": "",
         "imagenes": [
             "O-18.jpg",
@@ -3075,8 +3075,8 @@
         "lot": "O-19",
         "prix": 2850.0,
         "categorie": "Acc. Chariot Élévateur",
-        "descripcion": "Transpalette",
-        "detalles": "Prix valeur à neuf <br> *Prix négociable selon offre sérieuse*",
+        "descripcion": "Transpalette (WH-004)",
+        "detalles": "WH-004 <br> Prix valeur à neuf <br> *Prix négociable selon offre sérieuse*",
         "manual_url": "",
         "imagenes": [
             "O-19.jpg",
@@ -3560,8 +3560,8 @@
         "lot": "O-57",
         "prix": 10000.0,
         "categorie": "Outils légers",
-        "descripcion": "Laser",
-        "detalles": "Laser <br> Prix valeur à neuf <br> *Prix négociable selon offre sérieuse*",
+        "descripcion": "Laser (WH-005)",
+        "detalles": "WH-005 <br> Laser <br> Prix valeur à neuf <br> *Prix négociable selon offre sérieuse*",
         "manual_url": "",
         "imagenes": [
             "O-57.jpg",
@@ -3577,8 +3577,8 @@
         "lot": "O-58",
         "prix": 1700.0,
         "categorie": "Outils légers",
-        "descripcion": "Spider Box",
-        "detalles": "Spider Box <br> Prix valeur à neuf <br> *Prix négociable selon offre sérieuse*",
+        "descripcion": "Spider Box (WH-006)",
+        "detalles": "WH-006 <br> Spider Box <br> Prix valeur à neuf <br> *Prix négociable selon offre sérieuse*",
         "manual_url": "",
         "imagenes": [
             "O-58.jpg",
@@ -3591,8 +3591,8 @@
         "lot": "O-59",
         "prix": 0.0,
         "categorie": "Outils légers",
-        "descripcion": "Coffrage Rod Vibrateur & Convertisseur[o]",
-        "detalles": "Coffrage <br> Rod <br> Vibrateur & Convertisseur <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "descripcion": "Coffrage Rod Vibrateur & Convertisseur (WH-007)[o]",
+        "detalles": "WH-007 <br> Coffrage <br> Rod <br> Vibrateur & Convertisseur <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
         "manual_url": ",289",
         "imagenes": [
             "O-59.jpg",
@@ -3605,8 +3605,8 @@
         "lot": "O-60",
         "prix": 4244.0,
         "categorie": "Outils électriques",
-        "descripcion": "Ventilateur Industriel",
-        "detalles": "Ventilateur Industriel <br> Prix a titre de référence <br> *Prix négociable selon offre sérieuse* <br>  Pour info supplémentaire communiquer avec nous",
+        "descripcion": "Ventilateur Industriel (WH-008)",
+        "detalles": "WH-008 <br> Ventilateur Industriel <br> Prix a titre de référence <br> *Prix négociable selon offre sérieuse* <br>  Pour info supplémentaire communiquer avec nous",
         "manual_url": "",
         "imagenes": [
             "O-60.jpg"
@@ -3618,8 +3618,8 @@
         "lot": "O-61",
         "prix": 0.0,
         "categorie": "Sanitaire",
-        "descripcion": "Station de lavage mobile autonome avec pompe au pied[o]",
-        "detalles": "Station de lavage mobile autonome avec pompe au pied <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "descripcion": "Station de lavage mobile autonome avec pompe au pied (WH-009)[o]",
+        "detalles": "WH-009 <br> Station de lavage mobile autonome avec pompe au pied <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
         "manual_url": ",291",
         "imagenes": [
             "O-61.jpg"
