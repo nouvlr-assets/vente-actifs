@@ -75,7 +75,7 @@ const DEPT_CONFIG = {
             "Tous",
             "Acc. Pick up", "Acc. Déneigement", "Acc. Chariot Élévateur",
             "Coffre", "Radios","Quincailleries Ferroviaire", "Acc. Ferroviaire", "Outils légers",
-            "Sanitaire",
+            "Sanitaire", "Roulotte",
             "Outils électriques",  "Quincailleries",
             "Entrepôt Conteneur", "Matériels de Sécurité", "Clôture et signalisation", "Materiels",
 
@@ -168,6 +168,7 @@ const translations = {
             "Drone": "Drone",
             "Sanitaire": "Sanitaire",
             "Machinerie Ferroviaire": "Machinerie Ferroviaire",
+            "Roulotte": "Roulottes",
         },
         tooltip_title: "Inclus:",
         policy_html: `
@@ -248,6 +249,7 @@ const translations = {
             "Drone": "Drone",
             "Sanitaire": "Sanitary",
             "Machinerie Ferroviaire": "Railway Machinery",
+            "Roulotte": "Trailers / Roulottes",
         },
         tooltip_title: "Included:",
         policy_html: `
@@ -371,6 +373,7 @@ function cleanIconName(catName) {
         "Drone": "Drone",
         "Sanitaire": "Sanitaire",
         "Machinerie Ferroviaire": "Machinerie_Ferroviaire",
+        "Roulotte": "Roulotte",
     };
 
     if(map[catName]) return map[catName];
