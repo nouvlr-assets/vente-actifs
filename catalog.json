@@ -2962,7 +2962,7 @@
     },
     {
         "lot": "O-16",
-        "prix": 7021.2,
+        "prix": 8042.4,
         "categorie": "Coffre",
         "descripcion": "Coffre de Chantier (WH-001)",
         "detalles": "WH-001 <br> Prix valeur à neuf <br> *Prix négociable selon offre sérieuse*",
@@ -2974,7 +2974,7 @@
             "O-16_C.jpg"
         ],
         "units_available": 1,
-        "unit_price": 7021.2
+        "unit_price": 8042.4
     },
     {
         "lot": "O-17",
@@ -3657,7 +3657,7 @@
     {
         "lot": "O-68",
         "prix": 0.0,
-        "categorie": "Entrepôt Conteneur",
+        "categorie": "Roulotte",
         "descripcion": "Complexe de Chantier[o]",
         "detalles": "Complexe de Chantier de 30x60 en excellent état . <br> Le complexe sera disponible à la vente à partir de mai 2026. . <br> Si vous êtes intéressé, nous vous remercions de bien vouloir nous faire parvenir votre offre. <br> Pour toutes question, nhésitez pas à nous contacter. \"",
         "manual_url": "",
