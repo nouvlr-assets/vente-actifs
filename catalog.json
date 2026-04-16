@@ -390,19 +390,6 @@
         "unit_price": 0.0
     },
     {
-        "lot": "A-52",
-        "prix": 52250.0,
-        "categorie": "Station Totale",
-        "descripcion": "Station Total MS60 1  MultiStation",
-        "detalles": "Station MS60 1\" MultiStation (2020)  <br>  Antenne RH16 (2020)  <br>  Contrôleur CS20 3.75G (2020)  <br>  Chargeur GKL341  <br>  Prisme 360 GRZ122  <br>  Canne SECO & Trépied",
-        "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_nova_ms60_ds.ashx",
-        "imagenes": [
-            "A-52.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
         "lot": "A-53",
         "prix": 52250.0,
         "categorie": "Station Totale",
@@ -1898,7 +1885,7 @@
     },
     {
         "lot": "A-214",
-        "prix": 760.0,
+        "prix": 380.0,
         "categorie": "Outils électriques",
         "descripcion": "Hilti Impact SW 22-A",
         "detalles": "Hilti Impact SW 22-A (2020)  <br>  Hilti Perceuse TE 6-A36 (2020)  <br>  Chargeur batterie C4/36-350",
@@ -1906,7 +1893,7 @@
         "imagenes": [
             "A-214.jpg"
         ],
-        "units_available": 2,
+        "units_available": 1,
         "unit_price": 380.0
     },
     {
@@ -2148,32 +2135,6 @@
         "unit_price": 320.0
     },
     {
-        "lot": "A-504.5",
-        "prix": 484.5,
-        "categorie": "Monuments",
-        "descripcion": "Monuments piédestal acier 55Po",
-        "detalles": "Monument piédestal acier  <br>  Longueur 55Po",
-        "manual_url": "",
-        "imagenes": [
-            "A-504.5.jpg"
-        ],
-        "units_available": 3,
-        "unit_price": 340.0
-    },
-    {
-        "lot": "A-504.6",
-        "prix": 161.5,
-        "categorie": "Monuments",
-        "descripcion": "Monument piédestal acier 59Po",
-        "detalles": "Monument piédestal acier  <br>  Longueur 59Po",
-        "manual_url": "",
-        "imagenes": [
-            "A-504.6.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
         "lot": "A-504.7",
         "prix": 356.25,
         "categorie": "Monuments",
@@ -2211,19 +2172,6 @@
         ],
         "units_available": 6,
         "unit_price": 300.0
-    },
-    {
-        "lot": "A-505",
-        "prix": 605.62,
-        "categorie": "Monuments",
-        "descripcion": "Monuments piédestal acier 72Po",
-        "detalles": "Monument piédestal acier  <br>  Longueur 72Po",
-        "manual_url": "",
-        "imagenes": [
-            "A-505.jpg"
-        ],
-        "units_available": 3,
-        "unit_price": 425.0
     },
     {
         "lot": "A-505.2",
@@ -2814,7 +2762,7 @@
         "imagenes": [
             "I-1.jpg"
         ],
-        "units_available": 50,
+        "units_available": 44,
         "unit_price": 25.0
     },
     {
@@ -3654,12 +3602,96 @@
         "unit_price": 0.0
     },
     {
+        "lot": "O-64",
+        "prix": 0.0,
+        "categorie": "Matériels",
+        "descripcion": "Chariot Utilitaire[o]",
+        "detalles": "Chariot Utilitaire <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",294",
+        "imagenes": [
+            "O-64.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-65",
+        "prix": 0.0,
+        "categorie": "Matériels",
+        "descripcion": "Bac en plastique[o]",
+        "detalles": "Bac en plastique <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",295",
+        "imagenes": [
+            "O-65.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-66",
+        "prix": 0.0,
+        "categorie": "Matériels",
+        "descripcion": "Table à pique-nique[o]",
+        "detalles": "Table à pique-nique <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",296",
+        "imagenes": [
+            "O-66.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-67",
+        "prix": 12243.32,
+        "categorie": "Outils légers",
+        "descripcion": "Outils pour Fibre optic (WH-010)",
+        "detalles": "Outils pour Fibre optic (WH-010) <br> Prix a titre de référence <br> *Prix négociable selon offre sérieuse* <br>  Pour info supplémentaire communiquer avec nous",
+        "manual_url": "",
+        "imagenes": [
+            "O-67.jpg",
+            "O-67_A.jpg",
+            "O-67_B.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-68",
+        "prix": 0.0,
+        "categorie": "Entrepôt Conteneur",
+        "descripcion": "Complexe de Chantier[o]",
+        "detalles": "Complexe de Chantier de 30x60 en excellent état . <br> Le complexe sera disponible à la vente à partir de mai 2026. . <br> Si vous êtes intéressé, nous vous remercions de bien vouloir nous faire parvenir votre offre. <br> Pour toutes question, nhésitez pas à nous contacter. \"",
+        "manual_url": "",
+        "imagenes": [
+            "O-68.jpg",
+            "O-68_A.jpg",
+            "O-68_B.jpg",
+            "O-68_C.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-69",
+        "prix": 24600.0,
+        "categorie": "Outils légers",
+        "descripcion": "Échelle & Escabeau_(WH-011)",
+        "detalles": "Échelle Wh-011 <br> Prix a titre de référence <br> *Prix négociable selon offre sérieuse* <br>  Pour info supplémentaire communiquer avec nous",
+        "manual_url": "",
+        "imagenes": [
+            "O-69.jpg",
+            "O-69_A.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 1.0
+    },
+    {
         "lot": "M-1",
         "prix": 0.0,
         "categorie": "Machinerie Ferroviaire",
         "descripcion": "Rail Heater[o]",
-        "detalles": "Rail Heater",
-        "manual_url": "",
+        "detalles": "Rail Heater <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",300",
         "imagenes": [
             "M-1.jpg"
         ],
@@ -3671,10 +3703,77 @@
         "prix": 0.0,
         "categorie": "Machinerie Ferroviaire",
         "descripcion": "Rail Puller[o]",
-        "detalles": "Rail Puller",
-        "manual_url": "",
+        "detalles": "Rail Puller <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",301",
         "imagenes": [
             "M-2.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "M-3",
+        "prix": 0.0,
+        "categorie": "Machinerie légère",
+        "descripcion": "Bennes à Béton[o]",
+        "detalles": "Bennes à Béton <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",302",
+        "imagenes": [
+            "M-3.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "M-4",
+        "prix": 0.0,
+        "categorie": "Machinerie légère",
+        "descripcion": "Brumisateur[o]",
+        "detalles": "Brumisateur <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",303",
+        "imagenes": [
+            "M-4.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "M-5",
+        "prix": 0.0,
+        "categorie": "Machinerie légère",
+        "descripcion": "Fourche de Grue[o]",
+        "detalles": "Fourche de Grue <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",304",
+        "imagenes": [
+            "M-5.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "M-6",
+        "prix": 0.0,
+        "categorie": "Machinerie légère",
+        "descripcion": "Hilti Diamond Coring[o]",
+        "detalles": "Hilti Diamond Coring <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",305",
+        "imagenes": [
+            "M-6.jpg",
+            "M-6_A.jpg",
+            "M-6_B.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "M-7",
+        "prix": 0.0,
+        "categorie": "Machinerie légère",
+        "descripcion": "Grue en flèche [o]",
+        "detalles": "Grue en flèche <br>  <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",306",
+        "imagenes": [
+            "M-7.jpg"
         ],
         "units_available": 1,
         "unit_price": 0.0
