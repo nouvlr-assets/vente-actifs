@@ -2962,7 +2962,7 @@
     },
     {
         "lot": "O-16",
-        "prix": 8042.4,
+        "prix": 8020.0,
         "categorie": "Coffre",
         "descripcion": "Coffre de Chantier (WH-001)",
         "detalles": "WH-001 <br> Prix valeur à neuf <br> *Prix négociable selon offre sérieuse*",
@@ -2970,8 +2970,7 @@
         "imagenes": [
             "O-16.jpg",
             "O-16_A.jpg",
-            "O-16_B.jpg",
-            "O-16_C.jpg"
+            "O-16_B.jpg"
         ],
         "units_available": 1,
         "unit_price": 8042.4
