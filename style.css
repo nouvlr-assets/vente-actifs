@@ -1360,7 +1360,7 @@ a.nav-btn:hover { color: var(--color-acento-secundario); }
     position: absolute;
     top: 10px;
     left: -5px;
-    background: #e67e22; /* Color naranja para destacar */
+    background: #e67e22; /* Orange color */
     color: white;
     padding: 5px 12px;
     font-weight: bold;
@@ -1381,46 +1381,51 @@ a.nav-btn:hover { color: var(--color-acento-secundario); }
     color: #07284f;
 }
 
-/* --- Estilo del GIF Promocional --- */
-/* --- style.css UPDATE --- */
+
+/* --- style.css UPDATE: Fixed Right Promo Banner --- */
 .promo-banner {
+    /* 1. Desktop: Fixed on the right side */
     position: fixed;
-    top: 150px;
-    right: 30px;
+    top: 200px;
+    right: 40px;
     z-index: 9999;
 
-    /* 1. CREAMOS LA CAJA AQUÍ */
-    background-color: #000;    /* Fondo negro para que se fusione con el GIF */
-    padding: 15px;             /* ESTO es lo que da aire a las letras */
-    border-radius: 18px;       /* Bordes redondeados de la caja */
+    background-color: #000;
+    padding: 15px;
+    border-radius: 18px;
     box-shadow: 0 8px 25px rgba(0,0,0,0.5);
 
     display: flex;
     align-items: center;
     justify-content: center;
     transition: transform 0.3s ease;
+
+    /* Disable all click interactions */
+    pointer-events: none;
+    user-select: none;
 }
 
 .promo-banner img {
-    /* 2. ACHICAMOS UN PELÍN EL GIF DENTRO DE LA CAJA */
-    width: 120px;              /* Ajusta este ancho a tu gusto */
+    width: 130px;
     height: auto;
     display: block;
-    border-radius: 0;          /* Ya no necesita borde el GIF, lo tiene la caja */
 }
 
-/* Efecto hover */
-.promo-banner:hover {
-    transform: scale(1.1) rotate(3deg); /* Un pequeño giro le da un toque más "oferta" */
-}
-
+/* --- Mobile Specific Fix --- */
 @media (max-width: 800px) {
     .promo-banner {
-        width: 80px;
-        padding: 10px;
-        top: 100px;
+        /* 2. Change from 'fixed' to 'absolute' so it stays at the top and DOES NOT follow scroll */
+        position: absolute;
+        top: 10px;       /* Place it at the very top of the page */
+        right: 10px;     /* Small margin from the right edge */
+
+        /* Reduce size so it doesn't cover the NouvLR logo or buttons */
+        width: auto;
+        padding: 8px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     }
+
     .promo-banner img {
-        width: 60px;
+        width: 60px;     /* Much smaller GIF for mobile */
     }
 }

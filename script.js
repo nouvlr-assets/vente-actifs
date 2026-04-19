@@ -486,11 +486,11 @@ function generarTarjetaHTML(item) {
     if (unitSelections[item.lot] === undefined) unitSelections[item.lot] = 0;
     const iconName = cleanIconName(item.categorie);
 
-    // --- 1. DETECCIÓN DE OFERTA Y LIMPIEZA DEL NOMBRE ---
+    // --- 1. OFFER DETECTION AN NAME'S CLEANING  ---
     const rawDescription = item.descripcion || "";
-    // Detecta si contiene [o] o [O]
+    // Detects if contains [o] or [O]
     const esOferta = /\[o\]/i.test(rawDescription);
-    // Crea la descripción limpia para mostrarla al usuario
+    // Clan description for the user.
     const cleanedDescription = rawDescription.replace(/\[o\]/gi, "").trim();
 
     const offerBadge = esOferta ? `<div class="offer-badge">${getText('label_offer')}</div>` : '';
@@ -499,11 +499,11 @@ function generarTarjetaHTML(item) {
     let actionButtonHTML = '';
 
     if (esOferta) {
-        // Lógica de Subasta
+        // Action's logic
         precioDisplay = `<input type="number" id="custom-price-${item.lot}" class="custom-price-input" placeholder="${getText('placeholder_offer')}">`;
         actionButtonHTML = `<button onclick="agregarOfertaAlCarrito('${item.lot}')" class="btn-add" style="background-color:#e67e22;">${getText('btn_offer')}</button>`;
     } else {
-        // Lógica Estándar
+        // Standard logic
         const esGratis = item.prix === 0;
         precioDisplay = esGratis
             ? `<strong style="color:#d9534f; font-size:1.1rem; display:block; margin:10px 0;">${getText('card_price_free')}</strong>`
@@ -514,7 +514,7 @@ function generarTarjetaHTML(item) {
             </button>`;
     }
 
-    // --- 2. ETIQUETAS TÉCNICAS ---
+    // --- 2. TECHNICAL LABELS ---
     let badgesHTML = '';
     if (DEPT_CODE === 'A' && item.detalles) {
         const det = item.detalles.toLowerCase();
@@ -528,7 +528,7 @@ function generarTarjetaHTML(item) {
         });
     }
 
-    // --- 3. SELECCIÓN DE UNIDADES ---
+    // --- 3. UNTIS SELECTOR---
     const esDivisible = (item.units_available > 1 && item.unit_price > 0);
     let unitSelectorHTML = '';
     if (esDivisible && !esOferta) {
@@ -549,7 +549,7 @@ function generarTarjetaHTML(item) {
             </div>`;
     }
 
-    // --- 4. RENDERIZADO FINAL ---
+    // --- 4. FINAL RENDER ---
     return `
     <div class="lote-card">
         ${offerBadge}
@@ -620,7 +620,7 @@ function verDetalle(lotID) {
     const lote = deptCatalogData.find(i => i.lot === lotID);
     if (!lote) return;
 
-    // --- LÓGICA DE LIMPIEZA Y OFERTA ---
+    // --- LOGIC CLEAN AND OFFER---
     const rawDesc = lote.descripcion || "";
     const esOferta = /\[o\]/i.test(rawDesc);
     const descLimpia = rawDesc.replace(/\[o\]/gi, "").trim();
@@ -630,7 +630,7 @@ function verDetalle(lotID) {
 
     const manualBtn = lote.manual_url ? `<a href="${lote.manual_url}" target="_blank" class="manual-btn-styled">${getText('modal_manual_btn')}</a>` : '';
 
-    // Ajuste de precio para el modal
+    // Adjustment of the price modal
     let precioHTML = '';
     if (esOferta) {
         precioHTML = `<span style="color:#e67e22; font-weight:bold;">${getText('label_offer')}</span>`;
