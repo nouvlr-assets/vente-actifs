@@ -429,19 +429,6 @@
         "unit_price": 0.0
     },
     {
-        "lot": "A-57",
-        "prix": 0.0,
-        "categorie": "Station Totale",
-        "descripcion": "Station Total TS60 I 0.5  R1000",
-        "detalles": "Station Totale avec imagerie TS60 I 0.5\"  <br>  GeoCom Robotique TS/MS  <br>  Poignée radio RH16 (2019)  <br>  Embase GDF321",
-        "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_nova_ts60_ds.ashx",
-        "imagenes": [
-            "A-57.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
         "lot": "A-58",
         "prix": 54150.0,
         "categorie": "Station Totale",
@@ -533,19 +520,6 @@
         "unit_price": 0.0
     },
     {
-        "lot": "A-65",
-        "prix": 6884.13,
-        "categorie": "Station Totale",
-        "descripcion": "Trimble TSC7",
-        "detalles": "Trimble TSC7",
-        "manual_url": "",
-        "imagenes": [
-            "A-65.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
         "lot": "A-67",
         "prix": 7600.0,
         "categorie": "GPS",
@@ -560,7 +534,7 @@
     },
     {
         "lot": "A-74",
-        "prix": 18525.0,
+        "prix": 0.0,
         "categorie": "GPS",
         "descripcion": "GS16 3.75G & UHF Performance NAFTA",
         "detalles": "GS16 3.75G & UHF Performance NAFTA  <br>  Contrôleur CS20 LTE (2018)  <br>  Adapteur pour antenne GPS  <br>  Canne fibre carbone SECO 2.2m",
@@ -632,32 +606,6 @@
         "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_gs16_ds.ashx",
         "imagenes": [
             "A-79.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
-        "lot": "A-80",
-        "prix": 18525.0,
-        "categorie": "GPS",
-        "descripcion": "GS16 3.75G & UHF Performance NAFTA",
-        "detalles": "GS16 3.75G & UHF Performance NAFTA (2020)  <br>  Contrôleur CS20 LTE (2018)   <br>  Adapteur pour antenne GPS  <br>  Canne à prisme en fibre de carbone SECO 2.2m",
-        "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_gs16_ds.ashx",
-        "imagenes": [
-            "A-80.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
-        "lot": "A-80.1",
-        "prix": 18525.0,
-        "categorie": "GPS",
-        "descripcion": "GS16 3.75G & UHF Performance NAFTA",
-        "detalles": "GS16 3.75G & UHF Performance NAFTA (2017)  <br>  Contrôleur CS20 LTE (2019)   <br>  Adapteur pour antenne GPS  <br>  Canne à prisme en fibre de carbone SECO 2.2m",
-        "manual_url": "",
-        "imagenes": [
-            "A-80.1.jpg"
         ],
         "units_available": 1,
         "unit_price": 0.0
@@ -1247,32 +1195,6 @@
         "unit_price": 0.0
     },
     {
-        "lot": "A-126.4",
-        "prix": 2333.38,
-        "categorie": "Accessoires",
-        "descripcion": "MT1000 Target S6 Active/passive",
-        "detalles": "MT1000 Target S6 Active/passive",
-        "manual_url": "",
-        "imagenes": [
-            "A-126.4.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
-        "lot": "A-128.1",
-        "prix": 71.25,
-        "categorie": "Accessoires",
-        "descripcion": "Support aimanté pour prisme",
-        "detalles": "Support aimanté pour prisme",
-        "manual_url": "",
-        "imagenes": [
-            "A-128.1.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
         "lot": "A-129",
         "prix": 118.75,
         "categorie": "Accessoires",
@@ -1310,19 +1232,6 @@
         ],
         "units_available": 1,
         "unit_price": 0.0
-    },
-    {
-        "lot": "A-130.1",
-        "prix": 2374.05,
-        "categorie": "Accessoires",
-        "descripcion": "Sabot Magnétique",
-        "detalles": "Sabot Magnétique",
-        "manual_url": "",
-        "imagenes": [
-            "A-130.1.jpg"
-        ],
-        "units_available": 6,
-        "unit_price": 416.5
     },
     {
         "lot": "A-131",
