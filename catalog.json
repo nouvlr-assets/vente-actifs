@@ -3697,5 +3697,19 @@
         ],
         "units_available": 1,
         "unit_price": 0.0
+    },
+    {
+        "lot": "M-8",
+        "prix": 0.0,
+        "categorie": "Machinerie Ferroviaire",
+        "descripcion": "Train Stop System[o]",
+        "detalles": "Train Stop System <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",308",
+        "imagenes": [
+            "M-8.jpg",
+            "M-8_A.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
     }
 ]
