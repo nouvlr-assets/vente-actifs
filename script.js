@@ -365,7 +365,7 @@ function cleanIconName(catName) {
         "Électroménager": "Electromenager",
         "Périphériques": "Peripheriques",
         "Véhicule": "Vehicule",
-        "Matériels":"Matériels",
+        "Matériels":"Materiels",
         "Coffre": "Coffre",
         "Radios": "Radios",
         "Acc_Ferroviaires": "Acc_Ferroviaires",
