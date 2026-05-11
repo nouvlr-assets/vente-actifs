@@ -3642,7 +3642,7 @@
         "prix": 0.0,
         "categorie": "Entrepôt Conteneur",
         "descripcion": "Conteneur de chantier_(WH-015)[o]",
-        "detalles": "Conteneur de chantier <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "detalles": "Conteneur de chantier WH-015 <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
         "manual_url": ",303",
         "imagenes": [
             "O-72.jpg",
@@ -3656,7 +3656,7 @@
         "prix": 0.0,
         "categorie": "Entrepôt Conteneur",
         "descripcion": "Conteneur de chantier_(WH-016)[o]",
-        "detalles": "Conteneur de chantier <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "detalles": "Conteneur de chantier WH-016 <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
         "manual_url": ",304",
         "imagenes": [
             "O-73.jpg",
@@ -3670,7 +3670,7 @@
         "prix": 0.0,
         "categorie": "Entrepôt Conteneur",
         "descripcion": "Conteneur Électrique_(WH-017)[o]",
-        "detalles": "Conteneur Électrique <br> Plusieurs autres photo disponible sur demande. <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "detalles": "Conteneur Électrique WH-017 <br> Plusieurs autres photo disponible sur demande. <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
         "manual_url": ",305",
         "imagenes": [
             "O-74.jpg",
@@ -3791,8 +3791,8 @@
         "lot": "M-9",
         "prix": 0.0,
         "categorie": "Machinerie légère",
-        "descripcion": "Canon à Neige[o]",
-        "detalles": "Canon à Neige <br>  <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "descripcion": "Canon à Neige_(WH-014)[o]",
+        "detalles": "Canon à Neige WH-014 <br>  <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
         "manual_url": ",314",
         "imagenes": [
             "M-9.jpg",
