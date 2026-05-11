@@ -3638,12 +3638,55 @@
         "unit_price": 0.0
     },
     {
+        "lot": "O-72",
+        "prix": 0.0,
+        "categorie": "Entrepôt Conteneur",
+        "descripcion": "Conteneur de chantier_(WH-015)[o]",
+        "detalles": "Conteneur de chantier <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",303",
+        "imagenes": [
+            "O-72.jpg",
+            "O-72_A.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-73",
+        "prix": 0.0,
+        "categorie": "Entrepôt Conteneur",
+        "descripcion": "Conteneur de chantier_(WH-016)[o]",
+        "detalles": "Conteneur de chantier <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",304",
+        "imagenes": [
+            "O-73.jpg",
+            "O-73_A.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-74",
+        "prix": 0.0,
+        "categorie": "Entrepôt Conteneur",
+        "descripcion": "Conteneur Électrique_(WH-017)[o]",
+        "detalles": "Conteneur Électrique <br> Plusieurs autres photo disponible sur demande. <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",305",
+        "imagenes": [
+            "O-74.jpg",
+            "O-74_A.jpg",
+            "O-74_B.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
         "lot": "M-1",
         "prix": 0.0,
         "categorie": "Machinerie Ferroviaire",
         "descripcion": "Rail Heater[o]",
         "detalles": "Rail Heater <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",303",
+        "manual_url": ",306",
         "imagenes": [
             "M-1.jpg"
         ],
@@ -3656,7 +3699,7 @@
         "categorie": "Machinerie Ferroviaire",
         "descripcion": "Rail Puller[o]",
         "detalles": "Rail Puller <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",304",
+        "manual_url": ",307",
         "imagenes": [
             "M-2.jpg"
         ],
@@ -3669,7 +3712,7 @@
         "categorie": "Machinerie légère",
         "descripcion": "Bennes à Béton[o]",
         "detalles": "Bennes à Béton <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",305",
+        "manual_url": ",308",
         "imagenes": [
             "M-3.jpg"
         ],
@@ -3682,7 +3725,7 @@
         "categorie": "Machinerie légère",
         "descripcion": "Brumisateur[o]",
         "detalles": "Brumisateur <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",306",
+        "manual_url": ",309",
         "imagenes": [
             "M-4.jpg"
         ],
@@ -3695,7 +3738,7 @@
         "categorie": "Machinerie légère",
         "descripcion": "Fourche de Grue[o]",
         "detalles": "Fourche de Grue <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",307",
+        "manual_url": ",310",
         "imagenes": [
             "M-5.jpg"
         ],
@@ -3708,7 +3751,7 @@
         "categorie": "Machinerie légère",
         "descripcion": "Hilti Diamond Coring[o]",
         "detalles": "Hilti Diamond Coring <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",308",
+        "manual_url": ",311",
         "imagenes": [
             "M-6.jpg",
             "M-6_A.jpg",
@@ -3723,7 +3766,7 @@
         "categorie": "Machinerie légère",
         "descripcion": "Grue en flèche [o]",
         "detalles": "Grue en flèche <br>  <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",309",
+        "manual_url": ",312",
         "imagenes": [
             "M-7.jpg"
         ],
@@ -3736,10 +3779,25 @@
         "categorie": "Machinerie Ferroviaire",
         "descripcion": "Train Stop System[o]",
         "detalles": "Train Stop System <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",310",
+        "manual_url": ",313",
         "imagenes": [
             "M-8.jpg",
             "M-8_A.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "M-9",
+        "prix": 0.0,
+        "categorie": "Machinerie légère",
+        "descripcion": "Canon à Neige[o]",
+        "detalles": "Canon à Neige <br>  <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",314",
+        "imagenes": [
+            "M-9.jpg",
+            "M-9_A.jpg",
+            "M-9_B.jpg"
         ],
         "units_available": 1,
         "unit_price": 0.0
