@@ -3681,12 +3681,141 @@
         "unit_price": 0.0
     },
     {
+        "lot": "O-75",
+        "prix": 67800.0,
+        "categorie": "Entrepôt Conteneur",
+        "descripcion": "Dôme d'entreposage",
+        "detalles": "Dôme d'entreposage",
+        "manual_url": "",
+        "imagenes": [
+            "O-75.jpg",
+            "O-75_A.jpg",
+            "O-75_B.jpg"
+        ],
+        "units_available": 8,
+        "unit_price": 8475.0
+    },
+    {
+        "lot": "O-76",
+        "prix": 3900.0,
+        "categorie": "Entrepôt Conteneur",
+        "descripcion": "Conteneur à compresseur_(WH-018)",
+        "detalles": "Conteneur à compresseur (WH-018) <br> *Prix négociable selon offre sérieuse* <br>  Pour info supplémentaire communiquer avec nous",
+        "manual_url": "",
+        "imagenes": [
+            "O-76.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-77",
+        "prix": 13500.0,
+        "categorie": "Entrepôt Conteneur",
+        "descripcion": "Conteneur Électrique_(WH-019)",
+        "detalles": "Conteneur Électrique (WH-019) <br> *Prix négociable selon offre sérieuse* <br>  Pour info supplémentaire communiquer avec nous",
+        "manual_url": "",
+        "imagenes": [
+            "O-77.jpg",
+            "O-77_A.jpg",
+            "O-77_B.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-78",
+        "prix": 37620.0,
+        "categorie": "Entrepôt Conteneur",
+        "descripcion": "Conteneur Électrique_(WH-20)",
+        "detalles": "Conteneur Électrique (WH-020) <br> *Prix négociable selon offre sérieuse* <br>  Pour info supplémentaire communiquer avec nous",
+        "manual_url": "",
+        "imagenes": [
+            "O-78.jpg",
+            "O-78_A.jpg",
+            "O-78_B.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-79",
+        "prix": 3800.0,
+        "categorie": "Entrepôt Conteneur",
+        "descripcion": "Conteneur de Chantier_(WH-21)",
+        "detalles": "Conteneur de Chantier  (WH-021) <br> *Prix négociable selon offre sérieuse* <br>  Pour info supplémentaire communiquer avec nous",
+        "manual_url": "",
+        "imagenes": [
+            "O-79.jpg",
+            "O-79_A.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-80",
+        "prix": 6500.0,
+        "categorie": "Matériels",
+        "descripcion": "Antichute Grizzly_(WH-22)",
+        "detalles": "Antichute Grizzly (WH-22) <br> *Prix négociable selon offre sérieuse* <br>  Pour info supplémentaire communiquer avec nous",
+        "manual_url": "",
+        "imagenes": [
+            "O-80.jpg",
+            "O-80_A.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-81",
+        "prix": 11700.0,
+        "categorie": "Matériels",
+        "descripcion": "Cage_(WH-23)",
+        "detalles": "Cage (WH-23) <br> *Prix négociable selon offre sérieuse* <br>  Pour info supplémentaire communiquer avec nous",
+        "manual_url": "",
+        "imagenes": [
+            "O-81.jpg",
+            "O-81_A.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-82",
+        "prix": 6550.0,
+        "categorie": "Matériels",
+        "descripcion": "Équipement Feuillard_(WH-24)",
+        "detalles": "Équipement Feuillard (WH-24) <br> *Prix négociable selon offre sérieuse* <br>  Pour info supplémentaire communiquer avec nous",
+        "manual_url": "",
+        "imagenes": [
+            "O-82.jpg",
+            "O-82_A.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-83",
+        "prix": 321942.24,
+        "categorie": "Acc. Ferroviaire",
+        "descripcion": "Dérailleurs et accessoires_(WH-25)",
+        "detalles": "Dérailleurs et accessoires (Wh-25) <br> *Prix négociable selon offre sérieuse* <br>  Pour info supplémentaire communiquer avec nous",
+        "manual_url": "",
+        "imagenes": [
+            "O-83.jpg",
+            "O-83_A.jpg",
+            "O-83_B.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
         "lot": "M-1",
         "prix": 0.0,
         "categorie": "Machinerie Ferroviaire",
         "descripcion": "Rail Heater[o]",
         "detalles": "Rail Heater <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",306",
+        "manual_url": ",315",
         "imagenes": [
             "M-1.jpg"
         ],
@@ -3699,7 +3828,7 @@
         "categorie": "Machinerie Ferroviaire",
         "descripcion": "Rail Puller[o]",
         "detalles": "Rail Puller <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",307",
+        "manual_url": ",316",
         "imagenes": [
             "M-2.jpg"
         ],
@@ -3712,7 +3841,7 @@
         "categorie": "Machinerie légère",
         "descripcion": "Bennes à Béton[o]",
         "detalles": "Bennes à Béton <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",308",
+        "manual_url": ",317",
         "imagenes": [
             "M-3.jpg"
         ],
@@ -3725,7 +3854,7 @@
         "categorie": "Machinerie légère",
         "descripcion": "Brumisateur[o]",
         "detalles": "Brumisateur <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",309",
+        "manual_url": ",318",
         "imagenes": [
             "M-4.jpg"
         ],
@@ -3738,7 +3867,7 @@
         "categorie": "Machinerie légère",
         "descripcion": "Fourche de Grue[o]",
         "detalles": "Fourche de Grue <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",310",
+        "manual_url": ",319",
         "imagenes": [
             "M-5.jpg"
         ],
@@ -3751,7 +3880,7 @@
         "categorie": "Machinerie légère",
         "descripcion": "Hilti Diamond Coring[o]",
         "detalles": "Hilti Diamond Coring <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",311",
+        "manual_url": ",320",
         "imagenes": [
             "M-6.jpg",
             "M-6_A.jpg",
@@ -3766,7 +3895,7 @@
         "categorie": "Machinerie légère",
         "descripcion": "Grue en flèche [o]",
         "detalles": "Grue en flèche <br>  <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",312",
+        "manual_url": ",321",
         "imagenes": [
             "M-7.jpg"
         ],
@@ -3779,7 +3908,7 @@
         "categorie": "Machinerie Ferroviaire",
         "descripcion": "Train Stop System[o]",
         "detalles": "Train Stop System <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",313",
+        "manual_url": ",322",
         "imagenes": [
             "M-8.jpg",
             "M-8_A.jpg"
@@ -3793,7 +3922,7 @@
         "categorie": "Machinerie légère",
         "descripcion": "Canon à Neige_(WH-014)[o]",
         "detalles": "Canon à Neige WH-014 <br>  <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",314",
+        "manual_url": ",323",
         "imagenes": [
             "M-9.jpg",
             "M-9_A.jpg",
