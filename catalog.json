@@ -3849,19 +3849,6 @@
         "unit_price": 0.0
     },
     {
-        "lot": "M-4",
-        "prix": 0.0,
-        "categorie": "Machinerie légère",
-        "descripcion": "Brumisateur[o]",
-        "detalles": "Brumisateur <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",318",
-        "imagenes": [
-            "M-4.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
         "lot": "M-5",
         "prix": 0.0,
         "categorie": "Machinerie légère",
@@ -3925,8 +3912,7 @@
         "manual_url": ",323",
         "imagenes": [
             "M-9.jpg",
-            "M-9_A.jpg",
-            "M-9_B.jpg"
+            "M-9_A.jpg"
         ],
         "units_available": 1,
         "unit_price": 0.0
