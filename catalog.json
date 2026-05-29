@@ -2675,19 +2675,6 @@
         "unit_price": 0.0
     },
     {
-        "lot": "I-1",
-        "prix": 1250.0,
-        "categorie": "Écrans",
-        "descripcion": "Écran d'ordinateur",
-        "detalles": "Écran d'ordinateur <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",232",
-        "imagenes": [
-            "I-1.jpg"
-        ],
-        "units_available": 44,
-        "unit_price": 25.0
-    },
-    {
         "lot": "O-1",
         "prix": 120800.0,
         "categorie": "Acc. Pick up",
