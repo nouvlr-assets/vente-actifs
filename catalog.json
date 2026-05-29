@@ -1152,7 +1152,7 @@
         "imagenes": [
             "A-125.5.jpg"
         ],
-        "units_available": 7,
+        "units_available": 4,
         "unit_price": 1710.0
     },
     {
@@ -1715,19 +1715,6 @@
         "unit_price": 192.38
     },
     {
-        "lot": "A-206",
-        "prix": 406.12,
-        "categorie": "Outils électriques",
-        "descripcion": "Milwakee ensemble de lumière DEL à batterie",
-        "detalles": "Milwakee ensemble de lumière DEL à batterie",
-        "manual_url": "",
-        "imagenes": [
-            "A-206.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
         "lot": "A-207",
         "prix": 102.6,
         "categorie": "Outils électriques",
@@ -1868,19 +1855,6 @@
             "A-221.jpg"
         ],
         "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
-        "lot": "A-222",
-        "prix": 171.0,
-        "categorie": "Outils électriques",
-        "descripcion": "Hilti ensemble de lumière à batterie",
-        "detalles": "Hilti ensemble de lumière à batterie SL 6-A22  <br>  Batterie B 22/5.2 Li-ion  <br>  Chargeur",
-        "manual_url": "",
-        "imagenes": [
-            "A-222.jpg"
-        ],
-        "units_available": 2,
         "unit_price": 0.0
     },
     {
