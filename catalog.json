@@ -3613,20 +3613,6 @@
         "unit_price": 0.0
     },
     {
-        "lot": "O-73",
-        "prix": 0.0,
-        "categorie": "Entrepôt Conteneur",
-        "descripcion": "Conteneur de chantier_(WH-016)[o]",
-        "detalles": "Conteneur de chantier WH-016 <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",304",
-        "imagenes": [
-            "O-73.jpg",
-            "O-73_A.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
         "lot": "O-74",
         "prix": 0.0,
         "categorie": "Entrepôt Conteneur",
