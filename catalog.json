@@ -780,19 +780,6 @@
         "unit_price": 0.0
     },
     {
-        "lot": "A-100",
-        "prix": 0.0,
-        "categorie": "Mesure Ferroviaire",
-        "descripcion": "Station Total Trimble",
-        "detalles": "Ensemble & Accessoire pour scan voie ferroviaire GEDO CE 2.0  <br>  Station Total Trimble S9",
-        "manual_url": "https://geospatial.trimble.com/en/products/hardware/trimble-s9",
-        "imagenes": [
-            "A-100.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
         "lot": "A-100.1",
         "prix": 0.0,
         "categorie": "Mesure Ferroviaire",
@@ -3599,20 +3586,6 @@
         "unit_price": 0.0
     },
     {
-        "lot": "O-72",
-        "prix": 0.0,
-        "categorie": "Entrepôt Conteneur",
-        "descripcion": "Conteneur de chantier_(WH-015)[o]",
-        "detalles": "Conteneur de chantier WH-015 <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",303",
-        "imagenes": [
-            "O-72.jpg",
-            "O-72_A.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
         "lot": "O-74",
         "prix": 0.0,
         "categorie": "Entrepôt Conteneur",
@@ -3757,12 +3730,506 @@
         "unit_price": 0.0
     },
     {
+        "lot": "O-84",
+        "prix": 0.0,
+        "categorie": "Radios",
+        "descripcion": "Radio Kenwood[o]",
+        "detalles": "Radio Kenwood <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",315",
+        "imagenes": [
+            "O-84.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-85",
+        "prix": 0.0,
+        "categorie": "Radios",
+        "descripcion": "Chargeur Kenwood[o]",
+        "detalles": "Chargeur Kenwood <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",316",
+        "imagenes": [
+            "O-85.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-86",
+        "prix": 0.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Chargeur Hilti[o]",
+        "detalles": "Chargeur Hilti <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",317",
+        "imagenes": [
+            "O-86.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-87",
+        "prix": 0.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Chargeur Hilti[o]",
+        "detalles": "Chargeur Hilti <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",318",
+        "imagenes": [
+            "O-87.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-88",
+        "prix": 0.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Chargeur Hilti[o]",
+        "detalles": "Chargeur Hilti <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",319",
+        "imagenes": [
+            "O-88.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-89",
+        "prix": 0.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Chargeur Milwaukee[o]",
+        "detalles": "Chargeur Milwaukee <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",320",
+        "imagenes": [
+            "O-89.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-90",
+        "prix": 0.0,
+        "categorie": "Outils légers",
+        "descripcion": "Tie Tongs[o]",
+        "detalles": "Tie Tongs <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",321",
+        "imagenes": [
+            "O-90.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-91",
+        "prix": 0.0,
+        "categorie": "Acc. Ferroviaire",
+        "descripcion": "Perceuse à Rail[o]",
+        "detalles": "Perceuse à Rail <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",322",
+        "imagenes": [
+            "O-91.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-92",
+        "prix": 0.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Impact à gaz[o]",
+        "detalles": "Impact à gaz <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",323",
+        "imagenes": [
+            "O-92.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-93",
+        "prix": 0.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Hand Tamper[o]",
+        "detalles": "Hand Tamper <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",324",
+        "imagenes": [
+            "O-93.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-94",
+        "prix": 0.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Scie Mécanique[o]",
+        "detalles": "Scie Mécanique <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",325",
+        "imagenes": [
+            "O-94.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-95",
+        "prix": 0.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Jack Mécanique[o]",
+        "detalles": "Jack Mécanique <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",326",
+        "imagenes": [
+            "O-95.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-96",
+        "prix": 0.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Blowerpack[o]",
+        "detalles": "Blowerpack <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",327",
+        "imagenes": [
+            "O-96.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-97",
+        "prix": 0.0,
+        "categorie": "Outils légers",
+        "descripcion": "Marteau Caoutchouc[o]",
+        "detalles": "Marteau Caoutchouc <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",328",
+        "imagenes": [
+            "O-97.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-98",
+        "prix": 0.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Guide de scie mécanique[o]",
+        "detalles": "Guide de scie mécanique <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",329",
+        "imagenes": [
+            "O-98.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-99",
+        "prix": 0.0,
+        "categorie": "Outils légers",
+        "descripcion": "Pic de jardin[o]",
+        "detalles": "Pic de jardin <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",330",
+        "imagenes": [
+            "O-99.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-100",
+        "prix": 0.0,
+        "categorie": "Outils légers",
+        "descripcion": "Pic à ballast[o]",
+        "detalles": "Pic à ballast <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",331",
+        "imagenes": [
+            "O-100.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-101",
+        "prix": 0.0,
+        "categorie": "Outils légers",
+        "descripcion": "Fourche[o]",
+        "detalles": "Fourche  <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",332",
+        "imagenes": [
+            "O-101.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-102",
+        "prix": 0.0,
+        "categorie": "Outils légers",
+        "descripcion": "Masse[o]",
+        "detalles": "Masse <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",333",
+        "imagenes": [
+            "O-102.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-103",
+        "prix": 0.0,
+        "categorie": "Acc. Ferroviaire",
+        "descripcion": "Marteau de track[o]",
+        "detalles": "Marteau de track <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",334",
+        "imagenes": [
+            "O-103.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-104",
+        "prix": 0.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Milwaukee Impact[o]",
+        "detalles": "Milwaukee Impact <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",335",
+        "imagenes": [
+            "O-104.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-105",
+        "prix": 0.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Milwaukee Impact[o]",
+        "detalles": "Milwaukee Impact <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",336",
+        "imagenes": [
+            "O-105.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-107",
+        "prix": 0.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Milwaukee Impact[o]",
+        "detalles": "Milwaukee Impact <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",337",
+        "imagenes": [
+            "O-107.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-107",
+        "prix": 0.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Hilti Impact[o]",
+        "detalles": "Hilti Impact <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",338",
+        "imagenes": [
+            "O-107.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-108",
+        "prix": 0.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Scie Ronde Hilti[o]",
+        "detalles": "Scie Ronde Hilti <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",339",
+        "imagenes": [
+            "O-108.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-109",
+        "prix": 0.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Scie ronde Milwaukee[o]",
+        "detalles": "Scie ronde Milwaukee <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",340",
+        "imagenes": [
+            "O-109.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-110",
+        "prix": 0.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Scie Ronde Hilti[o]",
+        "detalles": "Scie Ronde Hilti <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",341",
+        "imagenes": [
+            "O-110.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-111",
+        "prix": 0.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Sawzall Hilti[o]",
+        "detalles": "Sawzall Hilti <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",342",
+        "imagenes": [
+            "O-111.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-112",
+        "prix": 0.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Drill à mandarin Hilti[o]",
+        "detalles": "Drill à mandarin Hilti <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",343",
+        "imagenes": [
+            "O-112.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-113",
+        "prix": 0.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Drill à mandarin Milwaukee[o]",
+        "detalles": "Drill à mandarin Milwaukee <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",344",
+        "imagenes": [
+            "O-113.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-114",
+        "prix": 0.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Hammer drill Hilti[o]",
+        "detalles": "Hammer drill Hilti <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",345",
+        "imagenes": [
+            "O-114.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-115",
+        "prix": 0.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Hammer drill Hilti[o]",
+        "detalles": "Hammer drill Hilti <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",346",
+        "imagenes": [
+            "O-115.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-116",
+        "prix": 0.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Hammer drill Hilti[o]",
+        "detalles": "Hammer drill Hilti <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",347",
+        "imagenes": [
+            "O-116.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-117",
+        "prix": 0.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Hammer drill Hilti[o]",
+        "detalles": "Hammer drill Hilti <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",348",
+        "imagenes": [
+            "O-117.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-118",
+        "prix": 0.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Hammer drill Hilti[o]",
+        "detalles": "Hammer drill Hilti <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",349",
+        "imagenes": [
+            "O-118.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-119",
+        "prix": 0.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Hammer drill Hilti[o]",
+        "detalles": "Hammer drill Hilti <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",350",
+        "imagenes": [
+            "O-119.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-120",
+        "prix": 0.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Grinder Makita[o]",
+        "detalles": "Grinder Makita <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",351",
+        "imagenes": [
+            "O-120.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-121",
+        "prix": 0.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Grinder Makita[o]",
+        "detalles": "Grinder Makita <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",352",
+        "imagenes": [
+            "O-121.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
         "lot": "M-1",
         "prix": 0.0,
         "categorie": "Machinerie Ferroviaire",
         "descripcion": "Rail Heater[o]",
         "detalles": "Rail Heater <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",315",
+        "manual_url": ",353",
         "imagenes": [
             "M-1.jpg"
         ],
@@ -3775,7 +4242,7 @@
         "categorie": "Machinerie Ferroviaire",
         "descripcion": "Rail Puller[o]",
         "detalles": "Rail Puller <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",316",
+        "manual_url": ",354",
         "imagenes": [
             "M-2.jpg"
         ],
@@ -3788,7 +4255,7 @@
         "categorie": "Machinerie légère",
         "descripcion": "Bennes à Béton[o]",
         "detalles": "Bennes à Béton <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",317",
+        "manual_url": ",355",
         "imagenes": [
             "M-3.jpg"
         ],
@@ -3801,7 +4268,7 @@
         "categorie": "Machinerie légère",
         "descripcion": "Fourche de Grue[o]",
         "detalles": "Fourche de Grue <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",319",
+        "manual_url": ",357",
         "imagenes": [
             "M-5.jpg"
         ],
@@ -3814,7 +4281,7 @@
         "categorie": "Machinerie légère",
         "descripcion": "Hilti Diamond Coring[o]",
         "detalles": "Hilti Diamond Coring <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",320",
+        "manual_url": ",358",
         "imagenes": [
             "M-6.jpg",
             "M-6_A.jpg",
@@ -3829,7 +4296,7 @@
         "categorie": "Machinerie légère",
         "descripcion": "Grue en flèche [o]",
         "detalles": "Grue en flèche <br>  <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",321",
+        "manual_url": ",359",
         "imagenes": [
             "M-7.jpg"
         ],
@@ -3842,7 +4309,7 @@
         "categorie": "Machinerie Ferroviaire",
         "descripcion": "Train Stop System[o]",
         "detalles": "Train Stop System <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",322",
+        "manual_url": ",360",
         "imagenes": [
             "M-8.jpg",
             "M-8_A.jpg"
@@ -3856,7 +4323,7 @@
         "categorie": "Machinerie légère",
         "descripcion": "Canon à Neige_(WH-014)[o]",
         "detalles": "Canon à Neige WH-014 <br>  <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",323",
+        "manual_url": ",361",
         "imagenes": [
             "M-9.jpg",
             "M-9_A.jpg"
