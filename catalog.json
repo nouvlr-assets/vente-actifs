@@ -1663,19 +1663,6 @@
         "unit_price": 0.0
     },
     {
-        "lot": "A-201",
-        "prix": 106.88,
-        "categorie": "Outils électriques",
-        "descripcion": "Chargeur multiple Milwake",
-        "detalles": "Chargeur multiple Milwaukee M18",
-        "manual_url": "",
-        "imagenes": [
-            "A-201.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
         "lot": "A-203.1",
         "prix": 102.6,
         "categorie": "Outils électriques",
