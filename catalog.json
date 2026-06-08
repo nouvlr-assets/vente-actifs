@@ -1728,19 +1728,6 @@
         "unit_price": 0.0
     },
     {
-        "lot": "A-210",
-        "prix": 855.0,
-        "categorie": "Outils électriques",
-        "descripcion": "Hilti PS 50 détecteur acier armature",
-        "detalles": "Hilti PS 50 détecteur acier armature (2020)",
-        "manual_url": "",
-        "imagenes": [
-            "A-210.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
         "lot": "A-212",
         "prix": 427.5,
         "categorie": "Outils électriques",
@@ -1918,36 +1905,6 @@
         "manual_url": "",
         "imagenes": [
             "A-302.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
-        "lot": "A-400",
-        "prix": 2784.15,
-        "categorie": "Quincailleries",
-        "descripcion": "Divers éléments ancrages tiges billes",
-        "detalles": "Ancrages à béton  <br>  Coil Threaded Drop-In Anchor  <br>  Wedge Anchor  <br>  Billes nivellement  <br>  Vis à béton",
-        "manual_url": "",
-        "imagenes": [
-            "A-400.jpg",
-            "A-400_A.jpg",
-            "A-400_B.jpg",
-            "A-400_C.jpg",
-            "A-400_D.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
-        "lot": "A-400.1",
-        "prix": 1570.63,
-        "categorie": "Quincailleries",
-        "descripcion": "Forêts Béton",
-        "detalles": "Forêts Béton",
-        "manual_url": "",
-        "imagenes": [
-            "A-400.1.jpg"
         ],
         "units_available": 1,
         "unit_price": 0.0
