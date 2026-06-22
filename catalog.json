@@ -2749,6 +2749,19 @@
         "unit_price": 0.0
     },
     {
+        "lot": "O-14",
+        "prix": 0.0,
+        "categorie": "Machinerie légère",
+        "descripcion": "Stanley Hydraulique[o]",
+        "detalles": "Stanley Hydraulique",
+        "manual_url": "",
+        "imagenes": [
+            "O-14.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
         "lot": "O-15",
         "prix": 4500.0,
         "categorie": "Acc. Chariot Élévateur",
@@ -2781,7 +2794,7 @@
         "categorie": "Radios",
         "descripcion": "Radios et Accessoires (WH-002)[o]",
         "detalles": "WH-002 <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",249",
+        "manual_url": ",250",
         "imagenes": [
             "O-17.jpg",
             "O-17_A.jpg",
@@ -2844,7 +2857,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Ancrage[o]",
         "detalles": "Ancrage  <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",252",
+        "manual_url": ",253",
         "imagenes": [
             "O-21.jpg"
         ],
@@ -2857,7 +2870,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Bolts[o]",
         "detalles": "Bolts <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",253",
+        "manual_url": ",254",
         "imagenes": [
             "O-22.jpg",
             "O-22_A.jpg"
@@ -2871,7 +2884,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Bouteille & Butterfly Clip[o]",
         "detalles": "Bouteille & Butterfly Clip <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",254",
+        "manual_url": ",255",
         "imagenes": [
             "O-23.jpg"
         ],
@@ -2884,7 +2897,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "C Channel[o]",
         "detalles": "C Channel <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",255",
+        "manual_url": ",256",
         "imagenes": [
             "O-24.jpg"
         ],
@@ -2897,7 +2910,7 @@
         "categorie": "Acc. Ferroviaire",
         "descripcion": "Dérailleurs & Flag[o]",
         "detalles": "Dérailleurs & Flag <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",256",
+        "manual_url": ",257",
         "imagenes": [
             "O-25.jpg"
         ],
@@ -2910,7 +2923,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "DF Hardware[o]",
         "detalles": "DF Hardware <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",257",
+        "manual_url": ",258",
         "imagenes": [
             "O-26.jpg"
         ],
@@ -2923,7 +2936,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "DF Pads[o]",
         "detalles": "DF Pads <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",258",
+        "manual_url": ",259",
         "imagenes": [
             "O-27.jpg"
         ],
@@ -2936,7 +2949,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "DF Plates[o]",
         "detalles": "DF Plates <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",259",
+        "manual_url": ",260",
         "imagenes": [
             "O-28.jpg"
         ],
@@ -2949,7 +2962,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Gage Pads Standards[o]",
         "detalles": "Gage Pads Standards <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",260",
+        "manual_url": ",261",
         "imagenes": [
             "O-29.jpg"
         ],
@@ -2962,7 +2975,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Gage Pads Bi-Block[o]",
         "detalles": "Gage Pads Bi-Block <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",261",
+        "manual_url": ",262",
         "imagenes": [
             "O-30.jpg"
         ],
@@ -2975,7 +2988,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Poubelle Shack[o]",
         "detalles": "Poubelle Shack <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",262",
+        "manual_url": ",263",
         "imagenes": [
             "O-31.jpg"
         ],
@@ -2988,7 +3001,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Hollow Tie Plate[o]",
         "detalles": "Hollow Tie Plate <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",263",
+        "manual_url": ",264",
         "imagenes": [
             "O-32.jpg"
         ],
@@ -3001,7 +3014,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Iron Horse Hands[o]",
         "detalles": "Iron Horse Hands <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",264",
+        "manual_url": ",265",
         "imagenes": [
             "O-33.jpg"
         ],
@@ -3014,7 +3027,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Joint Bar[o]",
         "detalles": "Joint Bar <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",265",
+        "manual_url": ",266",
         "imagenes": [
             "O-34.jpg"
         ],
@@ -3027,7 +3040,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Jordan Rail[o]",
         "detalles": "Jordan Rail <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",266",
+        "manual_url": ",267",
         "imagenes": [
             "O-35.jpg"
         ],
@@ -3040,7 +3053,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "L Bracket[o]",
         "detalles": "L Bracket <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",267",
+        "manual_url": ",268",
         "imagenes": [
             "O-36.jpg"
         ],
@@ -3053,7 +3066,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "M-180[o]",
         "detalles": "M-180 <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",268",
+        "manual_url": ",269",
         "imagenes": [
             "O-37.jpg"
         ],
@@ -3066,7 +3079,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Nuts[o]",
         "detalles": "Nuts <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",269",
+        "manual_url": ",270",
         "imagenes": [
             "O-38.jpg"
         ],
@@ -3079,7 +3092,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Pandrol[o]",
         "detalles": "Pandrol <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",270",
+        "manual_url": ",271",
         "imagenes": [
             "O-39.jpg"
         ],
@@ -3092,7 +3105,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Pad Bleu[o]",
         "detalles": "Pad Bleu <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",271",
+        "manual_url": ",272",
         "imagenes": [
             "O-40.jpg"
         ],
@@ -3105,7 +3118,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Push and Pull[o]",
         "detalles": "Push and Pull <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",272",
+        "manual_url": ",273",
         "imagenes": [
             "O-41.jpg"
         ],
@@ -3118,7 +3131,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Rail Ancers[o]",
         "detalles": "Rail Ancers <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",273",
+        "manual_url": ",274",
         "imagenes": [
             "O-42.jpg"
         ],
@@ -3131,7 +3144,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Rail Cart[o]",
         "detalles": "Rail Cart <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",274",
+        "manual_url": ",275",
         "imagenes": [
             "O-43.jpg"
         ],
@@ -3144,7 +3157,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Rail Pads[o]",
         "detalles": "Rail Pads <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",275",
+        "manual_url": ",276",
         "imagenes": [
             "O-44.jpg"
         ],
@@ -3157,7 +3170,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Rollers[o]",
         "detalles": "Rollers <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",276",
+        "manual_url": ",277",
         "imagenes": [
             "O-45.jpg"
         ],
@@ -3170,7 +3183,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Shim[o]",
         "detalles": "Shim <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",277",
+        "manual_url": ",278",
         "imagenes": [
             "O-46.jpg"
         ],
@@ -3183,7 +3196,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Sleeve for Heater[o]",
         "detalles": "Sleeve for Heater <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",278",
+        "manual_url": ",279",
         "imagenes": [
             "O-47.jpg"
         ],
@@ -3196,7 +3209,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Spike Screw[o]",
         "detalles": "Spike Screw <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",279",
+        "manual_url": ",280",
         "imagenes": [
             "O-48.jpg"
         ],
@@ -3209,7 +3222,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Spindle[o]",
         "detalles": "Spindle <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",280",
+        "manual_url": ",281",
         "imagenes": [
             "O-49.jpg"
         ],
@@ -3222,7 +3235,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Sping Washer[o]",
         "detalles": "Spring Washer <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",281",
+        "manual_url": ",282",
         "imagenes": [
             "O-50.jpg"
         ],
@@ -3235,7 +3248,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Station Brace[o]",
         "detalles": "Station Brace  <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",282",
+        "manual_url": ",283",
         "imagenes": [
             "O-51.jpg"
         ],
@@ -3248,7 +3261,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Stiffness Pads[o]",
         "detalles": "Stiffness Pads <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",283",
+        "manual_url": ",284",
         "imagenes": [
             "O-52.jpg"
         ],
@@ -3261,7 +3274,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Tie Pad[o]",
         "detalles": "Tie Pad <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",284",
+        "manual_url": ",285",
         "imagenes": [
             "O-53.jpg"
         ],
@@ -3274,7 +3287,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Tie Plate[o]",
         "detalles": "Tie Plate <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",285",
+        "manual_url": ",286",
         "imagenes": [
             "O-54.jpg"
         ],
@@ -3287,7 +3300,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Washers[o]",
         "detalles": "Washers <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",286",
+        "manual_url": ",287",
         "imagenes": [
             "O-55.jpg"
         ],
@@ -3300,7 +3313,7 @@
         "categorie": "Quincailleries Ferroviaire",
         "descripcion": "Wheel Shocks[o]",
         "detalles": "Wheel Shocks <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",287",
+        "manual_url": ",288",
         "imagenes": [
             "O-56.jpg"
         ],
@@ -3344,7 +3357,7 @@
         "categorie": "Outils légers",
         "descripcion": "Coffrage Rod Vibrateur & Convertisseur (WH-007)[o]",
         "detalles": "WH-007 <br> Coffrage <br> Rod <br> Vibrateur & Convertisseur <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",290",
+        "manual_url": ",291",
         "imagenes": [
             "O-59.jpg",
             "O-59_A.jpg"
@@ -3371,7 +3384,7 @@
         "categorie": "Sanitaire",
         "descripcion": "Station de lavage mobile autonome avec pompe au pied (WH-009)[o]",
         "detalles": "WH-009 <br> Station de lavage mobile autonome avec pompe au pied <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",292",
+        "manual_url": ",293",
         "imagenes": [
             "O-61.jpg"
         ],
@@ -3384,7 +3397,7 @@
         "categorie": "Outils électriques",
         "descripcion": "Power Wrench[o]",
         "detalles": "Power Wrench <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",293",
+        "manual_url": ",294",
         "imagenes": [
             "O-62.jpg"
         ],
@@ -3397,7 +3410,7 @@
         "categorie": "Outils électriques",
         "descripcion": "Power Pack[o]",
         "detalles": "Power Pack <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",294",
+        "manual_url": ",295",
         "imagenes": [
             "O-63.jpg"
         ],
@@ -3410,7 +3423,7 @@
         "categorie": "Matériels",
         "descripcion": "Chariot Utilitaire[o]",
         "detalles": "Chariot Utilitaire <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",295",
+        "manual_url": ",296",
         "imagenes": [
             "O-64.jpg"
         ],
@@ -3423,7 +3436,7 @@
         "categorie": "Matériels",
         "descripcion": "Bac en plastique[o]",
         "detalles": "Bac en plastique <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",296",
+        "manual_url": ",297",
         "imagenes": [
             "O-65.jpg"
         ],
@@ -3436,7 +3449,7 @@
         "categorie": "Matériels",
         "descripcion": "Table à pique-nique[o]",
         "detalles": "Table à pique-nique <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",297",
+        "manual_url": ",298",
         "imagenes": [
             "O-66.jpg"
         ],
@@ -3503,26 +3516,12 @@
         "unit_price": 0.0
     },
     {
-        "lot": "O-71",
-        "prix": 19750.01,
-        "categorie": "Matériels",
-        "descripcion": "Plaque de Rue_(WH-013)",
-        "detalles": "Plaque de Rue WH-013 <br> Prix a titre de référence <br> *Prix négociable selon offre sérieuse* <br>  Pour info supplémentaire communiquer avec nous",
-        "manual_url": "",
-        "imagenes": [
-            "O-71.jpg",
-            "O-71_A.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
         "lot": "O-74",
         "prix": 0.0,
         "categorie": "Entrepôt Conteneur",
         "descripcion": "Conteneur Électrique_(WH-017)[o]",
         "detalles": "Conteneur Électrique WH-017 <br> Plusieurs autres photo disponible sur demande. <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",305",
+        "manual_url": ",306",
         "imagenes": [
             "O-74.jpg",
             "O-74_A.jpg",
@@ -3666,7 +3665,7 @@
         "categorie": "Radios",
         "descripcion": "Radio Kenwood[o]",
         "detalles": "Radio Kenwood <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",315",
+        "manual_url": ",316",
         "imagenes": [
             "O-84.jpg"
         ],
@@ -3679,7 +3678,7 @@
         "categorie": "Radios",
         "descripcion": "Chargeur Kenwood[o]",
         "detalles": "Chargeur Kenwood <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",316",
+        "manual_url": ",317",
         "imagenes": [
             "O-85.jpg"
         ],
@@ -3692,7 +3691,7 @@
         "categorie": "Outils électriques",
         "descripcion": "Chargeur Hilti[o]",
         "detalles": "Chargeur Hilti <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",317",
+        "manual_url": ",318",
         "imagenes": [
             "O-86.jpg"
         ],
@@ -3705,7 +3704,7 @@
         "categorie": "Outils électriques",
         "descripcion": "Chargeur Hilti[o]",
         "detalles": "Chargeur Hilti <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",318",
+        "manual_url": ",319",
         "imagenes": [
             "O-87.jpg"
         ],
@@ -3718,7 +3717,7 @@
         "categorie": "Outils électriques",
         "descripcion": "Chargeur Hilti[o]",
         "detalles": "Chargeur Hilti <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",319",
+        "manual_url": ",320",
         "imagenes": [
             "O-88.jpg"
         ],
@@ -3731,7 +3730,7 @@
         "categorie": "Outils électriques",
         "descripcion": "Chargeur Milwaukee[o]",
         "detalles": "Chargeur Milwaukee <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",320",
+        "manual_url": ",321",
         "imagenes": [
             "O-89.jpg"
         ],
@@ -3744,7 +3743,7 @@
         "categorie": "Outils légers",
         "descripcion": "Tie Tongs[o]",
         "detalles": "Tie Tongs <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",321",
+        "manual_url": ",322",
         "imagenes": [
             "O-90.jpg"
         ],
@@ -3757,7 +3756,7 @@
         "categorie": "Acc. Ferroviaire",
         "descripcion": "Perceuse à Rail[o]",
         "detalles": "Perceuse à Rail <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",322",
+        "manual_url": ",323",
         "imagenes": [
             "O-91.jpg"
         ],
@@ -3770,7 +3769,7 @@
         "categorie": "Outils électriques",
         "descripcion": "Impact à gaz[o]",
         "detalles": "Impact à gaz <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",323",
+        "manual_url": ",324",
         "imagenes": [
             "O-92.jpg"
         ],
@@ -3783,7 +3782,7 @@
         "categorie": "Outils électriques",
         "descripcion": "Hand Tamper[o]",
         "detalles": "Hand Tamper <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",324",
+        "manual_url": ",325",
         "imagenes": [
             "O-93.jpg"
         ],
@@ -3796,7 +3795,7 @@
         "categorie": "Outils électriques",
         "descripcion": "Scie Mécanique[o]",
         "detalles": "Scie Mécanique <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",325",
+        "manual_url": ",326",
         "imagenes": [
             "O-94.jpg"
         ],
@@ -3809,7 +3808,7 @@
         "categorie": "Outils électriques",
         "descripcion": "Jack Mécanique[o]",
         "detalles": "Jack Mécanique <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",326",
+        "manual_url": ",327",
         "imagenes": [
             "O-95.jpg"
         ],
@@ -3822,7 +3821,7 @@
         "categorie": "Outils électriques",
         "descripcion": "Blowerpack[o]",
         "detalles": "Blowerpack <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",327",
+        "manual_url": ",328",
         "imagenes": [
             "O-96.jpg"
         ],
@@ -3835,7 +3834,7 @@
         "categorie": "Outils légers",
         "descripcion": "Marteau Caoutchouc[o]",
         "detalles": "Marteau Caoutchouc <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",328",
+        "manual_url": ",329",
         "imagenes": [
             "O-97.jpg"
         ],
@@ -3848,7 +3847,7 @@
         "categorie": "Outils électriques",
         "descripcion": "Guide de scie mécanique[o]",
         "detalles": "Guide de scie mécanique <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",329",
+        "manual_url": ",330",
         "imagenes": [
             "O-98.jpg"
         ],
@@ -3861,7 +3860,7 @@
         "categorie": "Outils légers",
         "descripcion": "Pic de jardin[o]",
         "detalles": "Pic de jardin <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",330",
+        "manual_url": ",331",
         "imagenes": [
             "O-99.jpg"
         ],
@@ -3874,7 +3873,7 @@
         "categorie": "Outils légers",
         "descripcion": "Pic à ballast[o]",
         "detalles": "Pic à ballast <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",331",
+        "manual_url": ",332",
         "imagenes": [
             "O-100.jpg"
         ],
@@ -3887,7 +3886,7 @@
         "categorie": "Outils légers",
         "descripcion": "Fourche[o]",
         "detalles": "Fourche  <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",332",
+        "manual_url": ",333",
         "imagenes": [
             "O-101.jpg"
         ],
@@ -3900,7 +3899,7 @@
         "categorie": "Outils légers",
         "descripcion": "Masse[o]",
         "detalles": "Masse <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",333",
+        "manual_url": ",334",
         "imagenes": [
             "O-102.jpg"
         ],
@@ -3913,7 +3912,7 @@
         "categorie": "Acc. Ferroviaire",
         "descripcion": "Marteau de track[o]",
         "detalles": "Marteau de track <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",334",
+        "manual_url": ",335",
         "imagenes": [
             "O-103.jpg"
         ],
@@ -3926,7 +3925,7 @@
         "categorie": "Outils électriques",
         "descripcion": "Milwaukee Impact[o]",
         "detalles": "Milwaukee Impact <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",335",
+        "manual_url": ",336",
         "imagenes": [
             "O-104.jpg"
         ],
@@ -3939,7 +3938,7 @@
         "categorie": "Outils électriques",
         "descripcion": "Milwaukee Impact[o]",
         "detalles": "Milwaukee Impact <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",336",
+        "manual_url": ",337",
         "imagenes": [
             "O-105.jpg"
         ],
@@ -3952,7 +3951,7 @@
         "categorie": "Outils électriques",
         "descripcion": "Milwaukee Impact[o]",
         "detalles": "Milwaukee Impact <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",337",
+        "manual_url": ",338",
         "imagenes": [
             "O-107.jpg"
         ],
@@ -3965,7 +3964,7 @@
         "categorie": "Outils électriques",
         "descripcion": "Hilti Impact[o]",
         "detalles": "Hilti Impact <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",338",
+        "manual_url": ",339",
         "imagenes": [
             "O-107.jpg"
         ],
@@ -3978,7 +3977,7 @@
         "categorie": "Outils électriques",
         "descripcion": "Scie Ronde Hilti[o]",
         "detalles": "Scie Ronde Hilti <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",339",
+        "manual_url": ",340",
         "imagenes": [
             "O-108.jpg"
         ],
@@ -3991,7 +3990,7 @@
         "categorie": "Outils électriques",
         "descripcion": "Scie ronde Milwaukee[o]",
         "detalles": "Scie ronde Milwaukee <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",340",
+        "manual_url": ",341",
         "imagenes": [
             "O-109.jpg"
         ],
@@ -4004,7 +4003,7 @@
         "categorie": "Outils électriques",
         "descripcion": "Scie Ronde Hilti[o]",
         "detalles": "Scie Ronde Hilti <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",341",
+        "manual_url": ",342",
         "imagenes": [
             "O-110.jpg"
         ],
@@ -4017,7 +4016,7 @@
         "categorie": "Outils électriques",
         "descripcion": "Sawzall Hilti[o]",
         "detalles": "Sawzall Hilti <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",342",
+        "manual_url": ",343",
         "imagenes": [
             "O-111.jpg"
         ],
@@ -4030,7 +4029,7 @@
         "categorie": "Outils électriques",
         "descripcion": "Drill à mandarin Hilti[o]",
         "detalles": "Drill à mandarin Hilti <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",343",
+        "manual_url": ",344",
         "imagenes": [
             "O-112.jpg"
         ],
@@ -4043,7 +4042,7 @@
         "categorie": "Outils électriques",
         "descripcion": "Drill à mandarin Milwaukee[o]",
         "detalles": "Drill à mandarin Milwaukee <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",344",
+        "manual_url": ",345",
         "imagenes": [
             "O-113.jpg"
         ],
@@ -4056,7 +4055,7 @@
         "categorie": "Outils électriques",
         "descripcion": "Hammer drill Hilti[o]",
         "detalles": "Hammer drill Hilti <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",345",
+        "manual_url": ",346",
         "imagenes": [
             "O-114.jpg"
         ],
@@ -4069,7 +4068,7 @@
         "categorie": "Outils électriques",
         "descripcion": "Hammer drill Hilti[o]",
         "detalles": "Hammer drill Hilti <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",346",
+        "manual_url": ",347",
         "imagenes": [
             "O-115.jpg"
         ],
@@ -4082,7 +4081,7 @@
         "categorie": "Outils électriques",
         "descripcion": "Hammer drill Hilti[o]",
         "detalles": "Hammer drill Hilti <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",347",
+        "manual_url": ",348",
         "imagenes": [
             "O-116.jpg"
         ],
@@ -4095,7 +4094,7 @@
         "categorie": "Outils électriques",
         "descripcion": "Hammer drill Hilti[o]",
         "detalles": "Hammer drill Hilti <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",348",
+        "manual_url": ",349",
         "imagenes": [
             "O-117.jpg"
         ],
@@ -4108,7 +4107,7 @@
         "categorie": "Outils électriques",
         "descripcion": "Hammer drill Hilti[o]",
         "detalles": "Hammer drill Hilti <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",349",
+        "manual_url": ",350",
         "imagenes": [
             "O-118.jpg"
         ],
@@ -4121,7 +4120,7 @@
         "categorie": "Outils électriques",
         "descripcion": "Hammer drill Hilti[o]",
         "detalles": "Hammer drill Hilti <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",350",
+        "manual_url": ",351",
         "imagenes": [
             "O-119.jpg"
         ],
@@ -4134,7 +4133,7 @@
         "categorie": "Outils électriques",
         "descripcion": "Grinder Makita[o]",
         "detalles": "Grinder Makita <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",351",
+        "manual_url": ",352",
         "imagenes": [
             "O-120.jpg"
         ],
@@ -4147,7 +4146,7 @@
         "categorie": "Outils électriques",
         "descripcion": "Grinder Makita[o]",
         "detalles": "Grinder Makita <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",352",
+        "manual_url": ",353",
         "imagenes": [
             "O-121.jpg"
         ],
@@ -4175,11 +4174,115 @@
         "categorie": "Matériels",
         "descripcion": "Pompes & Accesoires_(WH-027)[o]",
         "detalles": "Pompes & Accesoires (WH-027) <br>  <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",354",
+        "manual_url": ",355",
         "imagenes": [
             "O-123.jpg",
             "O-123_A.jpg",
             "O-123_B.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-124",
+        "prix": 0.0,
+        "categorie": "Outils électriques",
+        "descripcion": "Kit Scie Mécanique[o]",
+        "detalles": "Kit Scie Mécanique <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",356",
+        "imagenes": [
+            "O-124.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-125",
+        "prix": 0.0,
+        "categorie": "Outils légers",
+        "descripcion": "Shovac Hilti[o]",
+        "detalles": "Shovac Hilti <br>  <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",357",
+        "imagenes": [
+            "O-125.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-126",
+        "prix": 0.0,
+        "categorie": "Outils légers",
+        "descripcion": "Shopvac Bosch[o]",
+        "detalles": "Shopvac Bosch <br>  <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",358",
+        "imagenes": [
+            "O-126.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-127",
+        "prix": 0.0,
+        "categorie": "Outils légers",
+        "descripcion": "Shopvac Hilti[o]",
+        "detalles": "Shopvac Hilti <br>  <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",359",
+        "imagenes": [
+            "O-127.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-128",
+        "prix": 0.0,
+        "categorie": "Outils légers",
+        "descripcion": "Shopvac Hilti[o]",
+        "detalles": "Shopvac Hilti <br>  <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",360",
+        "imagenes": [
+            "O-128.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-129",
+        "prix": 0.0,
+        "categorie": "Outils légers",
+        "descripcion": "Shopvac Ridgid[o]",
+        "detalles": "Shopvac Ridgid <br>  <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",361",
+        "imagenes": [
+            "O-129.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-130",
+        "prix": 0.0,
+        "categorie": "Outils légers",
+        "descripcion": "Shopvac Dewalt[o]",
+        "detalles": "Shopvac Dewalt <br>  <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",362",
+        "imagenes": [
+            "O-130.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-131",
+        "prix": 0.0,
+        "categorie": "Outils légers",
+        "descripcion": "Pare-Étincelle[o]",
+        "detalles": "Pare-Étincelle <br>  <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",363",
+        "imagenes": [
+            "O-131.jpg"
         ],
         "units_available": 1,
         "unit_price": 0.0
@@ -4190,7 +4293,7 @@
         "categorie": "Machinerie Ferroviaire",
         "descripcion": "Rail Heater[o]",
         "detalles": "Rail Heater <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",355",
+        "manual_url": ",364",
         "imagenes": [
             "M-1.jpg"
         ],
@@ -4203,7 +4306,7 @@
         "categorie": "Machinerie Ferroviaire",
         "descripcion": "Rail Puller[o]",
         "detalles": "Rail Puller <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",356",
+        "manual_url": ",365",
         "imagenes": [
             "M-2.jpg"
         ],
@@ -4216,7 +4319,7 @@
         "categorie": "Machinerie légère",
         "descripcion": "Bennes à Béton[o]",
         "detalles": "Bennes à Béton <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",357",
+        "manual_url": ",366",
         "imagenes": [
             "M-3.jpg"
         ],
@@ -4229,7 +4332,7 @@
         "categorie": "Machinerie légère",
         "descripcion": "Fourche de Grue[o]",
         "detalles": "Fourche de Grue <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",359",
+        "manual_url": ",368",
         "imagenes": [
             "M-5.jpg"
         ],
@@ -4242,7 +4345,7 @@
         "categorie": "Machinerie légère",
         "descripcion": "Hilti Diamond Coring[o]",
         "detalles": "Hilti Diamond Coring <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",360",
+        "manual_url": ",369",
         "imagenes": [
             "M-6.jpg",
             "M-6_A.jpg",
@@ -4257,7 +4360,7 @@
         "categorie": "Machinerie légère",
         "descripcion": "Grue en flèche [o]",
         "detalles": "Grue en flèche <br>  <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",361",
+        "manual_url": ",370",
         "imagenes": [
             "M-7.jpg"
         ],
@@ -4270,7 +4373,7 @@
         "categorie": "Machinerie Ferroviaire",
         "descripcion": "Train Stop System[o]",
         "detalles": "Train Stop System <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",362",
+        "manual_url": ",371",
         "imagenes": [
             "M-8.jpg",
             "M-8_A.jpg"
@@ -4284,10 +4387,166 @@
         "categorie": "Machinerie légère",
         "descripcion": "Canon à Neige_(WH-014)[o]",
         "detalles": "Canon à Neige (WH-014) <br>  <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",363",
+        "manual_url": ",372",
         "imagenes": [
             "M-9.jpg",
             "M-9_A.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "M-10",
+        "prix": 0.0,
+        "categorie": "Générateurs électriques",
+        "descripcion": "Génératrice[o]",
+        "detalles": "Génératrice <br>  <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",373",
+        "imagenes": [
+            "M-10.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "M-11",
+        "prix": 0.0,
+        "categorie": "Générateurs électriques",
+        "descripcion": "Génératice[o]",
+        "detalles": "Génératice <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",374",
+        "imagenes": [
+            "M-11.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "M-12",
+        "prix": 0.0,
+        "categorie": "Générateurs électriques",
+        "descripcion": "Génératrice[o]",
+        "detalles": "Génératrice <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",375",
+        "imagenes": [
+            "M-12.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "M-13",
+        "prix": 0.0,
+        "categorie": "Générateurs électriques",
+        "descripcion": "Génératrice[o]",
+        "detalles": "Génératrice <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",376",
+        "imagenes": [
+            "M-13.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "M-14",
+        "prix": 0.0,
+        "categorie": "Machinerie légère",
+        "descripcion": "Stanley Hydraulique[o]",
+        "detalles": "Stanley Hydraulique <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",377",
+        "imagenes": [
+            "M-14.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "M-15",
+        "prix": 0.0,
+        "categorie": "Machinerie légère",
+        "descripcion": "Unité Hydraulique[o]",
+        "detalles": "Unité Hydraulique <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",378",
+        "imagenes": [
+            "M-15.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "M-16",
+        "prix": 0.0,
+        "categorie": "Machinerie légère",
+        "descripcion": "Unité Hydraulique[o]",
+        "detalles": "Unité Hydraulique <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",379",
+        "imagenes": [
+            "M-16.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "M-17",
+        "prix": 0.0,
+        "categorie": "Machinerie légère",
+        "descripcion": "Accessoire Hydraulique[o]",
+        "detalles": "Accessoire Hydraulique <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",380",
+        "imagenes": [
+            "M-17.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "M-18",
+        "prix": 0.0,
+        "categorie": "Machinerie légère",
+        "descripcion": "Accessoire Hydraulique[o]",
+        "detalles": "Accessoire Hydraulique <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",381",
+        "imagenes": [
+            "M-18.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "M-19",
+        "prix": 0.0,
+        "categorie": "Machinerie Ferroviaire",
+        "descripcion": "Rail & Switch grinding machine[o]",
+        "detalles": "Rail & Switch grinding machine <br> Accessoire Hydraulique <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",382",
+        "imagenes": [
+            "M-19.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "M-20",
+        "prix": 0.0,
+        "categorie": "Machinerie Ferroviaire",
+        "descripcion": "Rail Grinder[o]",
+        "detalles": "Rail Grinder <br> Accessoire Hydraulique <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",383",
+        "imagenes": [
+            "M-20.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "M-21",
+        "prix": 0.0,
+        "categorie": "Machinerie Ferroviaire",
+        "descripcion": "Rail Grinder[o]",
+        "detalles": "Rail Grinder <br> Accessoire Hydraulique <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",384",
+        "imagenes": [
+            "M-21.jpg"
         ],
         "units_available": 1,
         "unit_price": 0.0
