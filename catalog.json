@@ -4550,5 +4550,19 @@
         ],
         "units_available": 1,
         "unit_price": 0.0
+    },
+    {
+        "lot": "M-22",
+        "prix": 25325.0,
+        "categorie": "Chauffage Électrique",
+        "descripcion": "Chauffage Électrique_(WH-028)",
+        "detalles": "Chauffage Électrique (WH-028) <br> *Prix négociable selon offre sérieuse* <br>  Pour info supplémentaire communiquer avec nous",
+        "manual_url": "",
+        "imagenes": [
+            "M-22.jpg",
+            "M-22_A.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
     }
 ]
