@@ -390,19 +390,6 @@
         "unit_price": 0.0
     },
     {
-        "lot": "A-53",
-        "prix": 47025.0,
-        "categorie": "Station Totale",
-        "descripcion": "Station Total MS60 1 R2000",
-        "detalles": "Station MS60 1\" MultiStation (2020)  <br>  Poignée radio RH16 (2018)  <br>  Contrôleur CS20 LTE (2019)  <br>  Captivate TS/MS  <br>  Prisme 360 GRZ122  <br>  Canne à prisme SECO & Trépied",
-        "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_nova_ms60_ds.ashx",
-        "imagenes": [
-            "A-53.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
         "lot": "A-54",
         "prix": 0.0,
         "categorie": "Station Totale",
@@ -4168,12 +4155,42 @@
         "unit_price": 0.0
     },
     {
+        "lot": "O-122",
+        "prix": 18290.0,
+        "categorie": "Entrepôt Conteneur",
+        "descripcion": "Conteneur Électrique_(WH-026)",
+        "detalles": "Conteneur Électrique (WH-026) <br> *Prix négociable selon offre sérieuse* <br>  Pour info supplémentaire communiquer avec nous",
+        "manual_url": "",
+        "imagenes": [
+            "O-122.jpg",
+            "O-122_A.jpg",
+            "O-122_B.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-123",
+        "prix": 0.0,
+        "categorie": "Matériels",
+        "descripcion": "Pompes & Accesoires_(WH-027)[o]",
+        "detalles": "Pompes & Accesoires (WH-027) <br>  <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",354",
+        "imagenes": [
+            "O-123.jpg",
+            "O-123_A.jpg",
+            "O-123_B.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
         "lot": "M-1",
         "prix": 0.0,
         "categorie": "Machinerie Ferroviaire",
         "descripcion": "Rail Heater[o]",
         "detalles": "Rail Heater <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",353",
+        "manual_url": ",355",
         "imagenes": [
             "M-1.jpg"
         ],
@@ -4186,7 +4203,7 @@
         "categorie": "Machinerie Ferroviaire",
         "descripcion": "Rail Puller[o]",
         "detalles": "Rail Puller <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",354",
+        "manual_url": ",356",
         "imagenes": [
             "M-2.jpg"
         ],
@@ -4199,7 +4216,7 @@
         "categorie": "Machinerie légère",
         "descripcion": "Bennes à Béton[o]",
         "detalles": "Bennes à Béton <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",355",
+        "manual_url": ",357",
         "imagenes": [
             "M-3.jpg"
         ],
@@ -4212,7 +4229,7 @@
         "categorie": "Machinerie légère",
         "descripcion": "Fourche de Grue[o]",
         "detalles": "Fourche de Grue <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",357",
+        "manual_url": ",359",
         "imagenes": [
             "M-5.jpg"
         ],
@@ -4225,7 +4242,7 @@
         "categorie": "Machinerie légère",
         "descripcion": "Hilti Diamond Coring[o]",
         "detalles": "Hilti Diamond Coring <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",358",
+        "manual_url": ",360",
         "imagenes": [
             "M-6.jpg",
             "M-6_A.jpg",
@@ -4240,7 +4257,7 @@
         "categorie": "Machinerie légère",
         "descripcion": "Grue en flèche [o]",
         "detalles": "Grue en flèche <br>  <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",359",
+        "manual_url": ",361",
         "imagenes": [
             "M-7.jpg"
         ],
@@ -4253,7 +4270,7 @@
         "categorie": "Machinerie Ferroviaire",
         "descripcion": "Train Stop System[o]",
         "detalles": "Train Stop System <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",360",
+        "manual_url": ",362",
         "imagenes": [
             "M-8.jpg",
             "M-8_A.jpg"
@@ -4266,8 +4283,8 @@
         "prix": 0.0,
         "categorie": "Machinerie légère",
         "descripcion": "Canon à Neige_(WH-014)[o]",
-        "detalles": "Canon à Neige WH-014 <br>  <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",361",
+        "detalles": "Canon à Neige (WH-014) <br>  <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",363",
         "imagenes": [
             "M-9.jpg",
             "M-9_A.jpg"
