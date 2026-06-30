@@ -86,8 +86,8 @@ const DEPT_CONFIG = {
         title: "VENTE MACHINERIE",
         placeholder: "Rechercher (ex: Générateur...)",
         categories: [
-            "Tous", "Machinerie Ferroviaire", "Machinerie légère", "Générateurs électriques", "Véhicule",
-            "Chauffage Électrique", "Compacteur",  "Réservoir", "Trailer",
+            "Tous", "Machinerie Ferroviaire", "Machinerie légère", "Générateurs électriques", "Chauffage Électrique", "Véhicule",
+             "Compacteur",  "Réservoir", "Trailer",
             "Souffleuse à neige", "Panneau d'affichage", "Nettoyeur h. pression",
 
         ]
