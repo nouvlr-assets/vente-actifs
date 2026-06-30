@@ -76,8 +76,9 @@ const DEPT_CONFIG = {
             "Acc. Pick up", "Acc. Déneigement", "Acc. Chariot Élévateur",
             "Coffre", "Radios","Quincailleries Ferroviaire", "Acc. Ferroviaire", "Outils légers",
             "Sanitaire", "Roulotte",
-            "Outils électriques",  "Quincailleries",
-            "Entrepôt Conteneur", "Matériels de Sécurité", "Clôture et signalisation", "Matériels",
+            "Outils électriques",  "Matériels",
+            "Entrepôt Conteneur", "Matériels de Sécurité", "Clôture et signalisation",
+            "Quincailleries",
 
         ]
     },
@@ -86,7 +87,7 @@ const DEPT_CONFIG = {
         placeholder: "Rechercher (ex: Générateur...)",
         categories: [
             "Tous", "Machinerie Ferroviaire", "Machinerie légère", "Générateurs électriques", "Véhicule",
-            "Compacteur", "Chauffage Électrique", "Réservoir", "Trailer",
+            "Chauffage Électrique", "Compacteur",  "Réservoir", "Trailer",
             "Souffleuse à neige", "Panneau d'affichage", "Nettoyeur h. pression",
 
         ]

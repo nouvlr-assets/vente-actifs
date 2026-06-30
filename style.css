@@ -1429,3 +1429,52 @@ a.nav-btn:hover { color: var(--color-acento-secundario); }
         width: 60px;     /* Much smaller GIF for mobile */
     }
 }
+
+/* Contenedor general: Posiciona y agranda los bloques al lado del logo */
+.header-banners-container {
+    display: flex;
+    gap: 25px;                  /* Un poco más de espacio de separación entre los dos GIFs */
+    flex: 1;                    /* Toma el espacio disponible */
+    max-width: 950px;           /* ¡Más grandes! Subimos de 850px a 950px para darles más presencia */
+    margin-left: 40px;          /* ¡CLAVE! Los empuja hacia la izquierda, despegándolos del borde derecho */
+    margin-right: auto;         /* Asegura el equilibrio en el espaciado */
+    align-self: center;         /* Sigue centrándolos verticalmente respecto al logotipo */
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+/* Cada bloque de banner: ¡Totalmente transparente! */
+.banner-item {
+    flex: 1;
+    height: 125px;              /* ¡Un punto más altos! Pasamos de 115px a 125px */
+    background: transparent;    /* ¡MÁGICO! Al ser transparente, adopta el degradado exacto de tu header */
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;    /* Centra el GIF horizontalmente dentro de su espacio */
+    align-items: center;        /* Centra el GIF verticalmente dentro de su espacio */
+}
+
+/* Comportamiento del GIF interno */
+.banner-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;        /* Protege las proporciones del GIF sobre el fondo transparente */
+    display: block;
+    pointer-events: none;
+}
+
+/* --- ADAPTABILIDAD REFORZADA PARA MÓVILES --- */
+@media (max-width: 768px) {
+    .header-banners-container {
+        margin-left: 0;
+        width: 100%;
+        max-width: 100%;
+        flex-direction: row;    /* Mantiene los dos banners en fila en tablets/móviles grandes */
+        gap: 12px;
+    }
+
+    .banner-item {
+        height: 90px;           /* Ajuste proporcional para pantallas pequeñas */
+    }
+}
