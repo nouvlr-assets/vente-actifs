@@ -1858,19 +1858,6 @@
         "unit_price": 0.0
     },
     {
-        "lot": "A-301",
-        "prix": 273.6,
-        "categorie": "Outils légers",
-        "descripcion": "Échelle ajustable jusquà 21 pied aluminium",
-        "detalles": "Echelle ajustable jusquà 21 pied aluminium  <br>  Escabeau Featherlite 375",
-        "manual_url": "",
-        "imagenes": [
-            "A-301.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
         "lot": "A-302",
         "prix": 477.09,
         "categorie": "Outils légers",
@@ -1934,32 +1921,6 @@
         ],
         "units_available": 5,
         "unit_price": 288.0
-    },
-    {
-        "lot": "A-504.7",
-        "prix": 320.62,
-        "categorie": "Monuments",
-        "descripcion": "Monuments piédestal acier 36-37Po",
-        "detalles": "Monument piédestal acier  <br>  Longueur 36-37Po Base 8x8 Po",
-        "manual_url": "",
-        "imagenes": [
-            "A-504.7.jpg"
-        ],
-        "units_available": 3,
-        "unit_price": 225.0
-    },
-    {
-        "lot": "A-504.8",
-        "prix": 111.15,
-        "categorie": "Monuments",
-        "descripcion": "Monument piédestal acier 36Po",
-        "detalles": "Monument piédestal acier  <br>  Longueur 36Po",
-        "manual_url": "",
-        "imagenes": [
-            "A-504.8.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
     },
     {
         "lot": "A-504.9",
