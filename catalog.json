@@ -1127,7 +1127,7 @@
             "A-125.5.jpg"
         ],
         "units_available": 4,
-        "unit_price": 1710.0
+        "unit_price": 1539.0
     },
     {
         "lot": "A-125.6",
@@ -1478,7 +1478,7 @@
             "A-143.1.jpg"
         ],
         "units_available": 4,
-        "unit_price": 494.55
+        "unit_price": 445.1
     },
     {
         "lot": "A-143.2",
@@ -1530,7 +1530,7 @@
             "A-145.jpg"
         ],
         "units_available": 8,
-        "unit_price": 9.0
+        "unit_price": 8.0
     },
     {
         "lot": "A-146",
@@ -1543,7 +1543,7 @@
             "A-146.jpg"
         ],
         "units_available": 16,
-        "unit_price": 45.0
+        "unit_price": 40.0
     },
     {
         "lot": "A-148",
@@ -1673,7 +1673,7 @@
             "A-204.jpg"
         ],
         "units_available": 2,
-        "unit_price": 192.38
+        "unit_price": 182.76
     },
     {
         "lot": "A-207",
@@ -1725,7 +1725,7 @@
             "A-213.jpg"
         ],
         "units_available": 3,
-        "unit_price": 448.88
+        "unit_price": 426.44
     },
     {
         "lot": "A-214",
@@ -1738,7 +1738,7 @@
             "A-214.jpg"
         ],
         "units_available": 1,
-        "unit_price": 342.0
+        "unit_price": 324.9
     },
     {
         "lot": "A-218.1",
@@ -1907,7 +1907,7 @@
             "A-405.jpg"
         ],
         "units_available": 2,
-        "unit_price": 720.0
+        "unit_price": 684.0
     },
     {
         "lot": "A-504.2",
@@ -1920,7 +1920,7 @@
             "A-504.2.jpg"
         ],
         "units_available": 5,
-        "unit_price": 288.0
+        "unit_price": 273.6
     },
     {
         "lot": "A-504.9",
@@ -1933,7 +1933,7 @@
             "A-504.9.jpg"
         ],
         "units_available": 6,
-        "unit_price": 270.0
+        "unit_price": 256.5
     },
     {
         "lot": "A-505.2",
@@ -1946,7 +1946,7 @@
             "A-505.2.jpg"
         ],
         "units_available": 25,
-        "unit_price": 306.0
+        "unit_price": 290.7
     },
     {
         "lot": "A-505.3",
@@ -1959,7 +1959,7 @@
             "A-505.3.jpg"
         ],
         "units_available": 17,
-        "unit_price": 270.0
+        "unit_price": 256.5
     },
     {
         "lot": "A-505.4",
@@ -1972,7 +1972,7 @@
             "A-505.4.jpg"
         ],
         "units_available": 7,
-        "unit_price": 382.5
+        "unit_price": 362.9
     },
     {
         "lot": "A-505.5",
@@ -1985,7 +1985,7 @@
             "A-505.5.jpg"
         ],
         "units_available": 13,
-        "unit_price": 135.0
+        "unit_price": 128.25
     },
     {
         "lot": "A-505.6",
@@ -2011,7 +2011,7 @@
             "A-505.7.jpg"
         ],
         "units_available": 5,
-        "unit_price": 270.0
+        "unit_price": 256.5
     },
     {
         "lot": "A-505.9",
@@ -2024,7 +2024,7 @@
             "A-505.9.jpg"
         ],
         "units_available": 3,
-        "unit_price": 202.5
+        "unit_price": 192.38
     },
     {
         "lot": "A-506.1",
@@ -2050,7 +2050,7 @@
             "A-506.2.jpg"
         ],
         "units_available": 5,
-        "unit_price": 247.5
+        "unit_price": 234.65
     },
     {
         "lot": "A-506.4",
@@ -2063,7 +2063,7 @@
             "A-506.4.jpg"
         ],
         "units_available": 4,
-        "unit_price": 157.5
+        "unit_price": 149.63
     },
     {
         "lot": "A-506.5",
@@ -2076,7 +2076,7 @@
             "A-506.5.jpg"
         ],
         "units_available": 6,
-        "unit_price": 247.5
+        "unit_price": 235.13
     },
     {
         "lot": "A-600",
@@ -2102,7 +2102,7 @@
             "A-602.jpg"
         ],
         "units_available": 8,
-        "unit_price": 1198.8
+        "unit_price": 959.04
     },
     {
         "lot": "A-603",
@@ -2154,7 +2154,7 @@
             "A-700.jpg"
         ],
         "units_available": 3,
-        "unit_price": 4500.0
+        "unit_price": 3600.0
     },
     {
         "lot": "A-702",
@@ -2284,7 +2284,7 @@
             "A-712.jpg"
         ],
         "units_available": 2,
-        "unit_price": 450.0
+        "unit_price": 360.0
     },
     {
         "lot": "A-712.1",
