@@ -936,7 +936,7 @@
     },
     {
         "lot": "A-101.7",
-        "prix": 2850.0,
+        "prix": 3000.0,
         "categorie": "Drone",
         "descripcion": "Accessoire Drone Batterie TB65",
         "detalles": "Batterie TB65 <br> Applicable sur le DJI Matrice 300 TK & DJI Matrice 350 RTK <br> *Disponible fin avril 2026*",
@@ -962,7 +962,7 @@
     },
     {
         "lot": "A-101.9",
-        "prix": 285.0,
+        "prix": 300.0,
         "categorie": "Drone",
         "descripcion": "Accessoire Drone Batteries WB37",
         "detalles": "Batterie WB37 (2021) - Lot de 5 unités <br> *Disponible fin avril 2026*",
@@ -1895,19 +1895,6 @@
         ],
         "units_available": 1,
         "unit_price": 0.0
-    },
-    {
-        "lot": "A-405",
-        "prix": 1004.62,
-        "categorie": "Quincailleries",
-        "descripcion": "Parasol",
-        "detalles": "2x Parasol 8 x 10",
-        "manual_url": "",
-        "imagenes": [
-            "A-405.jpg"
-        ],
-        "units_available": 2,
-        "unit_price": 684.0
     },
     {
         "lot": "A-504.2",
