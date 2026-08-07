@@ -1,18 +1,5 @@
 [
     {
-        "lot": "A-9",
-        "prix": 23821.25,
-        "categorie": "Station Totale",
-        "descripcion": "Station Totale TS16 P 1 R500",
-        "detalles": "Station Totale TS16 P 1 R500 (2016)  <br>  Poignée radio RH16  <br>  Embase GDF321  <br>  Contrôleur CS20 3.75G (2018)  <br>  Chargeur GKL341  <br>  Prisme 360 GRZ4  <br>  Canne GNSS SECO & Trépied",
-        "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_ts16_ds.ashx",
-        "imagenes": [
-            "A-9.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
         "lot": "A-10",
         "prix": 23821.25,
         "categorie": "Station Totale",
@@ -716,7 +703,7 @@
     },
     {
         "lot": "A-97",
-        "prix": 6540.75,
+        "prix": 1090.12,
         "categorie": "Appareil de mesure",
         "descripcion": "DT8-05LS Théodolite numérique 5",
         "detalles": "Théodolite numérique 5\" visée laser. plomb optique",
@@ -857,19 +844,6 @@
         "unit_price": 0.0
     },
     {
-        "lot": "A-101.1",
-        "prix": 8075.0,
-        "categorie": "Drone",
-        "descripcion": "Drone DJI Matrice 350 RTK",
-        "detalles": "DJI Matrice 350 RTK (2024)  <br>  2x Batteries TB65 (2024)  <br>  Emetteur DJI RC Plus  <br>  Chargeur BS65 <br> *Disponible fin avril 2026*",
-        "manual_url": "https://dl.djicdn.com/downloads/matrice_350_rtk/20230518/Matrice_350_RTK_User_Manual_v1.0_EN.pdf",
-        "imagenes": [
-            "A-101.1.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
         "lot": "A-101.2",
         "prix": 5225.0,
         "categorie": "Drone",
@@ -878,123 +852,6 @@
         "manual_url": "https://dl.djicdn.com/downloads/matrice-300/20200507/M300_RTK_Specs_EN.pdf",
         "imagenes": [
             "A-101.2.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
-        "lot": "A-101.3",
-        "prix": 1710.0,
-        "categorie": "Drone",
-        "descripcion": "Drone accessoire Caméra DJI Zenmuse H20",
-        "detalles": "Caméra DJI Zenmuse H20 (2021)  <br>  Grand Angle Zoom 23x optique <br> *Disponible fin avril 2026*",
-        "manual_url": "https://dl.djicdn.com/downloads/zenmuse_h20/20200507/Zenmuse_H20_Series_User_Manual_v1.0_EN.pdf",
-        "imagenes": [
-            "A-101.3.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
-        "lot": "A-101.4",
-        "prix": 6650.0,
-        "categorie": "Drone",
-        "descripcion": "Drone accessoire Caméra DJI Zenmuse P1 avec objecOf 35 mm",
-        "detalles": "Caméra DJI Zenmuse P1 (2021)  <br>  Objectif 35 mm  <br>  Photogrammétrie <br> *Disponible fin avril 2026*",
-        "manual_url": "https://dl.djicdn.com/downloads/zenmuse_p1/20210125/Zenmuse_P1_User_Manual_v1.0_EN.pdf",
-        "imagenes": [
-            "A-101.4.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
-        "lot": "A-101.5",
-        "prix": 13775.0,
-        "categorie": "Drone",
-        "descripcion": "Lidar DJI Zenmuse L2",
-        "detalles": "Lidar DJI Zenmuse L2 (2024) <br> *Disponible fin avril 2026*",
-        "manual_url": "https://dl.djicdn.com/downloads/zenmuse_l2/20231018/Zenmuse_L2_User_Manual_v1.0_EN.pdf",
-        "imagenes": [
-            "A-101.5.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
-        "lot": "A-101.6",
-        "prix": 2375.0,
-        "categorie": "Drone",
-        "descripcion": "Accessoire Drone Parachute",
-        "detalles": "AVSS PRS-M350 parachute (2021)  <br>  Homologué par Transports Canada <br> *Disponible fin avril 2026*",
-        "manual_url": "",
-        "imagenes": [
-            "A-101.6.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
-        "lot": "A-101.7",
-        "prix": 3000.0,
-        "categorie": "Drone",
-        "descripcion": "Accessoire Drone Batterie TB65",
-        "detalles": "Batterie TB65 <br> Applicable sur le DJI Matrice 300 TK & DJI Matrice 350 RTK <br> *Disponible fin avril 2026*",
-        "manual_url": "",
-        "imagenes": [
-            "A-101.7.jpg"
-        ],
-        "units_available": 4,
-        "unit_price": 750.0
-    },
-    {
-        "lot": "A-101.8",
-        "prix": 213.75,
-        "categorie": "Drone",
-        "descripcion": "Accessoire Drone valise pour Batterie",
-        "detalles": "Valise de transport pour Batterie TB60/TB65 <br> *Disponible fin avril 2026*",
-        "manual_url": "",
-        "imagenes": [
-            "A-101.8.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
-        "lot": "A-101.9",
-        "prix": 300.0,
-        "categorie": "Drone",
-        "descripcion": "Accessoire Drone Batteries WB37",
-        "detalles": "Batterie WB37 (2021) - Lot de 5 unités <br> *Disponible fin avril 2026*",
-        "manual_url": "",
-        "imagenes": [
-            "A-101.9.jpg"
-        ],
-        "units_available": 5,
-        "unit_price": 60.0
-    },
-    {
-        "lot": "A-101.10",
-        "prix": 71.25,
-        "categorie": "Drone",
-        "descripcion": "Accessoire Drone Support Émetteur DJI C Plus",
-        "detalles": "Courroie et support pour émetteur DJI RC Plus (2024) <br> *Disponible fin avril 2026*",
-        "manual_url": "",
-        "imagenes": [
-            "A-101.10.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
-        "lot": "A-101.11",
-        "prix": 95.0,
-        "categorie": "Drone",
-        "descripcion": "Accessoire Drone Support de caméra supérieur",
-        "detalles": "Support de connecteur de cardan de caméra supérieur (2021) <br> *Disponible fin avril 2026*",
-        "manual_url": "",
-        "imagenes": [
-            "A-101.11.jpg"
         ],
         "units_available": 1,
         "unit_price": 0.0
@@ -1118,7 +975,7 @@
     },
     {
         "lot": "A-125.5",
-        "prix": 23256.0,
+        "prix": 1539.0,
         "categorie": "Accessoires",
         "descripcion": "Coffre d'ensemble pour embase (GVP609)",
         "detalles": "Coffre d'ensemble pour embase (GVP609)  <br>  Embase sans plomb optique (GDF321)  <br>  Porteur avec plomb optique (GZR103)  <br>  Prisme circulaire Pro (GPR121)",
@@ -1126,7 +983,7 @@
         "imagenes": [
             "A-125.5.jpg"
         ],
-        "units_available": 4,
+        "units_available": 1,
         "unit_price": 1539.0
     },
     {
@@ -2445,19 +2302,6 @@
         "manual_url": "",
         "imagenes": [
             "A-1000.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
-        "lot": "A-1001",
-        "prix": 360.0,
-        "categorie": "Radios",
-        "descripcion": "Radio Motorola",
-        "detalles": "Radio Motorola <br> Inclus: batterie et chargeur",
-        "manual_url": "",
-        "imagenes": [
-            "A-1001.jpg"
         ],
         "units_available": 1,
         "unit_price": 0.0
