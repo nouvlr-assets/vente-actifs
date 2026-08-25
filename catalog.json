@@ -3702,8 +3702,8 @@
         "lot": "O-107",
         "prix": 0.0,
         "categorie": "Outils électriques",
-        "descripcion": "Milwaukee Impact[o]",
-        "detalles": "Milwaukee Impact <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "descripcion": "Hilti Impact[o]",
+        "detalles": "Hilti Impact <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
         "manual_url": ",338",
         "imagenes": [
             "O-107.jpg"
@@ -3715,8 +3715,8 @@
         "lot": "O-107",
         "prix": 0.0,
         "categorie": "Outils électriques",
-        "descripcion": "Hilti Impact[o]",
-        "detalles": "Hilti Impact <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "descripcion": "Milwaukee Impact[o]",
+        "detalles": "Milwaukee Impact <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
         "manual_url": ",339",
         "imagenes": [
             "O-107.jpg"
@@ -4041,12 +4041,40 @@
         "unit_price": 0.0
     },
     {
+        "lot": "O-132",
+        "prix": 19500.0,
+        "categorie": "Entrepôt Conteneur",
+        "descripcion": "Conteneur Électrique_(WH-30)",
+        "detalles": "Conteneur Électrique (WH-30) <br>  <br> *Prix négociable selon offre sérieuse* <br>  Pour info supplémentaire communiquer avec nous",
+        "manual_url": "",
+        "imagenes": [
+            "O-132.jpg",
+            "O-132_A.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
+        "lot": "O-133",
+        "prix": 0.0,
+        "categorie": "Sanitaire",
+        "descripcion": "Bloc Sanitaire_(WH-31)[o]",
+        "detalles": "Bloc Sanitaire (WH-31) <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
+        "manual_url": ",365",
+        "imagenes": [
+            "O-133.jpg",
+            "O-133_A.jpg"
+        ],
+        "units_available": 1,
+        "unit_price": 0.0
+    },
+    {
         "lot": "M-1",
         "prix": 0.0,
         "categorie": "Machinerie Ferroviaire",
         "descripcion": "Rail Heater[o]",
         "detalles": "Rail Heater <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",364",
+        "manual_url": ",366",
         "imagenes": [
             "M-1.jpg"
         ],
@@ -4059,7 +4087,7 @@
         "categorie": "Machinerie Ferroviaire",
         "descripcion": "Rail Puller[o]",
         "detalles": "Rail Puller <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",365",
+        "manual_url": ",367",
         "imagenes": [
             "M-2.jpg"
         ],
@@ -4072,7 +4100,7 @@
         "categorie": "Machinerie légère",
         "descripcion": "Bennes à Béton[o]",
         "detalles": "Bennes à Béton <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",366",
+        "manual_url": ",368",
         "imagenes": [
             "M-3.jpg"
         ],
@@ -4085,7 +4113,7 @@
         "categorie": "Machinerie légère",
         "descripcion": "Fourche de Grue[o]",
         "detalles": "Fourche de Grue <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",368",
+        "manual_url": ",370",
         "imagenes": [
             "M-5.jpg"
         ],
@@ -4098,7 +4126,7 @@
         "categorie": "Machinerie légère",
         "descripcion": "Hilti Diamond Coring[o]",
         "detalles": "Hilti Diamond Coring <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",369",
+        "manual_url": ",371",
         "imagenes": [
             "M-6.jpg",
             "M-6_A.jpg",
@@ -4113,7 +4141,7 @@
         "categorie": "Machinerie légère",
         "descripcion": "Grue en flèche [o]",
         "detalles": "Grue en flèche <br>  <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",370",
+        "manual_url": ",372",
         "imagenes": [
             "M-7.jpg"
         ],
@@ -4126,7 +4154,7 @@
         "categorie": "Machinerie Ferroviaire",
         "descripcion": "Train Stop System[o]",
         "detalles": "Train Stop System <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",371",
+        "manual_url": ",373",
         "imagenes": [
             "M-8.jpg",
             "M-8_A.jpg"
@@ -4140,7 +4168,7 @@
         "categorie": "Machinerie légère",
         "descripcion": "Canon à Neige_(WH-014)[o]",
         "detalles": "Canon à Neige (WH-014) <br>  <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",372",
+        "manual_url": ",374",
         "imagenes": [
             "M-9.jpg",
             "M-9_A.jpg"
@@ -4154,7 +4182,7 @@
         "categorie": "Générateurs électriques",
         "descripcion": "Génératrice[o]",
         "detalles": "Génératrice <br>  <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",373",
+        "manual_url": ",375",
         "imagenes": [
             "M-10.jpg"
         ],
@@ -4167,7 +4195,7 @@
         "categorie": "Générateurs électriques",
         "descripcion": "Génératice[o]",
         "detalles": "Génératice <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",374",
+        "manual_url": ",376",
         "imagenes": [
             "M-11.jpg"
         ],
@@ -4180,7 +4208,7 @@
         "categorie": "Générateurs électriques",
         "descripcion": "Génératrice[o]",
         "detalles": "Génératrice <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",375",
+        "manual_url": ",377",
         "imagenes": [
             "M-12.jpg"
         ],
@@ -4193,7 +4221,7 @@
         "categorie": "Générateurs électriques",
         "descripcion": "Génératrice[o]",
         "detalles": "Génératrice <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",376",
+        "manual_url": ",378",
         "imagenes": [
             "M-13.jpg"
         ],
@@ -4206,7 +4234,7 @@
         "categorie": "Machinerie légère",
         "descripcion": "Stanley Hydraulique[o]",
         "detalles": "Stanley Hydraulique <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",377",
+        "manual_url": ",379",
         "imagenes": [
             "M-14.jpg"
         ],
@@ -4219,7 +4247,7 @@
         "categorie": "Machinerie légère",
         "descripcion": "Unité Hydraulique[o]",
         "detalles": "Unité Hydraulique <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",378",
+        "manual_url": ",380",
         "imagenes": [
             "M-15.jpg"
         ],
@@ -4232,7 +4260,7 @@
         "categorie": "Machinerie légère",
         "descripcion": "Unité Hydraulique[o]",
         "detalles": "Unité Hydraulique <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",379",
+        "manual_url": ",381",
         "imagenes": [
             "M-16.jpg"
         ],
@@ -4245,7 +4273,7 @@
         "categorie": "Machinerie légère",
         "descripcion": "Accessoire Hydraulique[o]",
         "detalles": "Accessoire Hydraulique <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",380",
+        "manual_url": ",382",
         "imagenes": [
             "M-17.jpg"
         ],
@@ -4258,7 +4286,7 @@
         "categorie": "Machinerie légère",
         "descripcion": "Accessoire Hydraulique[o]",
         "detalles": "Accessoire Hydraulique <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",381",
+        "manual_url": ",383",
         "imagenes": [
             "M-18.jpg"
         ],
@@ -4271,7 +4299,7 @@
         "categorie": "Machinerie Ferroviaire",
         "descripcion": "Rail & Switch grinding machine[o]",
         "detalles": "Rail & Switch grinding machine <br> Accessoire Hydraulique <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",382",
+        "manual_url": ",384",
         "imagenes": [
             "M-19.jpg"
         ],
@@ -4284,7 +4312,7 @@
         "categorie": "Machinerie Ferroviaire",
         "descripcion": "Rail Grinder[o]",
         "detalles": "Rail Grinder <br> Accessoire Hydraulique <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",383",
+        "manual_url": ",385",
         "imagenes": [
             "M-20.jpg"
         ],
@@ -4297,7 +4325,7 @@
         "categorie": "Machinerie Ferroviaire",
         "descripcion": "Rail Grinder[o]",
         "detalles": "Rail Grinder <br> Accessoire Hydraulique <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",384",
+        "manual_url": ",386",
         "imagenes": [
             "M-21.jpg"
         ],
