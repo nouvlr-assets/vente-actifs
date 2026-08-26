@@ -1234,19 +1234,6 @@
         "unit_price": 0.0
     },
     {
-        "lot": "A-138.1",
-        "prix": 60.0,
-        "categorie": "Accessoires",
-        "descripcion": "Laser Leica en croix",
-        "detalles": "Laser Leica en croix",
-        "manual_url": "",
-        "imagenes": [
-            "A-138.1.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
         "lot": "A-138.2",
         "prix": 363.38,
         "categorie": "Accessoires",
