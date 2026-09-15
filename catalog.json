@@ -481,19 +481,6 @@
         "unit_price": 0.0
     },
     {
-        "lot": "A-64",
-        "prix": 19924.36,
-        "categorie": "Station Totale",
-        "descripcion": "Trimble S7 2''",
-        "detalles": "Carnet <br> Prisme MT1000 S6 Active/Passive <br> Canne 2.6M <br> Trépied TRIMAX",
-        "manual_url": "",
-        "imagenes": [
-            "A-64.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
         "lot": "A-67",
         "prix": 4522.0,
         "categorie": "GPS",
@@ -585,19 +572,6 @@
         "unit_price": 0.0
     },
     {
-        "lot": "A-82",
-        "prix": 13862.02,
-        "categorie": "GPS",
-        "descripcion": "GPS Trimble",
-        "detalles": "GPS Trimble",
-        "manual_url": "",
-        "imagenes": [
-            "A-82.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
         "lot": "A-84",
         "prix": 997.5,
         "categorie": "Accessoires",
@@ -645,19 +619,6 @@
         "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_ls10_ls15_ds.ashx",
         "imagenes": [
             "A-89.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
-        "lot": "A-89.1",
-        "prix": 4013.28,
-        "categorie": "Appareil de mesure",
-        "descripcion": "Niveau Trimble DiNi",
-        "detalles": "Niveau Trimble DiNi",
-        "manual_url": "",
-        "imagenes": [
-            "A-89.1.jpg"
         ],
         "units_available": 1,
         "unit_price": 0.0
@@ -731,28 +692,8 @@
         "unit_price": 0.0
     },
     {
-        "lot": "A-100.2",
-        "prix": 96971.05,
-        "categorie": "Mesure Ferroviaire",
-        "descripcion": "Pack TRIMBLE GEDO CE 2.0 VORSYS-01 2019",
-        "detalles": "Pack TRIMBLE GEDO CE 2.0 VORSYS-01 2019",
-        "manual_url": "",
-        "imagenes": [
-            "A-100.2.jpg",
-            "A-100.2_A.jpg",
-            "A-100.2_B.jpg",
-            "A-100.2_C.jpg",
-            "A-100.2_D.jpg",
-            "A-100.2_E.jpg",
-            "A-100.2_F.jpg",
-            "A-100.2_G.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
         "lot": "A-100.3",
-        "prix": 97277.82,
+        "prix": 138968.31,
         "categorie": "Mesure Ferroviaire",
         "descripcion": "Pack TRIMBLE GEDO CE 2.0 VORSYS-02 2020",
         "detalles": "Pack TRIMBLE GEDO CE 2.0 VORSYS-02 2020",
@@ -771,25 +712,8 @@
         "unit_price": 0.0
     },
     {
-        "lot": "A-100.4",
-        "prix": 54324.92,
-        "categorie": "Mesure Ferroviaire",
-        "descripcion": "Pack TRIMBLE GEDO CE 2.0 TRACK-01 2019",
-        "detalles": "Pack TRIMBLE GEDO CE 2.0 TRACK-01 2019",
-        "manual_url": "",
-        "imagenes": [
-            "A-100.4.jpg",
-            "A-100.4_A.jpg",
-            "A-100.4_B.jpg",
-            "A-100.4_C.jpg",
-            "A-100.4_D.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
         "lot": "A-100.5",
-        "prix": 53596.21,
+        "prix": 76566.01,
         "categorie": "Mesure Ferroviaire",
         "descripcion": "Pack TRIMBLE GEDO CE 2.0 TRACK-02 2020",
         "detalles": "Pack TRIMBLE GEDO CE 2.0 TRACK-02 2020",
@@ -1026,19 +950,6 @@
         "unit_price": 0.0
     },
     {
-        "lot": "A-131.1",
-        "prix": 183.14,
-        "categorie": "Accessoires",
-        "descripcion": "Mini prism Leica GMP101",
-        "detalles": "Mini Prism GMP101",
-        "manual_url": "",
-        "imagenes": [
-            "A-131.1.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
         "lot": "A-131.2",
         "prix": 925.88,
         "categorie": "Accessoires",
@@ -1234,32 +1145,6 @@
         "unit_price": 0.0
     },
     {
-        "lot": "A-143.1",
-        "prix": 1118.18,
-        "categorie": "Accessoires",
-        "descripcion": "Track Gauge",
-        "detalles": "Track Gauge",
-        "manual_url": "",
-        "imagenes": [
-            "A-143.1.jpg"
-        ],
-        "units_available": 4,
-        "unit_price": 445.1
-    },
-    {
-        "lot": "A-143.2",
-        "prix": 664.14,
-        "categorie": "Accessoires",
-        "descripcion": "Track Gauge numérique",
-        "detalles": "Track Gauge numérique",
-        "manual_url": "",
-        "imagenes": [
-            "A-143.2.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
         "lot": "A-144",
         "prix": 132.27,
         "categorie": "Accessoires",
@@ -1372,19 +1257,6 @@
         "manual_url": "",
         "imagenes": [
             "A-153.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
-        "lot": "A-154",
-        "prix": 5638.46,
-        "categorie": "Accessoires",
-        "descripcion": "Trimble AD-12 Enmbase AutoNivelante",
-        "detalles": "Trimble AD-12 Enmbase AutoNivelante",
-        "manual_url": "",
-        "imagenes": [
-            "A-154.jpg"
         ],
         "units_available": 1,
         "unit_price": 0.0
