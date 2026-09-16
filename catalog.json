@@ -585,19 +585,6 @@
         "unit_price": 0.0
     },
     {
-        "lot": "A-87",
-        "prix": 4013.28,
-        "categorie": "Appareil de mesure",
-        "descripcion": "Niveau LS15 0.3mm",
-        "detalles": "Niveau LS15 0.3mm (2019)  <br>  Chargeur GKL311  <br>  Base pour mire GPLE / GPCL  <br>  Mire GKNL4M  <br>  Trépied  <br>  Mire Invar GWCL92 0.92m  <br>  Mire Invar GPCL2 2m",
-        "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_ls10_ls15_ds.ashx",
-        "imagenes": [
-            "A-87.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
         "lot": "A-88",
         "prix": 4013.28,
         "categorie": "Appareil de mesure",
