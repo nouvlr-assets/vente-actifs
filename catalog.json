@@ -104,19 +104,6 @@
         "unit_price": 0.0
     },
     {
-        "lot": "A-26",
-        "prix": 14131.25,
-        "categorie": "Station Totale",
-        "descripcion": "Station Totale TS16 I 1 R1000",
-        "detalles": "Station Totale TS16 I 1 R1000 (2018)  <br>  Poignée radio RH16  <br>  Embase GDF321  <br>  Chargeur  <br>  Prisme 360 GRZ122  <br>  Canne SECO & Trépied",
-        "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_ts16_ds.ashx",
-        "imagenes": [
-            "A-26.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
         "lot": "A-27",
         "prix": 14131.25,
         "categorie": "Station Totale",
@@ -151,32 +138,6 @@
         "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_ts16_ds.ashx",
         "imagenes": [
             "A-32.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
-        "lot": "A-33",
-        "prix": 12435.5,
-        "categorie": "Station Totale",
-        "descripcion": "Station Totale TS16 P 1 R1000",
-        "detalles": "Station Totale TS16 P 1 R1000 (2016)  <br>  Poignée radio RH16  <br>  Embase GDF321  <br>  Chargeur GKL341  <br>  Prisme 360 GRZ122  <br>  Trépied",
-        "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_ts16_ds.ashx",
-        "imagenes": [
-            "A-33.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
-        "lot": "A-34",
-        "prix": 14131.25,
-        "categorie": "Station Totale",
-        "descripcion": "Station Totale TS16 P 1 R1000",
-        "detalles": "Station Totale TS16 P 1 R1000 (2018)  <br>  Poignée radio RH16  <br>  Embase GDF321  <br>  Chargeur GKL341  <br>  Prisme 360 GRZ122  <br>  Trépied",
-        "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_ts16_ds.ashx",
-        "imagenes": [
-            "A-34.jpg"
         ],
         "units_available": 1,
         "unit_price": 0.0
@@ -533,19 +494,6 @@
         "unit_price": 0.0
     },
     {
-        "lot": "A-77",
-        "prix": 11022.38,
-        "categorie": "GPS",
-        "descripcion": "GS16 3.75G & UHF Performance NAFTA",
-        "detalles": "GS16 3.75G & UHF Performance NAFTA (2020)  <br>  Contrôleur CS20 LTE (2016)  <br>  Adapteur pour antenne GPS  <br>  Canne à prisme en fibre de carbone SECO 2.2m",
-        "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_gs16_ds.ashx",
-        "imagenes": [
-            "A-77.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
         "lot": "A-78",
         "prix": 11022.38,
         "categorie": "GPS",
@@ -867,32 +815,6 @@
         "manual_url": "",
         "imagenes": [
             "A-125.6.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
-        "lot": "A-126.2",
-        "prix": 610.47,
-        "categorie": "Accessoires",
-        "descripcion": "Prisme 360 GRZ122 brisé",
-        "detalles": "Prisme 360 GRZ122 (brisé)",
-        "manual_url": "",
-        "imagenes": [
-            "A-126.2.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
-        "lot": "A-126.3",
-        "prix": 305.24,
-        "categorie": "Accessoires",
-        "descripcion": "Prisme 360 GRZ122 brisé",
-        "detalles": "Prisme 360 GRZ122 (brisé)",
-        "manual_url": "",
-        "imagenes": [
-            "A-126.3.jpg"
         ],
         "units_available": 1,
         "unit_price": 0.0
@@ -2869,19 +2791,6 @@
         "manual_url": ",295",
         "imagenes": [
             "O-63.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
-        "lot": "O-64",
-        "prix": 0.0,
-        "categorie": "Matériels",
-        "descripcion": "Chariot Utilitaire[o]",
-        "detalles": "Chariot Utilitaire <br> Pour toute information supplémentaire, nhésitez pas à communiquer avec nous.",
-        "manual_url": ",296",
-        "imagenes": [
-            "O-64.jpg"
         ],
         "units_available": 1,
         "unit_price": 0.0
