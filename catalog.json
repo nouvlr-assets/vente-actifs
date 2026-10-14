@@ -143,19 +143,6 @@
         "unit_price": 0.0
     },
     {
-        "lot": "A-36",
-        "prix": 14131.25,
-        "categorie": "Station Totale",
-        "descripcion": "Station Totale TS16 I 1 R1000",
-        "detalles": "Station Totale TS16 I 1 R1000 (2018)  <br>  Poignée Radio RH16  <br>  Embase GDF321  <br>  Prisme 360 GRZ122  <br>  Trépied",
-        "manual_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_ts16_ds.ashx",
-        "imagenes": [
-            "A-36.jpg"
-        ],
-        "units_available": 1,
-        "unit_price": 0.0
-    },
-    {
         "lot": "A-37",
         "prix": 14131.25,
         "categorie": "Station Totale",
